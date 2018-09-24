@@ -1,0 +1,42 @@
+# dir = research
+dir 2school\PhD Courses\GRSTopic2.pdfC6008 Transferable Skills
+dir /a  # show all files including hidden files
+cd "C:\Program Files"    # cd to a absolute directory
+cls     # clear screen
+dir *.png   # only show certaini files
+ipconfig /?
+mkdir newfolder     # make new directory
+rmdir oldfolder     # remove empty directory
+rmdir /s oldfolder  # force remove directory
+del filename.suffix # delete file
+echo testing sentence > test.txt    # write a new file with overwritting function
+echo testing 2 >> test.txt
+dir > test.txt      # save dir result to a file
+copy test.txt destinyfolder # copy file
+xcopy folder destinyfolder  # copy files from one folder to another
+move A newfolder    # move file A into newfolder
+
+# crtl + c # exit program #
+path                # show all paths for *.exe
+wmic logicaldisk get name   # show all disk drives
+tree                # show all directories
+color /?
+color 07/7B         # change background color
+attrib +r -h bacon.txt  # modify attributes of files
+type file.text
+
+ipconfig            # show ips
+ipconfig /?
+arp /?
+arp -a
+ping google.com
+tracert google.com  # connection with google server
+nslookup google.com
+
+ipconfig | clip     # copy the ip info to clipboard
+wmic product get name   # acquire names for *.exe
+
+### VS Code
+crtl for multi-line editing
+crtl + D for variable multi-editing
+crtl + alt for multiline selection

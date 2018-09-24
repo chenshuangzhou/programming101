@@ -1,0 +1,177 @@
+a=3
+who    # variable in scope
+whos  # show info of a
+
+A = [1,2,3;4,5,6;7,8,9]  # matrix of 3X3
+[]                                      # zero matrix
+ones(4)                           # full matrix
+eye()                               % identity matrix
+rand()                             % random matrix
+randn()                          % normally distributed random matrix 
+
+
+A = [1:9]¡¯*[1:9]              % multiplication 
+A(:)                                  % rectirization 
+A(:,1); A(1,:)                   % first column or first row
+A(1:5,:)                            % first five rows
+A(end-1:end,: )              % the last two rows
+[A(6:end,: ); A(1:5,: )]   % combine two matrix
+A([6:end,1:5),: ) 
+           
+repmat(eye(2),[3,5])   % make copies of eye(2) into 3 by 5
+reshape([1:25],[5,5])   % reshape vector into a matrix of 5 by 5
+A=eye(3); A(4,4)=3       % fill in 3 with space beyond the previous matrix
+
+A=[1:9]
+A¡¯                                     % transpose
+M = A¡¯*A
+P = [0,0,1;0,1,0; 1,0,0]; inv(P),P^-1  % inverse the same
+P^2                                  % matrix square
+A = rand([3,5]), B=pinv(A); A*B               % pseudo inverse matrix
+Cond(A)             
+det(A)                              % determinants
+A=[2,1;3,1]; B = [7,9]¡¯
+Inv(A)*B; A\B                 % same calculation
+
+A=[1,2,3;4,5,6;7,8,9]
+A .* B                            % element-wise operation
+A .^2                             % element-wise square
+A ./ 2; A/2                            
+[1:10] ./ [10:-1:1]
+
+
+A = reshape ([1:25],5,5)
+min(A); max(A); 
+sum(A)                         % sum for all rows
+sum(A,2)                      % sum for all columns 
+
+A = rand(3)                  
+Mask = A<0                  % boolean results 
+A(mask)                        % find values for conditional result
+
+a=3
+if 1<2
+    disp(¡®smaller¡¯)
+else 
+    disp(¡®bigger¡¯)
+end
+
+Switch a
+Case 1
+   Disp(¡®one¡¯)
+Case 2 
+    Disp(¡®two¡¯)
+Otherwise
+    Disp(¡®help¡¯)
+
+
+
+for i = [10:-2;0]
+    disp(i)
+end
+
+X=1/101
+format long                   % not the real number
+X
+
+V=linspace(0,1,101); v(101)-1   % prevent numeric errors
+
+N = 1000
+X = linspace(0,1,N)
+Y2 = 1 ./(1+x .^2)
+4*sum(y2/N)
+
+y1 = 1 ./ (1+x)
+
+A = [4,2,8,5,7,1]
+sort(A)
+unique ([1,2,2,3,3,2,1])        % find unique values without repeated ones
+find(A)                              % list non-zero elements
+find(A==8)                       % search the 
+
+Matrix factorization, ~ operator
+A=rand(3)
+Lambda = eig(A)
+[v,lambda] = eig(A)       % eigen decomposition
+[v,~] = eig(A)                  % only compute eigen values
+
+
+Memory control
+Who
+Whos
+Load    % load matrix from the file
+Save    % save certain file or matrix (save v.mat v)
+Clear
+
+
+Sparse matrix
+Sparse()    % 0 into null
+Zeros()
+Full()          % turn sparse matrix into full version
+Spy()          % show matrix on the axis
+
+X=[1:10] .^2
+Dx= x(2:end)- x(1:end-1); Dx = diff(X)  % the same
+A = eye(3); diff(A)   % subtract rows
+
+Function y = mysine(x)      % in the file of mysine.m; save the file as ¡°mysine¡±
+    Y=sin(x)
+End
+
+Mysine(pi)
+
+
+x=linspace(0,pi,30)
+plot(x,x,¡¯x¡¯)           % A scatter plot, ¡®x¡¯ being notation
+Plot(x,sin(x),¡¯-¡¯)    % linear plotting 
+Plot(x,sin(x),¡¯or¡¯,x,cos(x),¡¯+b¡¯)    % ¡®o¡¯ in red and ¡®+¡¯ in blue
+Legend(¡®sin¡¯,¡¯cos¡¯)                        % name function in sequence
+Polarplot(x,sin(x),¡¯or¡¯)
+Semilogx(x,x)          % log on x-axis, or on y-axis
+Loglog(x,x,¡¯x¡¯)
+
+X=randn(100,1)
+Hist(x,10)                % 10 bars on histogram or automatic on default
+Binrange = -4:4
+[bincounts] = histc(x,binrange)    % histogram counts
+
+Bar(x,y,hist)
+
+[X,Y] = meshgrid(-8:.5;8)
+R = sqrt(x.^2+Y.^2)+eps
+Z=sin(R)./R
+Mesh(Z)
+Mesh(X,Y,Z)
+
+[C,h]=contour(Z);clabel(C,h)
+Contour(X,Y,Z)
+Title(¡®Test^a^bTitle_1_2_3¡¯);  % superscript and subscript
+
+
+Figure(1); plot1
+Figure(2); plot2
+Hold on; hold off                % keep the current graph in the figure
+
+Subplot(2,2,1); plot1-4            % separate 2x2 layout for 4 graphs
+Subplot(1,2,2)                      % 
+
+Loading/saving data
+Imread(¡®image.jpg¡¯)
+Imshow(¡®image.jpg¡¯)
+Contour(pic(:,:,1));axis equal   % row column ratio maintained 
+tic;pause;toc          % record time between tic and toc
+
+
+Sqr=@(x)(x.^2)    % variable as a function handle sqr is the function of x^2
+Sqr(10)
+Quad(y2,0,1)    % integral(y2,0,1) in matlab
+F = @(x) (x-3)^2+1
+[x,y] = fminsearch(f,1)     % search minimum solve for y=1
+
+G=@(x)cos(x)-x
+Fsolve(g,0.7)
+
+
+Matlab Toolbox
+Sym(¡®x¡¯)
+

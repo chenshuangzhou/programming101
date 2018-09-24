@@ -1,0 +1,257 @@
+Sno,Username,Name,Contribs,Language,Location
+#1,Ocramius ,Marco Pivetta,61259,PHP,Frankfurt
+#2,michalbe ,Micha? Budzy?ski,14771,JavaScript,"Warsaw, Poland"
+#3,kevinsawicki ,Kevin Sawicki,9159,JavaScript,"Redwood City, CA"
+#4,brianchandotcom ,Brian Chan,8893,JavaScript,"Los Angeles, CA"
+#5,fabpot ,Fabien Potencier,8751,PHP,"Paris, France"
+#6,weierophinney ,Matthew Weier O'Phinney,8742,PHP,"Sioux Falls, SD, USA"
+#7,GrahamCampbell ,Graham Campbell,8418,PHP,The United Kingdom
+#8,mrmrs ,Adam Morse,7826,CSS,San Francisco
+#9,rkh ,Konstantin Haase,6625,Ruby,Berlin
+#10,md-5,,6123,Java,"Melbourne, Australia"
+#11,ornicar ,Thibault Duplessis,5937,PHP,"Paris, France"
+#12,hadley ,Hadley Wickham,5887,R,"Houston, TX"
+#13,jdalton ,John-David Dalton,5622,JavaScript,http://twitter.com/jdalton
+#14,springmeyer ,Dane Springmeyer,5591,C++,"Winthrop, WA"
+#15,taylorotwell ,Taylor Otwell,5546,PHP,Arkansas
+#16,jgm ,John MacFarlane,5341,Haskell,"Berkeley, CA"
+#17,substack ,James Halliday,5341,JavaScript,"Oakland, California, USA"
+#18,robrix ,Rob Rix,5339,Objective-C,"London, Ontario"
+#19,michaelklishin ,Michael Klishin,5269,Ruby,
+#20,cvrebert ,Chris Rebert,5245,JavaScript,"Bay Area, California, USA"
+#21,mikermcneil ,Mike McNeil,5201,JavaScript,"Austin, TX"
+#22,c9s ,Yo-An Lin,5102,PHP,
+#23,markstory ,Mark Story,5014,PHP,"Toronto, Ontario"
+#24,snoyberg ,Michael Snoyman,4797,Haskell,Israel
+#25,tmcw ,Tom MacWright,4790,JavaScript,"Washington, DC"
+#26,schacon ,Scott Chacon,4587,Ruby,"San Francisco, CA"
+#27,mitchellh ,Mitchell Hashimoto,4575,Ruby,"San Francisco, CA"
+#28,mafintosh ,Mathias Buus,4571,JavaScript,"Copenhagen, Denmark"
+#29,SamyPesse ,Samy Pessé,4440,JavaScript,"Lyon, France / Palo Alto, CA"
+#30,stefanpenner ,Stefan Penner,4317,JavaScript,"San Jose, CA"
+#31,remy ,Remy Sharp,4295,JavaScript,"Brighton, UK"
+#32,rstacruz ,Rico Sta. Cruz,4289,JavaScript,"Manila, Philippines"
+#33,dcramer ,David Cramer,4287,Python,"San Francisco, CA"
+#34,addyosmani ,Addy Osmani,4264,JavaScript,"London, England"
+#35,bevacqua ,Nicolas Bevacqua,4110,JavaScript,"Buenos Aires, Argentina"
+#36,kytrinyx ,Katrina Owen,4090,Ruby,Santa Monica
+#37,parkr ,Parker Moore,4071,Ruby,"San Francisco, CA"
+#38,josh ,Joshua Peek,4026,Ruby,"San Francisco, CA"
+#39,jamesward ,James Ward,3999,Java,"Crested Butte, CO, USA"
+#40,3rd-Eden ,Arnout Kazemier,3912,JavaScript,"Drachten, the Netherlands"
+#41,pippinsplugins ,Pippin Williamson,3781,PHP,"Hutchinson, KS"
+#42,feross ,Feross Aboukhadijeh,3772,JavaScript,"Mountain View, CA"
+#43,rafaelfranca ,Rafael Mendonça França,3744,Ruby,"São Paulo, Brazil"
+#44,Raynos ,Raynos ,3680,JavaScript,San Francisco
+#45,jwiegley ,John Wiegley,3628,Haskell,"Peoria, Illinois, USA"
+#46,jonathanong ,jongleberry,3606,JavaScript,"Los Angeles, CA"
+#47,josevalim ,José Valim,3591,Ruby,"Kraków, Poland"
+#48,thomasdavis ,Thomas Davis,3462,JavaScript,"Brisbane, Australia"
+#49,ingydotnet ,Ingy döt Net,3416,Perl,Seattle
+#50,dominictarr ,Dominic Tarr,3385,JavaScript,New Zealand
+#51,zcbenz ,Cheng Zhao,3278,JavaScript,Beijing
+#52,evancz ,Evan Czaplicki,3249,Elm,
+#53,benbalter ,Ben Balter,3193,Ruby,"Washington, DC"
+#54,bastianallgeier ,Bastian Allgeier,3173,PHP,"Mannheim, Germany"
+#55,HugoGiraudel ,Hugo Giraudel,3166,CSS,Grenoble (France)
+#56,ebidel ,Eric Bidelman,3142,JavaScript,"San Francisco, CA"
+#57,TooTallNate ,Nathan Rajlich,3138,JavaScript,"San Francisco, CA"
+#58,r7kamura ,Ryo Nakamura,3118,Ruby,"Tokyo, Japan"
+#59,yihui ,Yihui Xie,3086,R,"Ames, IA"
+#60,kripken ,Alon Zakai,3067,JavaScript,
+#61,ekmett ,Edward Kmett,3066,Haskell,"Cambridge, MA"
+#62,mcollina ,Matteo Collina,3030,JavaScript,In the clouds above Italy
+#63,FooBarWidget ,Hongli Lai,2995,Ruby,Earth
+#64,sahat ,Sahat Yalkabov,2971,JavaScript,"Sunnyvale, CA"
+#65,indutny ,Fedor Indutny,2958,JavaScript,Russia
+#66,steveklabnik ,Steve Klabnik,2945,Ruby,Brooklyn
+#67,kohsuke ,Kohsuke Kawaguchi,2940,Java,"San Jose, California"
+#68,weaverryan ,Ryan Weaver,2938,PHP,"Nashville, TN"
+#69,orta ,Orta,2911,Ruby,Manchester / NYC
+#70,creationix ,Tim Caswell,2894,JavaScript,"Red Lick, TX, USA"
+#71,maxogden ,Max Ogden,2888,JavaScript,"Portland, OR"
+#72,STRd6 ,Daniel X Moore,2878,CoffeeScript,"Fillmore, CA"
+#73,yiminghe ,yiminghe,2872,JavaScript,China
+#74,jspahrsummers ,Justin Spahr-Summers,2867,Shell,"San Francisco, CA"
+#75,swannodette ,David Nolen,2854,Clojure,New York
+#76,PaulKinlan ,Paul Kinlan,2816,JavaScript,"Liverpool, London, Mountain View (CA)"
+#77,zenorocha ,Zeno Rocha,2801,JavaScript,"Los Angeles, CA"
+#78,mgechev ,Minko Gechev,2776,JavaScript,"Sofia, Bulgaria"
+#79,mattn ,mattn,2745,Go,"Osaka, Japan"
+#80,RubyLouvre ,????,2729,JavaScript,China
+#81,fsouza ,Francisco Souza,2713,Python,"Rio de Janeiro, Brazil"
+#82,karan ,Karan Goel,2648,Python,Seattle
+#83,arunoda ,Arunoda Susiripala,2645,JavaScript,"Colombo, Sri Lanka"
+#84,paulcbetts ,Paul Betts,2590,C#,San Francisco
+#85,bbatsov ,Bozhidar Batsov,2570,Emacs Lisp,"Sofia, Bulgaria"
+#86,mathiasbynens ,Mathias Bynens,2564,JavaScript,Belgium
+#87,KrauseFx ,Felix Krause,2562,Ruby,United Kingdom
+#88,mikolalysenko ,Mikola Lysenko,2542,JavaScript,"Madison, WI"
+#89,chrisdone ,Chris Done,2535,Haskell,Italy
+#90,josegonzalez ,Jose Diaz-Gonzalez,2527,PHP,"New York, NY"
+#91,JakeWharton ,Jake Wharton,2516,Java,"San Francisco, CA"
+#92,happypeter ,Peter Wang,2508,CSS,Qinhuangdao China
+#93,leafo ,leaf,2503,MoonScript,San Francisco
+#94,alex ,Alex Gaynor,2492,Python,Washington D.C.
+#95,rdegges ,Randall Degges,2491,Python,Bay Area
+#96,sferik ,Erik Michaels-Ober,2481,Ruby,
+#97,chjj ,Christopher Jeffrey ,2481,JavaScript,San Francisco
+#98,kana ,Kana Natsuno,2458,VimL,"Tokyo, Japan"
+#99,ai ,Andrey Sitnik,2455,Ruby,"Saint Petersburg, Russia"
+#100,stof ,Christophe Coevoet,2413,PHP,Paris
+#101,Unknwon ,??,2413,Go,"Boston, MA"
+#102,tokuhirom ,Tokuhiro Matsuno,2361,Perl,"Tokyo, Japan"
+#103,samdark ,Alexander Makarov,2322,PHP,Russia
+#104,kraih ,Sebastian Riedel,2320,Perl,Germany
+#105,frsyuki ,FURUHASHI Sadayuki,2281,Ruby,"Mountain View, CA"
+#106,matthewmccullough,Matthew McCullough,2250,Java,"Denver, CO USA"
+#107,balupton ,Benjamin Lupton,2237,JavaScript,Australia
+#108,hueniverse ,Eran Hammer,2218,JavaScript,"Los Gatos, CA"
+#109,migurski,,2217,Python,
+#110,kazuho ,Kazuho Oku,2213,Perl,Tokyo
+#111,webmozart ,Bernhard Schussek,2212,PHP,"Vienna, Austria"
+#112,phuslu ,Phus Lu,2192,Python,"Nanjing, China"
+#113,mikejolley ,Mike Jolley,2167,PHP,"England, UK"
+#114,purcell ,Steve Purcell,2159,Emacs Lisp,"Chester, UK"
+#115,ryanflorence ,Ryan Florence,2147,JavaScript,"Salt Lake City, UT"
+#116,torvalds ,Linus Torvalds,2126,Makefile,"Portland, OR"
+#117,fogus ,Fogus,2120,Clojure,DC
+#118,madskristensen ,Mads Kristensen,2094,C#,Seattle
+#119,qiangxue ,Qiang Xue,2090,,"Virginia, U.S.A."
+#120,domenic ,Domenic Denicola,2036,JavaScript,"New York, NY"
+#121,MatthewMueller ,Matthew Mueller,1999,JavaScript,"San Francisco, CA"
+#122,armon ,Armon Dadgar,1987,Go,"San Francisco, CA"
+#123,ashfurrow ,Ash Furrow,1976,Objective-C,Amsterdam
+#124,johnpapa ,John Papa,1964,JavaScript,"Orlando, FL"
+#125,davidfowl ,David Fowler,1947,C#,"Bellevue, WA"
+#126,twada ,Takuto Wada,1934,JavaScript,"Tokyo, Japan"
+#127,SamSaffron ,Sam,1927,Ruby,"Sydney, Australia"
+#128,clowwindy ,clowwindy,1910,Shell,
+#129,fengmk2 ,fengmk2,1896,JavaScript,"Hangzhou, China"
+#130,mattt ,Mattt Thompson,1895,Ruby,"Portland, OR"
+#131,jessesquires ,Jesse Squires,1889,Objective-C,"San Francisco, CA"
+#132,ayende ,Ayende Rahien,1859,C#,Israel
+#133,tbranyen ,Tim Branyen,1854,JavaScript,"Shapleigh, ME"
+#134,andyque ,????,1848,C,"Xiamen, Fujian, China"
+#135,headius ,Charles Oliver Nutter,1845,Ruby,
+#136,contra ,contra,1812,JavaScript,earth
+#137,jlord ,Jessica Lord,1803,JavaScript,"Portland, Ore"
+#138,willdurand ,William Durand,1788,PHP,France
+#139,julycoding ,July,1786,TeX,"Beijing, China"
+#140,tenderlove ,Aaron Patterson,1778,Ruby,Seattle
+#141,drnic ,Dr Nic Williams,1777,Ruby,"Palo Alto, CA, USA"
+#142,eduardolundgren ,Eduardo Lundgren,1764,JavaScript,Brazil
+#143,jezdez ,Jannis Leidel,1764,Python,"Berlin, Europe"
+#144,mourner ,Vladimir Agafonkin,1763,JavaScript,"Kiev, Ukraine"
+#145,Shougo ,Shougo,1751,VimL,Vim
+#146,rwaldron ,Rick Waldron,1742,JavaScript,"Brooklyn, NY"
+#147,passy ,Pascal Hartig,1731,JavaScript,"London, UK"
+#148,timoxley ,Tim Oxley,1727,JavaScript,"Brisbane, AU ? Singapore"
+#149,btford ,Brian Ford,1721,JavaScript,"San Francisco, CA"
+#150,photonstorm ,Richard Davey,1715,JavaScript,UK
+#151,ErisDS ,Hannah Wolfe,1713,JavaScript,UK
+#152,mrdoob ,Ricardo Cabello,1707,JavaScript,"London, England"
+#153,EisenbergEffect ,Rob Eisenberg,1692,CSS,"Tallahassee, FL"
+#154,bryanveloso ,Bryan Veloso,1689,Python,"Los Angeles, CA"
+#155,bergie ,Henri Bergius,1679,JavaScript,"Berlin, Germany"
+#156,soyjavi ,Javi Jiménez,1671,CoffeeScript,Bilbao ?? Chiang Mai
+#157,ednapiranha ,the brain that died,1666,JavaScript,
+#158,vladikoff ,Vlad Filippov,1657,JavaScript,North America
+#159,freddix ,Fryderyk Dziarmagowski,1655,Diff,
+#160,lihaoyi ,Li Haoyi,1653,Scala,
+#161,audreyt ,??,1643,Perl,"Taipei, Taiwan"
+#162,robotlolita ,,1642,JavaScript,"Belo Horizonte, Brazil"
+#163,dead-horse ,Yiyu He,1635,JavaScript,"Hangzhou, China"
+#164,sorah ,Shota Fukumori,1625,Ruby,"Tokyo, Japan"
+#165,maryrosecook ,Mary Rose Cook,1620,JavaScript,"New York, NY"
+#166,turingou ,Guo Yu,1616,JavaScript,"Peking, Mainland China"
+#167,vhf ,victor felder,1605,JavaScript,Fribourg (Switzerland)
+#168,derickr ,Derick Rethans,1601,PHP,"London, England"
+#169,bradfitz ,Brad Fitzpatrick,1587,Go,"San Francisco, CA"
+#170,nzakas ,Nicholas C. Zakas,1574,JavaScript,"Mountain View, CA"
+#171,xhzengAIB ,Jack,1562,Objective-C,China GuangDong (??)
+#172,apotonick ,Nick Sutterer,1560,Ruby,"Byron Bay, Australia"
+#173,caitp ,?caitp?,1556,JavaScript,"Toronto, Canada"
+#174,michaelficarra ,Michael Ficarra,1548,JavaScript,"Sunnyvale, CA"
+#175,hsbt ,SHIBATA Hiroshi,1548,Ruby,"Tokyo, Japan"
+#176,indirect ,André Arko,1542,Ruby,San Francisco
+#177,rvagg ,Rod Vagg,1537,JavaScript,"South Coast NSW, Australia"
+#178,rakyll ,Burcu Dogan,1535,Go,"Berkeley, CA"
+#179,jeresig ,John Resig,1502,JavaScript,"Brooklyn, NY"
+#180,weavejester ,James Reeves,1496,Clojure,"London, UK"
+#181,tomchristie ,Tom Christie,1479,Python,"Brighton, UK"
+#182,ericholscher ,Eric Holscher,1473,Python,"Portland, Or"
+#183,tmpvar ,Elijah Insua,1471,JavaScript,Roaming
+#184,olivergierke ,Oliver Gierke,1461,Java,"Dresden, Germany"
+#185,mdo ,Mark Otto,1457,CSS,"San Francisco, CA"
+#186,hotoo ,??™,1455,JavaScript,"Hangzhou, China"
+#187,svenfuchs ,Sven Fuchs,1431,Ruby,Germany/Berlin
+#188,benoitc ,Benoit Chesneau,1418,Erlang,"Creil, France"
+#189,sole ,sole,1415,JavaScript,London
+#190,mnot ,Mark Nottingham,1414,Python,"Melbourne, Australia"
+#191,pedrovgs ,Pedro Vicente Gómez Sánchez,1413,Java,Madrid
+#192,dfm ,Dan Foreman-Mackey,1410,Python,"Brooklyn, NY"
+#193,marijnh ,Marijn Haverbeke,1409,JavaScript,Berlin
+#194,mitsuhiko ,Armin Ronacher,1404,Python,Austria / United Kingdom
+#195,gitster ,Junio C Hamano,1384,CSS,"Mountain View, CA"
+#196,avelino ,Thiago Avelino,1384,Python,Brazil - Sao Paulo / SP
+#197,matyhtf ,Tianfeng,1384,PHP,China
+#198,lsmith77 ,Lukas Kahwe Smith,1374,PHP,"Zurich, Switzerland"
+#199,andrewsmedina ,Andrews Medina,1366,Python,Rio de Janeiro
+#200,jakevdp ,Jake Vanderplas,1357,Python,Seattle WA
+#201,chneukirchen ,Christian Neukirchen,1355,Ruby,"Munich, Germany"
+#202,mxcl ,Max Howell,1354,Objective-C,Chicago
+#203,isaacs ,isaacs,1347,JavaScript,Oakland CA
+#204,agentzh ,Yichun Zhang,1344,Perl,"San Francisco, CA, USA"
+#205,desandro ,David DeSandro,1343,JavaScript,"Brooklyn, NY"
+#206,HenrikJoreteg ,Henrik Joreteg,1343,JavaScript,"West Richland, WA"
+#207,munificent ,Bob Nystrom,1341,Dart,"Seattle, WA"
+#208,nhaarman ,Niek Haarman,1323,Java,Netherlands
+#209,rsc ,Russ Cox,1290,Go,"Cambridge, MA"
+#210,robdodson ,Rob Dodson,1289,JavaScript,"San Francisco, CA"
+#211,imathis ,Brandon Mathis,1289,Ruby,"Birmingham, AL"
+#212,davecheney ,Dave Cheney,1288,Go,"Sydney, Australia"
+#213,fatih ,Fatih Arslan,1278,Go,"Ankara, Turkey"
+#214,magnars ,Magnar Sveen,1267,JavaScript,Norway
+#215,mperham ,Mike Perham,1266,Ruby,"Portland, OR"
+#216,shiffman ,Daniel Shiffman,1265,Processing,"New York, NY"
+#217,jeromeetienne ,Jerome Etienne,1263,JavaScript,"Paris, france"
+#218,barryvdh ,Barry vd. Heuvel,1254,PHP,"Eindhoven, the Netherlands"
+#219,vitorbritto ,Vitor Britto,1254,JavaScript,Brazil
+#220,garethr ,Gareth Rushgrove,1232,Ruby,Cambridge
+#221,tj ,TJ Holowaychuk,1232,JavaScript,"Victoria, BC, Canada"
+#222,nex3 ,Natalie Weizenbaum,1231,Ruby,Seattle
+#223,philips ,Brandon Philips,1209,Shell,"San Francisco, CA"
+#224,andrew ,Andrew Nesbitt,1208,JavaScript,"Bath, UK"
+#225,ryanseys ,Ryan Seys,1208,JavaScript,Land of maple syrup
+#226,Trinea ,Trinea,1208,Java,"Shanghai, China"
+#227,miloyip ,Milo Yip,1204,C++,"Hong Kong, China"
+#228,postmodern ,Postmodern,1200,Ruby,
+#229,tommy351 ,Tommy Chen,1200,JavaScript,Taipei
+#230,aFarkas ,Alexander Farkas,1173,JavaScript,Berlin
+#231,swankjesse ,Jesse Wilson,1169,Java,"Waterloo, Canada"
+#232,stevedekorte ,Steve Dekorte,1158,C,San Francisco
+#233,bfirsh ,Ben Firshman,1158,Shell,"London, UK"
+#234,alloy ,Eloy Durán,1156,Ruby,"Amsterdam, the Netherlands"
+#235,raganwald ,Reg Braithwaite,1153,JavaScript,"Toronto, Canada"
+#236,getify ,Kyle Simpson,1152,JavaScript,"Austin, TX"
+#237,shama ,Kyle Robinson Young,1140,JavaScript,"Portland, OR"
+#238,jrburke ,James Burke,1139,JavaScript,
+#239,ianstormtaylor ,Ian Storm Taylor,1135,JavaScript,"San Francisco, CA"
+#240,sk89q ,sk89q,1114,Java,United States
+#241,bdarnell ,Ben Darnell,1109,Python,
+#242,philsturgeon ,Phil Sturgeon,1103,PHP,Bristol & Brooklyn
+#243,lilydjwg ,??,1088,Python,
+#244,michaelliao ,Michael Liao,1081,Python,"Beijing, China"
+#245,juliangruber ,Julian Gruber,1076,JavaScript,"Munich, Germany"
+#246,jakearchibald ,Jake Archibald,1073,JavaScript,
+#247,lepture ,Hsiaoming Yang,1070,Python,"Everywhere, China"
+#248,matz ,"Yukihiro ""Matz"" Matsumoto",1069,Ruby,"Matsue, Japan"
+#249,philipwalton ,Philip Walton,1068,JavaScript,"San Francisco, CA"
+#250,fzaninotto ,Francois Zaninotto,1067,JavaScript,"Nancy, France"
+#251,antirez ,Salvatore Sanfilippo,1065,C,"Campobello di Licata, Sicily, Italy"
+#252,pydanny ,Daniel Greenfeld,1063,Python,"Inland Empire, CA"
+#253,necolas ,Nicolas Gallagher,1058,JavaScript,"San Francisco, CA"
+#254,sebastianbergmann,Sebastian Bergmann,1057,PHP,"Siegburg, Germany"
+#255,alsotang ,alsotang,1050,JavaScript,"HangZhou, China"
+#256,paulp ,Paul Phillips,1041,Scala,"Bend, OR"

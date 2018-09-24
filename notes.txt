@@ -1,0 +1,772 @@
+﻿### Download Extensions on VS Code ###
+Excel viewer
+format html in php
+github pull requests
+python
+r
+spell right
+vscode-pdf
+
+
+### SOWK7007 Research Methods ##################################################################################
+
+
+180918
+Janet and Tammy
+    Answer research questions with meta analysis
+        Interventions
+        Mistreatment
+        Measurement
+        Causal and correlational relationships
+    How to summarize literature
+        Knowledge support: covered by few studies
+        Decision support: practical implication 
+        Grey literature: non published studies 
+	Registration 
+        "Intellectual property - patent" in PROSPERO
+
+
+Meta analysis procedure:
+1.	Research questions: what is the effectiveness of interventions for elderly with Alzheimer's disease.
+    a.	Framework: 
+        i.	Quantitative: Problem, Intervention, Comparison, Outcome of intervention effectiveness. Effective size in a series of studies: 
+            a.	A value to reflect magnitude: treatment effect, strength of relationship, estimate of prevalence, 
+            b.	Effect size: risk ratio,
+            c.	relative weight for each study
+            d.	Summary effect and p value
+        ii.	Mixed: demographics, details of intervention in meta synthesis analysis 
+    b.	Types of synthesis: segregated or integrated 
+        i.	Meta synthesis, meta enthonpology, 
+    c.	Critiques:
+        i.	Explain why choose quantitative meta analysis 
+        ii.	Keywords and database
+        iii.	Inclusion criteria: ppt
+            1.	Grey literature: valid literature and add values to research 
+        iv.	Check target journal to see specific guidelines for outlines
+        v.	Interested reliability 
+2.	Search strategy (www.meta-analysis.com)
+    a.	Pubmed, CINAHL, Embase, British Nursing Index (BNI), Cumulative Index to Nursing and Allied Health Literature (CINAHL), PubMed, Medline, PsycINFO, SPORTdiscus, Environmental Science and Pollution Research (ESPR), CNKI, Dissertation Abstracts, HealthSTAR, Medline, Mental Health Abstracts, PsycINFO, Social Sciences Abstracts, Sociological Abstracts via SocioFile, Academic Search Premier, ERIC, and Family & Society Studies Worldwide, Medline, PsycINFO, SUMMON, Scopus
+    b.	(grey literature) WHO Global Health Library, Cochrane Library, Database of Abstracts of Reviews of Effects (DARE), Google Scholar, Centre for Reviews and Dissemination (CRD) Database, OpenGrey, and EThOS (British Library)
+3.	Study selection
+4.	Inclusion and exclusion criteria
+5.	Quality assessment
+    a.	Qualitative: Critical Appraisal Skills Programme (CASP)
+    b.	Quantitative: 
+        i.	PRISMA guidelines
+        ii.	Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) checklist
+6.	Data extraction 
+7.	Synthesis 
+    a.	Qualitative: (1) Familiarization; (2) Identifying a thematic framework; (3) Indexing; (4) Charting; and (5) Mapping and Interpretation
+    b.	Quantitative: 
+        i.	DV moderated by IVs: Statistical metric, InOR, S.E.
+        ii.	structual aspect of IV, functional aspects of IV, combined assessment of IV
+8.	Registration 
+    a.	PROSPERO https://www.crd.york.ac.uk/prospero/
+    b.	Cochrane Collaboration https://www.cochrane.org/
+    c.	Campbell Collaboration https://www.campbellcollaboration.org/
+	
+
+180911 
+
+1.	Psycho-socio-biological perspectives, Youth Data, 2016
+2.	Index in intervention: KPI, admission rate into hospital, numeric indicator, social return investment 
+3.	Design
+    a)	Case control: grouping by var
+    b)	RCT: pre and post groups, obs and exp groups 
+        i.	To avoid subjective allocation 
+        ii.	Minimize or control confounders
+4.	Data
+    a)	Classification/cutoff points: 
+        i.	Quantitative - For subjective reported scores
+        ii.	How to quantify qualitative data from interview 
+            1.	Count times; Key words capture; Frequency; Facial expression: MS �C warning made from changes of facial expression; Emotions; Linguistic pattern 
+            2.	To avoid: pre/post comparison, structured coding, correct classification, keywords tagged, meaning attached 
+5.	Time
+    a)	Incidence rate (IR); Prevalence rate (PR)
+    b)	Time, frequency, intervals
+    c)	Designs:
+        i.	Cross-sectional (no causal relationship and sequences, not measure changes), 
+        ii.	retrospective (no control, not ideal for quants), twin study (generic effects being controlled), 
+        iii.	prospective (contamination even with causal relationship), pre-post study, longitudinal (carefully determine intervals of each trial), panel
+6.	Objectives
+    a)	Nature of inquiry
+    b)	Theory and data rely on each other
+7.	Better methods �C evidence based practice (ML can examine x-ray)
+
+Tasks 
+    1.	Find a paper
+    2.	Find its problems
+    3.	My contribution on this field: meaning making of caregiving, reflective groups for social workers
+
+
+
+### GRSC6020 Thesis Writing ##################################################################################
+
+190912
+
+Contact info in the booklet: 
+Clear argument: what you are going to talk about, and summarize what you have talked about. This is called the meta text, which is the part of your thesis which talks about the text itself. 
+
+A convincing argument:
+    Justify that gap based on reference to up to date and relevant research
+    Identify a research gap which is meaningful and significant to your reader
+    Justify your own research findings based on previous research which is important in your specific field
+    Express all of this using the language of you academic discourse community 
+
+Aims
+    To enhance disciplinary litany
+    Noticing of key features of language 
+	Noticing and bridge research gap
+
+Tasks
+    Study guide blanking filling
+    Course booklet 
+    Literature review submit before the 5th class
+    Critique of a thesis 
+
+Learning outcomes
+    Identify target audience: 
+    Recognize audience and voice in text
+
+Moves
+    General field
+    Specific
+    How interested
+    Why important
+    Application/problem solving
+
+Main idea of title: the social intelligence of 
+
+
+
+
+
+### Supervision: Projects ####################################################################################
+
+### 180924 on meta analysis
+
+1. Psychosocial interventions for elderly diagnosed of Alzheimer's
+1.1 Objective: compare the effectiveness of psychosocial interventions conducted for Chinese population and Western population diagnosed of Alzheimer's Disease from 2010 to 2018
+1.2 Methods: 
+    1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
+    1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
+    1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
+    1.2.4 Year range: 2008-2018
+1.3 Statistics:
+    1.3.1 publication bias analysis
+    1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
+    1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
+1.4 similar studies
+    1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
+    1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
+    1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
+1.5 Questions:
+    1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
+    1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
+
+argument: 
+    By policy and by choice - no diagnosis, medication, medical care
+    Settings: 
+    Literature: meta-analysis and cross-country
+
+2. Meaning-making of caregivers
+2.1 Objective: Discuss meaning-making model through a meta-analysis perspective
+2.2 Variables: 
+    2.2.1 Meaning-making process: 
+        2.2.1.1 caregiving stress:
+        2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
+        2.2.1.3 coping strategies
+        2.2.1.4 roles of personality *: 
+            2.2.1.4.1 gender: *
+            2.2.1.4.2 culture: *
+            2.2.1.4.3 self-regulation: *
+            2.2.1.4.4 positive affect (optimism): *
+            2.2.1.4.5 sense of purpose: *
+            2.2.1.4.6 social support: *
+        2.2.1.5 changes/development in global meaning; *
+    2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
+    2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
+    2.2.4 Measurement: 
+        2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
+        2.2.4.2 Global and situational meaning-making (coping): 
+            2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
+            2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
+            2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
+    2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
+        Individual part
+        Loss/powerlessness
+        Provisional Meaning
+        Ultimate Meaning
+        Spouse part
+        2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
+        2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
+        2.2.5.3 Global Role strain
+        2.2.5.4 Marital Tension
+        2.2.5.5 Marital Satisfaction
+        2.2.5.6 Caregiver Satisfaction
+        2.2.5.7 Religiosity
+
+2.3 Problem:
+    2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
+    2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
+    2.3.3 Meaning making process is intentional or unconscious?
+
+"Meaning-making": abstract, keywords, title; 
+methodology, empirical, factors, theory, qualitative/quantitative
+
+* stress processing: primary and secondary appraisal
+* theory: cultural difference in social cognition; 
+* survey/questionnaire 
+* reflective group: 
+    5-6 sessions: 
+    Caregiver support: burden, depression, caregiving
+    reflective group course structure: 
+
+
+Team meeting:
+# factors impact
+# primary/secondary appraisal: general questions about these two parts.
+# cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
+
+### 180910
+Caregiving allowance ~ women (gender study) incentive for formal care; economic values performed, reduced labor market participation, structure of labor market, caregiving (formal or informal) for elderly (disabled or general) is effective
+
+Meaning Making Model:
+
+System Theory (Caregiving model * Generational Model * Meaning Making Model) - Long-term care system: 
+1.	Carer:
+    i.	Psychological distress
+        1.	Caregiver Burden Inventory (CBI)
+    ii.	Meaning-making (the restoration of meaning in the context of highly stressful situations)
+        1.	There is increasing consensus that meaning making (i.e., “the restoration of meaning in the context of highly stressful situations;” Park, 2010, p. 257) can represent a central aspect of coping and adjustment in these contexts. From a meaning making perspective, challenges emerge if the reality of a stressor cannot be adaptively assimilated into global meaning (e.g., preexisting beliefs/values, goals) and/or the person cannot accommodate aspects of their global system to situationally construct meaning out of the experience (Holland, 2015). These violations of meaning can be quite distressing and lead to strained efforts to reconcile one’s appraisal of the stressor and global meaning, which may manifest as MDD or other mental health problems that prompt individuals to seek psychotherapy (Kendler, Karkowski, & Prescott, 1999; Park 2010).
+        2.	Help clients (carers) make sense of significant stressors and regain a sense of purpose and direction in life (Clark, 1995).
+        3.	Meaning made [Chinese version of the Positive Aspects of Caregiving (PAC)]: Affirming self, Enriching life 
+        4.	Meaning search: situational meaning [Finding Meaning Through Caregiving Scale (FMTCS) – loss/powerfulness + provisional meaning], global meaning (self-in-world, life goals, sense of life purpose)
+2.	Family: social assistance-like arrangement: residential care, home care
+    i.	caregiving intensity
+    ii.	caregiving needs [Activity of Daily Living (ADL)]
+    iii.	physical health
+    iv.	mental health
+    v.	part/full-time work
+    vi.	income, income security, social security 
+    vii.	gender, age, marital status, education level, living arrangement, financial status, physical distance (co-resident caregivers), 
+3.	Government: 
+    i.	Tasks: cost management, program evaluation, administered means-tested assisting program 
+    ii.	Policies: health, social, employment policies 
+4.	Market: economic values of output by government and input by care recipients and carers; caregiving evaluated in terms of changes in aging and social values;  impact of care allowance on the labor force participation of women caregivers; community care rather than institutionalization is financially more cost-effective (economically and quality-wised); 
+5.	Voluntary sectors: volunteers, organizations, community care, NGO, NPO; charitable or religious organizations; 
+6.	Social workers 
+    i.	reflective groups
+7.	Social background: social cost, social pressures, social insurance system, policy beneficiary to female; 
+
+Generations [baby boomer: 1946-1964; generation X: 1965-1980]
+    1.	Sense of loss, self centered; Tendency of searching meaning; Sense of meaning made 
+    2.	Well-being ~ Sense of loss + meaning searching
+
+Interactions, Meaning-making Model:
+    1.	Examine distribution for responsibilities of long-term care between the state, the market, and the family
+    2.	Factors for participating in paid labor market and informal caregiving
+    3.	Caregiving intensity 
+
+Effects:
+    1.	Substitution effect: time needs for informal care work reduces labor market participation
+    2.	Income effect: high cost of caregiving induce carers to increase labor market participation to earn more income
+    3.	Demand for respite work: work as respite to avoid heavy caring work and mental pressure
+    4.	Disadvantage in job market due to high rate of absenteeism
+
+Problems:
+    1.	Opportunity costs of caregivers’ foregone earnings and leisure
+    2.	Expenditure in household
+    3.	Health effects and impact on marriages
+    4.	Reduction of work hours
+
+Caregiving relationship 
+    1.	Care recipient and informal caregiver:
+
+
+
+
+### 180907  #########################################################
+
+
+1.	Discussion
+    ○	Country review of the United States and Japan 
+        ■	looking into literature 
+        ■	to finish next Monday
+    ○	Data mining (web scraping with Python) on social media on meaning-making
+        ■	reading two books: Mastering Social Media Mining with Python (Bonzanini), Python Social Media Analytics (Chatterjee & Krystyanczuk)
+        ■	to find the application for the analysis of meaning-making
+        ■	association of "meaning making" or "meaning searching" with people's understanding, definition, and attitude while recording demographic info of carers through social media (websites, blogs, forum, social networking platform such as fb and twitter, pinterest, youtube), or,
+        ■	evaluate feedbacks and responses from carers to a list of meaning-making-related topics
+        ■	to contact Dr. Luo Hao on programming and coding issues
+    ○	Systematic review on meaning making (and interventions for Alzheimers)
+        ■	to check with Huiying and Jieling on their work in regards to systematic review
+        ■	to work on as class assignments
+2.	Plan for next session [could be earlier since our project is moving faster in this stage]
+    ○	to report analytical methods for data mining of meaning making
+    ○	to report primary preparation for systematic review on meaning making
+3.	Questions:
+    ○	Would you please help coordinate Dr. Luo in this data mining project? I guess we need to have a meeting on this topic, because I am not quite familiar with meaing-making even though I learned the theory and its basic construct. [my suggestion is do a literature review on meaning making & carer first; then we would have much more confidence what to “mine” in the data sea. For the technical side, no worries, I will link you to Dr. Luo]
+    ○	You mentioned questionnaire related to meaning-making (I couldn't hear that part clearly due to signal issues)? Are you suggesting to design part of the questionnaires based on the result of data mining? [I mean if you could identify new framework on meaning making, or other key variables that you would like to be included for your thesis, I will support you. But time is important – the project data collection would start late this year or early next year. Again, literature review is important.]
+
+
+### 180907
+Data Mining with Python:
+<<Python Social Media Analytics>>: Twitter, Facebook, Forum, Youtube, Github, Pinterest, Blogs, RSS, Google+
+    data mining social media
+    Facebook sentimentals 
+    Coding can be a little complicated 
+    Know any friend in CS
+
+<<Mastering Social Media Mining with Python>>
+    Country review United states (tax discount) and Japan (dont have carer allowance)
+    Join Deng Linlin
+    Python technical assistance from Luo
+    Meaning-making direction 
+    Meaning akongmakong systematic review
+    Country review
+
+Systematic review
+
+
+
+
+
+### 180906  #########################################################
+
+
+1.   	Rational to select countries under review
+
+2.   	Under each country - United Kingdom
+    2.1.	Policy name, time of enactment, weblink, etc.
+        Policy Name: Carer’s Allowance (Invalid Care Allowance until 1986)
+        Time of enactment: 1976
+        Weblink: https://www.gov.uk/carers-allowance
+    2.2.	Rational and objective
+        Carer's Allowance is a means-tested, non-contributory benefit in the United Kingdom payable to people who care for a disabled person for at least 35 hours a week. It was first established as Invalid Care Allowance in 1976, not eligible for married women until the occurrence of an unlawful sexual discrimination by the European Court in 1986 in the case of Jackie Drake.
+    2.3.	Defining eligibility
+        The following conditions for a carer need to be met: 1) spend at least 35 hours a week caring for a disabled person (one doesn't have to live with them or be related to them); 2) care for someone who receives the higher-rate or middle-rate care component of Disability Living Allowance, either rate of Personal Independence Payment daily living component, or any rate of Attendance Allowance; 3) do not earn more than £120 a week (after deductions); 4) are not in full-time education (or 21 hours a week or more); 5) age of 16 and above; 6) have been in England, Scotland or Wales for at least 2 of the last 3 years (this doesn’t apply if you’re a refugee or have humanitarian protection status), or normally live in England, Scotland or Wales, or you live abroad as a member of the armed forces 7) not subject to immigration control.
+        Noted: elderly shall include all age groups
+    2.4.	Amount
+        Carer’s Allowance is worth £64.60 per week (for April 2018-19) and is usually paid every four weeks
+    2.5.	Administrative procedure
+        1) Contact Carer’s Allowance Unit on 0800 731 0297 (text phone: 0800 731 0317) or visit GOV.UK to download a claim form or make a claim online. Local Age UK can assist when needed.
+        2) Written decision and effective date will be informed if the claim is approved. A challenge can be made if the claim is turned down.
+        3) Keep the Carer’s Allowance Unit informed and updated whenever there is a change of caregiving condition, including but not limited to: a) one changes, starts or leaves job; b) one starts earning more than £120 a week; c) one stops being a carer; d) one takes a holiday or goes into hospital - even if one arranges care while away; e) the person to care for goes into hospital or takes a holiday
+    2.6.	Welfare regime/GDP/etc.
+        Welfare regime mainly aims toward the promotion of health, education, employment, and social security. This regime causes increase in expenditure and a bigger range of government responsibility as well as in taxation, regulation of industry, food and housing.
+    2.7.	Evaluation report/debate;
+        1) Expenditure and burden for government take away the awareness of citizens’ personal responsibility and result in welfare dependency with which people become lack of motivation or incentives in working and personal development.
+        2) Allowance, being stringent in its condition, is provided with heavy and regular caring duties for caregivers who has to give up their own work or personal business later on. All conditions of criteria allow a small percentage of carers to receive the allowance. Only under 1% of UK population received a Carer’s Allowance in 2008.
+        3) Identification of targeted carers who are eligible to receive allowance can be administratively complicated and infeasible due to its various requirement to evaluate, in which some can be difficult to assess in the real setting.
+    2.8.	Anything related.
+
+Reference
+    OECD. (2011). Providing and Paying for Long-Term Care: Chapter 4 Policies to Support Family Carers.
+    UK Government. (2018). Carer’s Allowance. Retrieved from https://www.gov.uk/carers-allowance
+    Age UK. (December 27, 2013).  Carer’s Allowance. Retrieved from https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/carers-allowance/
+    Cares UK. (April 20, 2014). Our History. Retrieved from https://en.wikipedia.org/wiki/Carer%27s_Allowance
+    HK legislative council
+    Carer allowance in Finland and the United Kingdom (2015-2016) https://www.legco.gov.hk/research-publications/english/essentials-1516ise23-carer-allowance-in-finland-and-the-united-kingdom.htm
+    HK SWD Pilot Scheme on Living Allowance for Carers of Elderly Persons from Low Income Families Phase II
+    https://www.swd.gov.hk/en/textonly/site_pubsvc/page_supportser/sub_PCA/
+    Long-Term Care Coverage in Europe
+    https://www.soa.org/Files/Pubs/pub-2016-05-ltc-coverage-europe.pdf
+    Long term care for elderly: Provisions and providers in 33 European countries
+    https://www.researchgate.net/publication/303566393_Long-term_care_for_the_elderly_Provisions_and_providers_in_33_European_countries?enrichId=rgreq-7244375eb6a4a012b04e7a3fe6486e2f-XXX&enrichSource=Y292ZXJQYWdlOzMwMzU2NjM5MztBUzozNjY0OTI0NTg3MzM1NjhAMTQ2NDM5MDAxOTY5OQ%3D%3D&el=1_x_2&_esc=publicationCoverPdf
+    OECD (2011): Help Wanted? Providing and Paying for long-term care
+    https://read.oecd-ilibrary.org/social-issues-migration-health/help-wanted_9789264097759-en#page1
+    OECD. (2013) A Good Life in Old Age? Monitoring and Improving Quality in Long-term Care.
+    https://www.oecd.org/els/health-systems/PolicyBrief-Good-Life-in-Old-Age.pdf
+    http://www.oecd.org/els/health-systems/a-good-life-in-old-age-9789264194564-en.htm
+ 
+### 180829 on Tasks (long-term): dementia caregiving, adult child caregiver, meaning making, generation, longitudinal study
+1. Time table for survey (N = 1000), sum, policy
+2. Recruitment strategy:
+    a) new media (whatsapp, facebook, video website), survey group, with Award:
+    b) Risk assessment - REACH2; identification of participants.
+    c) Quality control
+    d) Sources: 智慧友善医疗社区计划, ADA, Support group/ charter/ salvation
+3. Country review:
+    a) template; IRB; GDP;
+    b) Word documented with endnote library saved
+    c) US, UK, Australia, HK, New Zealand
+    d) Welfare Regime/GDP: political and economic status; definition (such as Social context: aged caregivers surveyed by comprehensive test and people with disabilities in HK)
+4. Survey issues: identification of survey
+5. Publication
+    a) meaning-making from twitter, fb, weibo
+    b) 3-4 pairs of dementia elderly and caregivers for meaning making tasks
+6. Theory/Model
+    a) Meaning making model (towards stress and challenging conditions): global (beliefs, goals, subjective sense of meaning) and situational meaning (specific instance… ) e.g. Meaning Making Model (Park, 2014)
+        i. Affirming self and enriching life (Lou, Lau & Cheung, 2014), caregiving adjustment, psychological distress (Lou, Lau & Cheung, 2015)
+        ii. Protective factors associated with positive mental health indicators among caregivers
+        iii. Social norms play a significant role in meaning-making process ?? lacked literature support
+        iv. Expanding meaning making framework between two generations
+        v. Meaning making associated with well-being of caregivers
+    b) Generation model towards meaning making in dementia caregiving to investigate generational differences (baby boom and X generations); meanings (dementia caregiving, meaning made, well-being indicators) between and within two generations
+7. Measurement
+    a) Finding Meaning Through Caregiving Scale (FMTCS) – loss/powerfulness and provisional meaning
+    b) Positive Aspects of Caregiving (PAC)
+    c) Activity of Daily Living (ADL)
+    d) Revised Memory and Problem Behavioral Checklist (REACH II)
+
+Tasks (short-term by this weekend till 180902)
+    1. Policy reading and taking notes
+    2. Revise 2.1 (policy/act name), 2.2 (objectives), 2.3 (separate set of eligibility; define disabilities; separate definition of eligibilities), 2.6, 2.7 (evaluation report)
+    3. Mark citation in policy review framework
+    4. Web scraping with python on facebook and twitter, moments, whatsapp, weibo for meaning making tasks, separating two groups – baby boom and X generations
+
+ 
+POLICY: Macau carer allowance study proposal
+1. Objects: carers of elderly aged 65 or more, and disability
+2. Eligibility: [? require policy review of different countries]
+3. Research Framework:
+    a) Policy feasibility analysis from perspectives of political, economic, social, legal, and environmental conditions of Macau on
+        i. roles (of organizations),
+        ii. motivations,
+        iii.belief systems,
+        iv. resources,
+        v. positions (political attitude),
+        vi. model of actions (strategic plan or model).
+    b) [reference] Meltsner: political feasibility and policy analysis; May: politics and policy analysis; Reich: applied political analysis for health policy reform; Starling: strategies for policy making; Thomas: actor management in the development of health financing reform; 吴定：公共政策2版
+4. Research method:
+    a) Literature review, interview in depth, focus group
+    b) Confucian familism from Asian countries; career allowance policy; policy review and analysis; definition and eligibility of carers
+    c) Identification of Macau stakeholders and key players by policy review, support, neutral, or against career allowance
+    d) Data extracted from deep interview, focused group, and literature review used for analysis on above 6 areas.
+ 
+ 
+
+ 
+### 180915  #########################################################
+
+* Work on timeline and country review 
+* REACH II to social workers: risk assessment (questions) into web based accounts with coupons. 
+* Multi component (coping strategies, referral system, social worker training) application with; behaviors problems and communication; activities 
+* Objectives and timeline
+* Meaning-making added to meaning marking including males participants to covey overall questionnaire. Publish papers on male’s meaning making and PPL by literature review
+* Python data scraping sample papers su steward on suicide with python web scraping 
+* Macau project: HK on 
+* Policy archive downloaded where to acquire 
+* Reference for criticism added to the current table. 
+* Add another country for country review. 
+* OECD framework: allowance and policy. Take it for reference to make detailed analysis. 
+* Australia’s definition on primary carer
+* Meaning making of volunteers and social workers: four pairs of 100 each. Manipulation of age, gender and generations. Mentor illness. Boston university. 
+
+
+
+
+### Work Notes (history) ###########################################################################
+###############################################################################################
+###  Working Progress   ##################################### ######################################
+## job type: T (trannslation), R (research), S (study), W (work/waiting list), C (completed cases)
+
+
+###    UPDATE    ################################################################################### 
+# read data
+# work = read.table("C:/Users/chens/OneDrive/work/work progress.xls",header=T,sep="\t")
+work = read.table("C:/Users/chens/OneDrive/work/work progress.txt",header=T,sep="\t")
+a = work  # make a transition file
+View(a)
+
+# format change
+for (i in 1:5){
+  a[,i] = c(as.character(a[,i]))  
+  i=i+1
+}
+
+a[1,] = c(as.character(a[1,]))  # make column progress into character format
+
+# modification example
+a[c(2,6,9,10),2]=99 # make progress update
+a[10:26,]=work[8:24,] # for copy and edit
+a = rbind(work[1:10,],c(0),work[12:23,])  # insert a row into specific position
+a = rbind(a,c('W13',0,'test','no comment')) # make a new line
+a = rbind(a[1:6,],c('S03',1,'literature review on aging care','(171101) <- 171001'),a[7:26,])
+a = rbind(a[1,],a[3:5,],a[7:8,],a[10,],a[11:23,],a[c(2,6,9),])  # move certain line to specific position
+a = rbind(a[2:5,],a[8:9,],a[10:25,],b[c(1,6,7),],a[26,])  # row shifting operation; creating temp file as in b=work
+a = a[-c(11,12),] # remove designated rows
+a[2,3] = "meta analysis - grammer check"  # adding notes
+dataname[dataname==0]<-NA; new<-na.omit(dataname)
+a[which(a[,1] == 'T01'),5] = "one page per day"   # revise comments according to specific ID
+
+# read notes
+read.table(a[23,5], sep = "\n", header=F)
+
+# Save file
+write.table(a,"C:/Users/chens/OneDrive/work progress.xls", sep="\t", col.names=T,row.names=F, quote=TRUE, na="NA")
+
+write.table(a,"C:/Users/chens/OneDrive/work progress.txt", sep="\t", col.names=T,row.names=F, quote=TRUE, na="NA")
+
+
+
+# create file
+work = matrix(c(0), nrow = 100, ncol = 5,
+              dimnames = list(c(),
+                             c("ID","progress(%)","notes","timeline","comments")))
+
+
+
+
+### R05 education reform with Cao Shuliang #########################################################
+Chapter 4 大数据时代英语职业发展与未来
+1   大数据时代英语教师的职业发展（“大数据”语境下)
+1.1 教师角色定位
+1.2 英语教学活动的组织引导者
+1.3 英语教学资源的研发者
+1.4 自主学习的诊断与评价者
+
+2   大数据时代英语翻译职业的发展
+3   大数据时代英语导游职业的发展
+4   大数据时代英语读物出版的发展
+
+
+
+### R06 vocational education with Zhou Yi  #########################################################
+* 5000-10000 characters in Chinese
+* deadline: October 1st
+* globalization
+
+
+## 170805
+1. second (problems) and third (reform and globalization) parts need improvement
+2. more literature support on problems, financial support (government?), enterprise based training, and international cooperation
+
+## 170731 Internationalization of Chinese Vocational Education
+1. teachers training: scholar exchange
+2. curriculum reform: (comprehensive and general education:not only technical type, humanity and social science)
+3. enterprise based training: (case study)
+4. global cooperation: [real estate]
+5. washington, sydney, dublin agreement/mode
+6.
+
+## 170713 discussion on topics and direction (globalization：[人才培养为核心的职业教育国际化发展])
+Topics: Developing countries, global economy, and community colleges
+** globalization：[人才培养为核心的职业教育国际化发展]
+** Porter’s diamond model：sustainable competitiveness [中美比较]
+** 高职院校职能：职业教育，补偿教育，社区教育，大学转学教育（预科），普通教育，素质教育
+** 影响高职院校的发展因素：学费，设施，资助，课程结构,生源
+
+
+
+- 论美国社区学院及其在中国的发展前景(楼利明)
+* history of development: community colleges in U.S. (as in figure 1)
+
+* five functions of community colleges
+(1)学术的传递与研究功能。
+(2)职业技术教育功能。
+(3)继续教育功能。
+(4)补偿教育功能。生活相对贫困的人纷纷参加高中阶段的学习,
+(5)社区服务功能。
+
+- 刍议美国社区学院对我国高职院校发展的启示
+* comparison:
+    学费：公立大学学费的30-40%；
+    设施：残疾人设施；儿童发展中心
+    资助：教育部的家庭补助。中国的社区学院的经费投入, 国家尚无投资法规, 地方财政往往偏重于其他公益事业的发展, 很难抽出多余的经费用于发展社区学院。由
+    课程结构：实践课占40-60%
+    生源：教育层次化
+
+- 地方高等职业院校创办社区学院的办学模式探析
+* 广州城市职业学院/广州社区学院/白云分院
+    以职业学院为主，人民政府主导，立足社区，服务社区
+    社区教育+社会服务
+    课程：学历教育、继续教育，还开展了专项课程，如早教课程、家庭教育课程、医疗保健课程、幼儿养护课程、疾病预防与治疗课程以及养生和美容
+
+* 高职教育与社区教育、成人教育进行有机整合
+* 社区教育的效益分析：推动社区经济发展，推动高职教育教学改革，规范社区教育办学环境
+* 职能：职业教育，补偿教育，社区教育，大学转学教育（预科），普通教育，素质教育
+* 社区学院校际联盟：垂直式，水平式，混合式合作 [美国社区学院校际联盟模式]
+* 1990s:上海、北京、沈阳、南京；2000s：北京的朝阳社区学院, 南京的秦淮社区大学, 上海的南市社区学院、闸北社区学院、长宁社区学院和金山社区学院[我国社区学院发展现状、问题与对策]
+* 包括：职业学院、成人教育(网络教育，函授，电大现代远程开放教育)、其他培训机构
+
+### R13	Social Work Students Project with Lei Jie ##################################################
+
+
+A. demographics
+B. attitude on causes of poverty
+C. attitude on causes of crimes
+D. coping methods of poverty
+E. social work goals
+F. age group preferred
+G. client group preferred
+H. workplace type: juvenile prison, hospitals, schools...
+I. sectors preferred: government, non-for profit, for profit...
+J. level of practice preferred: individual, group, community social work...
+K. intervention type
+L. level of intervention: individual, familial, group, community...
+M. professional identity
+
+
+
+## Does social work education have... (welfare state model)
+1. welfare state model: social justice, welfare system finance, universal welfare services/provision, individual benefits
+2. impact of SW education on social policy preference (a sense of identification with notions of social justice and social responsibility) of students
+3. Table 3, pre-post tests (freshman year and senior year) - guess no longitudinal study
+4* extended studies about SW education on attitude towards social policy
+
+## poverty in the eyes of beholder...(X)
+1. person-in-environment theoretical basis
+2. structural (social conditions), individualistic (behaviors, motivation, effort and poverty), psychological and fatalistic (exogenous factors of luck, health, emotion, interpersonal abilities) causes poverty
+3. intervention methods relevant to individual needs and environmental influences.
+
+## SW graduates and welfare economy sector preference (variables)
+1. MANOVA (rough): 1st and 2nd measurements; university X time
+2. SW education offers process of professoinal socialization
+3. comparison among SW students; cross sectional study
+4. longitudinal studies about program of studies
+5. DVs: preference on client group, social service org, welfare economy, SW practice
+
+##** SW students amd social change...
+[B] views on poverty (caused by social a=.81 , psychological a=.85 and motivational factors a=.88)
+ ~
+[D] coping methods (extended social welfare, psychotherapeutic treatment, minimised state assistance)
+[E] SW goals (society oriented a=.78, individual oriented a=.69)
+
+DV: Policy practice (willingness of engagement) [I,J]
+MV: SW goal [E] (social and individual oriented) + coping methods [D]
+EV: attitude towards poverty causes [B] (17 of 19 items)
+
+B * (E + D) = I # path analysis
+
+##** SWers and policy practice...
+1. demongraphics + socioeconomic/political orientation + poverty cause + SW goals + support + engagement for policy practice
+2. gender, ethnicity, religion, political/socioeconomic orientation, psychological causes, motivation, structural causes, support for universal benefits, pay for welfare, government responsibility, enhancing inner resources, promoting social justice, exerting social control protecting people at risk, support for policy practice
+
+
+## SW's attitudes towards social welfare policy
+1. exploratory factor analysis on support for welfare state
+
+## The PIE approach ...
+1. SW goals [E], SW activities [H], intervention [L], level of practice [J], perceived attainment of SW goals [M]
+2. ANOVA on variables above
+
+## where does it begin ...
+1. comparative review including Guangzhou, China on the following items:
+2. client group [F,G], organizations [modified H], sectors [I], level/type of practice [J],
+
+
+## Conclusion
+
+
+
+## follow-up study
+educational program development,
+
+
+## questions:
+subjects: students only?
+categories in sections D (3 cat) and E (2 cats)
+
+
+### S02 05  SEM  ###################################################################################
+
+## Model Fitness:
+    matrix: r1 * r2 * r3 ...
+    matrix fitness: goodness of fit statistics:
+        chi square (least square, estimated non-centrality): <<
+        RMSEA (root mean square error of approximation): < 0.05(0.08)
+            90% CI for RMSEA
+            p value for test of close fit (RMSAE < 0.05)
+        NNFI (non-normed fit index ~ TLI): > 0.9
+        CFI (comparative fit index ~ RNI):  > 0.9
+        AIC
+    df = [non-duplicating elements, p(p+1)/2] - [估计参数 estimated parameters]
+        9*10/2 - 21 (9 lambda/factor loading and 9 endogenous variables, 3 correlations, ) = 24
+        bigger df indicates simpler model
+    Indices for lambda-x
+        modification: maximum modification index is 41.35 for element (8,1) indicates reassignment of element to suggested factor will bring down chi square (better for the model)
+        standardized solution: with standardized index [0,1]
+        (structure) variance of item = theta^2 + loadings^2
+    Embedded model
+
+
+
+## EFA & CFA
+    EFA - principal component analysis:
+        eigenvalues (>1): overall variance (up to the number of variables) explained by each loadings
+        scree test: greatest change in slope
+        meaningful dimensions
+    - varimax: rotated (uncorrelated) factor loadings
+        unique var column: measurement error, not accounted for in any factor provided
+    - promax: rotated (correlated) factor loadings
+
+    CFA -
+
+## modeling categories: on multiple DVs, IVs (factor structure and factor relations), errors
+    categories:
+        measurement model: IV ~ DV
+        structural model: DV ~ DV (factors)
+    functions:
+        tolerance: errors as endogenous variables
+        model fit and comparison:
+        regression, CFA, EFA, ANOVA...
+
+
+
+## LISREl
+    FI: fixed model
+        variables with no correlations (r = 0)
+        set/fixed metric/scale:
+            no metric/unit
+            fixed metric (with no standardized unit metrics) - set as 1
+                fixed variance: variances of all FACTORS set as 1; loadings of free estimate while others are fixed
+                fixed loading: one of the ITEM in each factor set as 1; the first item (for example) set as fixed whie the other items in each factor are free
+    FR: free variance
+        parameters to estimate of uncertainty/questioned
+    Methods:
+        fixed variance:
+        fixed loading:
+    DA: data
+    LX: loadings (lambda) of variables, FU - full, FI - ; LX21, LX42, LX 63
+    MA: matrix - KM (correlated matrix), CM (covariate matrix)
+    MI: modified index
+    MO: model
+    NI: number of variables
+    NK: number of categories
+    NO: number of cases
+    NX: number of variables
+    PH: correlations among factors, ST - diagonal
+    TD: error, DI - diagonal, FR - free
+    OU: output
+    SS/SC: standardized score
+    VA: fix loadings; 'VA 1 LX1,1 LX4,2 LX7,3'
+
+    lambda (factor loadings), PHI (factor matrix), THETA-DELTA (errors for each items)
+        parameters: correlation/error coefficients
+            SE parameters being 1 indicate the item all accounted for in errors
+        SE: standard error
+        t-value: paramter/SE; >2 ~ significantly different from 0
+
+
+4.2.4 24'00"
+
+
+
+
+### Writings  ######################################################################################
+
+2017
+
+陈霜洲.老龄趋势下的智能化居家养老[J]. 健康前沿(甘肃科技), 2017(6): 269. CN: 62-0071/R, ISSN: 9128-6509
+李泽如, 陈霜洲.电商时代下的大学生网上创业之路[J]. 中国科技投资,2017(7), 14: 341-342. CN：11-5441/N
+陈霜洲, 李美华.智能化居家养老模式的开发与推广使用[J].社区心理学研究(第三卷), 2017(4): 86-100.北京:社会科学文献出版社.ISBN：9787520104944
+陈霜洲.智能化居家养老模式的应用前景[J]. 现代养生, 2017(7): 291. CN13-1305/R, ISSN：1671-0223
+
+期刊：
+
+护理 老年痴呆 主题搜索 2016起 按发表时间排序-17*50条
+中国健康心理学杂志
+社会工作与管理 广东工业大学出版社
+中国社会工作前沿 中国社科文献出版社
+中国学校卫生 Chinese Journal Of School Health
+the journals of gerontology: series B
+geriatrics and gerontology international
+the genrontologist
+age and ageing
+ageing and mental health
+psychology and ageing 
+Asian Journal of Gerontology and Geriatric
+中国老年学杂志
+社会科学战线

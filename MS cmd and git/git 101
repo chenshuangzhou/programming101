@@ -1,0 +1,20 @@
+touch notes.txt     # create file
+# echo > notes.txt
+git init    # initiate repository (folder)
+git config --global user.name 'Kevin Chen'  # config username
+git config --global user.email 'chenshuangzhou@hotmail.com' # configure email address
+git add note.txt    # add file to repository
+git add *.txt       # add all text file to repo
+git status          # check repository
+git add .           # add all file from the folder to repo
+git rm -- cached note.txt       # remove file
+git commit          # write comments after it
+    # in vim, "i" to edit , "esc" to exit 
+git commit -m "change content in notes"     # make comment in the command line
+touch .gitignore    
+    # inside  .gitignore naming file's name that can be ignored
+        # eg.: /foldername
+        # eg.: *.txt
+
+
+

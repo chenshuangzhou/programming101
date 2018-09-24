@@ -11,10 +11,16 @@ git rm -- cached note.txt       # remove file
 git commit          # write comments after it
     # in vim, "i" to edit , "esc" to exit 
 git commit -m "change content in notes"     # make comment in the command line
+git remote add . https://github.com/chenshuangzhou?tab=repositories    # set the new remote
+git remote -v       # verify remote access
+
 touch .gitignore    
     # inside  .gitignore naming file's name that can be ignored
         # eg.: /foldername
         # eg.: *.txt
+git branch branch1      # add new branch called 'branch1'
+git checkout branch1    # switch to new branch - branch1
+touch notes2.txt        # create file in new branch
 
 
 

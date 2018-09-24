@@ -1,4 +1,4 @@
-# dir = research
+s# dir = research
 dir 2school\PhD Courses\GRSTopic2.pdfC6008 Transferable Skills
 dir /a  # show all files including hidden files
 cd "C:\Program Files"    # cd to a absolute directory
@@ -10,7 +10,7 @@ rmdir oldfolder     # remove empty directory
 rmdir /s oldfolder  # force remove directory
 del filename.suffix # delete file
 echo testing sentence > test.txt    # write a new file with overwritting function
-echo testing 2 >> test.txt
+echo testing 2 >> test.txt 
 dir > test.txt      # save dir result to a file
 copy test.txt destinyfolder # copy file
 xcopy folder destinyfolder  # copy files from one folder to another

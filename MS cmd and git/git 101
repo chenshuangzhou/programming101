@@ -5,6 +5,7 @@ git config --global user.name 'Kevin Chen'  # config username
 git config --global user.email 'chenshuangzhou@hotmail.com' # configure email address
 git add note.txt    # add file to repository
 git add *.txt       # add all text file to repo
+git add README.md
 git status          # check repository
 git add .           # add all file from the folder to repo
 git rm -- cached note.txt       # remove file
@@ -13,7 +14,7 @@ git commit          # write comments after it
 git commit -m "change content in notes"     # make comment in the command line
 git remote add remotename https://github.com/chenshuangzhou?tab=repositories    # set the new remote
 git remote -v       # verify remote access
-git push . master   # push every file to master branch
+git push remotename master   # push every file to master branch
 touch .gitignore    
     # inside  .gitignore naming file's name that can be ignored
         # eg.: /foldername
@@ -21,7 +22,8 @@ touch .gitignore
 git branch branch1      # add new branch called 'branch1'
 git checkout branch1    # switch to new branch - branch1
 touch notes2.txt        # create file in new branch
-
+git remote remove remotename    # remove certain remote
+git push -u origin master       # push files
 
 ### Referemce
 https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes

@@ -137,6 +137,89 @@ Moves
 
 Main idea of title: the social intelligence of 
 
+### Systematic Review ##################################################################################
+[reading]
+
+
+### Meaning Making Model ##################################################################################
+[reading]
+* Finding meaning through caregiving: development of an instrument for family caregivers of persons with AD
+measures:
+    Non-Death Grief Experience Inventory - Form B (GEI-B): grief associated with situations of divorce, separation, parenting a handicapped child, and institutionalization of aged parents
+    Life Attitude Profile-Revised (LAP-R): purpose, coherence, life control, death acceptance, existential vacuum, and goal seeking; personal meaning index, life attitude balance index
+    Ladder of Life Index (LOLI): meaningful life in 5 years towards future
+    Public and Private Religiosity
+    Finding Meaning Through Caregiving Scale (FMTCS): 
+        loss/powerlessness: difficult aspects of caregiving
+        provisional meaning: how caregivers find day to day meaning 
+        ultimate meaning: philosophical, religious, spiritual attributions associated with the experience of caregiving
+From Spouse's side
+    Behaviors: Frequency of Behavior Problem Scale
+    Depression: Center for Epidemiological Studies-Depression Scale
+    Global Role strain
+    Marital Tension
+    Marital Satisfaction
+    Caregiver Satisfaction
+    Religiosity
+
+* Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia
+Analytical items:
+    1. Skills training for caregiversManaging behavioral and psychological symptoms of dementia
+        Communicating better with care recipient
+        Using role play, videos modeling behavior management strategies, cognitive-behavioral interventions, vignettes, live interviews
+        Enhancing care recipients quality of life, e.g., improving daily activities, increasing pleasant events
+    2. Education for caregivers     
+        Psychoeducation
+        Improving home care
+        Tailored advice and recommendations     
+        Problem-solving methods
+        Improving support network
+        Computer-mediated automated interactive voice response
+        Planning: emergencies, legal, financial
+    3. Activity planning and environmental redesign
+        Planning activities with caregiver for care recipient
+        Modifying care recipient’s physical and social environment
+    4. Enhancing support for caregivers     
+        Social support
+        Web or telephone support
+        Strategies on how to access support     
+        Family counseling
+    5. Self-care techniques for caregivers     
+        Health management    
+        Stress management
+        Coping with change as a result of caregiving     
+        Music therapy Counseling
+    6.  Miscellaneous
+        Collaborative care with a health professional or care manager
+        Exercise for care recipient
+Limitations:
+    problem in identification of which specific elements of interventions were effective for which behaviors
+    not all interventions target behaviors
+    choices of instruments
+    caregivers' variability in knowledge, skills, and supports prior to intervention affect their capacity for improvement 
+    the quality of research and sample size vary
+
+* Meta analysis of psychosocial interventions for caregivers of people with dementia
+    criteria for rating quality of studies TABLE 1
+        design: RCT
+        subjects: standardized diagnostic criteria 
+        outcome: well validated, reliable measures, objective outcome
+        statistics: statistical significance
+        evidence of sufficient powerfulness
+        results: blind ratings, follow-up assessment
+    evaluation of items
+        study name, design, outcome measures, instruments, sample size, evaluative quality, dosage
+        effect size of difference between treatment and control group
+
+* Narratives of family caregiving - the process of making meaning
+Triangulated design 
+    thematic: characteristics 
+    across-case analysis and narrative + within-case analysis
+Theory: reader-response theory 
+
+
+
+
 
 
 ### Supervision: Projects ####################################################################################
@@ -284,7 +367,8 @@ Caregiving relationship
 
 
 
-### 180907  #########################################################
+### COA Projects and Meetings ##########################################
+### 180907 
 
 
 1.	Discussion
@@ -330,7 +414,7 @@ Systematic review
 
 
 
-### 180906  #########################################################
+### 180906  
 
 
 1.   	Rational to select countries under review
@@ -436,7 +520,7 @@ POLICY: Macau carer allowance study proposal
  
 
  
-### 180915  #########################################################
+### 180915  
 
 * Work on timeline and country review 
 * REACH II to social workers: risk assessment (questions) into web based accounts with coupons. 
@@ -456,7 +540,7 @@ POLICY: Macau carer allowance study proposal
 
 
 ### Work Notes (history) ###########################################################################
-###############################################################################################
+####################################################################################################
 ###  Working Progress   ##################################### ######################################
 ## job type: T (trannslation), R (research), S (study), W (work/waiting list), C (completed cases)
 

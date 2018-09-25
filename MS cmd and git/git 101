@@ -9,12 +9,16 @@ git add README.md
 git status          # check repository
 git add .           # add all file from the folder to repo
 git rm -- cached note.txt       # remove file
+
 git commit          # write comments after it
     # in vim, "i" to edit , "esc" to exit 
 git commit -m "change content in notes"     # make comment in the command line
-git remote add remotename https://github.com/chenshuangzhou?tab=repositories    # set the new remote
+
+git remote add remotename https://github.com/chenshuangzhou/programming101    # set the new remote
 git remote -v       # verify remote access
 git push remotename master   # push every file to master branch
+git remote remove remotename    # remove certain remote
+
 touch .gitignore    
     # inside  .gitignore naming file's name that can be ignored
         # eg.: /foldername
@@ -22,8 +26,12 @@ touch .gitignore
 git branch branch1      # add new branch called 'branch1'
 git checkout branch1    # switch to new branch - branch1
 touch notes2.txt        # create file in new branch
-git remote remove remotename    # remove certain remote
+
+git push
 git push -u origin master       # push files
+
+git clone url
+git pull        # update info from the cloned url
 
 ### Referemce
 https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes

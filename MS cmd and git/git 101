@@ -8,11 +8,23 @@ git add *.txt       # add all text file to repo
 git add README.md
 git status          # check repository
 git add .           # add all file from the folder to repo
+    git status
 git rm -- cached note.txt       # remove file
+
+git add -u      # (update) add modification and deletion
+git add .       # add modification and creation
+git add -A      # add modification, deletion and creation
+
 
 git commit          # write comments after it
     # in vim, "i" to edit , "esc" to exit 
 git commit -m "change content in notes"     # make comment in the command line
+git commit --amend      # resubmit the file
+
+eg.
+    git commit -m 'initial commit'
+    git add forgotten_file
+    git commit --amend
 
 git remote add remotename https://github.com/chenshuangzhou/programming101    # set the new remote
 git remote -v       # verify remote access

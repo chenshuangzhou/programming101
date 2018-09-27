@@ -122,10 +122,9 @@ print (Kevin.health)
 
 
 
-
-
-
 ### Web data-mining
+
+python -m pip install --upgrade pip
 pip install bs4  
 pip install requests
 
@@ -166,15 +165,22 @@ for container in containers:
 
     print("brand: " + brand)
     print("product_name: " + product_name)
-    pring("shipping: " + shipping)
+    print("shipping: " + shipping)
 
 
     f.write(brand+ ", " + product_name.replace(",","|") + ", " + shipping + "\n")
 
 f.close()
 
-# python name.py        # to run the program 
 
+# containers[0].div.div.a.img["title"]    # including href and src of pics and product title
+# containers[1].div.div.a.i.findAll("",{"class":"item-rating"})
+
+#
+# python name.py        # to run the program 
+#
+
+#
 
 # YouTube Video: https://www.youtube.com/watch?v=wlnx-7cm4Gg
 from tweepy.streaming import StreamListener

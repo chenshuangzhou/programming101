@@ -251,7 +251,7 @@ Caregiving allowance ~ women (gender study) incentive for formal care; economic 
 
 Meaning Making Model:
 
-System Theory (Caregiving model * Generational Model * Meaning Making Model) - Long-term care system: 
+System Theory + Reader-Response Theory (Caregiving model * Generational Model * Meaning Making Model) - Long-term care system: 
 1.	Carer:
     i.	Psychological distress
         1.	Caregiver Burden Inventory (CBI)
@@ -276,6 +276,12 @@ System Theory (Caregiving model * Generational Model * Meaning Making Model) - L
 6.	Social workers 
     i.	reflective groups
 7.	Social background: social cost, social pressures, social insurance system, policy beneficiary to female; 
+* Reader-Response Theory
+    metacognitive and cognitive: affective, developmental, personal and social, individual differences
+    psychological background: beliefs, emotions, motivations
+    developmental, personal, social and individual differences
+    social motives
+    
 
 Generations [baby boomer: 1946-1964; generation X: 1965-1980]
     1.	Sense of loss, self centered; Tendency of searching meaning; Sense of meaning made 

@@ -128,6 +128,7 @@ python -m pip install --upgrade pip
 pip install bs4  
 pip install requests
 
+
 # in python
 import bs4
 from urllib.request import urlopen as uReq

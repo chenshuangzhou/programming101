@@ -10,8 +10,76 @@ vscode-pdf
 
 ### SOWK7007 Research Methods ##################################################################################
 
+### 181002 Causal inference
 
-180918
+Validity: external and internal	
+Effectiveness of supporting group: 
+	Single case study: trend analysis
+	RCT: effectiveness evaluation; compliance in RCT can be difficult to achieve
+	Pre-experimental study design:
+	Selection bias:
+Inferring causality
+	Cause must precede the effect in time
+The two variables are empirically correlated with on another
+The observed empirical correlation between the two variables that 
+Threats to internal validity
+	History, maturation, testing, instrumentation changes, statistical regression, selection bias, ambiguity regarding the direction of causal inference
+Conterfactuals
+	Find the alternative possibility of unconditional path
+
+Experimental Design
+	Randomized group distribution, - randomization still exist
+	Contamination: cases within the same cluster may intervene each other 
+	Controlling variables: covariates may be influential in the model but assumed not
+
+Hot Et al. (2016)
+What do you learn from the flow diagram?
+	Describe process and details 
+	CONSORT statement: require to report for RCT 
+
+Why is there a need to compare characteristics on the baseline?
+	Table 1 baseline characteristics description
+	Demonstrate randomization as it should be balanced
+
+What are common challenges in conducting an RCT?
+	Attrition: predictable attrition’s can be made up
+	Validity issue: generalizable in other circumstances with the similar protocol which is difficult to achieve
+	
+Did the intervention effect sustain in this study? How would this affect the implication of this study?
+	Long-term intervention is needed
+	Pre-condition of individuals will affect the analysis 
+	
+Observational study
+	Not suited for causal judgement 
+	Confounding variables can affect the analysis 
+	
+DID 
+	Definition: differences in pre/post treatment and experimental/control comparisons
+	Assumptions: 
+		Trends on baseline status should be paralleled 
+		Comparison group should change at the same rate
+		Common-shock: unrelated events should have the same effects on both experimental and control groups
+	Questions
+		What are the two differences that this study was contrasting
+1.	Policy types
+2.	Characteristic groups
+		What did county fixed effects and the ear fixed effects do
+			Controlling for time-varying factors (such as policy change) and cultural and demographic factors 
+		Why is there a need to adopt a comparison group
+		Other trends may correlates with immigration enforcement policies (other time-varying factors may affect outcome). What did the authors do to address this
+
+Regression discontinuity 
+	Condition: Cut-off point in index or parameters; beneficiaries and non beneficiaries should be continuous 
+	Intuitive explanation: the potential beneficiaries (units) just above the cut off point are very similar to the potential beneficiaries just below the cut off point. 
+
+Instrumental variables 
+	Related to IV not related to DV
+	
+PSM
+	Controlling for covariates
+
+
+### 180918
 Janet and Tammy
     Answer research questions with meta analysis
         Interventions
@@ -66,7 +134,7 @@ Meta analysis procedure:
     c.	Campbell Collaboration https://www.campbellcollaboration.org/
 	
 
-180911 
+### 180911 
 
 1.	Psycho-socio-biological perspectives, Youth Data, 2016
 2.	Index in intervention: KPI, admission rate into hospital, numeric indicator, social return investment 
@@ -102,7 +170,7 @@ Tasks
 
 ### GRSC6020 Thesis Writing ##################################################################################
 
-190912
+### 190912
 
 Contact info in the booklet: 
 Clear argument: what you are going to talk about, and summarize what you have talked about. This is called the meta text, which is the part of your thesis which talks about the text itself. 
@@ -160,6 +228,39 @@ Literature review：
 
 
 ### Supervision: Projects ####################################################################################
+
+
+### 181003 systematic review on meaning making
+0. Article selection
+    Year range: 2007-2018
+    Keywords: "meaning","care"
+    Database: Pubmed, Mediline, PshchoINFO, Cochrane library, EMBASE, CINAHL, WOS, Scopus
+    Inclusion criteria: 
+    Exclusion criteria: 
+
+1. Quality Assessment and selection 
+    Cochrane 
+    Whittemore and Knafl, 2005
+    PRISMA
+
+
+2. Summary - Variables:
+    author (year)
+    aims and objectives
+    research design (including sampling method)
+    measurement
+    country
+    settings
+    participants (eg.ample size, age, gender, martial status, health and mental health states)
+    care recipient (eg. age, gender, social security, financial status)
+    theory
+    cognitive framework
+    definition of meaning searching/making
+    global meaning 
+    situational meaning 
+    coping strategy
+    changes in meaning (making)
+    other key findings
 
 ### 180924 on meta analysis
 

@@ -1,0 +1,169 @@
+### Overview ##########################################################################################################
+
+[meeting]: 180927 (Thursday)
+[coding]: folder of "Mastering social media mining with python"
+[academic]: /literature, /manuscript, /homework, /writing
+
+### Ongoing projects ###################################################################################################
+
+180902-181007 
+[academic/literature/homework] thesis review on 180930
+    750+ words
+
+
+181004-181007
+[academic/writing] Ethical Approval (due on 181008 Monday)
+    English Version proposal (Kevin writes a breif proposal)
+    Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
+        Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
+    Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
+        Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
+    Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
+        consent form for quesitonnaire (MM on this)
+        consent for for interview (MM on this)
+
+
+181004-181007 
+[academic/literature] Systematic Review on Meaning-making (due on 181008 Monday)
+    Preliminary search:
+        no year range
+        keywords: care* AND meaning AND (tool OR model OR theory or skill)
+        outcome: 
+            a list of year, author, name of articles, theory on endnote
+            summary or notes
+
+
+181004-181007 
+[academic/literature] theory
+    check article: cultural difference in social cognition 
+        1. Shore, B. (1998). Culture in mind: Cognition, culture, and the problem of meaning. Oxford University Press.
+        2. Hong, Y. Y., & Chiu, C. Y. (2001). Toward a paradigm shift: From cross-cultural differences in social cognition to social-cognitive mediation of cultural differences. Social cognition, 19(3: Special issue), 181-196.
+        3. Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psychological review, 98(2), 224.
+        4. Nisbett, R. E., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture and systems of thought: holistic versus analytic cognition. Psychological review, 108(2), 291.
+        5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press.
+    application in survey or questionnaire 
+
+
+181004-181007 
+[academic/literature/meta-analysis] Systematic review on Meaning-making: 
+    Preliminary search:
+        no year range
+        keywords: care* AND meaning AND (tool OR model OR theory or skill)
+        outcome: 
+            a list of (year, author, title, theory on endnote)
+            summary or notes
+    Organization of papers:
+        Screening
+            Year range: 2007-2018 ?
+            Keywords: "meaning","caregiv*" (or "care")...
+            Database: Pubmed, Medline, PshchoINFO, Cochrane library, EMBASE, CINAHL, WOS (Kevin), Scopus
+            Inclusion criteria: 
+            Exclusion criteria: 
+            Quality assessment: Cochrane, PRISMA, (Whittemore and Knafl, 2005)
+        Summary - Variables:
+            author (year)
+            aims and objectives
+            research method/design (including sampling method)
+            measurement
+            country
+            settings
+            participants (eg.ample size, age, gender, martial status, health and mental health states)
+            care recipient (eg. age, gender, social security, financial status)
+            theory
+            cognitive framework
+            definition of meaning searching/making
+            global meaning 
+            situational meaning 
+            coping strategy
+            changes in meaning (making)
+            other key findings
+            factors mentioned
+            qualitative/quantitative methods
+
+181001-181011 
+[academic/writing] AES PPT
+    One slide for 3 minutes' talking
+    Psychodynamics X Machine Learning
+    notes:
+        
+
+
+180916-XXXXXX 
+[coding] Python datamining on social network service
+    [reading] coding module
+    [reading] public media: 
+        twitter
+    [Vivian] Medical care system covers medication for AD in both rural and urban areas?
+
+
+180910-XXXXXX 
+[meeting] reflective group: 
+    Note (onedrive shared):5-6 sessions; caregiver support group of burden, depression, caregiving, etc.
+    [reading] integrate literature and come up with reflective group course structure: 
+
+
+### Completed Projects ###################################################################################################
+
+# 180912-180926 
+# [academic/homework] critique paper
+    15000+ words
+    due on 180926
+
+# 180920-XXXXXX 
+# [meta analysis] Meaning-making: 
+    [academic/literature] collecting info ('meaning') on:
+        abstract
+        keywords
+        title
+    [academic/literature] organization of papers:
+        methodology
+        empirical info collection
+        factors mentioned
+        theory
+        qualitative/quantitative methods
+    #[meeting] stress processing/Appraisal Theory (meaning and application in questionnaire): 
+        1. Intro: people have difference reactions and responses to the same event based on their own evaluations. Appraisal of an event causes an emotion, or affetive, response. 
+        2. Structural Model (Lazarus, 1991):
+            2.1. Primary appraisal: 
+                2.1.1 evaluates two aspects of a situation: motivational relevance (relevant or irrelevant to self), motivational congruence (congruent or incongrent with one's goals)
+                2.1.2 evaluation of personal significance of a specific person-environment transaction, being influenced by people's underlying assumptions or belifs about the world
+            2.2. Secondary appraisal: 
+                2.2.1 evaluate one's resources and options for coping
+                    coping potential: problem-focused coping or emotion-focused coping
+                2.2.2 evaluation of possibilities for coping and expectations regarding outcomes, being influenced by people's global meaning systems
+        3. Process Model (Smith & Kirby, 2000)
+            3.1 perceptual stimuli: sensation of pain or pleasure, perception of facial expression
+            3.2 associative processing: memory-based process makes quick connections and provides appraisal information associated with given stimulus
+            3.3 reasoning: logical, critical thinking about the stimulus and/or situation; slower and more deliberate. 
+        4. Stress/Coping Framework
+            4.1 demographic info, stressors, resources -> caregiver's `response to stress
+            4.2 resource being a moderator affecting stress outcome
+        5C. Questions:
+            5.1 How many hours per day do you perceive stress?
+            5.2 How many hours per day do you have to deal with the stress by yourself?
+            5.3 Do you have enough resources and capability to handle the stress?
+            5.4 What is your coping strategies?
+            5.5 Are those still stress to you after you adopt coping strategies?
+            5.6 Do you feel better after you use your coping strategies to those stress?
+
+    [meeting] theory
+        check article: cultural difference in social cognition 
+            1. Shore, B. (1998). Culture in mind: Cognition, culture, and the problem of meaning. Oxford University Press.
+            2. Hong, Y. Y., & Chiu, C. Y. (2001). Toward a paradigm shift: From cross-cultural differences in social cognition to social-cognitive mediation of cultural differences. Social cognition, 19(3: Special issue), 181-196.
+            3. Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psychological review, 98(2), 224.
+            4. Nisbett, R. E., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture and systems of thought: holistic versus analytic cognition. Psychological review, 108(2), 291.
+            5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press.
+        application in survey or questionnaire 
+    # [meeting] Factors/roles of personality (DV: stress outcome): 
+        demographics:
+            gender: 
+            race/ethnicity
+            income
+            age
+            education
+            culture: 
+        self-regulation: regulation of emotions, behaviors, and beliefs
+        positive affect (optimism): hope
+        sense of purpose: belief and goals
+        social support:
+

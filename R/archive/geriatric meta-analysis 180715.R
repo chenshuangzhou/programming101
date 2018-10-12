@@ -26,39 +26,29 @@ sum(average.age*sample.size,na.rm=T)/sum(sample.size,na.rm=T)   # group average 
 detach(meta1)
 
 ## Table 3 
-  age1=meta1[which(meta1$age1859==1),]
-    attach(age1)
-    table(age1859)
-    table(intervention2)
-    table(MMSE);table(ADL);table(QOL)
-    detach(age1)
+age1=meta1[which(meta1$age1859==1),]
+  table(age1859)
+  attach(age1);table(MMSE);table(ADL);table(QOL);table(intervention2)
+  detach(age1)
+
+age2=meta1[which(meta1$age6064==1),]
+  attach(age2)
+  table(age6064);table(intervention2);table(MMSE);table(ADL);table(QOL)
+  detach(age2)
+
+age3=meta1[which(meta1$age6570==1),]
+  attach(age3)
+  table(age6570);table(intervention2);table(MMSE);table(ADL);table(QOL)
+  detach(age3)
   
-  age2=meta1[which(meta1$age6064==1),]
-    attach(age2)
-    table(age6064)
-    table(intervention2)
-    table(MMSE);table(ADL);table(QOL)
-    detach(age2)
+age4=meta1[which(meta1$age7080==1),]
+  attach(age4)
+  table(age7080);table(intervention2);table(MMSE);table(ADL);table(QOL)
+  detach(age4)
   
-  age3=meta1[which(meta1$age6570==1),]
-    attach(age3)
-    table(age6570)
-    table(intervention2)
-    table(MMSE);table(ADL);table(QOL)
-    detach(age3)
-    
-  age4=meta1[which(meta1$age7080==1),]
-    attach(age4)
-    table(age7080)
-    table(intervention2)
-    table(MMSE);table(ADL);table(QOL)
-    detach(age4)
-    
-  age5=meta1[which(meta1$age80.==1),]
-    attach(age5)
-    table(age80.)
-    table(intervention2)
-    table(MMSE);table(ADL);table(QOL)
+age5=meta1[which(meta1$age80.==1),]
+  attach(age5)
+  table(age80.);table(intervention2);table(MMSE);table(ADL);table(QOL)
   detach(age5)
     
     
@@ -286,11 +276,11 @@ detach(meta1)
       b[11,11]=mean(sum((dQOLpost-dQOLpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
       b[11,12]=mean(sum((gOTHERpost-gOTHERpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
   
-      write.csv(b,file="C:/Users/ThinPak/Desktop/b.csv",row.names = FALSE)
+      write.csv(b,file="C:/Users/chens/Desktop/b.csv",row.names = FALSE)
     
       detach(meta1) 
       
-  ### Fixed effects models
+  ### Model Comparisons 
       # fixed-effect model check
       model1=metacont(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post,data=meta1,sm="SMD",byvar=intervention2)
       model2=metacont(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post,data=meta1,sm="SMD",byvar=intervention2)
@@ -506,7 +496,7 @@ attach(meta1)
   
   detach(meta1.3)
   
-write.csv(a,file="a.csv",row.names = FALSE)
+write.csv(treatment_table,file="a.csv",row.names = FALSE)
 
 # MMSE
 
@@ -578,4 +568,4 @@ metabias(meta3.1,method.bias="linreg",plotit=T,k.min=5)
 
 
 ### data output
-write.csv(meta1, file="C:/Users/chens/OneDrive/research/1personal/elder/meta/test.csv")
+write.csv(meta1, file="C:/Users/chens/OneDrive/research/1personal/Geriatric/meta/test.csv")

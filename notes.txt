@@ -10,6 +10,19 @@ vscode-pdf
 
 ### SOWK7007 Research Methods ##################################################################################
 
+### 181009 Scale development 
+Basic attributes of scales
+Conceptualize the target construct
+    identify latent construct 
+    literature review: 
+Develop the initial item pool
+    creation of an item pool
+Select items to form the scale
+Evaluate the psychometric properties of the scale
+Data collection
+    inclusion of comparison scales
+    
+
 ### 181002 Causal inference
 
 Validity: external and internal	
@@ -416,19 +429,19 @@ Caregiving relationship
 ### Macau Project
 
 1.  Ethical Approval (due on 181008 Monday)
-    English Version proposal (Kevin writes a beif proposal)
-    Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
+    (Kevin) English Version proposal (Kevin writes a beif proposal)
+    (MM) Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
         Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
-    Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
+    (Kevin) Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
         Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
-    Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
+    (Kevin) Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
         consent form for quesitonnaire (MM on this)
         consent for for interview (MM on this)
 
 2.  Systematic Review on Meaning-making (due on 181008 Monday)
     Preliminary search:
         no year range
-        keywords: care* AND meaning AND (tool OR model OR theory or skill)
+        keywords: TI = ((meaning AND caregiv* )AND (tool OR model OR theory OR skill))
         outcome: 
             a list of year, author, name of articles, theory on endnote
             summary or notes

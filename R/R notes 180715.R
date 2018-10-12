@@ -2175,7 +2175,7 @@ yb <- runif(10)*20
 xy.error.bars(x,y,xb,yb)
 
 # loops and repeat
-for (i in 1:5) print(i�???????2) #
+for (i in 1:5) print(i�????????2) #
 
 # factorial x
 fac1<-function(x) {
@@ -2327,7 +2327,7 @@ as.vector(Country[grep("R",as.character(Country))])
 -grep("[a-t]$"...) # do not end with a letter between a and t
 -grep("[A-T a-t]$"...) # exclude ending with a letter between a and t for both upper and lower case letters
 "^.y"   # with y as the second letter
-"^. {,4}$" # (5 ‘anythings�??????? is shown by �???????.�??????? then curly brackets {5} then y). Which are the countries with4 or fewer letters in their names?
+"^. {,4}$" # (5 ‘anythings�???????? is shown by �????????.�???????? then curly brackets {5} then y). Which are the countries with4 or fewer letters in their names?
 "^. {15, }$"  # 15 or more characters
 
 ## Substituting text within character strings
@@ -2349,8 +2349,8 @@ freq<-as.vector(unlist (lapply(gregexpr("o",text),length)))
 present<-ifelse(regexpr("o",text)<0,0,1)  # if a string hasnt a 'o', its value is 0 otherwise 1
 freq*present
 
-stock<-c(’car�???????,’van�???????)
-requests<-c(’truck�???????,’suv�???????,’van�???????,’sports�???????,’car�???????,’waggon�???????,’car�???????)
+stock<-c(’car�????????,’van�????????)
+requests<-c(’truck�????????,’suv�????????,’van�????????,’sports�????????,’car�????????,’waggon�????????,’car�????????)
 which(requests %in% stock);requests [which(requests %in% stock)]
 which(sapply(requests, "%in%", stock))  # show both the wrods and their positions
 
@@ -3237,7 +3237,7 @@ tmp[["test"]]$Open("C:/Users/chens/Desktop/test.doc")
 # forest() (download) ɭ��ͼ
 # funnel() ©��ͼ
 # metabias() ƫ�з���
-# metainf() (download metainf) ����Է���??????; forest(metainf())
+# metainf() (download metainf) ����Է���???????; forest(metainf())
 # metainc() (download, p.105) - time-series analysis
 # metagen() for year,region,lci,uci,se (download, p.109-111);
 # require n1,n2,m1,sd1,m2,sd2
@@ -3255,11 +3255,12 @@ coef(fit1) #check the coefficients
 parameterEstimates(fit1)  # as dataframe 
 
 
-#### Output
-packages = c("xlsx","outreg","plyr","psych","stargazer")
-sapply(packages,library,character.only=T)
-# library(xlsx);library(outreg);library(plyr)
-# library(psych);library(outreg);library(stargazer);
+#### Output; regression model; model comparison ####
+# packages = c("xlsx","outreg","plyr","psych","stargazer")
+# sapply(packages,install.packages,character.only=T)
+# sapply(packages,library,character.only=T)
+
+ library(xlsx);library(outreg);library(plyr);library(psych);library(stargazer);
 attach(mtcars)
 
 # description table 0
@@ -3272,15 +3273,15 @@ linear3=lm(mpg~hp+wt+cyl,data=mtcars)
 linear4=lm(mpg~hp+wt+cyl+hp*wt,data=mtcars)
 linear5=lm(mpg~hp+wt+cyl+hp*wt+wt*cyl,data=mtcars)
 
-  #a1=stargazer(linear1,linear2,linear3,linear4,title="ModelResult",align=T,type="text",out="table.htm")
-  #a2=stargazer(attitude[1:6,],summary=T,rownames = F,title="Summary Table",align=T,type="text")
-  #a3=cbind(linear1,linear2,linear3,linear4)
+  a1=stargazer(linear1,linear2,linear3,linear4,title="ModelResult",align=T,type="text",out="table.htm")
+  a2=stargazer(attitude[1:6,],summary=T,rownames = F,title="Summary Table",align=T,type="text")
+  a3=cbind(linear1,linear2,linear3,linear4)
 
-  # regt = list(
-              # lm(mpg~hp+wt+cyl,data=mtcars),
-              # lm(mpg~hp+wt+cyl,data=mtcars),
-              # lm(mpg~hp+wt+cyl+hp*wt,data=mtcars),
-              # lm(mpg~hp+wt+cyl+hp*wt+wt*cyl,data=mtcars))
+   regt = list(
+               lm(mpg~hp+wt+cyl,data=mtcars),
+               lm(mpg~hp+wt+cyl,data=mtcars),
+               lm(mpg~hp+wt+cyl+hp*wt,data=mtcars),
+               lm(mpg~hp+wt+cyl+hp*wt+wt*cyl,data=mtcars))
 
 # Correlation table 1
 table1 = as.data.frame(cor(mtcars[,unlist(lapply(mtcars, is.numeric))]))
@@ -3304,7 +3305,7 @@ detach()
 table = rbind.fill(table0,table1,table2,table3)     # require library(plyr)
 
 # output to excel
-write.xlsx(table,file="C:/Users/ThinPak/Desktop/test.xlsx")
+write.xlsx(table,file="C:/Users/chens/Desktop/test.xlsx")
 
 #anova12=anova(linear1,linear2)
 #anova23=anova(linear2,linear3)

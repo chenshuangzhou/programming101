@@ -93,10 +93,10 @@ age5=meta[which(meta$age80.==1),]
     gADLexp=J*dADLpre
     gADLcon=J*dADLcon
     
-    gQOLpre=J*dQOLpre
-    gQOLpost=J*dQOLpost
-    gQOLexp=J*dQOLpre
-    gQOLcon=J*dQOLcon
+    gOTHERpre=J*dQOLpre
+    gOTHERpost=J*dQOLpost
+    gOTHERexp=J*dQOLpre
+    gOTHERcon=J*dQOLcon
 
   detach(meta)
   
@@ -580,16 +580,16 @@ age5=meta[which(meta$age80.==1),]
 
   write.csv(t1,file="C:/Users/chens/Desktop/Intervention Effect Analysis.csv",row.names=FALSE)
   
-### TABLE 7 Model Comparison 
+### TABLE 7 Model Comparison
   ## Fixed Effect Model by measurement
-    fem1=metacont(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post,data=meta,sm="SMD",byvar=intervention2)
-    fem2=metacont(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post,data=meta,sm="SMD",byvar=intervention2)
-    fem3=metacont(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post,data=meta,sm="SMD",byvar=intervention2)
+    FEM1=metacont(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post,data=meta,sm="SMD",byvar=intervention2)
+    FEM2=metacont(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post,data=meta,sm="SMD",byvar=intervention2)
+    FEM3=metacont(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post,data=meta,sm="SMD",byvar=intervention2)
       # significant heterogeneity between groups, suggesting random effect model.
-      # Robust Multichip Average measures check (methods=FE/REML)
-      rma1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta)
-      rma2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta)
-      rma3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta)
+      # Robust Multichip Average measures check
+      RMA1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1)
+      RMA2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta1)
+      RMA3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta1)
   ## Random Effect Model
   #    attach(meta)
   #      ratio1=abs((m1e.post-m1e.pre)/(m1c.post-m1c.pre))

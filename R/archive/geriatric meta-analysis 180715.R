@@ -286,7 +286,7 @@ detach(meta1)
       model2=metacont(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post,data=meta1,sm="SMD",byvar=intervention2)
       model3=metacont(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post,data=meta1,sm="SMD",byvar=intervention2)
       
-      # significant hetergeniety between groups, suggesting random effect model.
+      # significant heterogeneity between groups, suggesting random effect model.
       
             # RMA model check
       res1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1)
@@ -400,7 +400,7 @@ detach(meta1)
 
 
 ####################
-### calculate MMSE, ADL, QOL average pre score including experiemnt and contrast groups
+### calculate MMSE, ADL, QOL average pre score including experiment and contrast groups
 
 ## figure making
 

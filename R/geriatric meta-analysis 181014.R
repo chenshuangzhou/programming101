@@ -1,8 +1,10 @@
 ### Library packages
-library(meta);library(metafor);library(nlme)
+library(meta);library(metafor);library(nlme);library(checkmate);library(forestplot);library(grid)
 
 ### Data Retrieval from "test.txt"
 meta=read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")
+#meta=read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")
+
 
 ### Demographic Information 
 ##  TABLE 1 - Literature Info - edit in excel file "meta-analysis" (the newest version 180325)
@@ -121,15 +123,18 @@ age5=meta[which(meta$age80.==1),]
   # meta3.2=meta[which(meta$QOL==1 & meta$intervention2==2),]
   # meta3.1=meta[which(meta$QOL==1 & meta$intervention2==1),]
 
-  meta1.3=meta[which(meta$MMSE==1 & meta$intervention2==3),]
-  meta1.2=meta[which(meta$MMSE==1 & meta$intervention2==2),]
-  meta1.1=meta[which(meta$MMSE==1 & meta$intervention2==1),]
-  meta2.3=meta[which(meta$ADL==1 & meta$intervention2==3),]
-  meta2.2=meta[which(meta$ADL==1 & meta$intervention2==2),]
-  meta2.1=meta[which(meta$ADL==1 & meta$intervention2==1),]
-  meta3.3=meta[which(meta$QOL==1 & meta$intervention2==3),]
-  meta3.2=meta[which(meta$QOL==1 & meta$intervention2==2),]
-  meta3.1=meta[which(meta$QOL==1 & meta$intervention2==1),]
+  meta1  =meta[which(meta$MMSE==1),]                         # MMSE
+  meta1.3=meta[which(meta$MMSE==1 & meta$intervention2==3),] # MMSE * nursing
+  meta1.2=meta[which(meta$MMSE==1 & meta$intervention2==2),] # MMSE * psychological 
+  meta1.1=meta[which(meta$MMSE==1 & meta$intervention2==1),] # MMSE * comprehensive
+  meta2  =meta[which(meta$ADL==1),]                          # ADL 
+  meta2.3=meta[which(meta$ADL==1 & meta$intervention2==3),]  # ADL * nursing
+  meta2.2=meta[which(meta$ADL==1 & meta$intervention2==2),]  # ADL * psychological
+  meta2.1=meta[which(meta$ADL==1 & meta$intervention2==1),]  # ADL * comprehensive
+  meta3  =meta[which(meta$QOL==1),]                          # QOL 
+  meta3.3=meta[which(meta$QOL==1 & meta$intervention2==3),]  # QOL * nursing
+  meta3.2=meta[which(meta$QOL==1 & meta$intervention2==2),]  # QOL * psychological 
+  meta3.1=meta[which(meta$QOL==1 & meta$intervention2==1),]  # QOL * comprehensive 
 
   t1=matrix(,27,12)
 ## MMSE: between-group and pre/post comparison 
@@ -579,17 +584,31 @@ age5=meta[which(meta$age80.==1),]
   detach(meta3.1)
 
   write.csv(t1,file="C:/Users/chens/Desktop/Intervention Effect Analysis.csv",row.names=FALSE)
-  
+  #write.csv(t1,file="C:/Users/Student RA/vscode temp/Intervention Effect Analysis.csv",row.names=FALSE)
+
+
 ### TABLE 7 Model Comparison 
   ## Fixed Effect Model by measurement
-    fem1=metacont(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post,data=meta,sm="SMD",byvar=intervention2)
-    fem2=metacont(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post,data=meta,sm="SMD",byvar=intervention2)
-    fem3=metacont(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post,data=meta,sm="SMD",byvar=intervention2)
-      # significant heterogeneity between groups, suggesting random effect model.
-      # Robust Multichip Average measures check (methods=FE/REML)
-      rma1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta)
-      rma2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta)
-      rma3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta)
+    fem1=metacont(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post,data=meta1,sm="SMD",byvar=intervention2) # MMSE
+    fem2=metacont(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post,data=meta2,sm="SMD",byvar=intervention2) # ADL
+    fem3=metacont(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post,data=meta3,sm="SMD",byvar=intervention2) # QOL
+    # eliminate null rows
+
+    # significant heterogeneity between groups, suggesting random effect model.
+    # Robust Multichip Average measures check (methods=FE/REML)
+    res1.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.1)
+    res1.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.2)
+    res1.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.3)
+    res2.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.1)
+    res2.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.2)
+    res2.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.3)
+    res3.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.1)
+    res3.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.2)
+    res3.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.3)
+      # n1i/n2i - patient number; m1i/m2i - mean score of two groups; sd1i/sd2i - std of score of groups
+  
+
+  
   ## Random Effect Model
   #    attach(meta)
   #      ratio1=abs((m1e.post-m1e.pre)/(m1c.post-m1c.pre))
@@ -615,46 +634,217 @@ age5=meta[which(meta$age80.==1),]
 
 ### Figures
 ##  Forest Plots
-  forestplot()
-  metabin()       # library(meta)
-  trimfill()      # sensitivity assessment
+  # forestplot()
+  # metabin()       # library(meta)
+  # trimfill()      # sensitivity assessment
+
+  ## decrease marginal space so the full space is used
+  par(mar=c(4,4,1,2),cex=.8,font=2,mfrow=c(3,3)) 
+
+  ## MMSE * Comprehenswive
+    attach(meta1.1)
+    forest(res1.1,xlim=c(-12,6),ilab=cbind(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post),
+            ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
+    detach(meta1.1)
+
+    text(c(-8.5,-4),30,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-10,-8.5,-7,-5.5,-4,-2.5),29,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(6,29,"SMD[95% CI]",pos=2)
+    text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res1.1$QE, digits=2, format="f")), ", df = ", .(res1.1$k-res1.1$p),
+      ", p = ", .(formatC(res1.1$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res1.1$I2, digits=1, format="f")), "%)")))
+
+
+  ## MMSE * Psychological
+    attach(meta1.2)
+    forest(res1.2,xlim=c(-12,6),ilab=cbind(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post),
+            ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
+    detach(meta1.2)
+
+    text(c(-8.5,-4),18,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-10,-8.5,-7,-5.5,-4,-2.5),17,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(6,17,"SMD[95% CI]",pos=2)
+    text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res1.2$QE, digits=2, format="f")), ", df = ", .(res1.2$k-res1.2$p),
+      ", p = ", .(formatC(res1.2$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res1.2$I2, digits=1, format="f")), "%)")))
+
+  ## MMSE * Nursing
+    attach(meta1.3)
+    forest(res1.3,xlim=c(-12,6),ilab=cbind(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post),
+            ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
+    detach(meta1.3)
+
+    text(c(-8.5,-4),31,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-10,-8.5,-7,-5.5,-4,-2.5),30,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(6,30,"SMD[95% CI]",pos=2)
+    text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res1.3$QE, digits=2, format="f")), ", df = ", .(res1.3$k-res1.3$p),
+      ", p = ", .(formatC(res1.3$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res1.3$I2, digits=1, format="f")), "%)")))
+
+
+  ## ADL * Comprehenswive 
+    attach(meta2.1)
+    forest(res2.1,xlim=c(-16,4),ilab=cbind(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post),
+            ilab.x=c(-13,-11.5,-10,-8.5,-7,-5.5),cex=.8)
+    detach(meta2.1)
+
+    text(c(-11.5,-4),35,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-13,-11.5,-10,-8.5,-7,-5.5),34,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(4,34,"SMD[95% CI]",pos=2)
+    text(-15.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res2.1$QE, digits=2, format="f")), ", df = ", .(res2.1$k-res2.1$p),
+      ", p = ", .(formatC(res2.1$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res2.1$I2, digits=1, format="f")), "%)")))
+
+  ## ADL * Psychological 
+    attach(meta2.2)
+    forest(res2.2,xlim=c(-16,4),ilab=cbind(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post),
+            ilab.x=c(-13,-11.5,-10,-8.5,-7,-5.5),cex=.8)
+    detach(meta2.2)
+
+    text(c(-11.5,-4),12,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-13,-11.5,-10,-8.5,-7,-5.5),11.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(4,11.5,"SMD[95% CI]",pos=2)
+    text(-14.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res2.2$QE, digits=2, format="f")), ", df = ", .(res2.2$k-res2.2$p),
+      ", p = ", .(formatC(res2.2$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res2.2$I2, digits=1, format="f")), "%)")))
+
+  ## ADL * Nursing
+    attach(meta2.3)
+    forest(res2.3,xlim=c(-13,4),ilab=cbind(experiment.n,m2e.post,s2e.post,contrast.n,m2c.post,s2c.post),
+            ilab.x=c(-11,-9.5,-8,-6.5,-5,-3.5),cex=.8)
+    detach(meta2.3)
+
+    text(c(-9.5,-4),29,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-11,-9.5,-8,-6.5,-5,-3.5),28,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(4,28,"SMD[95% CI]",pos=2)
+    text(-12.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res2.3$QE, digits=2, format="f")), ", df = ", .(res2.3$k-res2.3$p),
+      ", p = ", .(formatC(res2.3$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res2.3$I2, digits=1, format="f")), "%)")))
+
+  ## QOL * Comprehenswive %
+    attach(meta3.1)
+    forest(res3.1,xlim=c(-12,6),ilab=cbind(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post),
+            ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
+    detach(meta3.1)
+
+    text(c(-8.5,-4),10,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-10,-8.5,-7,-5.5,-4,-2.5),9.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(6,9.5,"SMD[95% CI]",pos=2)
+    text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res3.1$QE, digits=2, format="f")), ", df = ", .(res3.1$k-res3.1$p),
+      ", p = ", .(formatC(res3.1$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res3.1$I2, digits=1, format="f")), "%)")))
+
+
+  ## QOL * Psychological
+    attach(meta3.2)
+    forest(res3.2,xlim=c(-12,6),ilab=cbind(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post),
+            ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
+    detach(meta3.2)
+
+    text(c(-8.5,-4),5,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-10,-8.5,-7,-5.5,-4,-2.5),4.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(6,4.5,"SMD[95% CI]",pos=2)
+    text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res3.2$QE, digits=2, format="f")), ", df = ", .(res3.2$k-res3.2$p),
+      ", p = ", .(formatC(res3.2$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res3.2$I2, digits=1, format="f")), "%)")))
+
+  ## QOL * Nursing
+    attach(meta3.3)
+    forest(res3.3,xlim=c(-12,6),ilab=cbind(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post),
+            ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
+    detach(meta3.3)
+
+    text(c(-8.5,-4),7,c("Experiment Group","Control Group"))     # counted from the bottom
+    text(c(-10,-8.5,-7,-5.5,-4,-2.5),6.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
+    text(6,6.5,"SMD[95% CI]",pos=2)
+    text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
+      .(formatC(res3.3$QE, digits=2, format="f")), ", df = ", .(res3.3$k-res3.3$p),
+      ", p = ", .(formatC(res3.3$QEp, digits=2, format="f")), "; ", I^2, " = ",
+      .(formatC(res3.3$I2, digits=1, format="f")), "%)")))
 
 # funnel plots, radial plot, 11 plot, baujat plot
   
-  # overall
+   
+  #MMSE * comprehensive
   par(mfcol=c(2,2))
-  funnel(res1,main="Funnel Plot")
-  radial(res1,main="Radial Plot")
-  qqnorm(res1,main="Normal QQ Plot")
-  baujat(res1,main="Baujat Plot")
-    
-  #MMSE
-  par(mfcol=c(2,2))
-  funnel(res1,main="Funnel Plot")
-  radial(res1,main="Radial Plot")
-  qqnorm(res1,main="Normal QQ Plot")
-  baujat(res1,main="Baujat Plot")
+  funnel(res1.1,main="Funnel Plot")
+  radial(res1.1,main="Radial Plot")
+  qqnorm(res1.1,main="Normal QQ Plot")
+  baujat(res1.1,main="Baujat Plot")
 
-  #ADL
+  #MMSE * psychological
   par(mfcol=c(2,2))
-  funnel(res2,main="Funnel Plot")
-  radial(res2,main="Radial Plot")
-  qqnorm(res2,main="Normal QQ Plot")
-  baujat(res2,main="Baujat Plot")
-  
-  
-  #QOL
+  funnel(res1.2,main="Funnel Plot")
+  radial(res1.2,main="Radial Plot")
+  qqnorm(res1.2,main="Normal QQ Plot")
+  baujat(res1.2,main="Baujat Plot")
+
+  #MMSE * nursing
   par(mfcol=c(2,2))
-  funnel(res3,main="Funnel Plot")
-  radial(res3,main="Radial Plot")
-  qqnorm(res3,main="Normal QQ Plot")
-  baujat(res3,main="Baujat Plot")
+  funnel(res1.3,main="Funnel Plot")
+  radial(res1.3,main="Radial Plot")
+  qqnorm(res1.3,main="Normal QQ Plot")
+  baujat(res1.3,main="Baujat Plot")
+
+
+  #ADL * comprehensive
+  par(mfcol=c(2,2))
+  funnel(res2.1,main="Funnel Plot")
+  radial(res2.1,main="Radial Plot")
+  qqnorm(res2.1,main="Normal QQ Plot")
+  baujat(res2.1,main="Baujat Plot")
   
+  #ADL * psychological 
+  par(mfcol=c(2,2))
+  funnel(res2.2,main="Funnel Plot")
+  radial(res2.2,main="Radial Plot")
+  qqnorm(res2.2,main="Normal QQ Plot")
+  baujat(res2.2,main="Baujat Plot")
+
+  #ADL * nursing
+  par(mfcol=c(2,2))
+  funnel(res2.3,main="Funnel Plot")
+  radial(res2.3,main="Radial Plot")
+  qqnorm(res2.3,main="Normal QQ Plot")
+  baujat(res2.3,main="Baujat Plot")
+
+  #QOL * comprehensive
+  par(mfcol=c(2,2))
+  funnel(res3.1,main="Funnel Plot")
+  radial(res3.1,main="Radial Plot")
+  qqnorm(res3.1,main="Normal QQ Plot")
+  baujat(res3.1,main="Baujat Plot")
   
+  #QOL * psychological
+  par(mfcol=c(2,2))
+  funnel(res3.2,main="Funnel Plot")
+  radial(res3.2,main="Radial Plot")
+  qqnorm(res3.2,main="Normal QQ Plot")
+  baujat(res3.2,main="Baujat Plot")
+
+  #QOL * nursing
+  par(mfcol=c(2,2))
+  funnel(res3.3,main="Funnel Plot")
+  radial(res3.3,main="Radial Plot")
+  qqnorm(res3.3,main="Normal QQ Plot")
+  baujat(res3.3,main="Baujat Plot")
+
+
 # sensitivity test
-plot(influence(res1))
-plot(influence(res2))
-plot(influence(res3))
-
-# publication bias check
-metabias(model1,method.bias="linreg",plotit=T,k.min=5)
+plot(influence(res1.1))
+plot(influence(res1.2))
+plot(influence(res1.3))
+plot(influence(res2.1))
+plot(influence(res2.2))
+plot(influence(res2.3))
+plot(influence(res3.1))
+plot(influence(res3.2))
+plot(influence(res3.3))

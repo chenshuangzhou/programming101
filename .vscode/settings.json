@@ -9,5 +9,7 @@
         "latex",
         "plaintext",
         "r"
-    ]
+    ],
+    "r.rterm.windows": "C:\\Program Files\\R\\R-3.4.1\\bin\\x64\\R.exe",
+    "html.format.wrapLineLength": 300,
 }

@@ -1,10 +1,10 @@
 ### Library packages
-library(meta);library(metafor);library(nlme);library(checkmate);library(forestplot);library(grid)
+library(meta);library(metafor);library(nlme);library(checkmate);library(forestplot);library(grid);
+#library(officer);library(stargazer);library(outreg);library(SDMTools)
 
 ### Data Retrieval from "test.txt"
 meta=read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")
 #meta=read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")
-
 
 ### Demographic Information 
 ##  TABLE 1 - Literature Info - edit in excel file "meta-analysis" (the newest version 180325)
@@ -29,6 +29,8 @@ attach(meta)
 detach(meta)
 
 ## TABLE 3 - detailed demographic on year, age, and locations
+crosstable()
+
 age1=meta[which(meta$age1859==1),]
   table(age1859)
   attach(age1);table(MMSE);table(ADL);table(QOL);table(intervention2)
@@ -53,6 +55,44 @@ age5=meta[which(meta$age80.==1),]
   attach(age5)
   table(age80.);table(intervention2);table(MMSE);table(ADL);table(QOL)
   detach(age5)
+
+## TABLE 2
+attach(meta)
+
+  # year by intervetnion and measuremnet 
+  cbind(table(year,intervention2),table(year,MMSE),table(year,ADL),table(year,QOL))
+  cbind(table(location,intervention2),table(location,MMSE),table(location,ADL),table(location,QOL))
+  cbind(table(intervention2,MMSE),table(intervention2,ADL),table(intervention2,QOL))
+  # age group frequency
+
+  # age group by intervention and measurement
+  cbind(table(age1859,intervention2),table(age6064,intervention2),table(age6569,intervention2),table(age7080,intervention2),table(age80.,intervention2),
+        table(age1859,MMSE),table(age1859,ADL),table(age1859,QOL),
+        table(age6064,MMSE),table(age6064,ADL),table(age6064,QOL),
+        table(age6569,MMSE),table(age6569,ADL),table(age6569,QOL),
+        table(age7080,MMSE),table(age7080,ADL),table(age7080,QOL),
+        table(age80.,MMSE),table(age80.,ADL),table(age80.,QOL)
+        )
+  # gender percentage by intervention and measurement 
+  g1=sum(male,na.rm=T);g2=sum(female,na.rm=T);g3=g1+g2
+  g1/g3;g2/g3
+
+  g1=cbind(sum(male[which(intervention2==1)],na.rm=T),sum(male[which(intervention2==2)],na.rm=T),sum(male[which(intervention2==3)],na.rm=T))
+  g2=cbind(sum(female[which(intervention2==1)],na.rm=T),sum(female[which(intervention2==2)],na.rm=T),sum(female[which(intervention2==3)],na.rm=T))
+  g3=g1+g2; g1/g3;g2/g3
+
+  g1=cbind(sum(male[which(MMSE==1)],na.rm=T),sum(male[which(ADL==1)],na.rm=T),sum(male[which(QOL==1)],na.rm=T))
+  g2=cbind(sum(female[which(MMSE==1)],na.rm=T),sum(female[which(ADL==1)],na.rm=T)，sum(female[which(QOL==1)],na.rm=T))
+  g3=g1+g2; g1/g3;g2/g3
+
+  # age (continuous)
+  sum(average.age*sample.size,na.rm=T)/sum(sample.size)
+  wt.sd(average.age,sample.size,na.rm=T)
+
+  # sample size (continuous)
+  mean(sample.size)
+
+
 
 ### TABLE 4-6 - Intervention Effect Analysis (MMSE, ADL, QOL)
 ## Data Prep - calculate Cohen's d and Hedges' g for MMSE, ADL and QOL
@@ -596,15 +636,15 @@ age5=meta[which(meta$age80.==1),]
 
     # significant heterogeneity between groups, suggesting random effect model.
     # Robust Multichip Average measures check (methods=FE/REML)
-    res1.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.1)
-    res1.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.2)
-    res1.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.3)
-    res2.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.1)
-    res2.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.2)
-    res2.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.3)
-    res3.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.1)
-    res3.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.2)
-    res3.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.3)
+    res1.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.1,slab=authoryear)
+    res1.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.2,slab=authoryear)
+    res1.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m1e.post,m2i=m1c.post,sd1i=s1e.post,sd2i=s1c.post,measure="SMD",method="FE",data=meta1.3,slab=authoryear)
+    res2.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.1,slab=authoryear)
+    res2.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.2,slab=authoryear)
+    res2.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m2e.post,m2i=m2c.post,sd1i=s2e.post,sd2i=s2c.post,measure="SMD",method="FE",data=meta2.3,slab=authoryear)
+    res3.1=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.1,slab=authoryear)
+    res3.2=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.2,slab=authoryear)
+    res3.3=rma(n1i=experiment.n,n2i=contrast.n,m1i=m3e.post,m2i=m3c.post,sd1i=s3e.post,sd2i=s3c.post,measure="SMD",method="FE",data=meta3.3,slab=authoryear)
       # n1i/n2i - patient number; m1i/m2i - mean score of two groups; sd1i/sd2i - std of score of groups
   
 
@@ -638,15 +678,24 @@ age5=meta[which(meta$age80.==1),]
   # metabin()       # library(meta)
   # trimfill()      # sensitivity assessment
 
+
+  # grid.text("My custom title", .5, .9, gp=gpar(cex=2))
+
+
+
   ## decrease marginal space so the full space is used
-  par(mar=c(4,4,1,2),cex=.8,font=2,mfrow=c(3,3)) 
+  par(mar=c(4,4,1,2),cex=.8,font=2,mfrow=c(1,1)) 
+  
+  # par(mar=c(4,4,1,2),cex=.8,font=2,mfrow=c(3,3)) 
 
   ## MMSE * Comprehenswive
     attach(meta1.1)
-    forest(res1.1,xlim=c(-12,6),ilab=cbind(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post),
+    forest(res1.1,xlim=c(-12,6),
+            ilab=cbind(experiment.n,m1e.post,s1e.post,contrast.n,m1c.post,s1c.post),
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
     detach(meta1.1)
 
+    grid.text("MMSE Diagnosis with Comprehensive Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
     text(c(-8.5,-4),30,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),29,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(6,29,"SMD[95% CI]",pos=2)
@@ -662,6 +711,7 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
     detach(meta1.2)
 
+    grid.text("MMSE Diagnosis with Psychological Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
     text(c(-8.5,-4),18,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),17,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(6,17,"SMD[95% CI]",pos=2)
@@ -676,6 +726,7 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
     detach(meta1.3)
 
+    grid.text("MMSE Diagnosis with Nursing Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
     text(c(-8.5,-4),31,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),30,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(6,30,"SMD[95% CI]",pos=2)
@@ -691,7 +742,8 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-13,-11.5,-10,-8.5,-7,-5.5),cex=.8)
     detach(meta2.1)
 
-    text(c(-11.5,-4),35,c("Experiment Group","Control Group"))     # counted from the bottom
+    grid.text("ADL Diagnosis with Comprehensive Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
+    text(c(-11.5,-7),35,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-13,-11.5,-10,-8.5,-7,-5.5),34,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(4,34,"SMD[95% CI]",pos=2)
     text(-15.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
@@ -705,7 +757,8 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-13,-11.5,-10,-8.5,-7,-5.5),cex=.8)
     detach(meta2.2)
 
-    text(c(-11.5,-4),12,c("Experiment Group","Control Group"))     # counted from the bottom
+    grid.text("ADL Diagnosis with Psychological Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
+    text(c(-11.5,-7),12,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-13,-11.5,-10,-8.5,-7,-5.5),11.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(4,11.5,"SMD[95% CI]",pos=2)
     text(-14.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
@@ -719,7 +772,8 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-11,-9.5,-8,-6.5,-5,-3.5),cex=.8)
     detach(meta2.3)
 
-    text(c(-9.5,-4),29,c("Experiment Group","Control Group"))     # counted from the bottom
+    grid.text("ADL Diagnosis with Nursing Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
+    text(c(-9.5,-5),29,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-11,-9.5,-8,-6.5,-5,-3.5),28,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(4,28,"SMD[95% CI]",pos=2)
     text(-12.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
@@ -727,15 +781,16 @@ age5=meta[which(meta$age80.==1),]
       ", p = ", .(formatC(res2.3$QEp, digits=2, format="f")), "; ", I^2, " = ",
       .(formatC(res2.3$I2, digits=1, format="f")), "%)")))
 
-  ## QOL * Comprehenswive %
+  ## QOL * Comprehenswive
     attach(meta3.1)
-    forest(res3.1,xlim=c(-12,6),ilab=cbind(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post),
+    forest(res3.1,xlim=c(-12,9),ilab=cbind(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post),
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
     detach(meta3.1)
 
+    grid.text("QOL Diagnosis with Comprehensive Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
     text(c(-8.5,-4),10,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),9.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
-    text(6,9.5,"SMD[95% CI]",pos=2)
+    text(9,9.5,"SMD[95% CI]",pos=2)
     text(-11.4, -0.99, pos=4, cex=0.8, bquote(paste("for All Studies (Q = ",
       .(formatC(res3.1$QE, digits=2, format="f")), ", df = ", .(res3.1$k-res3.1$p),
       ", p = ", .(formatC(res3.1$QEp, digits=2, format="f")), "; ", I^2, " = ",
@@ -748,6 +803,7 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
     detach(meta3.2)
 
+    grid.text("QOL Diagnosis with Psychological Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
     text(c(-8.5,-4),5,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),4.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(6,4.5,"SMD[95% CI]",pos=2)
@@ -762,6 +818,7 @@ age5=meta[which(meta$age80.==1),]
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=.8)
     detach(meta3.3)
 
+    grid.text("QOL Diagnosis with Nursing Intervention", 0.48, 0.99, gp=gpar(cex=1.2))
     text(c(-8.5,-4),7,c("Experiment Group","Control Group"))     # counted from the bottom
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),6.5,c("Sample Size","Mean","Std.","Sample Size","Mean","Std."))
     text(6,6.5,"SMD[95% CI]",pos=2)
@@ -838,13 +895,20 @@ age5=meta[which(meta$age80.==1),]
   baujat(res3.3,main="Baujat Plot")
 
 
-# sensitivity test
-plot(influence(res1.1))
-plot(influence(res1.2))
-plot(influence(res1.3))
-plot(influence(res2.1))
-plot(influence(res2.2))
-plot(influence(res2.3))
-plot(influence(res3.1))
-plot(influence(res3.2))
-plot(influence(res3.3))
+  # sensitivity test
+  plot(influence(res1.1))
+  plot(influence(res1.2))
+  plot(influence(res1.3))
+  plot(influence(res2.1))
+  plot(influence(res2.2))
+  plot(influence(res2.3))
+  plot(influence(res3.1))
+  plot(influence(res3.2))
+  plot(influence(res3.3))
+
+##  Output using base:: or 
+ sink("result.txt")
+ print(summary(fem1))
+ print(summary(fem2))
+ print(summary(fem3))
+ sink()

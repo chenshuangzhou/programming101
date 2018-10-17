@@ -202,30 +202,30 @@ attach(meta)
   attach(meta1.3)   # Intervention = 3 - Nursing
   # pre intervention
     # observation M, SD
-    t1[1,1]=sum((meta1.3$m1e.pre*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[1,1]=sum((m1e.pre*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[1,2]=sqrt(sum(s1e.pre*s1e.pre*experiment.n/sum((experiment.n),na.rm=T),na.rm=T))/2
 
     # contrast M and SD
-    t1[2,1]=sum((meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[2,1]=sum((m1c.pre*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[2,2]=sqrt(sum(s1c.pre*s1c.pre*contrast.n/sum((contrast.n),na.rm=T),na.rm=T))/2
     
     # observation - contrast M, SD, d, g
-    t1[3,1]=sum((meta1.3$m1e.pre*experiment.n-meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[3,1]=sum((m1e.pre*experiment.n-m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[3,2]=sqrt(abs(sum((s1e.pre*s1e.pre*experiment.n-s1c.pre*s1c.pre*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[3,3]=mean(sum(dMMSEpre*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[3,4]=mean(sum(gMMSEpre*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
 
   # post intervention
     # observation M, SD
-    t1[1,5]=sum((meta1.3$m1e.post*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[1,5]=sum((m1e.post*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[1,6]=sqrt(sum(s1e.post*s1e.post*experiment.n/sum((experiment.n),na.rm=T),na.rm=T))/2
     
     # contrast M and SD
-    t1[2,5]=sum(meta1.3$m1c.post*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[2,5]=sum((m1c.post*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[2,6]=sqrt(sum(s1c.post*s1c.post*contrast.n/sum((contrast.n),na.rm=T),na.rm=T))/2
     
     # observation - contrast M, SD, d, g
-    t1[3,5]=sum((meta1.3$m1e.post*experiment.n-meta1.3$m1c.post*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[3,5]=sum((m1e.post*experiment.n-m1c.post*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[3,6]=sqrt(abs(sum((s1e.post*s1e.post*experiment.n-s1c.post*s1c.post*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[3,7]=mean(sum(dMMSEpost*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[3,8]=mean(sum(gMMSEpost*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -233,15 +233,15 @@ attach(meta)
     
   # post-pre intervention
     # observation M, SD
-    t1[1,9]=sum(((meta1.3$m1e.post-meta1.3$m1e.pre)*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[1,9]=sum(((m1e.post-m1e.pre)*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[1,10]=sqrt(abs(sum((s1e.post*s1e.post-s1e.pre*s1e.pre)*experiment.n/sum((experiment.n),na.rm=T),na.rm=T)))/2
 
     # contrast M and SD
-    t1[2,9]=sum(((meta1.3$m1c.post-meta1.3$m1c.pre)*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[2,9]=sum(((m1c.post-m1c.pre)*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[2,10]=sqrt(abs(sum((s1c.post*s1c.post-s1c.pre*s1e.pre)*experiment.n/sum((experiment.n),na.rm=T),na.rm=T)))/2
     
     # observation - contrast M, SD, d, g
-    t1[3,9]=sum((meta1.3$m1e.post*experiment.n-meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[3,9]=sum((m1e.post*experiment.n-m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[3,10]=sqrt(abs(sum((s1e.post*s1e.post*experiment.n-s1c.pre*s1c.pre*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[3,11]=mean(sum((dMMSEpost-dMMSEpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[3,12]=mean(sum((gMMSEpost-gMMSEpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -250,15 +250,15 @@ attach(meta)
   attach(meta1.2)   # Intervention = 2 - Psychological
   # pre intervention
     # observation M, SD
-    t1[4,1]=sum((meta1.3$m1e.pre*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[4,1]=sum((m1e.pre*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[4,2]=sqrt(sum(s1e.pre*s1e.pre*experiment.n/sum((experiment.n),na.rm=T),na.rm=T))/2
 
     # contrast M and SD
-    t1[5,1]=sum((meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[5,1]=sum((m1c.pre*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[5,2]=sqrt(sum(s1c.pre*s1c.pre*contrast.n/sum((contrast.n),na.rm=T),na.rm=T))/2
     
     # observation - contrast M, SD, d, g
-    t1[6,1]=sum((meta1.3$m1e.pre*experiment.n-meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[6,1]=sum((m1e.pre*experiment.n-m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[6,2]=sqrt(abs(sum((s1e.pre*s1e.pre*experiment.n-s1c.pre*s1c.pre*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[6,3]=mean(sum(dMMSEpre*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[6,4]=mean(sum(gMMSEpre*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -266,15 +266,15 @@ attach(meta)
 
   # post intervention
     # observation M, SD
-    t1[4,5]=sum((meta1.3$m1e.post*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[4,5]=sum((m1e.post*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[4,6]=sqrt(sum(s1e.post*s1e.post*experiment.n/sum((experiment.n),na.rm=T),na.rm=T))/2
     
     # contrast M and SD
-    t1[5,5]=sum((meta1.3$m1c.post*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[5,5]=sum((m1c.post*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[5,6]=sqrt(sum(s1c.post*s1c.post*contrast.n/sum((contrast.n),na.rm=T),na.rm=T))/2
     
     # observation - contrast M, SD, d, g
-    t1[6,5]=sum((meta1.3$m1e.post*experiment.n-meta1.3$m1c.post*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[6,5]=sum((m1e.post*experiment.n-m1c.post*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[6,6]=sqrt(abs(sum((s1e.post*s1e.post*experiment.n-s1c.post*s1c.post*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[6,7]=mean(sum(dMMSEpost*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[6,8]=mean(sum(gMMSEpost*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -282,15 +282,15 @@ attach(meta)
     
   # post-pre intervention
     # observation M, SD
-    t1[4,9]=sum(((meta1.3$m1e.post-meta1.3$m1e.pre)*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[4,9]=sum(((m1e.post-m1e.pre)*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[4,10]=sqrt(abs(sum((s1e.post*s1e.post-s1e.pre*s1e.pre)*experiment.n/sum((experiment.n),na.rm=T),na.rm=T)))/2
 
     # contrast M and SD
-    t1[5,9]=sum(((meta1.3$m1c.post-meta1.3$m1c.pre)*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[5,9]=sum(((m1c.post-m1c.pre)*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[5,10]=sqrt(abs(sum((s1c.post*s1c.post-s1c.pre*s1e.pre)*experiment.n/sum((experiment.n),na.rm=T),na.rm=T)))/2
     
     # observation - contrast M, SD, d, g
-    t1[6,9]=sum((meta1.3$m1e.post*experiment.n-meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[6,9]=sum((m1e.post*experiment.n-m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[6,10]=sqrt(abs(sum((s1e.post*s1e.post*experiment.n-s1c.pre*s1c.pre*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[6,11]=mean(sum((dMMSEpost-dMMSEpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[6,12]=mean(sum((gMMSEpost-gMMSEpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -299,15 +299,15 @@ attach(meta)
   attach(meta1.1)   # Intervention = 1 - Comprehensive
   # pre intervention
     # observation M, SD
-    t1[7,1]=sum((meta1.3$m1e.pre*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[7,1]=sum((m1e.pre*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[7,2]=sqrt(sum(s1e.pre*s1e.pre*experiment.n/sum((experiment.n),na.rm=T),na.rm=T))/2
 
     # contrast M and SD
-    t1[8,1]=sum((meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[8,1]=sum((m1c.pre*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[8,2]=sqrt(sum(s1c.pre*s1c.pre*contrast.n/sum((contrast.n),na.rm=T),na.rm=T))/2
     
     # observation - contrast M, SD, d, g
-    t1[9,1]=sum((meta1.3$m1e.pre*experiment.n-meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[9,1]=sum((m1e.pre*experiment.n-m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[9,2]=sqrt(abs(sum((s1e.pre*s1e.pre*experiment.n-s1c.pre*s1c.pre*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[9,3]=mean(sum(dMMSEpre*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[9,4]=mean(sum(gMMSEpre*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -315,15 +315,15 @@ attach(meta)
 
   # post intervention
     # observation M, SD
-    t1[7,5]=sum((meta1.3$m1e.post*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[7,5]=sum((m1e.post*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[7,6]=sqrt(sum(s1e.post*s1e.post*experiment.n/sum((experiment.n),na.rm=T),na.rm=T))/2
     
     # contrast M and SD
-    t1[8,5]=sum((meta1.3$m1c.post*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[8,5]=sum((m1c.post*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[8,6]=sqrt(sum(s1c.post*s1c.post*contrast.n/sum((contrast.n),na.rm=T),na.rm=T))/2
     
     # observation - contrast M, SD, d, g
-    t1[9,5]=sum((meta1.3$m1e.post*experiment.n-meta1.3$m1c.post*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[9,5]=sum((m1e.post*experiment.n-m1c.post*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[9,6]=sqrt(abs(sum((s1e.post*s1e.post*experiment.n-s1c.post*s1c.post*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[9,7]=mean(sum(dMMSEpost*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[9,8]=mean(sum(gMMSEpost*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
@@ -331,15 +331,15 @@ attach(meta)
 
   # post-pre intervention
     # observation M, SD
-    t1[7,9]=sum(((meta1.3$m1e.post-meta1.3$m1e.pre)*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
+    t1[7,9]=sum(((m1e.post-m1e.pre)*experiment.n),na.rm=T)/sum(experiment.n,na.rm=T)
     t1[7,10]=sqrt(abs(sum((s1e.post*s1e.post-s1e.pre*s1e.pre)*experiment.n/sum((experiment.n),na.rm=T),na.rm=T)))/2
 
     # contrast M and SD
-    t1[8,9]=sum(((meta1.3$m1c.post-meta1.3$m1c.pre)*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
+    t1[8,9]=sum(((m1c.post-m1c.pre)*contrast.n),na.rm=T)/sum(contrast.n,na.rm=T)
     t1[8,10]=sqrt(abs(sum((s1c.post*s1c.post-s1c.pre*s1e.pre)*experiment.n/sum((experiment.n),na.rm=T),na.rm=T)))/2
     
     # observation - contrast M, SD, d, g
-    t1[9,9]=sum((meta1.3$m1e.post*experiment.n-meta1.3$m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
+    t1[9,9]=sum((m1e.post*experiment.n-m1c.pre*contrast.n),na.rm=T)/sum(experiment.n+contrast.n,na.rm=T)
     t1[9,10]=sqrt(abs(sum((s1e.post*s1e.post*experiment.n-s1c.pre*s1c.pre*contrast.n),na.rm=T)/sum((experiment.n+contrast.n),na.rm=T)))
     t1[9,11]=mean(sum((dMMSEpost-dMMSEpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))
     t1[9,12]=mean(sum((gMMSEpost-gMMSEpre)*experiment.n,na.rm=T)/sum(experiment.n,na.rm=T))

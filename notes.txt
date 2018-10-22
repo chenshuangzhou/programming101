@@ -230,17 +230,46 @@ Literature review：
     Through analysis and evaluation of previous studies to clarify what is missing or poorly understood
     Justify the need， value or significance of the work
 
-### Thesis Review [homework]
-
-
-
-### Systematic Review [reading]
-
-
-### Meaning Making Model [reading]
-
 
 ### Supervision: Projects ####################################################################################
+
+
+### 181019 supervision seminar 
+1. Meta analysis on dementia interventions (with Reynold in November?)
+    Research questions:
+        Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
+        Are non-pharmacological interventions more associated with adverse events?
+        Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
+        Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?    
+    Factors to add:
+        City level
+        Country of origin/cultural factors
+        Policy difference
+        Comparisons (control group conditions)
+        Pharmacological / non-pharmacological groups
+    Things to note in inclusion/exclusion criteria:
+        Control group's conditions (placebo, usual care, medications + usual care)
+        Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
+
+2. Systematic review on meaning making (follow the team project)
+    In the stage of literature searching and screening
+    Variables to consider:
+        Gender
+        Definition of caregiving 
+        Meaning making mode: cognitive, family-relational, religious, spiritual 
+        Meaning making mechanism / models
+        Theories 
+        GRADE assessment
+
+3. Caregiving measurement exploration (System Theory + Reader-Response Theory (Caregiving model * Generational Model * Meaning Making Model))
+        System Theory: 
+            Generational differences
+            Levels of care
+            
+
+
+
+        Reader-Response Theory (Caregiving model * Generational Model * Meaning Making Model) - Long-term care system: 
 
 
 ### 181003 systematic review on meaning making

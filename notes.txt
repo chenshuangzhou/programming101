@@ -240,6 +240,8 @@ Literature review：
         Protocols_Handout.pdf
         reflect.pdf
         Reflective group 1.docx
+        Reflective Practice For Leadership (RPL).pdf
+
 
     ## Types 
     1 Instructional design virtual learning community (Law, et al., 2011)
@@ -263,14 +265,14 @@ Literature review：
                 2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
                 3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
                 4 requesting support: receive support from peers and supervisor 
-            2 advancing (knowledge): 
+            2 Advancing (knowledge): 
                 1 Question storming (15 min): 
                     asking reflective, interpretive, decisional questions (Weinstein, 1995)
                     team members think silently and write down questions before share in a round-robin process (Adams, 2004)
                 2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
                 3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
                 4 committing (15 min): commit to actions after the question is reframed with verified assumptions
-            3 disengaging (feelings, attitudes, and beliefs): 
+            3 Disengaging (feelings, attitudes, and beliefs): 
                 1 summarizing key discoveries
                 2 reviewing personal commitments
                 3 checking for alignment in the group

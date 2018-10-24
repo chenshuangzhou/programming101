@@ -233,77 +233,54 @@ Literature review：
 
 ### Supervision: Projects ####################################################################################
 
-### Reflective Group
-    ## Literature 
-        MarsickMaltbiaAoM Unpublished.pdf
-        ppd-peer-group-mentoring-reflective-model-details.pdf
-        Protocols_Handout.pdf
-        reflect.pdf
-        Reflective group 1.docx
-
-    ## Types 
-    1 Instructional design virtual learning community (Law, et al., 2011)
-        1 Motivation to participate virtual learning communities 
-        2 Factors for successful community building
-        3 Individual characteristics and group characteristics on community participation and knowledge building 
-        4 Structure of instructional design learning community: skills, knowledge, identity, values, epistemology (justifications and methods of proof that legitimize actions and claims within the community) (Shaffer, 2006)
-        5 Definition of reflective setting: 
-            1 novice professionals engage in authentic, messy, and ill-structured problems under the supervision of more experienced mentors
-            2 the ability to shift from standard, skilled performance to a more analytical and experimental mode when an unexpected complication arises during practice 
-    
-    ## Reflective Group Structure and Content 
-    1 Virtual learning (community) meeting (Law, et al., 2011)
-        1 Past experiences
-        2 Prior knowledge for collective prior knowledge 
-        3 Self perceptions
-    2 Action Learning Conversation Protocol (Marsick & Maltbia, 2006) and Reflective Model (Boud, Keogh, & Walker, 1985)
-        1 structured conversation in 3 phases: 
-            1 framing/engaging (skills, action, and behaviors): 
-                1 preparing (10 min): write a key challenge in the form of a question, background information
-                2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
-                3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
-                4 requesting support: receive support from peers and supervisor 
-            2 advancing (knowledge): 
-                1 Question storming (15 min): 
-                    asking reflective, interpretive, decisional questions (Weinstein, 1995)
-                    team members think silently and write down questions before share in a round-robin process (Adams, 2004)
-                2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
-                3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
-                4 committing (15 min): commit to actions after the question is reframed with verified assumptions
-            3 disengaging (feelings, attitudes, and beliefs): 
-                1 summarizing key discoveries
-                2 reviewing personal commitments
-                3 checking for alignment in the group
-
-         
-        
-    ## Reflective group techniques (Law, et al., 2011)
-        1 Interaction between individual characteristics and group characteristics (how individual contributes to the group while group influence knowledge construction process)
-        2 Group discussion online
-        3 Post one initial reaction towards the weekly Readings
-        4 Interact with at least one member in the online discussion forum
-        5 Post a reflection to synthesize learnings from readings and discussion
-
-    ## Theory
-    1 Levels of operations: 
-        1 unconscious or conscious impulses with aggressive behaviors are correlated with one's cognitive and emotional experiences 
-        2 supervisor facilitate social workers to develop their capacity to think and feel when faced with impulses and top self defeating patterns
-        3 supervisor and staff operate on conscious, covert and unconscious levels
-        4 supervisor creates more interactions between staff
-    2 Reflection improves quality 
-        1 reflection helps identify underlying values, beliefs, and assumptions and enables people to see how they can change a situation by changing the way they frame it and act on it 
-        2 structured conversation protocol enable supervisor in action learning programs to see how reflection could improve their thinking and the solutions to challenges in which they were engaged
 
 
-    ## Limitations
-    1 Older generation perceives virtual learning community may keep them isolated and segregated in "electronic communication"
+### 181024 supervision followup Revised
+1. Meta analysis on dementia interventions 
+    1.1 Research questions 
+    1.2 Factors to add:
+        1.2.1 dosage
+        1.2.2 intervention duration
+        1.2.3 types of professionals who do interventions
+        1.2.4 social system 
+        1.2.5 cultural system
+    1.3 Inclusion/exclusion criteria
+        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
+        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
 
+2. Systematic review on meaning making (follow the team project)
+    2.1 In the stage of literature searching and screening
+    2.2 Variables to consider:
+        2.2.1 Gender
+        2.2.2 Definition of caregiving 
+        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
+        2.2.4 Meaning making mechanism / models
+        2.2.5 Theories 
+        2.2.6 GRADE assessment
 
-
+3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
+        3.1 System Theory: 
+            3.1.1 Generational differences: cultural, socioeconomic, beliefs
+            3.1.2 Levels of care: micro, mezzo, macro
+            3.1.3 Meaning making mechanism: how meaning making approach help caregiving and relevant difficulties
+        3.2 Reader-response theory (narrative perspective of people around caregivers):
+            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
+            3.2.2 Psychological background: beliefs, emotions, motivations
+            3.2.3 Developmental, personal, social and individual differences
+            3.2.4 Social motives
+        3.3 Caregiving model:
+            Balance between caregiving tasks and personal life tasks
+        3.4 Generational model:
+            3.4.1 Collectivism 
+            3.4.2 Freedom and autonomy
+        3.5 Meaning making model:
+            3.5.1 Stress handling
+            3.5.2 Caregiving perception
+            3.5.3 Meaning of life
 
 
 ### 181019 supervision seminar 
-1. Meta analysis on dementia interventions (with Reynold in November?)
+1. Meta analysis on dementia interventions 
     1.1 Research questions:
         1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
         1.1.2 Are non-pharmacological interventions more associated with adverse events?

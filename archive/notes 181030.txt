@@ -234,99 +234,40 @@ Literature review：
 ### Supervision: Projects ####################################################################################
 
 
+### Meaning making #############################################################
+##  181029
 
-### 181024 supervision followup Revised
-1. Meta analysis on dementia interventions 
-    1.1 Research questions 
-    1.2 Factors to add:
-        1.2.1 dosage
-        1.2.2 intervention duration
-        1.2.3 types of professionals who do interventions
-        1.2.4 social system 
-        1.2.5 cultural system
-    1.3 Inclusion/exclusion criteria
-        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
-        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
+Perception of health: 
+	Identity: I live a healthy life style
+	Health: living a healthy lifestyle protects people from illness
+	Global goals: desire to live a long time with robust health
 
-2. Systematic review on meaning making (follow the team project)
-    2.1 In the stage of literature searching and screening
-    2.2 Variables to consider:
-        2.2.1 Gender
-        2.2.2 Definition of caregiving 
-        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
-        2.2.4 Meaning making mechanism / models
-        2.2.5 Theories 
-        2.2.6 GRADE assessment
-
-3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
-        3.1 System Theory: 
-            3.1.1 Generational differences: cultural, socioeconomic, beliefs
-            3.1.2 Levels of care: micro, mezzo, macro
-            3.1.3 Meaning making mechanism: how meaning making approach help caregiving and relevant difficulties
-        3.2 Reader-response theory (narrative perspective of people around caregivers):
-            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
-            3.2.2 Psychological background: beliefs, emotions, motivations
-            3.2.3 Developmental, personal, social and individual differences
-            3.2.4 Social motives
-        3.3 Caregiving model:
-            Balance between caregiving tasks and personal life tasks
-        3.4 Generational model:
-            3.4.1 Collectivism 
-            3.4.2 Freedom and autonomy
-        3.5 Meaning making model:
-            3.5.1 Stress handling
-            3.5.2 Caregiving perception
-            3.5.3 Meaning of life
+Discrepancies between situational and global meaning
+	Global meaning: what one believes and desires
+        Beliefs: 
+            Health (physical well-being, mortality, morbidity) and well-being; 
+            Illness violate important global beliefs (fairness, benevolence, predictability of the world and sense of invulnerability and personal control)
+        Goals (relationships, work, religion, knowledge, and achievement)
+            Health: physical health 
+            Illness: violates individuals' goals for their current lives and their plans for the future 
+        General sense of meaning in life: 
+	Situational meaning: appraised meaning
+        Primary appraisal: one's beliefs in ability to control events affect whether potentially stressful events are appraised primarily as challenges or as threats. 
+        Secondary appraisal: evaluates the possibilities for coping and expectations regarding outcomes. 
+        Reappraisal of meaning (meaning making as coping):
+            Modify the meaning of an event to make it consistent with preexisting beliefs and goals 
+            Modify relevant beliefs and goals to accommodate the event
+	Discrepancy creates distress and gives rise to efforts to reduce the discrepancy and resultant distress
+		Coping strategies 
+            Process: change one's global beliefs and goals with revised identity, growth, or world views to improve the fit between the appraised meaning of the stressor and global meaning (low control situations such as trauma, loss and serious illness may not be directly coped with)
+			Types: problem-focused, emotion-focused
+			
+Scenarios
+    1. People with mental illness appraise the meaning of their illness based on information they receive from sources such as their health providers. Their global meaning is that they can manage to control the illness by receiving conventional interventions or seeking help from their health providers; they have anticipated outcome in future and general sense of control over their lives. In order to reduce discrepancy between two types of meanings, one may gradually shift views of illness in a more positive direction or reconsider life goals or life meaning in light of the illness. 
+    2. When confronted with the fact of a loved one's death, the initial meaning of that eventual meanings that the individual may derive from it are influenced by the survivor's global meaning. Global meaning in terms of beliefs and goals regarding the deceased and their relationship, expectations about how and why things happen, perceptions of vulnerability to such events, and so on influence the survivor's understanding of the situation. From the perspective of stress and coping theory, situational meaning involves the appraisal of person-environment transactions, which in turn influences how people cope with the demands of those transactions and their outcomes. Traumatic events overwhelmingly beyond one's experiential readiness (primary appraisal) can lead one to question the viability of his or her world and self views. People with negative attitudes towards themselves perceive themselves not being able to adopt resources for coping with such a stressful situation (secondary appraisal). One would use reappraisal process to decrease the threatening and harmful aspects of the event and increase it positive aspects.
 
 
-### 181019 supervision seminar 
-1. Meta analysis on dementia interventions 
-    1.1 Research questions:
-        1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
-        1.1.2 Are non-pharmacological interventions more associated with adverse events?
-        1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
-        1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?    
-    1.2 Factors to add:
-        1.2.1 City level
-        1.2.2 Country of origin/cultural factors
-        1.2.3 Policy difference
-        1.2.4 Comparisons (control group conditions)
-        1.2.5 Pharmacological / non-pharmacological groups
-    1.3 Things to note in inclusion/exclusion criteria:
-        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
-        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
-
-2. Systematic review on meaning making (follow the team project)
-    2.1 In the stage of literature searching and screening
-    2.2 Variables to consider:
-        2.2.1 Gender
-        2.2.2 Definition of caregiving 
-        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
-        2.2.4 Meaning making mechanism / models
-        2.2.5 Theories 
-        2.2.6 GRADE assessment
-
-3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
-        3.1 System Theory: 
-            3.1.1 Generational differences: cultural, socioeconomic, beliefs
-            3.1.2 Levels of care: micro, mezzo, macro
-            3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
-        3.2 Reader-response theory (narrative perspective of people around caregivers):
-            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
-            3.2.2 Psychological background: beliefs, emotions, motivations
-            3.2.3 Developmental, personal, social and individual differences
-            3.2.4 Social motives
-        3.3 Caregiving model:
-            Balance between caregiving tasks and personal life tasks
-        3.4 Generational model:
-            3.4.1 Collectivism 
-            3.4.2 Freedom and autonomy
-        3.5 Meaing making model:
-            3.5.1 Stress handling
-            3.5.2 Caregiving perception
-            3.5.3 Meaning of life
- 
-### 181003 systematic review on meaning making
+## 181003 (systematic review on meaning making)
 0. Article selection
     Year range: 2007-2018
     Keywords: "meaning","care"
@@ -358,92 +299,7 @@ Literature review：
     changes in meaning (making)
     other key findings
 
-### 180924 on meta analysis
-
-1. Psychosocial interventions for elderly diagnosed of Alzheimer's
-1.1 Objective: compare the effectiveness of psychosocial interventions conducted for Chinese population and Western population diagnosed of Alzheimer's Disease from 2010 to 2018
-1.2 Methods: 
-    1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
-    1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
-    1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
-    1.2.4 Year range: 2008-2018
-1.3 Statistics:
-    1.3.1 publication bias analysis
-    1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
-    1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
-1.4 similar studies
-    1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
-    1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
-    1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
-1.5 Questions:
-    1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
-    1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
-
-argument: 
-    By policy and by choice - no diagnosis, medication, medical care
-    Settings: 
-    Literature: meta-analysis and cross-country
-
-2. Meaning-making of caregivers
-2.1 Objective: Discuss meaning-making model through a meta-analysis perspective
-2.2 Variables: 
-    2.2.1 Meaning-making process: 
-        2.2.1.1 caregiving stress:
-        2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
-        2.2.1.3 coping strategies
-        2.2.1.4 roles of personality *: 
-            2.2.1.4.1 gender: *
-            2.2.1.4.2 culture: *
-            2.2.1.4.3 self-regulation: *
-            2.2.1.4.4 positive affect (optimism): *
-            2.2.1.4.5 sense of purpose: *
-            2.2.1.4.6 social support: *
-        2.2.1.5 changes/development in global meaning; *
-    2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
-    2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
-    2.2.4 Measurement: 
-        2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
-        2.2.4.2 Global and situational meaning-making (coping): 
-            2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
-            2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
-            2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
-    2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
-        Individual part
-        Loss/powerlessness
-        Provisional Meaning
-        Ultimate Meaning
-        Spouse part
-        2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
-        2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
-        2.2.5.3 Global Role strain
-        2.2.5.4 Marital Tension
-        2.2.5.5 Marital Satisfaction
-        2.2.5.6 Caregiver Satisfaction
-        2.2.5.7 Religiosity
-
-2.3 Problem:
-    2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
-    2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
-    2.3.3 Meaning making process is intentional or unconscious?
-
-"Meaning-making": abstract, keywords, title; 
-methodology, empirical, factors, theory, qualitative/quantitative
-
-* stress processing: primary and secondary appraisal
-* theory: cultural difference in social cognition; 
-* survey/questionnaire 
-* reflective group: 
-    5-6 sessions: 
-    Caregiver support: burden, depression, caregiving
-    reflective group course structure: 
-
-
-Team meeting:
-# factors impact
-# primary/secondary appraisal: general questions about these two parts.
-# cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
-
-### 180910
+## 180910
 Caregiving allowance ~ women (gender study) incentive for formal care; economic values performed, reduced labor market participation, structure of labor market, caregiving (formal or informal) for elderly (disabled or general) is effective
 
 Meaning Making Model:
@@ -506,13 +362,208 @@ Caregiving relationship
 
 
 
+### Reflective Group #############################################################
+##  181029
+
+    ## Literature 
+        MarsickMaltbiaAoM Unpublished.pdf
+        ppd-peer-group-mentoring-reflective-model-details.pdf
+        Protocols_Handout.pdf
+        reflect.pdf
+        Reflective group 1.docx
+        Reflective Practice For Leadership (RPL).pdf
+    ## Types 
+    1 Instructional design virtual learning community (Law, et al., 2011)
+        1 Motivation to participate virtual learning communities 
+        2 Factors for successful community building
+        3 Individual characteristics and group characteristics on community participation and knowledge building 
+        4 Structure of instructional design learning community: skills, knowledge, identity, values, epistemology (justifications and methods of proof that legitimize actions and claims within the community) (Shaffer, 2006)
+        5 Definition of reflective setting: 
+            1 novice professionals engage in authentic, messy, and ill-structured problems under the supervision of more experienced mentors
+            2 the ability to shift from standard, skilled performance to a more analytical and experimental mode when an unexpected complication arises during practice 
+    ## Reflective Group Structure and Content 
+    1 Virtual learning (community) meeting (Law, et al., 2011)
+        1 Past experiences
+        2 Prior knowledge for collective prior knowledge 
+        3 Self perceptions
+    2 Action Learning Conversation Protocol (Marsick & Maltbia, 2006) and Reflective Model (Boud, Keogh, & Walker, 1985)
+        1 structured conversation in 3 phases: 
+            1 framing/engaging (skills, action, and behaviors): 
+                1 preparing (10 min): write a key challenge in the form of a question, background information
+                2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
+                3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
+                4 requesting support: receive support from peers and supervisor 
+            2 Advancing (knowledge): 
+                1 Question storming (15 min): 
+                    asking reflective, interpretive, decisional questions (Weinstein, 1995)
+                    team members think silently and write down questions before share in a round-robin process (Adams, 2004)
+                2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
+                3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
+                4 committing (15 min): commit to actions after the question is reframed with verified assumptions
+            3 Disengaging (feelings, attitudes, and beliefs): 
+                1 summarizing key discoveries
+                2 reviewing personal commitments
+                3 checking for alignment in the group
+       
+    ## Reflective group techniques (Law, et al., 2011)
+        1 Interaction between individual characteristics and group characteristics (how individual contributes to the group while group influence knowledge construction process)
+        2 Group discussion online
+        3 Post one initial reaction towards the weekly Readings
+        4 Interact with at least one member in the online discussion forum
+        5 Post a reflection to synthesize learnings from readings and discussion
+
+    ## Theory
+    1 Levels of operations: 
+        1 unconscious or conscious impulses with aggressive behaviors are correlated with one's cognitive and emotional experiences 
+        2 supervisor facilitate social workers to develop their capacity to think and feel when faced with impulses and top self defeating patterns
+        3 supervisor and staff operate on conscious, covert and unconscious levels
+        4 supervisor creates more interactions between staff
+    2 Reflection improves quality 
+        1 reflection helps identify underlying values, beliefs, and assumptions and enables people to see how they can change a situation by changing the way they frame it and act on it 
+        2 structured conversation protocol enable supervisor in action learning programs to see how reflection could improve their thinking and the solutions to challenges in which they were engaged
+
+
+    ## Limitations
+    1 Older generation perceives virtual learning community may keep them isolated and segregated in "electronic communication"
+
+
+
+
+
+### supervision seminar #############################################################
+##  181019
+1. Meta analysis on dementia interventions
+    1.1 Research questions:
+        1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
+        1.1.2 Are non-pharmacological interventions more associated with adverse events?
+        1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
+        1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?    
+    1.2 Factors to add:
+        1.2.1 City level
+        1.2.2 Country of origin/cultural factors
+        1.2.3 Policy difference
+        1.2.4 Comparisons (control group conditions)
+        1.2.5 Pharmacological / non-pharmacological groups
+    1.3 Things to note in inclusion/exclusion criteria:
+        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
+        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
+
+2. Systematic review on meaning making (follow the team project)
+    2.1 In the stage of literature searching and screening
+    2.2 Variables to consider:
+        2.2.1 Gender
+        2.2.2 Definition of caregiving 
+        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
+        2.2.4 Meaning making mechanism / models
+        2.2.5 Theories 
+        2.2.6 GRADE assessment
+
+3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
+        3.1 System Theory: 
+            3.1.1 Generational differences: cultural, socioeconomic, beliefs
+            3.1.2 Levels of care: micro, mezzo, macro
+            3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
+        3.2 Reader-response theory (narrative perspective of people around caregivers):
+            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
+            3.2.2 Psychological background: beliefs, emotions, motivations
+            3.2.3 Developmental, personal, social and individual differences
+            3.2.4 Social motives
+        3.3 Caregiving model:
+            Balance between caregiving tasks and personal life tasks
+        3.4 Generational model:
+            3.4.1 Collectivism 
+            3.4.2 Freedom and autonomy
+        3.5 Meaing making model:
+            3.5.1 Stress handling
+            3.5.2 Caregiving perception
+            3.5.3 Meaning of life
+ 
+
+## 180924 (meta analysis, meaning making)
+1. Psychosocial interventions for elderly diagnosed of Alzheimer's
+1.1 Objective: compare the effectiveness of psychosocial interventions conducted for Chinese population and Western population diagnosed of Alzheimer's Disease from 2010 to 2018
+1.2 Methods: 
+    1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
+    1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
+    1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
+    1.2.4 Year range: 2008-2018
+1.3 Statistics:
+    1.3.1 publication bias analysis
+    1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
+    1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
+1.4 similar studies
+    1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
+    1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
+    1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
+1.5 Questions:
+    1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
+    1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
+        argument: 
+            By policy and by choice - no diagnosis, medication, medical care
+            Settings: 
+            Literature: meta-analysis and cross-country
+
+2. Meaning-making of caregivers
+2.1 Objective: Discuss meaning-making model through a meta-analysis perspective
+2.2 Variables: 
+    2.2.1 Meaning-making process: 
+        2.2.1.1 caregiving stress:
+        2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
+        2.2.1.3 coping strategies
+        2.2.1.4 roles of personality *: 
+            2.2.1.4.1 gender: *
+            2.2.1.4.2 culture: *
+            2.2.1.4.3 self-regulation: *
+            2.2.1.4.4 positive affect (optimism): *
+            2.2.1.4.5 sense of purpose: *
+            2.2.1.4.6 social support: *
+        2.2.1.5 changes/development in global meaning; *
+    2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
+    2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
+    2.2.4 Measurement: 
+        2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
+        2.2.4.2 Global and situational meaning-making (coping): 
+            2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
+            2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
+            2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
+    2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
+        Individual part
+        Loss/powerlessness
+        Provisional Meaning
+        Ultimate Meaning
+        Spouse part
+        2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
+        2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
+        2.2.5.3 Global Role strain
+        2.2.5.4 Marital Tension
+        2.2.5.5 Marital Satisfaction
+        2.2.5.6 Caregiver Satisfaction
+        2.2.5.7 Religiosity
+    Others:
+        "Meaning-making": abstract, keywords, title; 
+        methodology, empirical, factors, theory, qualitative/quantitative
+        * stress processing: primary and secondary appraisal
+        * theory: cultural difference in social cognition; 
+        * survey/questionnaire 
+        * reflective group: 
+            5-6 sessions: 
+            Caregiver support: burden, depression, caregiving
+            reflective group course structure: 
+        Team meeting:
+            # factors impact
+            # primary/secondary appraisal: general questions about these two parts.
+            # cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
+2.3 Problem:
+    2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
+    2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
+    2.3.3 Meaning making process is intentional or unconscious?
+
 
 ### COA Projects and Meetings ##########################################
-
-### Macau Project
+## 181001 Macau Project
 
 1.  Ethical Approval (due on 181008 Monday)
-    (Kevin) English Version proposal (Kevin writes a beif proposal)
+    (Kevin) English Version proposal (Kevin writes a brief proposal)
     (MM) Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
         Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
     (Kevin) Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
@@ -529,10 +580,7 @@ Caregiving relationship
             a list of year, author, name of articles, theory on endnote
             summary or notes
                                     
-
-### 180907 
-
-
+## 180907 
 1.	Discussion
     ○	Country review of the United States and Japan 
         ■	looking into literature 
@@ -573,15 +621,12 @@ Data Mining with Python:
 Systematic review
 
 
-
-
-
 ### 180906  
 
 
-1.   	Rational to select countries under review
+1. Rational to select countries under review
 
-2.   	Under each country - United Kingdom
+2. Under each country - United Kingdom
     2.1.	Policy name, time of enactment, weblink, etc.
         Policy Name: Carer’s Allowance (Invalid Care Allowance until 1986)
         Time of enactment: 1976

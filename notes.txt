@@ -234,7 +234,8 @@ Literature review：
 ### Supervision: Projects ####################################################################################
 
 
-### Meaning making
+### Meaning making #############################################################
+##  181029
 
 Perception of health: 
 	Identity: I live a healthy life style
@@ -266,125 +267,7 @@ Scenarios
     2. When confronted with the fact of a loved one's death, the initial meaning of that eventual meanings that the individual may derive from it are influenced by the survivor's global meaning. Global meaning in terms of beliefs and goals regarding the deceased and their relationship, expectations about how and why things happen, perceptions of vulnerability to such events, and so on influence the survivor's understanding of the situation. From the perspective of stress and coping theory, situational meaning involves the appraisal of person-environment transactions, which in turn influences how people cope with the demands of those transactions and their outcomes. Traumatic events overwhelmingly beyond one's experiential readiness (primary appraisal) can lead one to question the viability of his or her world and self views. People with negative attitudes towards themselves perceive themselves not being able to adopt resources for coping with such a stressful situation (secondary appraisal). One would use reappraisal process to decrease the threatening and harmful aspects of the event and increase it positive aspects.
 
 
-### Reflective Group
-    ## Literature 
-        MarsickMaltbiaAoM Unpublished.pdf
-        ppd-peer-group-mentoring-reflective-model-details.pdf
-        Protocols_Handout.pdf
-        reflect.pdf
-        Reflective group 1.docx
-        Reflective Practice For Leadership (RPL).pdf
-
-
-    ## Types 
-    1 Instructional design virtual learning community (Law, et al., 2011)
-        1 Motivation to participate virtual learning communities 
-        2 Factors for successful community building
-        3 Individual characteristics and group characteristics on community participation and knowledge building 
-        4 Structure of instructional design learning community: skills, knowledge, identity, values, epistemology (justifications and methods of proof that legitimize actions and claims within the community) (Shaffer, 2006)
-        5 Definition of reflective setting: 
-            1 novice professionals engage in authentic, messy, and ill-structured problems under the supervision of more experienced mentors
-            2 the ability to shift from standard, skilled performance to a more analytical and experimental mode when an unexpected complication arises during practice 
-    
-    ## Reflective Group Structure and Content 
-    1 Virtual learning (community) meeting (Law, et al., 2011)
-        1 Past experiences
-        2 Prior knowledge for collective prior knowledge 
-        3 Self perceptions
-    2 Action Learning Conversation Protocol (Marsick & Maltbia, 2006) and Reflective Model (Boud, Keogh, & Walker, 1985)
-        1 structured conversation in 3 phases: 
-            1 framing/engaging (skills, action, and behaviors): 
-                1 preparing (10 min): write a key challenge in the form of a question, background information
-                2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
-                3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
-                4 requesting support: receive support from peers and supervisor 
-            2 Advancing (knowledge): 
-                1 Question storming (15 min): 
-                    asking reflective, interpretive, decisional questions (Weinstein, 1995)
-                    team members think silently and write down questions before share in a round-robin process (Adams, 2004)
-                2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
-                3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
-                4 committing (15 min): commit to actions after the question is reframed with verified assumptions
-            3 Disengaging (feelings, attitudes, and beliefs): 
-                1 summarizing key discoveries
-                2 reviewing personal commitments
-                3 checking for alignment in the group
-
-         
-        
-    ## Reflective group techniques (Law, et al., 2011)
-        1 Interaction between individual characteristics and group characteristics (how individual contributes to the group while group influence knowledge construction process)
-        2 Group discussion online
-        3 Post one initial reaction towards the weekly Readings
-        4 Interact with at least one member in the online discussion forum
-        5 Post a reflection to synthesize learnings from readings and discussion
-
-    ## Theory
-    1 Levels of operations: 
-        1 unconscious or conscious impulses with aggressive behaviors are correlated with one's cognitive and emotional experiences 
-        2 supervisor facilitate social workers to develop their capacity to think and feel when faced with impulses and top self defeating patterns
-        3 supervisor and staff operate on conscious, covert and unconscious levels
-        4 supervisor creates more interactions between staff
-    2 Reflection improves quality 
-        1 reflection helps identify underlying values, beliefs, and assumptions and enables people to see how they can change a situation by changing the way they frame it and act on it 
-        2 structured conversation protocol enable supervisor in action learning programs to see how reflection could improve their thinking and the solutions to challenges in which they were engaged
-
-
-    ## Limitations
-    1 Older generation perceives virtual learning community may keep them isolated and segregated in "electronic communication"
-
-
-
-
-
-### 181019 supervision seminar 
-1. Meta analysis on dementia interventions (with Reynold in November?)
-    1.1 Research questions:
-        1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
-        1.1.2 Are non-pharmacological interventions more associated with adverse events?
-        1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
-        1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?    
-    1.2 Factors to add:
-        1.2.1 City level
-        1.2.2 Country of origin/cultural factors
-        1.2.3 Policy difference
-        1.2.4 Comparisons (control group conditions)
-        1.2.5 Pharmacological / non-pharmacological groups
-    1.3 Things to note in inclusion/exclusion criteria:
-        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
-        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
-
-2. Systematic review on meaning making (follow the team project)
-    2.1 In the stage of literature searching and screening
-    2.2 Variables to consider:
-        2.2.1 Gender
-        2.2.2 Definition of caregiving 
-        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
-        2.2.4 Meaning making mechanism / models
-        2.2.5 Theories 
-        2.2.6 GRADE assessment
-
-3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
-        3.1 System Theory: 
-            3.1.1 Generational differences: cultural, socioeconomic, beliefs
-            3.1.2 Levels of care: micro, mezzo, macro
-            3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
-        3.2 Reader-response theory (narrative perspective of people around caregivers):
-            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
-            3.2.2 Psychological background: beliefs, emotions, motivations
-            3.2.3 Developmental, personal, social and individual differences
-            3.2.4 Social motives
-        3.3 Caregiving model:
-            Balance between caregiving tasks and personal life tasks
-        3.4 Generational model:
-            3.4.1 Collectivism 
-            3.4.2 Freedom and autonomy
-        3.5 Meaing making model:
-            3.5.1 Stress handling
-            3.5.2 Caregiving perception
-            3.5.3 Meaning of life
- 
-### 181003 systematic review on meaning making
+## 181003 (systematic review on meaning making)
 0. Article selection
     Year range: 2007-2018
     Keywords: "meaning","care"
@@ -416,92 +299,7 @@ Scenarios
     changes in meaning (making)
     other key findings
 
-### 180924 on meta analysis
-
-1. Psychosocial interventions for elderly diagnosed of Alzheimer's
-1.1 Objective: compare the effectiveness of psychosocial interventions conducted for Chinese population and Western population diagnosed of Alzheimer's Disease from 2010 to 2018
-1.2 Methods: 
-    1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
-    1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
-    1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
-    1.2.4 Year range: 2008-2018
-1.3 Statistics:
-    1.3.1 publication bias analysis
-    1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
-    1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
-1.4 similar studies
-    1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
-    1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
-    1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
-1.5 Questions:
-    1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
-    1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
-
-argument: 
-    By policy and by choice - no diagnosis, medication, medical care
-    Settings: 
-    Literature: meta-analysis and cross-country
-
-2. Meaning-making of caregivers
-2.1 Objective: Discuss meaning-making model through a meta-analysis perspective
-2.2 Variables: 
-    2.2.1 Meaning-making process: 
-        2.2.1.1 caregiving stress:
-        2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
-        2.2.1.3 coping strategies
-        2.2.1.4 roles of personality *: 
-            2.2.1.4.1 gender: *
-            2.2.1.4.2 culture: *
-            2.2.1.4.3 self-regulation: *
-            2.2.1.4.4 positive affect (optimism): *
-            2.2.1.4.5 sense of purpose: *
-            2.2.1.4.6 social support: *
-        2.2.1.5 changes/development in global meaning; *
-    2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
-    2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
-    2.2.4 Measurement: 
-        2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
-        2.2.4.2 Global and situational meaning-making (coping): 
-            2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
-            2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
-            2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
-    2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
-        Individual part
-        Loss/powerlessness
-        Provisional Meaning
-        Ultimate Meaning
-        Spouse part
-        2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
-        2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
-        2.2.5.3 Global Role strain
-        2.2.5.4 Marital Tension
-        2.2.5.5 Marital Satisfaction
-        2.2.5.6 Caregiver Satisfaction
-        2.2.5.7 Religiosity
-
-2.3 Problem:
-    2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
-    2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
-    2.3.3 Meaning making process is intentional or unconscious?
-
-"Meaning-making": abstract, keywords, title; 
-methodology, empirical, factors, theory, qualitative/quantitative
-
-* stress processing: primary and secondary appraisal
-* theory: cultural difference in social cognition; 
-* survey/questionnaire 
-* reflective group: 
-    5-6 sessions: 
-    Caregiver support: burden, depression, caregiving
-    reflective group course structure: 
-
-
-Team meeting:
-# factors impact
-# primary/secondary appraisal: general questions about these two parts.
-# cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
-
-### 180910
+## 180910
 Caregiving allowance ~ women (gender study) incentive for formal care; economic values performed, reduced labor market participation, structure of labor market, caregiving (formal or informal) for elderly (disabled or general) is effective
 
 Meaning Making Model:
@@ -564,13 +362,208 @@ Caregiving relationship
 
 
 
+### Reflective Group #############################################################
+##  181029
+
+    ## Literature 
+        MarsickMaltbiaAoM Unpublished.pdf
+        ppd-peer-group-mentoring-reflective-model-details.pdf
+        Protocols_Handout.pdf
+        reflect.pdf
+        Reflective group 1.docx
+        Reflective Practice For Leadership (RPL).pdf
+    ## Types 
+    1 Instructional design virtual learning community (Law, et al., 2011)
+        1 Motivation to participate virtual learning communities 
+        2 Factors for successful community building
+        3 Individual characteristics and group characteristics on community participation and knowledge building 
+        4 Structure of instructional design learning community: skills, knowledge, identity, values, epistemology (justifications and methods of proof that legitimize actions and claims within the community) (Shaffer, 2006)
+        5 Definition of reflective setting: 
+            1 novice professionals engage in authentic, messy, and ill-structured problems under the supervision of more experienced mentors
+            2 the ability to shift from standard, skilled performance to a more analytical and experimental mode when an unexpected complication arises during practice 
+    ## Reflective Group Structure and Content 
+    1 Virtual learning (community) meeting (Law, et al., 2011)
+        1 Past experiences
+        2 Prior knowledge for collective prior knowledge 
+        3 Self perceptions
+    2 Action Learning Conversation Protocol (Marsick & Maltbia, 2006) and Reflective Model (Boud, Keogh, & Walker, 1985)
+        1 structured conversation in 3 phases: 
+            1 framing/engaging (skills, action, and behaviors): 
+                1 preparing (10 min): write a key challenge in the form of a question, background information
+                2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
+                3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
+                4 requesting support: receive support from peers and supervisor 
+            2 Advancing (knowledge): 
+                1 Question storming (15 min): 
+                    asking reflective, interpretive, decisional questions (Weinstein, 1995)
+                    team members think silently and write down questions before share in a round-robin process (Adams, 2004)
+                2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
+                3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
+                4 committing (15 min): commit to actions after the question is reframed with verified assumptions
+            3 Disengaging (feelings, attitudes, and beliefs): 
+                1 summarizing key discoveries
+                2 reviewing personal commitments
+                3 checking for alignment in the group
+       
+    ## Reflective group techniques (Law, et al., 2011)
+        1 Interaction between individual characteristics and group characteristics (how individual contributes to the group while group influence knowledge construction process)
+        2 Group discussion online
+        3 Post one initial reaction towards the weekly Readings
+        4 Interact with at least one member in the online discussion forum
+        5 Post a reflection to synthesize learnings from readings and discussion
+
+    ## Theory
+    1 Levels of operations: 
+        1 unconscious or conscious impulses with aggressive behaviors are correlated with one's cognitive and emotional experiences 
+        2 supervisor facilitate social workers to develop their capacity to think and feel when faced with impulses and top self defeating patterns
+        3 supervisor and staff operate on conscious, covert and unconscious levels
+        4 supervisor creates more interactions between staff
+    2 Reflection improves quality 
+        1 reflection helps identify underlying values, beliefs, and assumptions and enables people to see how they can change a situation by changing the way they frame it and act on it 
+        2 structured conversation protocol enable supervisor in action learning programs to see how reflection could improve their thinking and the solutions to challenges in which they were engaged
+
+
+    ## Limitations
+    1 Older generation perceives virtual learning community may keep them isolated and segregated in "electronic communication"
+
+
+
+
+
+### supervision seminar #############################################################
+##  181019
+1. Meta analysis on dementia interventions
+    1.1 Research questions:
+        1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
+        1.1.2 Are non-pharmacological interventions more associated with adverse events?
+        1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
+        1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?    
+    1.2 Factors to add:
+        1.2.1 City level
+        1.2.2 Country of origin/cultural factors
+        1.2.3 Policy difference
+        1.2.4 Comparisons (control group conditions)
+        1.2.5 Pharmacological / non-pharmacological groups
+    1.3 Things to note in inclusion/exclusion criteria:
+        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
+        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
+
+2. Systematic review on meaning making (follow the team project)
+    2.1 In the stage of literature searching and screening
+    2.2 Variables to consider:
+        2.2.1 Gender
+        2.2.2 Definition of caregiving 
+        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
+        2.2.4 Meaning making mechanism / models
+        2.2.5 Theories 
+        2.2.6 GRADE assessment
+
+3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
+        3.1 System Theory: 
+            3.1.1 Generational differences: cultural, socioeconomic, beliefs
+            3.1.2 Levels of care: micro, mezzo, macro
+            3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
+        3.2 Reader-response theory (narrative perspective of people around caregivers):
+            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
+            3.2.2 Psychological background: beliefs, emotions, motivations
+            3.2.3 Developmental, personal, social and individual differences
+            3.2.4 Social motives
+        3.3 Caregiving model:
+            Balance between caregiving tasks and personal life tasks
+        3.4 Generational model:
+            3.4.1 Collectivism 
+            3.4.2 Freedom and autonomy
+        3.5 Meaing making model:
+            3.5.1 Stress handling
+            3.5.2 Caregiving perception
+            3.5.3 Meaning of life
+ 
+
+## 180924 (meta analysis, meaning making)
+1. Psychosocial interventions for elderly diagnosed of Alzheimer's
+1.1 Objective: compare the effectiveness of psychosocial interventions conducted for Chinese population and Western population diagnosed of Alzheimer's Disease from 2010 to 2018
+1.2 Methods: 
+    1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
+    1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
+    1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
+    1.2.4 Year range: 2008-2018
+1.3 Statistics:
+    1.3.1 publication bias analysis
+    1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
+    1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
+1.4 similar studies
+    1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
+    1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
+    1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
+1.5 Questions:
+    1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
+    1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
+        argument: 
+            By policy and by choice - no diagnosis, medication, medical care
+            Settings: 
+            Literature: meta-analysis and cross-country
+
+2. Meaning-making of caregivers
+2.1 Objective: Discuss meaning-making model through a meta-analysis perspective
+2.2 Variables: 
+    2.2.1 Meaning-making process: 
+        2.2.1.1 caregiving stress:
+        2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
+        2.2.1.3 coping strategies
+        2.2.1.4 roles of personality *: 
+            2.2.1.4.1 gender: *
+            2.2.1.4.2 culture: *
+            2.2.1.4.3 self-regulation: *
+            2.2.1.4.4 positive affect (optimism): *
+            2.2.1.4.5 sense of purpose: *
+            2.2.1.4.6 social support: *
+        2.2.1.5 changes/development in global meaning; *
+    2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
+    2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
+    2.2.4 Measurement: 
+        2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
+        2.2.4.2 Global and situational meaning-making (coping): 
+            2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
+            2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
+            2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
+    2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
+        Individual part
+        Loss/powerlessness
+        Provisional Meaning
+        Ultimate Meaning
+        Spouse part
+        2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
+        2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
+        2.2.5.3 Global Role strain
+        2.2.5.4 Marital Tension
+        2.2.5.5 Marital Satisfaction
+        2.2.5.6 Caregiver Satisfaction
+        2.2.5.7 Religiosity
+    Others:
+        "Meaning-making": abstract, keywords, title; 
+        methodology, empirical, factors, theory, qualitative/quantitative
+        * stress processing: primary and secondary appraisal
+        * theory: cultural difference in social cognition; 
+        * survey/questionnaire 
+        * reflective group: 
+            5-6 sessions: 
+            Caregiver support: burden, depression, caregiving
+            reflective group course structure: 
+        Team meeting:
+            # factors impact
+            # primary/secondary appraisal: general questions about these two parts.
+            # cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
+2.3 Problem:
+    2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
+    2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
+    2.3.3 Meaning making process is intentional or unconscious?
+
 
 ### COA Projects and Meetings ##########################################
-
-### Macau Project
+## 181001 Macau Project
 
 1.  Ethical Approval (due on 181008 Monday)
-    (Kevin) English Version proposal (Kevin writes a beif proposal)
+    (Kevin) English Version proposal (Kevin writes a brief proposal)
     (MM) Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
         Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
     (Kevin) Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
@@ -587,10 +580,7 @@ Caregiving relationship
             a list of year, author, name of articles, theory on endnote
             summary or notes
                                     
-
-### 180907 
-
-
+## 180907 
 1.	Discussion
     ○	Country review of the United States and Japan 
         ■	looking into literature 
@@ -631,15 +621,12 @@ Data Mining with Python:
 Systematic review
 
 
-
-
-
 ### 180906  
 
 
-1.   	Rational to select countries under review
+1. Rational to select countries under review
 
-2.   	Under each country - United Kingdom
+2. Under each country - United Kingdom
     2.1.	Policy name, time of enactment, weblink, etc.
         Policy Name: Carer’s Allowance (Invalid Care Allowance until 1986)
         Time of enactment: 1976
@@ -756,322 +743,6 @@ POLICY: Macau carer allowance study proposal
 * Australia’s definition on primary carer
 * Meaning making of volunteers and social workers: four pairs of 100 each. Manipulation of age, gender and generations. Mentor illness. Boston university. 
 
-
-
-
-### Work Notes (history) ###########################################################################
-####################################################################################################
-###  Working Progress   ##################################### ######################################
-## job type: T (trannslation), R (research), S (study), W (work/waiting list), C (completed cases)
-
-
-###    UPDATE    ################################################################################### 
-# read data
-# work = read.table("C:/Users/chens/OneDrive/work/work progress.xls",header=T,sep="\t")
-work = read.table("C:/Users/chens/OneDrive/work/work progress.txt",header=T,sep="\t")
-a = work  # make a transition file
-View(a)
-
-# format change
-for (i in 1:5){
-  a[,i] = c(as.character(a[,i]))  
-  i=i+1
-}
-
-a[1,] = c(as.character(a[1,]))  # make column progress into character format
-
-# modification example
-a[c(2,6,9,10),2]=99 # make progress update
-a[10:26,]=work[8:24,] # for copy and edit
-a = rbind(work[1:10,],c(0),work[12:23,])  # insert a row into specific position
-a = rbind(a,c('W13',0,'test','no comment')) # make a new line
-a = rbind(a[1:6,],c('S03',1,'literature review on aging care','(171101) <- 171001'),a[7:26,])
-a = rbind(a[1,],a[3:5,],a[7:8,],a[10,],a[11:23,],a[c(2,6,9),])  # move certain line to specific position
-a = rbind(a[2:5,],a[8:9,],a[10:25,],b[c(1,6,7),],a[26,])  # row shifting operation; creating temp file as in b=work
-a = a[-c(11,12),] # remove designated rows
-a[2,3] = "meta analysis - grammer check"  # adding notes
-dataname[dataname==0]<-NA; new<-na.omit(dataname)
-a[which(a[,1] == 'T01'),5] = "one page per day"   # revise comments according to specific ID
-
-# read notes
-read.table(a[23,5], sep = "\n", header=F)
-
-# Save file
-write.table(a,"C:/Users/chens/OneDrive/work progress.xls", sep="\t", col.names=T,row.names=F, quote=TRUE, na="NA")
-
-write.table(a,"C:/Users/chens/OneDrive/work progress.txt", sep="\t", col.names=T,row.names=F, quote=TRUE, na="NA")
-
-
-
-# create file
-work = matrix(c(0), nrow = 100, ncol = 5,
-              dimnames = list(c(),
-                             c("ID","progress(%)","notes","timeline","comments")))
-
-
-
-
-### R05 education reform with Cao Shuliang #########################################################
-Chapter 4 大数据时代英语职业发展与未来
-1   大数据时代英语教师的职业发展（“大数据”语境下)
-1.1 教师角色定位
-1.2 英语教学活动的组织引导者
-1.3 英语教学资源的研发者
-1.4 自主学习的诊断与评价者
-
-2   大数据时代英语翻译职业的发展
-3   大数据时代英语导游职业的发展
-4   大数据时代英语读物出版的发展
-
-
-
-### R06 vocational education with Zhou Yi  #########################################################
-* 5000-10000 characters in Chinese
-* deadline: October 1st
-* globalization
-
-
-## 170805
-1. second (problems) and third (reform and globalization) parts need improvement
-2. more literature support on problems, financial support (government?), enterprise based training, and international cooperation
-
-## 170731 Internationalization of Chinese Vocational Education
-1. teachers training: scholar exchange
-2. curriculum reform: (comprehensive and general education:not only technical type, humanity and social science)
-3. enterprise based training: (case study)
-4. global cooperation: [real estate]
-5. washington, sydney, dublin agreement/mode
-6.
-
-## 170713 discussion on topics and direction (globalization：[人才培养为核心的职业教育国际化发展])
-Topics: Developing countries, global economy, and community colleges
-** globalization：[人才培养为核心的职业教育国际化发展]
-** Porter’s diamond model：sustainable competitiveness [中美比较]
-** 高职院校职能：职业教育，补偿教育，社区教育，大学转学教育（预科），普通教育，素质教育
-** 影响高职院校的发展因素：学费，设施，资助，课程结构,生源
-
-
-
-- 论美国社区学院及其在中国的发展前景(楼利明)
-* history of development: community colleges in U.S. (as in figure 1)
-
-* five functions of community colleges
-(1)学术的传递与研究功能。
-(2)职业技术教育功能。
-(3)继续教育功能。
-(4)补偿教育功能。生活相对贫困的人纷纷参加高中阶段的学习,
-(5)社区服务功能。
-
-- 刍议美国社区学院对我国高职院校发展的启示
-* comparison:
-    学费：公立大学学费的30-40%；
-    设施：残疾人设施；儿童发展中心
-    资助：教育部的家庭补助。中国的社区学院的经费投入, 国家尚无投资法规, 地方财政往往偏重于其他公益事业的发展, 很难抽出多余的经费用于发展社区学院。由
-    课程结构：实践课占40-60%
-    生源：教育层次化
-
-- 地方高等职业院校创办社区学院的办学模式探析
-* 广州城市职业学院/广州社区学院/白云分院
-    以职业学院为主，人民政府主导，立足社区，服务社区
-    社区教育+社会服务
-    课程：学历教育、继续教育，还开展了专项课程，如早教课程、家庭教育课程、医疗保健课程、幼儿养护课程、疾病预防与治疗课程以及养生和美容
-
-* 高职教育与社区教育、成人教育进行有机整合
-* 社区教育的效益分析：推动社区经济发展，推动高职教育教学改革，规范社区教育办学环境
-* 职能：职业教育，补偿教育，社区教育，大学转学教育（预科），普通教育，素质教育
-* 社区学院校际联盟：垂直式，水平式，混合式合作 [美国社区学院校际联盟模式]
-* 1990s:上海、北京、沈阳、南京；2000s：北京的朝阳社区学院, 南京的秦淮社区大学, 上海的南市社区学院、闸北社区学院、长宁社区学院和金山社区学院[我国社区学院发展现状、问题与对策]
-* 包括：职业学院、成人教育(网络教育，函授，电大现代远程开放教育)、其他培训机构
-
-### R13	Social Work Students Project with Lei Jie ##################################################
-
-
-A. demographics
-B. attitude on causes of poverty
-C. attitude on causes of crimes
-D. coping methods of poverty
-E. social work goals
-F. age group preferred
-G. client group preferred
-H. workplace type: juvenile prison, hospitals, schools...
-I. sectors preferred: government, non-for profit, for profit...
-J. level of practice preferred: individual, group, community social work...
-K. intervention type
-L. level of intervention: individual, familial, group, community...
-M. professional identity
-
-
-
-## Does social work education have... (welfare state model)
-1. welfare state model: social justice, welfare system finance, universal welfare services/provision, individual benefits
-2. impact of SW education on social policy preference (a sense of identification with notions of social justice and social responsibility) of students
-3. Table 3, pre-post tests (freshman year and senior year) - guess no longitudinal study
-4* extended studies about SW education on attitude towards social policy
-
-## poverty in the eyes of beholder...(X)
-1. person-in-environment theoretical basis
-2. structural (social conditions), individualistic (behaviors, motivation, effort and poverty), psychological and fatalistic (exogenous factors of luck, health, emotion, interpersonal abilities) causes poverty
-3. intervention methods relevant to individual needs and environmental influences.
-
-## SW graduates and welfare economy sector preference (variables)
-1. MANOVA (rough): 1st and 2nd measurements; university X time
-2. SW education offers process of professoinal socialization
-3. comparison among SW students; cross sectional study
-4. longitudinal studies about program of studies
-5. DVs: preference on client group, social service org, welfare economy, SW practice
-
-##** SW students amd social change...
-[B] views on poverty (caused by social a=.81 , psychological a=.85 and motivational factors a=.88)
- ~
-[D] coping methods (extended social welfare, psychotherapeutic treatment, minimised state assistance)
-[E] SW goals (society oriented a=.78, individual oriented a=.69)
-
-DV: Policy practice (willingness of engagement) [I,J]
-MV: SW goal [E] (social and individual oriented) + coping methods [D]
-EV: attitude towards poverty causes [B] (17 of 19 items)
-
-B * (E + D) = I # path analysis
-
-##** SWers and policy practice...
-1. demongraphics + socioeconomic/political orientation + poverty cause + SW goals + support + engagement for policy practice
-2. gender, ethnicity, religion, political/socioeconomic orientation, psychological causes, motivation, structural causes, support for universal benefits, pay for welfare, government responsibility, enhancing inner resources, promoting social justice, exerting social control protecting people at risk, support for policy practice
-
-
-## SW's attitudes towards social welfare policy
-1. exploratory factor analysis on support for welfare state
-
-## The PIE approach ...
-1. SW goals [E], SW activities [H], intervention [L], level of practice [J], perceived attainment of SW goals [M]
-2. ANOVA on variables above
-
-## where does it begin ...
-1. comparative review including Guangzhou, China on the following items:
-2. client group [F,G], organizations [modified H], sectors [I], level/type of practice [J],
-
-
-## Conclusion
-
-
-
-## follow-up study
-educational program development,
-
-
-## questions:
-subjects: students only?
-categories in sections D (3 cat) and E (2 cats)
-
-
-### S02 05  SEM  ###################################################################################
-
-## Model Fitness:
-    matrix: r1 * r2 * r3 ...
-    matrix fitness: goodness of fit statistics:
-        chi square (least square, estimated non-centrality): <<
-        RMSEA (root mean square error of approximation): < 0.05(0.08)
-            90% CI for RMSEA
-            p value for test of close fit (RMSAE < 0.05)
-        NNFI (non-normed fit index ~ TLI): > 0.9
-        CFI (comparative fit index ~ RNI):  > 0.9
-        AIC
-    df = [non-duplicating elements, p(p+1)/2] - [估计参数 estimated parameters]
-        9*10/2 - 21 (9 lambda/factor loading and 9 endogenous variables, 3 correlations, ) = 24
-        bigger df indicates simpler model
-    Indices for lambda-x
-        modification: maximum modification index is 41.35 for element (8,1) indicates reassignment of element to suggested factor will bring down chi square (better for the model)
-        standardized solution: with standardized index [0,1]
-        (structure) variance of item = theta^2 + loadings^2
-    Embedded model
-
-
-
-## EFA & CFA
-    EFA - principal component analysis:
-        eigenvalues (>1): overall variance (up to the number of variables) explained by each loadings
-        scree test: greatest change in slope
-        meaningful dimensions
-    - varimax: rotated (uncorrelated) factor loadings
-        unique var column: measurement error, not accounted for in any factor provided
-    - promax: rotated (correlated) factor loadings
-
-    CFA -
-
-## modeling categories: on multiple DVs, IVs (factor structure and factor relations), errors
-    categories:
-        measurement model: IV ~ DV
-        structural model: DV ~ DV (factors)
-    functions:
-        tolerance: errors as endogenous variables
-        model fit and comparison:
-        regression, CFA, EFA, ANOVA...
-
-
-
-## LISREl
-    FI: fixed model
-        variables with no correlations (r = 0)
-        set/fixed metric/scale:
-            no metric/unit
-            fixed metric (with no standardized unit metrics) - set as 1
-                fixed variance: variances of all FACTORS set as 1; loadings of free estimate while others are fixed
-                fixed loading: one of the ITEM in each factor set as 1; the first item (for example) set as fixed whie the other items in each factor are free
-    FR: free variance
-        parameters to estimate of uncertainty/questioned
-    Methods:
-        fixed variance:
-        fixed loading:
-    DA: data
-    LX: loadings (lambda) of variables, FU - full, FI - ; LX21, LX42, LX 63
-    MA: matrix - KM (correlated matrix), CM (covariate matrix)
-    MI: modified index
-    MO: model
-    NI: number of variables
-    NK: number of categories
-    NO: number of cases
-    NX: number of variables
-    PH: correlations among factors, ST - diagonal
-    TD: error, DI - diagonal, FR - free
-    OU: output
-    SS/SC: standardized score
-    VA: fix loadings; 'VA 1 LX1,1 LX4,2 LX7,3'
-
-    lambda (factor loadings), PHI (factor matrix), THETA-DELTA (errors for each items)
-        parameters: correlation/error coefficients
-            SE parameters being 1 indicate the item all accounted for in errors
-        SE: standard error
-        t-value: paramter/SE; >2 ~ significantly different from 0
-
-
-4.2.4 24'00"
-
-
-
-
-### Writings  ######################################################################################
-
-2017
-
-陈霜洲.老龄趋势下的智能化居家养老[J]. 健康前沿(甘肃科技), 2017(6): 269. CN: 62-0071/R, ISSN: 9128-6509
-李泽如, 陈霜洲.电商时代下的大学生网上创业之路[J]. 中国科技投资,2017(7), 14: 341-342. CN：11-5441/N
-陈霜洲, 李美华.智能化居家养老模式的开发与推广使用[J].社区心理学研究(第三卷), 2017(4): 86-100.北京:社会科学文献出版社.ISBN：9787520104944
-陈霜洲.智能化居家养老模式的应用前景[J]. 现代养生, 2017(7): 291. CN13-1305/R, ISSN：1671-0223
-
-期刊：
-
-护理 老年痴呆 主题搜索 2016起 按发表时间排序-17*50条
-中国健康心理学杂志
-社会工作与管理 广东工业大学出版社
-中国社会工作前沿 中国社科文献出版社
-中国学校卫生 Chinese Journal Of School Health
-the journals of gerontology: series B
-geriatrics and gerontology international
-the genrontologist
-age and ageing
-ageing and mental health
-psychology and ageing 
-Asian Journal of Gerontology and Geriatric
-中国老年学杂志
-社会科学战线
 
 
 ### Readings Archive ###############################################################################

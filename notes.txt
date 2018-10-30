@@ -10,6 +10,23 @@ vscode-pdf
 
 ### SOWK7007 Research Methods ##################################################################################
 
+### 181030 Qualitative analysis
+Epistemological positions
+	Discuss the relaitonship between known and knower
+	Positivism: one version of reality observed by the knower
+    Social constructivism: subjectivity
+Person-in-context 
+    Subjective meanings - lived experience - context/environment 
+    
+Deductive (quantitative) / Inductive (qualitative)
+
+Theoretical framework / theories / menifestation / rationality 
+
+Gap-driven vs Goal-oriented
+
+	
+	
+
 ### 181009 Scale development 
 Basic attributes of scales
 Conceptualize the target construct
@@ -232,6 +249,34 @@ Literature review：
 
 
 ### Supervision: Projects ####################################################################################
+
+### Cognitive Motivation Therapy for Dementia
+## 181030
+    Background
+        Cochrane review and systematic evaluation on Reality Orientation Therapy 
+        14 weeks of 45-minuteweekly sessions
+        No clear long-term effect as the effects faded 10 weeks after the treatment stops
+        Similar therapy: Reminiscence Therapy (Woods et al., 2007)
+    Measurement
+        Cognition: 
+            Mini-Mental State Examination (MMSE, Folstein et al., 1975)
+            Alzheimer’s Disease Assessment Scale—Cognition (ADAS-Cog, Rosen et al., 1984)
+                categories: word recall, naming, commands, constructional praxis, ideational praxis, orientation, word recognition, spoken language, comprehension, word finding, remembering instructions, memory and new learning
+            Consortium to Establish a Register for Alzheimer’s Disease (CERAD, Morris et al., 1989)
+        Quality of life: QOL-AD (Logsdon et al.,1999)
+        Communication: Holden Communication Scale (Holden & Woods, 1982)
+        Behaviors: The Clifton Assessment Procedures for the Elderly—Behaviour Rating Scale (CAPE-BRS; Pattie and Gilleard, 1979)
+        Global scale:
+            Clinical Dementia Rating (CDR; Hughes, Berg, Danziger, Coben, & Martin, 1982)
+        Depression
+            Cornell Scale for Depression in Dementia (CSDD; Alexopoulos et al., 1988)
+        Anxiety
+            Rating for Anxiety in Dementia (RAID; Shankar, Walker, Frost, & Orrell, 1999)
+        Physical and mental dependency
+            Clifton Assessment Procedures for the Elderly-Behaviour Rating Scale (CAPE-BRS; Pattie & Gilleard, 1979)
+        
+
+
 
 
 ### Meaning making #############################################################

@@ -1,4 +1,17 @@
-﻿### Download Extensions on VS Code ###
+﻿### Journals
+JOURNALS OF GERONTOLOGY SERIES A-BIOLOGICAL SCIENCES AND MEDICAL SCIENCES
+JOURNAL OF THE AMERICAN GERIATRICS SOCIETY
+GERONTOLOGIST
+AMERICAN JOURNAL OF GERIATRIC PSYCHIATRY
+JOURNALS OF GERONTOLOGY SERIES B-PSYCHOLOGICAL SCIENCES AND SOCIAL SCIENCES
+INTERNATIONAL JOURNAL OF GERIATRIC PSYCHIATRY
+BMC Geriatrics
+AGING & MENTAL HEALTH
+Geriatrics & Gerontology International
+PSYCHOLOGY AND AGING
+
+
+### Download Extensions on VS Code ###
 Excel viewer
 format html in php
 github pull requests
@@ -323,6 +336,7 @@ Discrepancies between situational and global meaning
 Scenarios
     1. People with mental illness appraise the meaning of their illness based on information they receive from sources such as their health providers. Their global meaning is that they can manage to control the illness by receiving conventional interventions or seeking help from their health providers; they have anticipated outcome in future and general sense of control over their lives. In order to reduce discrepancy between two types of meanings, one may gradually shift views of illness in a more positive direction or reconsider life goals or life meaning in light of the illness. 
     2. When confronted with the fact of a loved one's death, the initial meaning of that eventual meanings that the individual may derive from it are influenced by the survivor's global meaning. Global meaning in terms of beliefs and goals regarding the deceased and their relationship, expectations about how and why things happen, perceptions of vulnerability to such events, and so on influence the survivor's understanding of the situation. From the perspective of stress and coping theory, situational meaning involves the appraisal of person-environment transactions, which in turn influences how people cope with the demands of those transactions and their outcomes. Traumatic events overwhelmingly beyond one's experiential readiness (primary appraisal) can lead one to question the viability of his or her world and self views. People with negative attitudes towards themselves perceive themselves not being able to adopt resources for coping with such a stressful situation (secondary appraisal). One would use reappraisal process to decrease the threatening and harmful aspects of the event and increase it positive aspects.
+    3. 
 
 
 ## 181003 (systematic review on meaning making)

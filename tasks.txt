@@ -2,49 +2,59 @@
 
 [meeting]: 180927 (Thursday)
 [coding]: folder of "Mastering social media mining with python"
-[academic]: /literature, /manuscript, /homework, /writing
+[academic]: /literature, /manuscript, /homework, /writing, /database
+[others]: /side-project; /contracted 
 
 ### Ongoing projects ###################################################################################################
 
-180902-181007 
-[academic/literature/homework] thesis review on 180930
-    750+ words
+181102-181102
+[academic/database] finding datasets (keyword=careg*, sort by released/updated, 3 pages completed)
+    keywords:  (caregiv* or family or member) and (meaning or sense) and mak* and dementia
+    search: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
+    Results (datasets):
+        Panel Study of Income Dynamics (PSID): Main Interview, 1968-2015 (ICPSR 37142)
+            dementia 
+            day care center, 
+            family day care home, sense of efficacy
+            family size, family composition
+
+        Work, Family, and Health Study (WFHS) (ICPSR 36158)
+            family caregiving roles; informal caregiving roles; management of work and caregiving roles; double/triple duty caregiving men; women employed in U.S.-based nursing homes entered and exited unpaid caregiving roles for children (double-duty-child caregivers), adults (double-duty-elder 
+            caregivers), or both (triple-duty caregivers)
+
+        National Health and Aging Trends Study (NHATS)
+
+        Health and Aging in Africa: A Longitudinal Study of an INDEPTH Community in South Africa [HAALSI] Baseline Survey: Agincourt, South Africa, 2015 (ICPSR 36633)
+            caregiver: role, emotional, financial, health care...
+            living status and physical health
+
+        Sacramento Area Latino Study on Aging (SALSA Study), 1996-2008: Neuropsychological Exam Data (ICPSR 29323)
 
 
-181004-181007
-[academic/writing] Ethical Approval (due on 181008 Monday)
-    English Version proposal (Kevin writes a breif proposal)
-    Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
-        Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
-    Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
-        Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
-    Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
-        consent form for quesitonnaire (MM on this)
-        consent for for interview (MM on this)
+
+181102-181104
+[others] writing research method part
+    word limit: 500-600
+    material: refer to wechat history
+
+180916-181105 
+[coding] Python datamining on social network service
+    [reading] coding module
+    [reading] public media: 
+        twitter
+    [Vivian] Medical care system covers medication for AD in both rural and urban areas?
 
 
-181004-181007 
-[academic/literature] Systematic Review on Meaning-making (due on 181008 Monday)
-    Preliminary search:
-        no year range
-        keywords: care* AND meaning AND (tool OR model OR theory or skill)
-        outcome: 
-            a list of year, author, name of articles, theory on endnote
-            summary or notes
-
-
-181004-181007 
+181004-181111 
 [academic/literature] theory
     check article: cultural difference in social cognition 
         1. Shore, B. (1998). Culture in mind: Cognition, culture, and the problem of meaning. Oxford University Press.
         2. Hong, Y. Y., & Chiu, C. Y. (2001). Toward a paradigm shift: From cross-cultural differences in social cognition to social-cognitive mediation of cultural differences. Social cognition, 19(3: Special issue), 181-196.
         3. Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psychological review, 98(2), 224.
         4. Nisbett, R. E., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture and systems of thought: holistic versus analytic cognition. Psychological review, 108(2), 291.
-        5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press.
-    application in survey or questionnaire 
+        5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press. application in survey or questionnaire 
 
-
-181004-181007 
+181004-181130 
 [academic/literature/meta-analysis] Systematic review on Meaning-making: 
     Preliminary search:
         no year range
@@ -54,11 +64,34 @@
             summary or notes
     Organization of papers:
         Screening
-            Year range: 2007-2018 ?
-            Keywords: "meaning","caregiv*" (or "care")...
-            Database: Pubmed, Medline, PshchoINFO, Cochrane library, EMBASE, CINAHL, WOS (Kevin), Scopus
+            Year range: 
+            Keywords: 
+                1. (TITLE=(caretak*  OR  caregiv*  OR  caring  OR  career  OR  care )) OR (ABS=(caretak*  OR  caregiv*  OR  caring  OR  career  OR  care ))) 
+                2. AND ((ABS=(meaning-making  OR (make  AND  meaning ) OR (making  AND  sense ) OR (make  AND  sense ) OR (sense  AND  making ) OR      value  OR  identity  OR (filial  AND  piety ))) OR (TITLE=(meaning-making  OR (make  AND  meaning ) OR (making  AND  sense ) OR (make  AND  sense ) OR (sense  AND  making ) OR  value  OR   identity  OR (filial  AND  piety )))) 
+                3. AND ((TITLE=(tool*  OR  model  OR  scale  OR  theor* ) OR  ABS=(tool*  OR  model  OR  scale  OR  theor* )))) 
+                4. AND (TITLE=(family ) OR  ABS=(family )) 
+                5. AND NOT ((TITLE=((nursing  AND  care ) OR  nurse  OR  decision-making  OR  hospital  OR  school  OR  education  OR  teachers  OR student  OR pet  OR  animal ) OR  ABS=((nursing  AND  care ) OR  nurse  OR  decision-making  OR  hospital  OR  school  OR  education  OR teachers  OR  student  OR pet  OR  animal )))
+            Database: Medline, PsychoINFO, WOS (Kevin), Scopus, Cochrane library, EMBASE, CINAHL
             Inclusion criteria: 
+                In1. Review Paper
+                In2. Peer Reviewed Journal Articles
+                In3. English written
             Exclusion criteria: 
+                Ex1. Studies focused on non-caregivers like teachers, students (D)
+                Ex2. Studies focused purely on decision- making (D)
+                Ex3. Studies with settings like hospital, school, education (D)
+                Ex4. Studies focused on non-human subjects like pet and animal (D)
+                Studies focused on nursing care or nurse training (D)
+                Ex5. Studies focused on caregivers who were the professional staff or
+                Ex6. Paid domestic helpers
+                Abstract only, books, discussion papers, editorials, thesis, commentary letters or conference proceedings.
+                Ex7. Studies focused on screening or assessing of specific disease.
+                Ex8. Studies focused on paediatric intervention.
+                Ex9. Studies focused on career development and gender equality in career setting.
+                Ex10. Studies focused on parental skills and parenting to infants or youth. 
+                Ex11.Studies focused on politics or social norms.
+                Ex12. Studies focused on the marriage. 
+                Ex13. Studies focused on medicine effects. 
             Quality assessment: Cochrane, PRISMA, (Whittemore and Knafl, 2005)
         Summary - Variables:
             author (year)
@@ -80,29 +113,48 @@
             factors mentioned
             qualitative/quantitative methods
 
+
+
+### Completed Projects ###################################################################################################
+
+
+180902-181007 
+[academic/literature/homework] thesis review on 180930
+    750+ words
+
+
+181004-181007
+[academic/writing] Ethical Approval (due on 181008 Monday)
+    English Version proposal (Kevin writes a breif proposal)
+    Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
+        Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
+    Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
+        Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
+    Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
+        consent form for quesitonnaire (MM on this)
+        consent for for interview (MM on this)
+
+181004-181007 
+[academic/literature] Systematic Review on Meaning-making (due on 181008 Monday)
+    Preliminary search:
+        no year range
+        keywords: care* AND meaning AND (tool OR model OR theory or skill)
+        outcome: 
+            a list of year, author, name of articles, theory on endnote
+            summary or notes
+
+
+180910-181030 
+[meeting] reflective group: 
+    Note (onedrive shared):5-6 sessions; caregiver support group of burden, depression, caregiving, etc.
+    [reading] integrate literature and come up with reflective group course structure: 
+
 181001-181011 
 [academic/writing] AES PPT
     One slide for 3 minutes' talking
     Psychodynamics X Machine Learning
     notes:
         
-
-
-180916-XXXXXX 
-[coding] Python datamining on social network service
-    [reading] coding module
-    [reading] public media: 
-        twitter
-    [Vivian] Medical care system covers medication for AD in both rural and urban areas?
-
-
-180910-XXXXXX 
-[meeting] reflective group: 
-    Note (onedrive shared):5-6 sessions; caregiver support group of burden, depression, caregiving, etc.
-    [reading] integrate literature and come up with reflective group course structure: 
-
-
-### Completed Projects ###################################################################################################
 
 # 180912-180926 
 # [academic/homework] critique paper

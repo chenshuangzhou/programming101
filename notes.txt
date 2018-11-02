@@ -10,6 +10,12 @@ AGING & MENTAL HEALTH
 Geriatrics & Gerontology International
 PSYCHOLOGY AND AGING
 
+### Temp thoughts
+pharmacological vs non-pharmacological interventions 
+MCI vs dementia 
+adverse effect taking into account
+
+
 
 ### Download Extensions on VS Code ###
 Excel viewer
@@ -503,6 +509,25 @@ Caregiving relationship
 
 
 ### supervision seminar #############################################################
+## Publication
+1. Database: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
+    Finding dataset: contact authors who published similar paper with dataset
+2. Theory:
+    Models, framework, theory is loosely required in social science journals, only used to interpret phenomenon or results 
+    Multiple theories sometimes can be used to interpret different part of the issues
+3. Publication: 
+    Identify journal: 
+        look into reference of targeted papers and identify which journals are they published from
+        The Gerontologist: meta analysis 
+            Find patterns of articles in this journal
+    To do: dementia should be linked to social component, sample size issues, measurement in detail, longitudinal study, findings not replicative, cultural context needs to be mentioned, methodology should be detailed on qualitative study especially, under-representative populations, countries with unique cultural elements, ageism, wealth distribution, discrimination, things are controversy (check editorial of month), population transitional/moving study, ambivalence of caregiving 
+    Not to do:growth curve in function data
+4. Identify research area:
+
+
+
+
+
 ##  181019
 1. Meta analysis on dementia interventions
     1.1 Research questions:

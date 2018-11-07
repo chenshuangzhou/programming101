@@ -29,14 +29,51 @@ vscode-pdf
 
 ### SOWK7007 Research Methods ##################################################################################
 
+
+### 181106 Big data
+About big data 
+  Characteristics: 
+    Volume (big data): multiple terabytes and petabytes
+    velocity (speed of change): smartphones and sensors, real-time Analytics
+    variety (different forms of data source)
+    veracity (uncertainty of data)
+    value (business value)
+  Differences between statistical learning and machine learning 
+    rule-based programming
+    data set size
+    assumption based
+    inference of prediction 
+    good understanding of data
+  Parametric methods 
+    assumptions with function describing relationship of IVs and DV
+    not match the real relationship
+    overfitting may occur
+  Non-parametric methods
+    no assumption with low-error estimation 
+    need a very large observations
+  Flexibility (low to high) X Interpretability (high to low)
+    Subset selection Lasso, least squares, generalized additive models trees, bagging and boosting, support vector machines
+  Supervised and unsupervised learning
+    Supervised:  linear regression, logistic regression, GAM,boosting, and support vector machine.
+    Unsupervised:  cluster analysis, principal component analysis, Propensity Score Analysis
+    Semi-supervised learning: predictor measurement (X) for m (<n) and n-m, response (Y) measurement for m only. 
+  ROC
+    ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. This curve plots two parameters: True Positive Rate, False Positive Rate
+  AUC
+    AUC stands for "Area under the ROC Curve." That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).
+  Questions
+    1. NLP content analysis
+    2. AUC vs GLM, which and when to use
+    3. can we use machine learning to determine fixed effects and random effects? usually compare AIC; how to define the model fitting and compare them?
+
 ### 181030 Qualitative analysis
 Epistemological positions
 	Discuss the relationship between known and knower
 	Positivism: one version of reality observed by the knower
-    Social constructivism: subjectivity
+  Social constructivism: subjectivity
 Person-in-context 
-    Subjective meanings - lived experience - context/environment 
-    
+  Subjective meanings - lived experience - context/environment 
+  
 Deductive (quantitative) / Inductive (qualitative)
 
 Theoretical framework / theories / manifestation / rationality 
@@ -44,16 +81,16 @@ Theoretical framework / theories / manifestation / rationality
 Gap-driven vs Goal-oriented
 
 Naturalism (ethnography)
-    good for policy implication 
+  good for policy implication 
 Phenomenology 
-    rely on personal Narratives
+  rely on personal Narratives
 Discourse analysis
-    knowledge and ideologies are always in the making 
+  knowledge and ideologies are always in the making 
 
 Grounded Theory
-    Participatory Action Research
-        Charmaz's Constructivist Grounded Theory
-            Multiple realities
+  Participatory Action Research
+    Charmaz's Constructivist Grounded Theory
+      Multiple realities
 
 Non-probability sampling
 	
@@ -62,15 +99,15 @@ Non-probability sampling
 ### 181009 Scale development 
 Basic attributes of scales
 Conceptualize the target construct
-    identify latent construct 
-    literature review: 
+  identify latent construct 
+  literature review: 
 Develop the initial item pool
-    creation of an item pool
+  creation of an item pool
 Select items to form the scale
 Evaluate the psychometric properties of the scale
 Data collection
-    inclusion of comparison scales
-    
+  inclusion of comparison scales
+  
 
 ### 181002 Causal inference
 
@@ -143,57 +180,57 @@ PSM
 
 ### 180918
 Janet and Tammy
-    Answer research questions with meta analysis
-        Interventions
-        Mistreatment
-        Measurement
-        Causal and correlational relationships
-    How to summarize literature
-        Knowledge support: covered by few studies
-        Decision support: practical implication 
-        Grey literature: non published studies 
+  Answer research questions with meta analysis
+    Interventions
+    Mistreatment
+    Measurement
+    Causal and correlational relationships
+  How to summarize literature
+    Knowledge support: covered by few studies
+    Decision support: practical implication 
+    Grey literature: non published studies 
 	Registration 
-        "Intellectual property - patent" in PROSPERO
+    "Intellectual property - patent" in PROSPERO
 
 
 Meta analysis procedure:
 1.	Research questions: what is the effectiveness of interventions for elderly with Alzheimer's disease.
-    a.	Framework: 
-        i.	Quantitative: Problem, Intervention, Comparison, Outcome of intervention effectiveness. Effective size in a series of studies: 
-            a.	A value to reflect magnitude: treatment effect, strength of relationship, estimate of prevalence, 
-            b.	Effect size: risk ratio,
-            c.	relative weight for each study
-            d.	Summary effect and p value
-        ii.	Mixed: demographics, details of intervention in meta synthesis analysis 
-    b.	Types of synthesis: segregated or integrated 
-        i.	Meta synthesis, meta enthonpology, 
-    c.	Critiques:
-        i.	Explain why choose quantitative meta analysis 
-        ii.	Keywords and database
-        iii.	Inclusion criteria: ppt
-            1.	Grey literature: valid literature and add values to research 
-        iv.	Check target journal to see specific guidelines for outlines
-        v.	Interested reliability 
+  a.	Framework: 
+    i.	Quantitative: Problem, Intervention, Comparison, Outcome of intervention effectiveness. Effective size in a series of studies: 
+      a.	A value to reflect magnitude: treatment effect, strength of relationship, estimate of prevalence, 
+      b.	Effect size: risk ratio,
+      c.	relative weight for each study
+      d.	Summary effect and p value
+    ii.	Mixed: demographics, details of intervention in meta synthesis analysis 
+  b.	Types of synthesis: segregated or integrated 
+    i.	Meta synthesis, meta enthonpology, 
+  c.	Critiques:
+    i.	Explain why choose quantitative meta analysis 
+    ii.	Keywords and database
+    iii.	Inclusion criteria: ppt
+      1.	Grey literature: valid literature and add values to research 
+    iv.	Check target journal to see specific guidelines for outlines
+    v.	Interested reliability 
 2.	Search strategy (www.meta-analysis.com)
-    a.	Pubmed, CINAHL, Embase, British Nursing Index (BNI), Cumulative Index to Nursing and Allied Health Literature (CINAHL), PubMed, Medline, PsycINFO, SPORTdiscus, Environmental Science and Pollution Research (ESPR), CNKI, Dissertation Abstracts, HealthSTAR, Medline, Mental Health Abstracts, PsycINFO, Social Sciences Abstracts, Sociological Abstracts via SocioFile, Academic Search Premier, ERIC, and Family & Society Studies Worldwide, Medline, PsycINFO, SUMMON, Scopus
-    b.	(grey literature) WHO Global Health Library, Cochrane Library, Database of Abstracts of Reviews of Effects (DARE), Google Scholar, Centre for Reviews and Dissemination (CRD) Database, OpenGrey, and EThOS (British Library)
+  a.	Pubmed, CINAHL, Embase, British Nursing Index (BNI), Cumulative Index to Nursing and Allied Health Literature (CINAHL), PubMed, Medline, PsycINFO, SPORTdiscus, Environmental Science and Pollution Research (ESPR), CNKI, Dissertation Abstracts, HealthSTAR, Medline, Mental Health Abstracts, PsycINFO, Social Sciences Abstracts, Sociological Abstracts via SocioFile, Academic Search Premier, ERIC, and Family & Society Studies Worldwide, Medline, PsycINFO, SUMMON, Scopus
+  b.	(grey literature) WHO Global Health Library, Cochrane Library, Database of Abstracts of Reviews of Effects (DARE), Google Scholar, Centre for Reviews and Dissemination (CRD) Database, OpenGrey, and EThOS (British Library)
 3.	Study selection
 4.	Inclusion and exclusion criteria
 5.	Quality assessment
-    a.	Qualitative: Critical Appraisal Skills Programme (CASP)
-    b.	Quantitative: 
-        i.	PRISMA guidelines
-        ii.	Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) checklist
+  a.	Qualitative: Critical Appraisal Skills Programme (CASP)
+  b.	Quantitative: 
+    i.	PRISMA guidelines
+    ii.	Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) checklist
 6.	Data extraction 
 7.	Synthesis 
-    a.	Qualitative: (1) Familiarization; (2) Identifying a thematic framework; (3) Indexing; (4) Charting; and (5) Mapping and Interpretation
-    b.	Quantitative: 
-        i.	DV moderated by IVs: Statistical metric, InOR, S.E.
-        ii.	structual aspect of IV, functional aspects of IV, combined assessment of IV
+  a.	Qualitative: (1) Familiarization; (2) Identifying a thematic framework; (3) Indexing; (4) Charting; and (5) Mapping and Interpretation
+  b.	Quantitative: 
+    i.	DV moderated by IVs: Statistical metric, InOR, S.E.
+    ii.	structual aspect of IV, functional aspects of IV, combined assessment of IV
 8.	Registration 
-    a.	PROSPERO https://www.crd.york.ac.uk/prospero/
-    b.	Cochrane Collaboration https://www.cochrane.org/
-    c.	Campbell Collaboration https://www.campbellcollaboration.org/
+  a.	PROSPERO https://www.crd.york.ac.uk/prospero/
+  b.	Cochrane Collaboration https://www.cochrane.org/
+  c.	Campbell Collaboration https://www.campbellcollaboration.org/
 	
 
 ### 180911 
@@ -201,32 +238,32 @@ Meta analysis procedure:
 1.	Psycho-socio-biological perspectives, Youth Data, 2016
 2.	Index in intervention: KPI, admission rate into hospital, numeric indicator, social return investment 
 3.	Design
-    a)	Case control: grouping by var
-    b)	RCT: pre and post groups, obs and exp groups 
-        i.	To avoid subjective allocation 
-        ii.	Minimize or control confounders
+  a)	Case control: grouping by var
+  b)	RCT: pre and post groups, obs and exp groups 
+    i.	To avoid subjective allocation 
+    ii.	Minimize or control confounders
 4.	Data
-    a)	Classification/cutoff points: 
-        i.	Quantitative - For subjective reported scores
-        ii.	How to quantify qualitative data from interview 
-            1.	Count times; Key words capture; Frequency; Facial expression: MS �C warning made from changes of facial expression; Emotions; Linguistic pattern 
-            2.	To avoid: pre/post comparison, structured coding, correct classification, keywords tagged, meaning attached 
+  a)	Classification/cutoff points: 
+    i.	Quantitative - For subjective reported scores
+    ii.	How to quantify qualitative data from interview 
+      1.	Count times; Key words capture; Frequency; Facial expression: MS �C warning made from changes of facial expression; Emotions; Linguistic pattern 
+      2.	To avoid: pre/post comparison, structured coding, correct classification, keywords tagged, meaning attached 
 5.	Time
-    a)	Incidence rate (IR); Prevalence rate (PR)
-    b)	Time, frequency, intervals
-    c)	Designs:
-        i.	Cross-sectional (no causal relationship and sequences, not measure changes), 
-        ii.	retrospective (no control, not ideal for quants), twin study (generic effects being controlled), 
-        iii.	prospective (contamination even with causal relationship), pre-post study, longitudinal (carefully determine intervals of each trial), panel
+  a)	Incidence rate (IR); Prevalence rate (PR)
+  b)	Time, frequency, intervals
+  c)	Designs:
+    i.	Cross-sectional (no causal relationship and sequences, not measure changes), 
+    ii.	retrospective (no control, not ideal for quants), twin study (generic effects being controlled), 
+    iii.	prospective (contamination even with causal relationship), pre-post study, longitudinal (carefully determine intervals of each trial), panel
 6.	Objectives
-    a)	Nature of inquiry
-    b)	Theory and data rely on each other
+  a)	Nature of inquiry
+  b)	Theory and data rely on each other
 7.	Better methods �C evidence based practice (ML can examine x-ray)
 
 Tasks 
-    1.	Find a paper
-    2.	Find its problems
-    3.	My contribution on this field: meaning making of caregiving, reflective groups for social workers
+  1.	Find a paper
+  2.	Find its problems
+  3.	My contribution on this field: meaning making of caregiving, reflective groups for social workers
 
 
 
@@ -238,81 +275,81 @@ Contact info in the booklet:
 Clear argument: what you are going to talk about, and summarize what you have talked about. This is called the meta text, which is the part of your thesis which talks about the text itself. 
 
 A convincing argument:
-    Justify that gap based on reference to up to date and relevant research
-    Identify a research gap which is meaningful and significant to your reader
-    Justify your own research findings based on previous research which is important in your specific field
-    Express all of this using the language of you academic discourse community 
+  Justify that gap based on reference to up to date and relevant research
+  Identify a research gap which is meaningful and significant to your reader
+  Justify your own research findings based on previous research which is important in your specific field
+  Express all of this using the language of you academic discourse community 
 
 Aims
-    To enhance disciplinary litany
-    Noticing of key features of language 
+  To enhance disciplinary litany
+  Noticing of key features of language 
 	Noticing and bridge research gap
 
 Tasks
-    Study guide blanking filling
-    Course booklet 
-    Literature review submit before the 5th class
-    Critique of a thesis 
+  Study guide blanking filling
+  Course booklet 
+  Literature review submit before the 5th class
+  Critique of a thesis 
 
 Learning outcomes
-    Identify target audience: 
-    Recognize audience and voice in text
+  Identify target audience: 
+  Recognize audience and voice in text
 
 Moves
-    General field
-    Specific
-    How interested
-    Why important
-    Application/problem solving
+  General field
+  Specific
+  How interested
+  Why important
+  Application/problem solving
 
 The flow：
-    Title
-    Introduction： give sense of direction - looking backward to the title and forward to the research questions
-    Literature review：clarifies what has ben and not been done as well as conflicting evidence， uncertainty or lack of effectively substantiated cliams
-    Research questions：
+  Title
+  Introduction： give sense of direction - looking backward to the title and forward to the research questions
+  Literature review：clarifies what has ben and not been done as well as conflicting evidence， uncertainty or lack of effectively substantiated cliams
+  Research questions：
 
 Literature review：
-    Demonstrate your knowledge of the field
-    Introduce background
-    Leads readers from unknown to known
-    Summarize current knowledge
-    Through analysis and evaluation of previous studies to clarify what is missing or poorly understood
-    Justify the need， value or significance of the work
+  Demonstrate your knowledge of the field
+  Introduce background
+  Leads readers from unknown to known
+  Summarize current knowledge
+  Through analysis and evaluation of previous studies to clarify what is missing or poorly understood
+  Justify the need， value or significance of the work
 
 
 ### Supervision: Projects ####################################################################################
 
 ### Cognitive Motivation Therapy for Dementia
 ## 181030
-    Background
-        Cochrane review and systematic evaluation on Reality Orientation Therapy 
-        14 weeks of 45-minuteweekly sessions
-        No clear long-term effect as the effects faded 10 weeks after the treatment stops
-        Similar therapy: Reminiscence Therapy (Woods et al., 2007)
-    Measurement
-        Cognition: 
-            Mini-Mental State Examination (MMSE, Folstein et al., 1975)
-            Alzheimer’s Disease Assessment Scale—Cognition (ADAS-Cog, Rosen et al., 1984)
-                categories: word recall, naming, commands, constructional praxis, ideational praxis, orientation, word recognition, spoken language, comprehension, word finding, remembering instructions, memory and new learning
-            Consortium to Establish a Register for Alzheimer’s Disease (CERAD, Morris et al., 1989)
-        Quality of life: QOL-AD (Logsdon et al.,1999)
-        Communication: Holden Communication Scale (Holden & Woods, 1982)
-        Behaviors: The Clifton Assessment Procedures for the Elderly—Behaviour Rating Scale (CAPE-BRS; Pattie and Gilleard, 1979)
-        Global scale:
-            Clinical Dementia Rating (CDR; Hughes, Berg, Danziger, Coben, & Martin, 1982)
-        Depression
-            Cornell Scale for Depression in Dementia (CSDD; Alexopoulos et al., 1988)
-        Anxiety
-            Rating for Anxiety in Dementia (RAID; Shankar, Walker, Frost, & Orrell, 1999)
-        Physical and mental dependency
-            Clifton Assessment Procedures for the Elderly-Behaviour Rating Scale (CAPE-BRS; Pattie & Gilleard, 1979)
-        
+  Background
+    Cochrane review and systematic evaluation on Reality Orientation Therapy 
+    14 weeks of 45-minuteweekly sessions
+    No clear long-term effect as the effects faded 10 weeks after the treatment stops
+    Similar therapy: Reminiscence Therapy (Woods et al., 2007)
+  Measurement
+    Cognition: 
+      Mini-Mental State Examination (MMSE, Folstein et al., 1975)
+      Alzheimer’s Disease Assessment Scale—Cognition (ADAS-Cog, Rosen et al., 1984)
+        categories: word recall, naming, commands, constructional praxis, ideational praxis, orientation, word recognition, spoken language, comprehension, word finding, remembering instructions, memory and new learning
+      Consortium to Establish a Register for Alzheimer’s Disease (CERAD, Morris et al., 1989)
+    Quality of life: QOL-AD (Logsdon et al.,1999)
+    Communication: Holden Communication Scale (Holden & Woods, 1982)
+    Behaviors: The Clifton Assessment Procedures for the Elderly—Behaviour Rating Scale (CAPE-BRS; Pattie and Gilleard, 1979)
+    Global scale:
+      Clinical Dementia Rating (CDR; Hughes, Berg, Danziger, Coben, & Martin, 1982)
+    Depression
+      Cornell Scale for Depression in Dementia (CSDD; Alexopoulos et al., 1988)
+    Anxiety
+      Rating for Anxiety in Dementia (RAID; Shankar, Walker, Frost, & Orrell, 1999)
+    Physical and mental dependency
+      Clifton Assessment Procedures for the Elderly-Behaviour Rating Scale (CAPE-BRS; Pattie & Gilleard, 1979)
+    
 
 
 
 
 ### Meaning making #############################################################
-##  181029
+## 181029
 
 Perception of health: 
 	Identity: I live a healthy life style
@@ -321,61 +358,82 @@ Perception of health:
 
 Discrepancies between situational and global meaning
 	Global meaning: what one believes and desires
-        Beliefs: 
-            Health (physical well-being, mortality, morbidity) and well-being; 
-            Illness violate important global beliefs (fairness, benevolence, predictability of the world and sense of invulnerability and personal control)
-        Goals (relationships, work, religion, knowledge, and achievement)
-            Health: physical health 
-            Illness: violates individuals' goals for their current lives and their plans for the future 
-        General sense of meaning in life: 
+    Beliefs: 
+      Health (physical well-being, mortality, morbidity) and well-being; 
+      Illness violate important global beliefs (fairness, benevolence, predictability of the world and sense of invulnerability and personal control)
+    Goals (relationships, work, religion, knowledge, and achievement)
+      Health: physical health 
+      Illness: violates individuals' goals for their current lives and their plans for the future 
+    General sense of meaning in life: 
 	Situational meaning: appraised meaning
-        Primary appraisal: one's beliefs in ability to control events affect whether potentially stressful events are appraised primarily as challenges or as threats. 
-        Secondary appraisal: evaluates the possibilities for coping and expectations regarding outcomes. 
-        Reappraisal of meaning (meaning making as coping):
-            Modify the meaning of an event to make it consistent with preexisting beliefs and goals 
-            Modify relevant beliefs and goals to accommodate the event
+    Primary appraisal: one's beliefs in ability to control events affect whether potentially stressful events are appraised primarily as challenges or as threats. 
+    Secondary appraisal: evaluates the possibilities for coping and expectations regarding outcomes. 
+    Reappraisal of meaning (meaning making as coping):
+      Modify the meaning of an event to make it consistent with preexisting beliefs and goals 
+      Modify relevant beliefs and goals to accommodate the event
 	Discrepancy creates distress and gives rise to efforts to reduce the discrepancy and resultant distress
 		Coping strategies 
-            Process: change one's global beliefs and goals with revised identity, growth, or world views to improve the fit between the appraised meaning of the stressor and global meaning (low control situations such as trauma, loss and serious illness may not be directly coped with)
+      Process: change one's global beliefs and goals with revised identity, growth, or world views to improve the fit between the appraised meaning of the stressor and global meaning (low control situations such as trauma, loss and serious illness may not be directly coped with)
 			Types: problem-focused, emotion-focused
 			
 Scenarios
-    1. People with mental illness appraise the meaning of their illness based on information they receive from sources such as their health providers. Their global meaning is that they can manage to control the illness by receiving conventional interventions or seeking help from their health providers; they have anticipated outcome in future and general sense of control over their lives. In order to reduce discrepancy between two types of meanings, one may gradually shift views of illness in a more positive direction or reconsider life goals or life meaning in light of the illness. 
-    2. When confronted with the fact of a loved one's death, the initial meaning of that eventual meanings that the individual may derive from it are influenced by the survivor's global meaning. Global meaning in terms of beliefs and goals regarding the deceased and their relationship, expectations about how and why things happen, perceptions of vulnerability to such events, and so on influence the survivor's understanding of the situation. From the perspective of stress and coping theory, situational meaning involves the appraisal of person-environment transactions, which in turn influences how people cope with the demands of those transactions and their outcomes. Traumatic events overwhelmingly beyond one's experiential readiness (primary appraisal) can lead one to question the viability of his or her world and self views. People with negative attitudes towards themselves perceive themselves not being able to adopt resources for coping with such a stressful situation (secondary appraisal). One would use reappraisal process to decrease the threatening and harmful aspects of the event and increase it positive aspects.
-    3. 
+  1. People with mental illness appraise the meaning of their illness based on information they receive from sources such as their health providers. Their global meaning is that they can manage to control the illness by receiving conventional interventions or seeking help from their health providers; while the situational meaning is that their symptoms worsen gradually and may not recover. They have anticipated outcome in future and general sense of control over their lives however the reality cannot meet their anticipation. In order to reduce discrepancy between two types of meanings, one may gradually shift views of illness in a more positive direction (believing other ways such as being optimistic, doing more physical activities, or becoming satisfactory with their lives) or reconsider life goals (they enjoy things that they physically can achieve and not expect anything that they can no longer achieve such as running with disability but they can still enjoy movies and food) or life meaning in light of the illness (illness allows one to value time and life more; illness restricts one's unhealthy eating habit). 
+
+  2. When confronted with the fact of a loved one's death, the initial meaning of that eventual meanings that the individual may derive from it are influenced by the survivor's global meaning. Global meaning in terms of beliefs and goals regarding the deceased and their relationship, expectations about how and why things happen, perceptions of vulnerability to such events, and so on influence the survivor's understanding of the situation. From the perspective of stress and coping theory, situational meaning involves the appraisal of person-environment transactions, which in turn influences how people cope with the demands of those transactions and their outcomes. Traumatic events overwhelmingly beyond one's experiential readiness (primary appraisal) can lead one to question the viability of his or her world and self views. People with negative attitudes towards themselves perceive themselves not being able to adopt resources for coping with such a stressful situation (secondary appraisal of situational meaning being congruent with global meaning or not). One would use reappraisal process to decrease the threatening and harmful aspects of the event and increase its positive aspects.
+  
+CST questions
+  1.	Is there a meta analysis research on CST comparing pharmacological and non-pharmacological interventions for dementia? 
+  2.	Does CST significantly have more effects on dementia comparing with other non-pharmacological interventions in RCT experiments?
+  3.	Does CST and relevant measurement include information of locus of control and coping strategies?
+ 
+
+
+Perception of health: 
+	Identity: I live a healthy life style
+	Health: living a healthy lifestyle protects people from illness
+	Global goals: desire to live a long time with robust health
+
+Discrepancies between situational and global meaning
+	Situational meaning: appraised meaning
+	Global meaning: what one believes and desires
+	Discrepancy creates distress and gives rise to efforts to reduce the discrepancy and resultant distress
+		Coping strategies: 
+			problem-focused
+			emotion-focused
+			non-solvable: low control situations such as trauma, loss and serious illness
 
 
 ## 181003 (systematic review on meaning making)
 0. Article selection
-    Year range: 2007-2018
-    Keywords: "meaning","care"
-    Database: Pubmed, Mediline, PshchoINFO, Cochrane library, EMBASE, CINAHL, WOS, Scopus
-    Inclusion criteria: 
-    Exclusion criteria: 
+  Year range: 2007-2018
+  Keywords: "meaning","care"
+  Database: Pubmed, Mediline, PshchoINFO, Cochrane library, EMBASE, CINAHL, WOS, Scopus
+  Inclusion criteria: 
+  Exclusion criteria: 
 
 1. Quality Assessment and selection 
-    Cochrane 
-    Whittemore and Knafl, 2005
-    PRISMA
+  Cochrane 
+  Whittemore and Knafl, 2005
+  PRISMA
 
 
 2. Summary - Variables:
-    author (year)
-    aims and objectives
-    research design (including sampling method)
-    measurement
-    country
-    settings
-    participants (eg.ample size, age, gender, martial status, health and mental health states)
-    care recipient (eg. age, gender, social security, financial status)
-    theory
-    cognitive framework
-    definition of meaning searching/making
-    global meaning 
-    situational meaning 
-    coping strategy
-    changes in meaning (making)
-    other key findings
+  author (year)
+  aims and objectives
+  research design (including sampling method)
+  measurement
+  country
+  settings
+  participants (eg.ample size, age, gender, martial status, health and mental health states)
+  care recipient (eg. age, gender, social security, financial status)
+  theory
+  cognitive framework
+  definition of meaning searching/making
+  global meaning 
+  situational meaning 
+  coping strategy
+  changes in meaning (making)
+  other key findings
 
 ## 180910
 Caregiving allowance ~ women (gender study) incentive for formal care; economic values performed, reduced labor market participation, structure of labor market, caregiving (formal or informal) for elderly (disabled or general) is effective
@@ -384,447 +442,511 @@ Meaning Making Model:
 
 System Theory + Reader-Response Theory (Caregiving model * Generational Model * Meaning Making Model) - Long-term care system: 
 1.	Carer:
-    i.	Psychological distress
-        1.	Caregiver Burden Inventory (CBI)
-    ii.	Meaning-making (the restoration of meaning in the context of highly stressful situations)
-        1.	There is increasing consensus that meaning making (i.e., “the restoration of meaning in the context of highly stressful situations;” Park, 2010, p. 257) can represent a central aspect of coping and adjustment in these contexts. From a meaning making perspective, challenges emerge if the reality of a stressor cannot be adaptively assimilated into global meaning (e.g., preexisting beliefs/values, goals) and/or the person cannot accommodate aspects of their global system to situationally construct meaning out of the experience (Holland, 2015). These violations of meaning can be quite distressing and lead to strained efforts to reconcile one’s appraisal of the stressor and global meaning, which may manifest as MDD or other mental health problems that prompt individuals to seek psychotherapy (Kendler, Karkowski, & Prescott, 1999; Park 2010).
-        2.	Help clients (carers) make sense of significant stressors and regain a sense of purpose and direction in life (Clark, 1995).
-        3.	Meaning made [Chinese version of the Positive Aspects of Caregiving (PAC)]: Affirming self, Enriching life 
-        4.	Meaning search: situational meaning [Finding Meaning Through Caregiving Scale (FMTCS) – loss/powerfulness + provisional meaning], global meaning (self-in-world, life goals, sense of life purpose)
+  i.	Psychological distress
+    1.	Caregiver Burden Inventory (CBI)
+  ii.	Meaning-making (the restoration of meaning in the context of highly stressful situations)
+    1.	There is increasing consensus that meaning making (i.e., “the restoration of meaning in the context of highly stressful situations;” Park, 2010, p. 257) can represent a central aspect of coping and adjustment in these contexts. From a meaning making perspective, challenges emerge if the reality of a stressor cannot be adaptively assimilated into global meaning (e.g., preexisting beliefs/values, goals) and/or the person cannot accommodate aspects of their global system to situationally construct meaning out of the experience (Holland, 2015). These violations of meaning can be quite distressing and lead to strained efforts to reconcile one’s appraisal of the stressor and global meaning, which may manifest as MDD or other mental health problems that prompt individuals to seek psychotherapy (Kendler, Karkowski, & Prescott, 1999; Park 2010).
+    2.	Help clients (carers) make sense of significant stressors and regain a sense of purpose and direction in life (Clark, 1995).
+    3.	Meaning made [Chinese version of the Positive Aspects of Caregiving (PAC)]: Affirming self, Enriching life 
+    4.	Meaning search: situational meaning [Finding Meaning Through Caregiving Scale (FMTCS) – loss/powerfulness + provisional meaning], global meaning (self-in-world, life goals, sense of life purpose)
 2.	Family: social assistance-like arrangement: residential care, home care
-    i.	caregiving intensity
-    ii.	caregiving needs [Activity of Daily Living (ADL)]
-    iii.	physical health
-    iv.	mental health
-    v.	part/full-time work
-    vi.	income, income security, social security 
-    vii.	gender, age, marital status, education level, living arrangement, financial status, physical distance (co-resident caregivers), 
+  i.	caregiving intensity
+  ii.	caregiving needs [Activity of Daily Living (ADL)]
+  iii.	physical health
+  iv.	mental health
+  v.	part/full-time work
+  vi.	income, income security, social security 
+  vii.	gender, age, marital status, education level, living arrangement, financial status, physical distance (co-resident caregivers), 
 3.	Government: 
-    i.	Tasks: cost management, program evaluation, administered means-tested assisting program 
-    ii.	Policies: health, social, employment policies 
-4.	Market: economic values of output by government and input by care recipients and carers; caregiving evaluated in terms of changes in aging and social values;  impact of care allowance on the labor force participation of women caregivers; community care rather than institutionalization is financially more cost-effective (economically and quality-wised); 
+  i.	Tasks: cost management, program evaluation, administered means-tested assisting program 
+  ii.	Policies: health, social, employment policies 
+4.	Market: economic values of output by government and input by care recipients and carers; caregiving evaluated in terms of changes in aging and social values; impact of care allowance on the labor force participation of women caregivers; community care rather than institutionalization is financially more cost-effective (economically and quality-wised); 
 5.	Voluntary sectors: volunteers, organizations, community care, NGO, NPO; charitable or religious organizations; 
 6.	Social workers 
-    i.	reflective groups
+  i.	reflective groups
 7.	Social background: social cost, social pressures, social insurance system, policy beneficiary to female; 
 * Reader-Response Theory
-    metacognitive and cognitive: affective, developmental, personal and social, individual differences
-    psychological background: beliefs, emotions, motivations
-    developmental, personal, social and individual differences
-    social motives
-    
+  metacognitive and cognitive: affective, developmental, personal and social, individual differences
+  psychological background: beliefs, emotions, motivations
+  developmental, personal, social and individual differences
+  social motives
+  
 
 Generations [baby boomer: 1946-1964; generation X: 1965-1980]
-    1.	Sense of loss, self centered; Tendency of searching meaning; Sense of meaning made 
-    2.	Well-being ~ Sense of loss + meaning searching
+  1.	Sense of loss, self centered; Tendency of searching meaning; Sense of meaning made 
+  2.	Well-being ~ Sense of loss + meaning searching
 
 Interactions, Meaning-making Model:
-    1.	Examine distribution for responsibilities of long-term care between the state, the market, and the family
-    2.	Factors for participating in paid labor market and informal caregiving
-    3.	Caregiving intensity 
+  1.	Examine distribution for responsibilities of long-term care between the state, the market, and the family
+  2.	Factors for participating in paid labor market and informal caregiving
+  3.	Caregiving intensity 
 
 Effects:
-    1.	Substitution effect: time needs for informal care work reduces labor market participation
-    2.	Income effect: high cost of caregiving induce carers to increase labor market participation to earn more income
-    3.	Demand for respite work: work as respite to avoid heavy caring work and mental pressure
-    4.	Disadvantage in job market due to high rate of absenteeism
+  1.	Substitution effect: time needs for informal care work reduces labor market participation
+  2.	Income effect: high cost of caregiving induce carers to increase labor market participation to earn more income
+  3.	Demand for respite work: work as respite to avoid heavy caring work and mental pressure
+  4.	Disadvantage in job market due to high rate of absenteeism
 
 Problems:
-    1.	Opportunity costs of caregivers’ foregone earnings and leisure
-    2.	Expenditure in household
-    3.	Health effects and impact on marriages
-    4.	Reduction of work hours
+  1.	Opportunity costs of caregivers’ foregone earnings and leisure
+  2.	Expenditure in household
+  3.	Health effects and impact on marriages
+  4.	Reduction of work hours
 
 Caregiving relationship 
-    1.	Care recipient and informal caregiver:
+  1.	Care recipient and informal caregiver:
 
 
 
 ### Reflective Group #############################################################
-##  181029
+## 181029
 
-    ## Literature 
-        MarsickMaltbiaAoM Unpublished.pdf
-        ppd-peer-group-mentoring-reflective-model-details.pdf
-        Protocols_Handout.pdf
-        reflect.pdf
-        Reflective group 1.docx
-        Reflective Practice For Leadership (RPL).pdf
-    ## Types 
-    1 Instructional design virtual learning community (Law, et al., 2011)
-        1 Motivation to participate virtual learning communities 
-        2 Factors for successful community building
-        3 Individual characteristics and group characteristics on community participation and knowledge building 
-        4 Structure of instructional design learning community: skills, knowledge, identity, values, epistemology (justifications and methods of proof that legitimize actions and claims within the community) (Shaffer, 2006)
-        5 Definition of reflective setting: 
-            1 novice professionals engage in authentic, messy, and ill-structured problems under the supervision of more experienced mentors
-            2 the ability to shift from standard, skilled performance to a more analytical and experimental mode when an unexpected complication arises during practice 
-    ## Reflective Group Structure and Content 
-    1 Virtual learning (community) meeting (Law, et al., 2011)
-        1 Past experiences
-        2 Prior knowledge for collective prior knowledge 
-        3 Self perceptions
-    2 Action Learning Conversation Protocol (Marsick & Maltbia, 2006) and Reflective Model (Boud, Keogh, & Walker, 1985)
-        1 structured conversation in 3 phases: 
-            1 framing/engaging (skills, action, and behaviors): 
-                1 preparing (10 min): write a key challenge in the form of a question, background information
-                2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
-                3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
-                4 requesting support: receive support from peers and supervisor 
-            2 Advancing (knowledge): 
-                1 Question storming (15 min): 
-                    asking reflective, interpretive, decisional questions (Weinstein, 1995)
-                    team members think silently and write down questions before share in a round-robin process (Adams, 2004)
-                2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
-                3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
-                4 committing (15 min): commit to actions after the question is reframed with verified assumptions
-            3 Disengaging (feelings, attitudes, and beliefs): 
-                1 summarizing key discoveries
-                2 reviewing personal commitments
-                3 checking for alignment in the group
-       
-    ## Reflective group techniques (Law, et al., 2011)
-        1 Interaction between individual characteristics and group characteristics (how individual contributes to the group while group influence knowledge construction process)
-        2 Group discussion online
-        3 Post one initial reaction towards the weekly Readings
-        4 Interact with at least one member in the online discussion forum
-        5 Post a reflection to synthesize learnings from readings and discussion
+  ## Literature 
+    MarsickMaltbiaAoM Unpublished.pdf
+    ppd-peer-group-mentoring-reflective-model-details.pdf
+    Protocols_Handout.pdf
+    reflect.pdf
+    Reflective group 1.docx
+    Reflective Practice For Leadership (RPL).pdf
+  ## Types 
+  1 Instructional design virtual learning community (Law, et al., 2011)
+    1 Motivation to participate virtual learning communities 
+    2 Factors for successful community building
+    3 Individual characteristics and group characteristics on community participation and knowledge building 
+    4 Structure of instructional design learning community: skills, knowledge, identity, values, epistemology (justifications and methods of proof that legitimize actions and claims within the community) (Shaffer, 2006)
+    5 Definition of reflective setting: 
+      1 novice professionals engage in authentic, messy, and ill-structured problems under the supervision of more experienced mentors
+      2 the ability to shift from standard, skilled performance to a more analytical and experimental mode when an unexpected complication arises during practice 
+  ## Reflective Group Structure and Content 
+  1 Virtual learning (community) meeting (Law, et al., 2011)
+    1 Past experiences
+    2 Prior knowledge for collective prior knowledge 
+    3 Self perceptions
+  2 Action Learning Conversation Protocol (Marsick & Maltbia, 2006) and Reflective Model (Boud, Keogh, & Walker, 1985)
+    1 structured conversation in 3 phases: 
+      1 framing/engaging (skills, action, and behaviors): 
+        1 preparing (10 min): write a key challenge in the form of a question, background information
+        2 sharing (10 min each): share each one's challenge and the team works on one challenge each time
+        3 clarifying (10 min each): peers help by asking objective questions to clarify the context and background information 
+        4 requesting support: receive support from peers and supervisor 
+      2 Advancing (knowledge): 
+        1 Question storming (15 min): 
+          asking reflective, interpretive, decisional questions (Weinstein, 1995)
+          team members think silently and write down questions before share in a round-robin process (Adams, 2004)
+        2 exploring assumptions (15 min): silently write down assumptions others hold and verify with the person. The procedure of ladder of inference is used to identify appropriate assumptions (Argyris, 1985)
+        3 reframing (15 min): reframing the original question. Each reframes the challenges and share revised question in a round-robin fashion with the help
+        4 committing (15 min): commit to actions after the question is reframed with verified assumptions
+      3 Disengaging (feelings, attitudes, and beliefs): 
+        1 summarizing key discoveries
+        2 reviewing personal commitments
+        3 checking for alignment in the group
+    
+  ## Reflective group techniques (Law, et al., 2011)
+    1 Interaction between individual characteristics and group characteristics (how individual contributes to the group while group influence knowledge construction process)
+    2 Group discussion online
+    3 Post one initial reaction towards the weekly Readings
+    4 Interact with at least one member in the online discussion forum
+    5 Post a reflection to synthesize learnings from readings and discussion
 
-    ## Theory
-    1 Levels of operations: 
-        1 unconscious or conscious impulses with aggressive behaviors are correlated with one's cognitive and emotional experiences 
-        2 supervisor facilitate social workers to develop their capacity to think and feel when faced with impulses and top self defeating patterns
-        3 supervisor and staff operate on conscious, covert and unconscious levels
-        4 supervisor creates more interactions between staff
-    2 Reflection improves quality 
-        1 reflection helps identify underlying values, beliefs, and assumptions and enables people to see how they can change a situation by changing the way they frame it and act on it 
-        2 structured conversation protocol enable supervisor in action learning programs to see how reflection could improve their thinking and the solutions to challenges in which they were engaged
-
-
-    ## Limitations
-    1 Older generation perceives virtual learning community may keep them isolated and segregated in "electronic communication"
+  ## Theory
+  1 Levels of operations: 
+    1 unconscious or conscious impulses with aggressive behaviors are correlated with one's cognitive and emotional experiences 
+    2 supervisor facilitate social workers to develop their capacity to think and feel when faced with impulses and top self defeating patterns
+    3 supervisor and staff operate on conscious, covert and unconscious levels
+    4 supervisor creates more interactions between staff
+  2 Reflection improves quality 
+    1 reflection helps identify underlying values, beliefs, and assumptions and enables people to see how they can change a situation by changing the way they frame it and act on it 
+    2 structured conversation protocol enable supervisor in action learning programs to see how reflection could improve their thinking and the solutions to challenges in which they were engaged
 
 
+  ## Limitations
+  1 Older generation perceives virtual learning community may keep them isolated and segregated in "electronic communication"
 
 
 
 ### supervision seminar #############################################################
-## Publication
+
+
+
+## 181105
+1. Meta analysis on dementia interventions
+  1.1 Research questions:
+    1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
+    1.1.2 Are non-pharmacological interventions more associated with adverse events?
+    1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
+    1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?  
+  1.2 Factors to add:
+    1.2.1 City level
+    1.2.2 Country of origin/cultural factors
+    1.2.3 Policy difference
+    1.2.4 Comparisons (control group conditions)
+    1.2.5 Pharmacological / non-pharmacological groups
+  1.3 Things to note in inclusion/exclusion criteria:
+    1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
+    1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
+
+2. Systematic review on meaning making (follow the team project)
+  2.1 In the stage of literature searching and screening
+  2.2 Variables to consider:
+    2.2.1 Gender
+    2.2.2 Definition of caregiving 
+    2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
+    2.2.4 Meaning making mechanism / models
+    2.2.5 Theories 
+    2.2.6 GRADE assessment
+
+3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
+    3.1 System Theory: 
+      3.1.1 Generational differences: cultural, socioeconomic, beliefs
+      3.1.2 Levels of care: micro, mezzo, macro
+      3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
+    3.2 Reader-response theory (narrative perspective of people around caregivers):
+      3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
+      3.2.2 Psychological background: beliefs, emotions, motivations
+      3.2.3 Developmental, personal, social and individual differences
+      3.2.4 Social motives
+    3.3 Caregiving model:
+      Balance between caregiving tasks and personal life tasks
+    3.4 Generational model:
+      3.4.1 Collectivism 
+      3.4.2 Freedom and autonomy
+    3.5 Meaing making model:
+      3.5.1 Stress handling
+      3.5.2 Caregiving perception
+      3.5.3 Meaning of life
+ 
+
+
+## 181102 academics and editors' choice with Merril Silverstein
 1. Database: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
-    Finding dataset: contact authors who published similar paper with dataset
+  Finding dataset: contact authors who published similar paper with dataset
 2. Theory:
-    Models, framework, theory is loosely required in social science journals, only used to interpret phenomenon or results 
-    Multiple theories sometimes can be used to interpret different part of the issues
+  Models, framework, theory is loosely required in social science journals, only used to interpret phenomenon or results 
+  Multiple theories sometimes can be used to interpret different part of the issues
+    Feminist theory, intersectionality, double jeopardy theory
 3. Publication: 
-    Identify journal: 
-        look into reference of targeted papers and identify which journals are they published from
-        The Gerontologist: meta analysis 
-            Find patterns of articles in this journal
-    To do: dementia should be linked to social component, sample size issues, measurement in detail, longitudinal study, findings not replicative, cultural context needs to be mentioned, methodology should be detailed on qualitative study especially, under-representative populations, countries with unique cultural elements, ageism, wealth distribution, discrimination, things are controversy (check editorial of month), population transitional/moving study, ambivalence of caregiving 
-    Not to do:growth curve in function data
+  Identify journal: 
+    look into reference of targeted papers and identify which journals are they published from
+    The Gerontologist: meta analysis 
+      Find patterns of articles in this journal
+  To do: dementia should be linked to social component, sample size issues, measurement in detail, longitudinal study, findings not replicative, cultural context needs to be mentioned, methodology should be detailed on qualitative study especially, under-representative populations, countries with unique cultural elements, ageism, wealth distribution, discrimination, things are controversy (check editorial of month), population transitional/moving study, ambivalence of caregiving 
+  Not to do:growth curve in function data
 4. Identify research area:
 
 
 
 
 
-##  181019
+## 181019
 1. Meta analysis on dementia interventions
-    1.1 Research questions:
-        1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
-        1.1.2 Are non-pharmacological interventions more associated with adverse events?
-        1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
-        1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?    
-    1.2 Factors to add:
-        1.2.1 City level
-        1.2.2 Country of origin/cultural factors
-        1.2.3 Policy difference
-        1.2.4 Comparisons (control group conditions)
-        1.2.5 Pharmacological / non-pharmacological groups
-    1.3 Things to note in inclusion/exclusion criteria:
-        1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
-        1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
+  1.1 Research questions:
+    1.1.1 Are non-pharmacological interventions still useful and effective in comparison with pharmacological interventions?
+    1.1.2 Are non-pharmacological interventions more associated with adverse events?
+    1.1.3 Is the effectiveness of interventions in China different from that in other Western countries with different cultures and medical care systems?
+    1.1.4 Do people in China tend to use psychosocial interventions more than foreign people due to the medical insurance coverage?  
+  1.2 Factors to add:
+    1.2.1 City level
+    1.2.2 Country of origin/cultural factors
+    1.2.3 Policy difference
+    1.2.4 Comparisons (control group conditions)
+    1.2.5 Pharmacological / non-pharmacological groups
+  1.3 Things to note in inclusion/exclusion criteria:
+    1.3.1 Control group's conditions (placebo, usual care, medications + usual care)
+    1.3.2 Participants' pre-existing conditions: having medications or not, receiving other interventions or not 
 
 2. Systematic review on meaning making (follow the team project)
-    2.1 In the stage of literature searching and screening
-    2.2 Variables to consider:
-        2.2.1 Gender
-        2.2.2 Definition of caregiving 
-        2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
-        2.2.4 Meaning making mechanism / models
-        2.2.5 Theories 
-        2.2.6 GRADE assessment
+  2.1 In the stage of literature searching and screening
+  2.2 Variables to consider:
+    2.2.1 Gender
+    2.2.2 Definition of caregiving 
+    2.2.3 Meaning making mode: cognitive, family-relational, religious, spiritual 
+    2.2.4 Meaning making mechanism / models
+    2.2.5 Theories 
+    2.2.6 GRADE assessment
 
 3. Caregiving measurement exploration (System Theory + Reader-Response Theory + Caregiving model + Generational Model + Meaning Making Model)
-        3.1 System Theory: 
-            3.1.1 Generational differences: cultural, socioeconomic, beliefs
-            3.1.2 Levels of care: micro, mezzo, macro
-            3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
-        3.2 Reader-response theory (narrative perspective of people around caregivers):
-            3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
-            3.2.2 Psychological background: beliefs, emotions, motivations
-            3.2.3 Developmental, personal, social and individual differences
-            3.2.4 Social motives
-        3.3 Caregiving model:
-            Balance between caregiving tasks and personal life tasks
-        3.4 Generational model:
-            3.4.1 Collectivism 
-            3.4.2 Freedom and autonomy
-        3.5 Meaing making model:
-            3.5.1 Stress handling
-            3.5.2 Caregiving perception
-            3.5.3 Meaning of life
+    3.1 System Theory: 
+      3.1.1 Generational differences: cultural, socioeconomic, beliefs
+      3.1.2 Levels of care: micro, mezzo, macro
+      3.1.3 Meaning making mechanism: how meaning making appraoch help caregiving and relevant difficulties
+    3.2 Reader-response theory (narrative perspective of people around caregivers):
+      3.2.1 Metacognitive and cognitive: affective, developmental, personal and social, individual differences
+      3.2.2 Psychological background: beliefs, emotions, motivations
+      3.2.3 Developmental, personal, social and individual differences
+      3.2.4 Social motives
+    3.3 Caregiving model:
+      Balance between caregiving tasks and personal life tasks
+    3.4 Generational model:
+      3.4.1 Collectivism 
+      3.4.2 Freedom and autonomy
+    3.5 Meaing making model:
+      3.5.1 Stress handling
+      3.5.2 Caregiving perception
+      3.5.3 Meaning of life
  
 
 ## 180924 (meta analysis, meaning making)
 1. Psychosocial interventions for elderly diagnosed of Alzheimer's
 1.1 Objective: compare the effectiveness of psychosocial interventions conducted for Chinese population and Western population diagnosed of Alzheimer's Disease from 2010 to 2018
 1.2 Methods: 
-    1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
-    1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
-    1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
-    1.2.4 Year range: 2008-2018
+  1.2.1 Chinese literature (CNKI, VIP, Wanfang) and English literature (Pubmed, Cochrane, Medline)
+  1.2.2 Inclusion criteria: RCT, screening tools (MMSE, ADL, QOL), diagnosed by ICD or DSM, etc.
+  1.2.3 Exclusion criteria: non-RCR, no comparison group, Chinese herb and medicine treatment, pharmacological intervention, comorbidity, etc.
+  1.2.4 Year range: 2008-2018
 1.3 Statistics:
-    1.3.1 publication bias analysis
-    1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
-    1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
+  1.3.1 publication bias analysis
+  1.3.2 Forest plot for effectiveness comparison of between group (Chinese population and foreign population) on demographics and treatment effects
+  1.3.3 meta-regression: whether demographics and Western/Chinese populations have differences on their treatment effects
 1.4 similar studies
-    1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
-    1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
-    1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
+  1.4.1 Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia. (Brodaty, et al.,2012)
+  1.4.2 Meta‐analysis of psychosocial interventions for caregivers of people with dementia. (Brodaty, et al., 2003)
+  1.4.3 Nonpharmacological Therapies in Alzheimer’s Disease: A Systematic Review of Efficacy (prior to 2008). (Olazarán, et al., 2010) 
 1.5 Questions:
-    1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
-    1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
-        argument: 
-            By policy and by choice - no diagnosis, medication, medical care
-            Settings: 
-            Literature: meta-analysis and cross-country
+  1.5.1 Would comparing Chinese and foreign populations be a narrow topic considering to publish in an English journal?
+  1.5.2 My assumption to compare two populations is that people's treatment (psychosocial intervention/medication) and residence (living at home or community/institution) preference are different. Would comparison be worth doing?
+    argument: 
+      By policy and by choice - no diagnosis, medication, medical care
+      Settings: 
+      Literature: meta-analysis and cross-country
 
 2. Meaning-making of caregivers
 2.1 Objective: Discuss meaning-making model through a meta-analysis perspective
 2.2 Variables: 
-    2.2.1 Meaning-making process: 
-        2.2.1.1 caregiving stress:
-        2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
-        2.2.1.3 coping strategies
-        2.2.1.4 roles of personality *: 
-            2.2.1.4.1 gender: *
-            2.2.1.4.2 culture: *
-            2.2.1.4.3 self-regulation: *
-            2.2.1.4.4 positive affect (optimism): *
-            2.2.1.4.5 sense of purpose: *
-            2.2.1.4.6 social support: *
-        2.2.1.5 changes/development in global meaning; *
-    2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
-    2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
-    2.2.4 Measurement: 
-        2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
-        2.2.4.2 Global and situational meaning-making (coping): 
-            2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
-            2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
-            2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
-    2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
-        Individual part
-        Loss/powerlessness
-        Provisional Meaning
-        Ultimate Meaning
-        Spouse part
-        2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
-        2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
-        2.2.5.3 Global Role strain
-        2.2.5.4 Marital Tension
-        2.2.5.5 Marital Satisfaction
-        2.2.5.6 Caregiver Satisfaction
-        2.2.5.7 Religiosity
-    Others:
-        "Meaning-making": abstract, keywords, title; 
-        methodology, empirical, factors, theory, qualitative/quantitative
-        * stress processing: primary and secondary appraisal
-        * theory: cultural difference in social cognition; 
-        * survey/questionnaire 
-        * reflective group: 
-            5-6 sessions: 
-            Caregiver support: burden, depression, caregiving
-            reflective group course structure: 
-        Team meeting:
-            # factors impact
-            # primary/secondary appraisal: general questions about these two parts.
-            # cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
+  2.2.1 Meaning-making process: 
+    2.2.1.1 caregiving stress:
+    2.2.1.2 discrepancy or congruency between global meaning and situational meaning (appraisal of an event)
+    2.2.1.3 coping strategies
+    2.2.1.4 roles of personality *: 
+      2.2.1.4.1 gender: *
+      2.2.1.4.2 culture: *
+      2.2.1.4.3 self-regulation: *
+      2.2.1.4.4 positive affect (optimism): *
+      2.2.1.4.5 sense of purpose: *
+      2.2.1.4.6 social support: *
+    2.2.1.5 changes/development in global meaning; *
+  2.2.2 Meaning: purpose, conceptualization of global meaning (stability, optimistic bias, personal relevance, religion), and situational meaning (person-environment transaction, primary and secondary appraisal of meaning), search for meaning (meaning making as coping), attribution and reattribution of an event
+  2.2.3 Beliefs: beliefs about the world, beliefs about the self, beliefs about the self in the world
+  2.2.4 Measurement: 
+    2.2.4.1 Initial appraised meaning of stressful events [Stress Appraisal Measure (SAM)]; 
+    2.2.4.2 Global and situational meaning-making (coping): 
+      2.2.4.2.1 Reappraisal of global or situational meaning [COPE inventory, Ways of Coping Checklist], 
+      2.2.4.2.2 Assessing the process of meaning making coping [Impact of Event Scale], 
+      2.2.4.2.3 Changed global or situational meaning [SAM, World Assumptions Scale]
+  2.2.5 [Finding meaning - An alternative paradigm for Alzheimer's disease family caregivers]
+    Individual part
+    Loss/powerlessness
+    Provisional Meaning
+    Ultimate Meaning
+    Spouse part
+    2.2.5.1 Behaviors: Frequency of Behavior Problem Scale
+    2.2.5.2 Depression: Center for Epidemiological Studies-Depression Scale
+    2.2.5.3 Global Role strain
+    2.2.5.4 Marital Tension
+    2.2.5.5 Marital Satisfaction
+    2.2.5.6 Caregiver Satisfaction
+    2.2.5.7 Religiosity
+  Others:
+    "Meaning-making": abstract, keywords, title; 
+    methodology, empirical, factors, theory, qualitative/quantitative
+    * stress processing: primary and secondary appraisal
+    * theory: cultural difference in social cognition; 
+    * survey/questionnaire 
+    * reflective group: 
+      5-6 sessions: 
+      Caregiver support: burden, depression, caregiving
+      reflective group course structure: 
+    Team meeting:
+      # factors impact
+      # primary/secondary appraisal: general questions about these two parts.
+      # cohorts study: aging issues; cohort effects rather than aging affects; literature preparation on maturity levels of one cohort.
 2.3 Problem:
-    2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
-    2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
-    2.3.3 Meaning making process is intentional or unconscious?
+  2.3.1 Individual differences: personality, values, beliefs that cause difference in global and situational meaning and meaning-making process
+  2.3.2 Research on coping strategies are overlooked: adaptive transformation of goals, changes in coping strategies as people age, 
+  2.3.3 Meaning making process is intentional or unconscious?
 
 
 ### COA Projects and Meetings ##########################################
 ## 181001 Macau Project
 
-1.  Ethical Approval (due on 181008 Monday)
-    (Kevin) English Version proposal (Kevin writes a brief proposal)
-    (MM) Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
-        Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
-    (Kevin) Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
-        Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
-    (Kevin) Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
-        consent form for quesitonnaire (MM on this)
-        consent for for interview (MM on this)
+1. Ethical Approval (due on 181008 Monday)
+  (Kevin) English Version proposal (Kevin writes a brief proposal)
+  (MM) Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
+    Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
+  (Kevin) Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
+    Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
+  (Kevin) Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
+    consent form for quesitonnaire (MM on this)
+    consent for for interview (MM on this)
 
-2.  Systematic Review on Meaning-making (due on 181008 Monday)
-    Preliminary search:
-        no year range
-        keywords: TI = ((meaning AND caregiv* )AND (tool OR model OR theory OR skill))
-        outcome: 
-            a list of year, author, name of articles, theory on endnote
-            summary or notes
-                                    
+2. Systematic Review on Meaning-making (due on 181008 Monday)
+  Preliminary search:
+    no year range
+    keywords: TI = ((meaning AND caregiv* )AND (tool OR model OR theory OR skill))
+    outcome: 
+      a list of year, author, name of articles, theory on endnote
+      summary or notes
+                  
 ## 180907 
 1.	Discussion
-    ○	Country review of the United States and Japan 
-        ■	looking into literature 
-        ■	to finish next Monday
-    ○	Data mining (web scraping with Python) on social media on meaning-making
-        ■	reading two books: Mastering Social Media Mining with Python (Bonzanini), Python Social Media Analytics (Chatterjee & Krystyanczuk)
-        ■	to find the application for the analysis of meaning-making
-        ■	association of "meaning making" or "meaning searching" with people's understanding, definition, and attitude while recording demographic info of carers through social media (websites, blogs, forum, social networking platform such as fb and twitter, pinterest, youtube), or,
-        ■	evaluate feedbacks and responses from carers to a list of meaning-making-related topics
-        ■	to contact Dr. Luo Hao on programming and coding issues
-    ○	Systematic review on meaning making (and interventions for Alzheimers)
-        ■	to check with Huiying and Jieling on their work in regards to systematic review
-        ■	to work on as class assignments
+  ○	Country review of the United States and Japan 
+    ■	looking into literature 
+    ■	to finish next Monday
+
+  ○	Data mining (web scraping with Python) on SNS on meaning-making
+    ■	books: Mastering Social Media Mining with Python (Bonzanini), Python Social Media Analytics (Chatterjee & Krystyanczuk)
+    ■	usable Twitter and FB API?
+        Twitter: Twurl
+        FB: Facebook Ads, Facebook Atlas, Facebook Graph, and Facebook Marketing
+    ■	Data collection
+        1. definition of meaning for caregiving and being a caregiver
+        2. meaning making process
+        3. coping strategies
+    ■	keywords: 
+        1. Caregiving: caretak* OR caregiv* OR caring OR career OR care OR caretak* OR caregiv* OR caring OR career OR care
+        2. Meaning making: "meaning mak*" or "mak* meaning" or "sense mak*" or "mak* sense" or "locus of control" or ...
+    ■	research goal:
+        1. what does meaning making means in carer population?
+        2. what are their meaning making process? does it echo to Park's model?
+        3. what are the coping strategies when making meaning?
+        4. to validate the meaning making model
+
+  ○	Systematic review on meaning making (and interventions for Alzheimers)
+    ■	to check with Huiying and Jieling on their work in regards to systematic review
+    ■	to work on as class assignments
 2.	Plan for next session [could be earlier since our project is moving faster in this stage]
-    ○	to report analytical methods for data mining of meaning making
-    ○	to report primary preparation for systematic review on meaning making
+  ○	to report analytical methods for data mining of meaning making
+  ○	to report primary preparation for systematic review on meaning making
 3.	Questions:
-    ○	Would you please help coordinate Dr. Luo in this data mining project? I guess we need to have a meeting on this topic, because I am not quite familiar with meaing-making even though I learned the theory and its basic construct. [my suggestion is do a literature review on meaning making & carer first; then we would have much more confidence what to “mine” in the data sea. For the technical side, no worries, I will link you to Dr. Luo]
-    ○	You mentioned questionnaire related to meaning-making (I couldn't hear that part clearly due to signal issues)? Are you suggesting to design part of the questionnaires based on the result of data mining? [I mean if you could identify new framework on meaning making, or other key variables that you would like to be included for your thesis, I will support you. But time is important – the project data collection would start late this year or early next year. Again, literature review is important.]
+  ○	Would you please help coordinate Dr. Luo in this data mining project? I guess we need to have a meeting on this topic, because I am not quite familiar with meaing-making even though I learned the theory and its basic construct. [my suggestion is do a literature review on meaning making & carer first; then we would have much more confidence what to “mine” in the data sea. For the technical side, no worries, I will link you to Dr. Luo]
+  ○	You mentioned questionnaire related to meaning-making (I couldn't hear that part clearly due to signal issues)? Are you suggesting to design part of the questionnaires based on the result of data mining? [I mean if you could identify new framework on meaning making, or other key variables that you would like to be included for your thesis, I will support you. But time is important – the project data collection would start late this year or early next year. Again, literature review is important.]
 
 
 ### 180907
 Data Mining with Python:
 <<Python Social Media Analytics>>: Twitter, Facebook, Forum, Youtube, Github, Pinterest, Blogs, RSS, Google+
-    data mining social media
-    Facebook sentimentals 
-    Coding can be a little complicated 
-    Know any friend in CS
+  data mining social media
+  Facebook sentimentals 
+  Coding can be a little complicated 
+  Know any friend in CS
 
 <<Mastering Social Media Mining with Python>>
-    Country review United states (tax discount) and Japan (dont have carer allowance)
-    Join Deng Linlin
-    Python technical assistance from Luo
-    Meaning-making direction 
-    Meaning akongmakong systematic review
-    Country review
+  Country review United states (tax discount) and Japan (dont have carer allowance)
+  Join Deng Linlin
+  Python technical assistance from Luo
+  Meaning-making direction 
+  Meaning akongmakong systematic review
+  Country review
 
 Systematic review
 
 
-### 180906  
+### 180906 
 
 
 1. Rational to select countries under review
 
 2. Under each country - United Kingdom
-    2.1.	Policy name, time of enactment, weblink, etc.
-        Policy Name: Carer’s Allowance (Invalid Care Allowance until 1986)
-        Time of enactment: 1976
-        Weblink: https://www.gov.uk/carers-allowance
-    2.2.	Rational and objective
-        Carer's Allowance is a means-tested, non-contributory benefit in the United Kingdom payable to people who care for a disabled person for at least 35 hours a week. It was first established as Invalid Care Allowance in 1976, not eligible for married women until the occurrence of an unlawful sexual discrimination by the European Court in 1986 in the case of Jackie Drake.
-    2.3.	Defining eligibility
-        The following conditions for a carer need to be met: 1) spend at least 35 hours a week caring for a disabled person (one doesn't have to live with them or be related to them); 2) care for someone who receives the higher-rate or middle-rate care component of Disability Living Allowance, either rate of Personal Independence Payment daily living component, or any rate of Attendance Allowance; 3) do not earn more than £120 a week (after deductions); 4) are not in full-time education (or 21 hours a week or more); 5) age of 16 and above; 6) have been in England, Scotland or Wales for at least 2 of the last 3 years (this doesn’t apply if you’re a refugee or have humanitarian protection status), or normally live in England, Scotland or Wales, or you live abroad as a member of the armed forces 7) not subject to immigration control.
-        Noted: elderly shall include all age groups
-    2.4.	Amount
-        Carer’s Allowance is worth £64.60 per week (for April 2018-19) and is usually paid every four weeks
-    2.5.	Administrative procedure
-        1) Contact Carer’s Allowance Unit on 0800 731 0297 (text phone: 0800 731 0317) or visit GOV.UK to download a claim form or make a claim online. Local Age UK can assist when needed.
-        2) Written decision and effective date will be informed if the claim is approved. A challenge can be made if the claim is turned down.
-        3) Keep the Carer’s Allowance Unit informed and updated whenever there is a change of caregiving condition, including but not limited to: a) one changes, starts or leaves job; b) one starts earning more than £120 a week; c) one stops being a carer; d) one takes a holiday or goes into hospital - even if one arranges care while away; e) the person to care for goes into hospital or takes a holiday
-    2.6.	Welfare regime/GDP/etc.
-        Welfare regime mainly aims toward the promotion of health, education, employment, and social security. This regime causes increase in expenditure and a bigger range of government responsibility as well as in taxation, regulation of industry, food and housing.
-    2.7.	Evaluation report/debate;
-        1) Expenditure and burden for government take away the awareness of citizens’ personal responsibility and result in welfare dependency with which people become lack of motivation or incentives in working and personal development.
-        2) Allowance, being stringent in its condition, is provided with heavy and regular caring duties for caregivers who has to give up their own work or personal business later on. All conditions of criteria allow a small percentage of carers to receive the allowance. Only under 1% of UK population received a Carer’s Allowance in 2008.
-        3) Identification of targeted carers who are eligible to receive allowance can be administratively complicated and infeasible due to its various requirement to evaluate, in which some can be difficult to assess in the real setting.
-    2.8.	Anything related.
+  2.1.	Policy name, time of enactment, weblink, etc.
+    Policy Name: Carer’s Allowance (Invalid Care Allowance until 1986)
+    Time of enactment: 1976
+    Weblink: https://www.gov.uk/carers-allowance
+  2.2.	Rational and objective
+    Carer's Allowance is a means-tested, non-contributory benefit in the United Kingdom payable to people who care for a disabled person for at least 35 hours a week. It was first established as Invalid Care Allowance in 1976, not eligible for married women until the occurrence of an unlawful sexual discrimination by the European Court in 1986 in the case of Jackie Drake.
+  2.3.	Defining eligibility
+    The following conditions for a carer need to be met: 1) spend at least 35 hours a week caring for a disabled person (one doesn't have to live with them or be related to them); 2) care for someone who receives the higher-rate or middle-rate care component of Disability Living Allowance, either rate of Personal Independence Payment daily living component, or any rate of Attendance Allowance; 3) do not earn more than £120 a week (after deductions); 4) are not in full-time education (or 21 hours a week or more); 5) age of 16 and above; 6) have been in England, Scotland or Wales for at least 2 of the last 3 years (this doesn’t apply if you’re a refugee or have humanitarian protection status), or normally live in England, Scotland or Wales, or you live abroad as a member of the armed forces 7) not subject to immigration control.
+    Noted: elderly shall include all age groups
+  2.4.	Amount
+    Carer’s Allowance is worth £64.60 per week (for April 2018-19) and is usually paid every four weeks
+  2.5.	Administrative procedure
+    1) Contact Carer’s Allowance Unit on 0800 731 0297 (text phone: 0800 731 0317) or visit GOV.UK to download a claim form or make a claim online. Local Age UK can assist when needed.
+    2) Written decision and effective date will be informed if the claim is approved. A challenge can be made if the claim is turned down.
+    3) Keep the Carer’s Allowance Unit informed and updated whenever there is a change of caregiving condition, including but not limited to: a) one changes, starts or leaves job; b) one starts earning more than £120 a week; c) one stops being a carer; d) one takes a holiday or goes into hospital - even if one arranges care while away; e) the person to care for goes into hospital or takes a holiday
+  2.6.	Welfare regime/GDP/etc.
+    Welfare regime mainly aims toward the promotion of health, education, employment, and social security. This regime causes increase in expenditure and a bigger range of government responsibility as well as in taxation, regulation of industry, food and housing.
+  2.7.	Evaluation report/debate;
+    1) Expenditure and burden for government take away the awareness of citizens’ personal responsibility and result in welfare dependency with which people become lack of motivation or incentives in working and personal development.
+    2) Allowance, being stringent in its condition, is provided with heavy and regular caring duties for caregivers who has to give up their own work or personal business later on. All conditions of criteria allow a small percentage of carers to receive the allowance. Only under 1% of UK population received a Carer’s Allowance in 2008.
+    3) Identification of targeted carers who are eligible to receive allowance can be administratively complicated and infeasible due to its various requirement to evaluate, in which some can be difficult to assess in the real setting.
+  2.8.	Anything related.
 
 Reference
-    OECD. (2011). Providing and Paying for Long-Term Care: Chapter 4 Policies to Support Family Carers.
-    UK Government. (2018). Carer’s Allowance. Retrieved from https://www.gov.uk/carers-allowance
-    Age UK. (December 27, 2013).  Carer’s Allowance. Retrieved from https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/carers-allowance/
-    Cares UK. (April 20, 2014). Our History. Retrieved from https://en.wikipedia.org/wiki/Carer%27s_Allowance
-    HK legislative council
-    Carer allowance in Finland and the United Kingdom (2015-2016) https://www.legco.gov.hk/research-publications/english/essentials-1516ise23-carer-allowance-in-finland-and-the-united-kingdom.htm
-    HK SWD Pilot Scheme on Living Allowance for Carers of Elderly Persons from Low Income Families Phase II
-    https://www.swd.gov.hk/en/textonly/site_pubsvc/page_supportser/sub_PCA/
-    Long-Term Care Coverage in Europe
-    https://www.soa.org/Files/Pubs/pub-2016-05-ltc-coverage-europe.pdf
-    Long term care for elderly: Provisions and providers in 33 European countries
-    https://www.researchgate.net/publication/303566393_Long-term_care_for_the_elderly_Provisions_and_providers_in_33_European_countries?enrichId=rgreq-7244375eb6a4a012b04e7a3fe6486e2f-XXX&enrichSource=Y292ZXJQYWdlOzMwMzU2NjM5MztBUzozNjY0OTI0NTg3MzM1NjhAMTQ2NDM5MDAxOTY5OQ%3D%3D&el=1_x_2&_esc=publicationCoverPdf
-    OECD (2011): Help Wanted? Providing and Paying for long-term care
-    https://read.oecd-ilibrary.org/social-issues-migration-health/help-wanted_9789264097759-en#page1
-    OECD. (2013) A Good Life in Old Age? Monitoring and Improving Quality in Long-term Care.
-    https://www.oecd.org/els/health-systems/PolicyBrief-Good-Life-in-Old-Age.pdf
-    http://www.oecd.org/els/health-systems/a-good-life-in-old-age-9789264194564-en.htm
+  OECD. (2011). Providing and Paying for Long-Term Care: Chapter 4 Policies to Support Family Carers.
+  UK Government. (2018). Carer’s Allowance. Retrieved from https://www.gov.uk/carers-allowance
+  Age UK. (December 27, 2013). Carer’s Allowance. Retrieved from https://www.ageuk.org.uk/information-advice/money-legal/benefits-entitlements/carers-allowance/
+  Cares UK. (April 20, 2014). Our History. Retrieved from https://en.wikipedia.org/wiki/Carer%27s_Allowance
+  HK legislative council
+  Carer allowance in Finland and the United Kingdom (2015-2016) https://www.legco.gov.hk/research-publications/english/essentials-1516ise23-carer-allowance-in-finland-and-the-united-kingdom.htm
+  HK SWD Pilot Scheme on Living Allowance for Carers of Elderly Persons from Low Income Families Phase II
+  https://www.swd.gov.hk/en/textonly/site_pubsvc/page_supportser/sub_PCA/
+  Long-Term Care Coverage in Europe
+  https://www.soa.org/Files/Pubs/pub-2016-05-ltc-coverage-europe.pdf
+  Long term care for elderly: Provisions and providers in 33 European countries
+  https://www.researchgate.net/publication/303566393_Long-term_care_for_the_elderly_Provisions_and_providers_in_33_European_countries?enrichId=rgreq-7244375eb6a4a012b04e7a3fe6486e2f-XXX&enrichSource=Y292ZXJQYWdlOzMwMzU2NjM5MztBUzozNjY0OTI0NTg3MzM1NjhAMTQ2NDM5MDAxOTY5OQ%3D%3D&el=1_x_2&_esc=publicationCoverPdf
+  OECD (2011): Help Wanted? Providing and Paying for long-term care
+  https://read.oecd-ilibrary.org/social-issues-migration-health/help-wanted_9789264097759-en#page1
+  OECD. (2013) A Good Life in Old Age? Monitoring and Improving Quality in Long-term Care.
+  https://www.oecd.org/els/health-systems/PolicyBrief-Good-Life-in-Old-Age.pdf
+  http://www.oecd.org/els/health-systems/a-good-life-in-old-age-9789264194564-en.htm
  
 ### 180829 on Tasks (long-term): dementia caregiving, adult child caregiver, meaning making, generation, longitudinal study
 1. Time table for survey (N = 1000), sum, policy
 2. Recruitment strategy:
-    a) new media (whatsapp, facebook, video website), survey group, with Award:
-    b) Risk assessment - REACH2; identification of participants.
-    c) Quality control
-    d) Sources: 智慧友善医疗社区计划, ADA, Support group/ charter/ salvation
+  a) new media (whatsapp, facebook, video website), survey group, with Award:
+  b) Risk assessment - REACH2; identification of participants.
+  c) Quality control
+  d) Sources: 智慧友善医疗社区计划, ADA, Support group/ charter/ salvation
 3. Country review:
-    a) template; IRB; GDP;
-    b) Word documented with endnote library saved
-    c) US, UK, Australia, HK, New Zealand
-    d) Welfare Regime/GDP: political and economic status; definition (such as Social context: aged caregivers surveyed by comprehensive test and people with disabilities in HK)
+  a) template; IRB; GDP;
+  b) Word documented with endnote library saved
+  c) US, UK, Australia, HK, New Zealand
+  d) Welfare Regime/GDP: political and economic status; definition (such as Social context: aged caregivers surveyed by comprehensive test and people with disabilities in HK)
 4. Survey issues: identification of survey
 5. Publication
-    a) meaning-making from twitter, fb, weibo
-    b) 3-4 pairs of dementia elderly and caregivers for meaning making tasks
+  a) meaning-making from twitter, fb, weibo
+  b) 3-4 pairs of dementia elderly and caregivers for meaning making tasks
 6. Theory/Model
-    a) Meaning making model (towards stress and challenging conditions): global (beliefs, goals, subjective sense of meaning) and situational meaning (specific instance… ) e.g. Meaning Making Model (Park, 2014)
-        i. Affirming self and enriching life (Lou, Lau & Cheung, 2014), caregiving adjustment, psychological distress (Lou, Lau & Cheung, 2015)
-        ii. Protective factors associated with positive mental health indicators among caregivers
-        iii. Social norms play a significant role in meaning-making process ?? lacked literature support
-        iv. Expanding meaning making framework between two generations
-        v. Meaning making associated with well-being of caregivers
-    b) Generation model towards meaning making in dementia caregiving to investigate generational differences (baby boom and X generations); meanings (dementia caregiving, meaning made, well-being indicators) between and within two generations
+  a) Meaning making model (towards stress and challenging conditions): global (beliefs, goals, subjective sense of meaning) and situational meaning (specific instance… ) e.g. Meaning Making Model (Park, 2014)
+    i. Affirming self and enriching life (Lou, Lau & Cheung, 2014), caregiving adjustment, psychological distress (Lou, Lau & Cheung, 2015)
+    ii. Protective factors associated with positive mental health indicators among caregivers
+    iii. Social norms play a significant role in meaning-making process ?? lacked literature support
+    iv. Expanding meaning making framework between two generations
+    v. Meaning making associated with well-being of caregivers
+  b) Generation model towards meaning making in dementia caregiving to investigate generational differences (baby boom and X generations); meanings (dementia caregiving, meaning made, well-being indicators) between and within two generations
 7. Measurement
-    a) Finding Meaning Through Caregiving Scale (FMTCS) – loss/powerfulness and provisional meaning
-    b) Positive Aspects of Caregiving (PAC)
-    c) Activity of Daily Living (ADL)
-    d) Revised Memory and Problem Behavioral Checklist (REACH II)
+  a) Finding Meaning Through Caregiving Scale (FMTCS) – loss/powerfulness and provisional meaning
+  b) Positive Aspects of Caregiving (PAC)
+  c) Activity of Daily Living (ADL)
+  d) Revised Memory and Problem Behavioral Checklist (REACH II)
 
 Tasks (short-term by this weekend till 180902)
-    1. Policy reading and taking notes
-    2. Revise 2.1 (policy/act name), 2.2 (objectives), 2.3 (separate set of eligibility; define disabilities; separate definition of eligibilities), 2.6, 2.7 (evaluation report)
-    3. Mark citation in policy review framework
-    4. Web scraping with python on facebook and twitter, moments, whatsapp, weibo for meaning making tasks, separating two groups – baby boom and X generations
+  1. Policy reading and taking notes
+  2. Revise 2.1 (policy/act name), 2.2 (objectives), 2.3 (separate set of eligibility; define disabilities; separate definition of eligibilities), 2.6, 2.7 (evaluation report)
+  3. Mark citation in policy review framework
+  4. Web scraping with python on facebook and twitter, moments, whatsapp, weibo for meaning making tasks, separating two groups – baby boom and X generations
 
  
 POLICY: Macau carer allowance study proposal
 1. Objects: carers of elderly aged 65 or more, and disability
 2. Eligibility: [? require policy review of different countries]
 3. Research Framework:
-    a) Policy feasibility analysis from perspectives of political, economic, social, legal, and environmental conditions of Macau on
-        i. roles (of organizations),
-        ii. motivations,
-        iii.belief systems,
-        iv. resources,
-        v. positions (political attitude),
-        vi. model of actions (strategic plan or model).
-    b) [reference] Meltsner: political feasibility and policy analysis; May: politics and policy analysis; Reich: applied political analysis for health policy reform; Starling: strategies for policy making; Thomas: actor management in the development of health financing reform; 吴定：公共政策2版
+  a) Policy feasibility analysis from perspectives of political, economic, social, legal, and environmental conditions of Macau on
+    i. roles (of organizations),
+    ii. motivations,
+    iii.belief systems,
+    iv. resources,
+    v. positions (political attitude),
+    vi. model of actions (strategic plan or model).
+  b) [reference] Meltsner: political feasibility and policy analysis; May: politics and policy analysis; Reich: applied political analysis for health policy reform; Starling: strategies for policy making; Thomas: actor management in the development of health financing reform; 吴定：公共政策2版
 4. Research method:
-    a) Literature review, interview in depth, focus group
-    b) Confucian familism from Asian countries; career allowance policy; policy review and analysis; definition and eligibility of carers
-    c) Identification of Macau stakeholders and key players by policy review, support, neutral, or against career allowance
-    d) Data extracted from deep interview, focused group, and literature review used for analysis on above 6 areas.
+  a) Literature review, interview in depth, focus group
+  b) Confucian familism from Asian countries; career allowance policy; policy review and analysis; definition and eligibility of carers
+  c) Identification of Macau stakeholders and key players by policy review, support, neutral, or against career allowance
+  d) Data extracted from deep interview, focused group, and literature review used for analysis on above 6 areas.
  
  
 
  
-### 180915  
+### 180915 
 
 * Work on timeline and country review 
 * REACH II to social workers: risk assessment (questions) into web based accounts with coupons. 
@@ -845,74 +967,74 @@ POLICY: Macau carer allowance study proposal
 ### Readings Archive ###############################################################################
 * Finding meaning through caregiving: development of an instrument for family caregivers of persons with AD
 measures:
-    Non-Death Grief Experience Inventory - Form B (GEI-B): grief associated with situations of divorce, separation, parenting a handicapped child, and institutionalization of aged parents
-    Life Attitude Profile-Revised (LAP-R): purpose, coherence, life control, death acceptance, existential vacuum, and goal seeking; personal meaning index, life attitude balance index
-    Ladder of Life Index (LOLI): meaningful life in 5 years towards future
-    Public and Private Religiosity
-    Finding Meaning Through Caregiving Scale (FMTCS): 
-        loss/powerlessness: difficult aspects of caregiving
-        provisional meaning: how caregivers find day to day meaning 
-        ultimate meaning: philosophical, religious, spiritual attributions associated with the experience of caregiving
+  Non-Death Grief Experience Inventory - Form B (GEI-B): grief associated with situations of divorce, separation, parenting a handicapped child, and institutionalization of aged parents
+  Life Attitude Profile-Revised (LAP-R): purpose, coherence, life control, death acceptance, existential vacuum, and goal seeking; personal meaning index, life attitude balance index
+  Ladder of Life Index (LOLI): meaningful life in 5 years towards future
+  Public and Private Religiosity
+  Finding Meaning Through Caregiving Scale (FMTCS): 
+    loss/powerlessness: difficult aspects of caregiving
+    provisional meaning: how caregivers find day to day meaning 
+    ultimate meaning: philosophical, religious, spiritual attributions associated with the experience of caregiving
 From Spouse's side
-    Behaviors: Frequency of Behavior Problem Scale
-    Depression: Center for Epidemiological Studies-Depression Scale
-    Global Role strain
-    Marital Tension
-    Marital Satisfaction
-    Caregiver Satisfaction
-    Religiosity
+  Behaviors: Frequency of Behavior Problem Scale
+  Depression: Center for Epidemiological Studies-Depression Scale
+  Global Role strain
+  Marital Tension
+  Marital Satisfaction
+  Caregiver Satisfaction
+  Religiosity
 
 * Meta-analysis of nonpharmacological interventions for neuropsychiatric symptoms of dementia
 Analytical items:
-    1. Skills training for caregiversManaging behavioral and psychological symptoms of dementia
-        Communicating better with care recipient
-        Using role play, videos modeling behavior management strategies, cognitive-behavioral interventions, vignettes, live interviews
-        Enhancing care recipients quality of life, e.g., improving daily activities, increasing pleasant events
-    2. Education for caregivers     
-        Psychoeducation
-        Improving home care
-        Tailored advice and recommendations     
-        Problem-solving methods
-        Improving support network
-        Computer-mediated automated interactive voice response
-        Planning: emergencies, legal, financial
-    3. Activity planning and environmental redesign
-        Planning activities with caregiver for care recipient
-        Modifying care recipient’s physical and social environment
-    4. Enhancing support for caregivers     
-        Social support
-        Web or telephone support
-        Strategies on how to access support     
-        Family counseling
-    5. Self-care techniques for caregivers     
-        Health management    
-        Stress management
-        Coping with change as a result of caregiving     
-        Music therapy Counseling
-    6.  Miscellaneous
-        Collaborative care with a health professional or care manager
-        Exercise for care recipient
+  1. Skills training for caregiversManaging behavioral and psychological symptoms of dementia
+    Communicating better with care recipient
+    Using role play, videos modeling behavior management strategies, cognitive-behavioral interventions, vignettes, live interviews
+    Enhancing care recipients quality of life, e.g., improving daily activities, increasing pleasant events
+  2. Education for caregivers   
+    Psychoeducation
+    Improving home care
+    Tailored advice and recommendations   
+    Problem-solving methods
+    Improving support network
+    Computer-mediated automated interactive voice response
+    Planning: emergencies, legal, financial
+  3. Activity planning and environmental redesign
+    Planning activities with caregiver for care recipient
+    Modifying care recipient’s physical and social environment
+  4. Enhancing support for caregivers   
+    Social support
+    Web or telephone support
+    Strategies on how to access support   
+    Family counseling
+  5. Self-care techniques for caregivers   
+    Health management  
+    Stress management
+    Coping with change as a result of caregiving   
+    Music therapy Counseling
+  6. Miscellaneous
+    Collaborative care with a health professional or care manager
+    Exercise for care recipient
 Limitations:
-    problem in identification of which specific elements of interventions were effective for which behaviors
-    not all interventions target behaviors
-    choices of instruments
-    caregivers' variability in knowledge, skills, and supports prior to intervention affect their capacity for improvement 
-    the quality of research and sample size vary
+  problem in identification of which specific elements of interventions were effective for which behaviors
+  not all interventions target behaviors
+  choices of instruments
+  caregivers' variability in knowledge, skills, and supports prior to intervention affect their capacity for improvement 
+  the quality of research and sample size vary
 
 * Meta analysis of psychosocial interventions for caregivers of people with dementia
-   criteria for rating quality of studies TABLE 1
-        design: RCT
-        subjects: standardized diagnostic criteria 
-        outcome: well validated, reliable measures, objective outcome
-        statistics: statistical significance
-        evidence of sufficient powerfulness
-        results: blind ratings, follow-up assessment 
-    evaluation of items
-        study name, design, outcome measures, instruments, sample size, evaluative quality, dosage
-        effect size of difference between treatment and control group
+  criteria for rating quality of studies TABLE 1
+    design: RCT
+    subjects: standardized diagnostic criteria 
+    outcome: well validated, reliable measures, objective outcome
+    statistics: statistical significance
+    evidence of sufficient powerfulness
+    results: blind ratings, follow-up assessment 
+  evaluation of items
+    study name, design, outcome measures, instruments, sample size, evaluative quality, dosage
+    effect size of difference between treatment and control group
 
 * Narratives of family caregiving - the process of making meaning
 Triangulated design 
-    thematic: characteristics 
-    across-case analysis and narrative + within-case analysis
+  thematic: characteristics 
+  across-case analysis and narrative + within-case analysis
 Theory: reader-response theory 

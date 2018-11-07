@@ -1,17 +1,37 @@
 ### Overview ##########################################################################################################
 
-[meeting]: 180927 (Thursday)
+[meeting]: 181204 (Tu)
 [coding]: folder of "Mastering social media mining with python"
-[academic]: /literature, /manuscript, /homework, /writing, /database
-[others]: /side-project; /contracted 
+[academic]: /literature, /manuscript, /homework, /writing, /database, /readings
+[others]: /side project; /contracted 
 
 ### Ongoing projects ###################################################################################################
 
-181102-181102
+
+
+181108-181110
+[academic/homework] Thesis critique (Thesis Writing Class)
+1. critique paper (refer to booklet p.21) 
+2. hardcopy:
+    cover page (portal)
+    old review with remarks
+    updated literature review
+    final assessment feedback sheet (portal)
+    Abstract of thesis
+    Critique
+
+
+181108-181111
+[academic/literature]
+1. find more exclusion criteria by reading literature
+
+
+181102-181111
 [academic/database] finding datasets (keyword=careg*, sort by released/updated, 3 pages completed)
     keywords:  (caregiv* or family or member) and (meaning or sense) and mak* and dementia
     search: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
     Results (datasets):
+        
         Panel Study of Income Dynamics (PSID): Main Interview, 1968-2015 (ICPSR 37142)
             dementia 
             day care center, 
@@ -22,30 +42,41 @@
             family caregiving roles; informal caregiving roles; management of work and caregiving roles; double/triple duty caregiving men; women employed in U.S.-based nursing homes entered and exited unpaid caregiving roles for children (double-duty-child caregivers), adults (double-duty-elder 
             caregivers), or both (triple-duty caregivers)
 
-        National Health and Aging Trends Study (NHATS)
-
         Health and Aging in Africa: A Longitudinal Study of an INDEPTH Community in South Africa [HAALSI] Baseline Survey: Agincourt, South Africa, 2015 (ICPSR 36633)
             caregiver: role, emotional, financial, health care...
             living status and physical health
 
-        Sacramento Area Latino Study on Aging (SALSA Study), 1996-2008: Neuropsychological Exam Data (ICPSR 29323)
+        Swedish Adoption/Twin Study on Aging (SATSA), 1984, 1987, 1990, 1993, 2004, 2007, and 2010 (ICPSR 3843)
+            home care, nursing care
+            dementia
+            mental ability, mental health (optimism, passimism)
+            caregiver's roles and tasks
+
+        National Health and Aging Trends Study (NHATS)
+            residential care not nursing home
+            SP cared for person; cared for person
+            
+        HRS: 
+            Variables
+                helper: 
+            questions: 
+                identifier throughout all databases?
+                how to see relevant publications
+                how to add 2016 data to RAND2014 dataset
 
 
-
-181102-181104
-[others] writing research method part
-    word limit: 500-600
-    material: refer to wechat history
-
-180916-181105 
-[coding] Python datamining on social network service
-    [reading] coding module
-    [reading] public media: 
-        twitter
-    [Vivian] Medical care system covers medication for AD in both rural and urban areas?
+181112-181113
+[academic/homework] Research Proposal (Research method Class)
 
 
-181004-181111 
+181107-181115
+[academic/literature] common knowledge
+1. social work cyclopedia: http://socialwork.oxfordre.com/
+2. family studies cyclopedia: https://onlinelibrary.wiley.com/doi/book/10.1002/9781119085621
+3. readings in onedrive/readings/gerontology
+
+
+181104-181113
 [academic/literature] theory
     check article: cultural difference in social cognition 
         1. Shore, B. (1998). Culture in mind: Cognition, culture, and the problem of meaning. Oxford University Press.
@@ -53,6 +84,15 @@
         3. Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psychological review, 98(2), 224.
         4. Nisbett, R. E., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture and systems of thought: holistic versus analytic cognition. Psychological review, 108(2), 291.
         5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press. application in survey or questionnaire 
+
+
+180916-181118 
+[coding] Python datamining on social network service
+    [reading] coding module
+    [reading] public media: 
+        twitter
+    [Vivian] Medical care system covers medication for AD in both rural and urban areas?
+
 
 181004-181130 
 [academic/literature/meta-analysis] Systematic review on Meaning-making: 
@@ -117,6 +157,30 @@
 
 ### Completed Projects ###################################################################################################
 
+
+
+181108-181110
+[others/side project] assignment writing on aging in society
+1. comment critically the issues and challenges of aging in society? what policy recommendations will you make to improve the caring for the elderly in society? give examples to illustrate your answer 
+2. words of 1500
+
+
+181107-181108 
+[others/side project] country review on United States (google drive)
+In the "service for carers" tab, update info:
+1. definition of caregivers; definition of informal carers
+2. policy differences in different region in US
+3. fill in the grid according to Policies to Suport Family Carers
+4. reference and link to official sources
+5. determine information from care recepients or caregivers, whose inclusion criteria and exclusion criteria need to be updated 
+
+Six categories: stake holders, motivation, belief system, resources, position, decision making model
+
+
+181102-181104
+[others] writing research method part
+    word limit: 500-600
+    material: refer to wechat history
 
 180902-181007 
 [academic/literature/homework] thesis review on 180930

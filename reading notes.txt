@@ -1,0 +1,142 @@
+### Bradd Shore - Culture in Mind - Cognition, Culture, and the Problem of Meaning (1996, Oxford University Press)
+
+## p.71
+
+0. General models
+
+(p.42)
+Culture: 
+    traits, integrated configurations, constellations of symbols and meanings, symbolic templates, a web of meanings, taxonomic trees, measurable units of behavior, a collection of material artifacts, systems of knowledge, sets of values and beliefs, sets of characteristics strategies for accomplishing a desired goal
+    exist as public artifacts "in the world" and cognitive constructs "in the mind" of members of a community
+Models:
+    provides a bridge between the empiricist concept of culture as "object" and the cognitive concept of culture as forms of knowledge. 
+Cultural model:
+    that can distinguish culture on the ground and culture in the mind
+
+Mental model:
+    Definition
+        aka mental representations
+        including personal and conventional (cognitive) models
+        creative and adaptive simplifications of reality that may reduce complexity of reality
+    Personal model (P): 
+        human are adept at constructing idiosyncratic models of experience on the fly, as a basic meaning-making strategy
+        Individual -> (mental model) -> physical environment
+    Conventional model (Co): 
+        reaction in circumstances, settings, and cultural conditions
+        not personally made but special-purpose program in which one internalize as part of his own stock of ready-made responses
+        schematized by people and socially constrained and reinforced by both positive and negative social feedback
+    Cultural model (Cu): 
+        the origin of conventional models
+        born, transformed through endless social exchanges
+        a shared model provides conventional resources to a community for meaning making   
+        Individual ->[(mental model) -> social environment] -> physical environment
+
+    Co->P: 
+        individuals of each generation are inscribed of conventional model
+        gain motivational force in a community
+        conventional models become a personal cognitive resource for individuals
+        conventional model + personal experience = personal models
+        individuals may experience conflicting personal and conventional models for a given domain of experience
+        
+    P vs Cu:
+        mental representations of cultural models internalize socially constrained experiences than idiosyncratic (P) models     
+        cultural practices constrain attention and guide saliency are not open to much personal choices but are closely guided by social norms
+
+    Instituted model vs conventional mental model
+        called "templates", social institutions—conventional, patterned public forms such as greetings, calendars, cockfights, discourse genres, houses, public spaces, chants, conventional body postures, and even deliberately orchestrated aromas 
+        such as rituals, carnival, dance, genres, or games
+        lead a double life, as part of an external social world and as products of intentional behavior
+        govern concept formation of newly socialized individuals, from which individuals construct conventional mental models
+        distinction
+            being different from conventional mental models and the distinction is of great theoretical importance
+            when comparing instituted model and conventional mental model, members of a community under certain conditions will fail to fully internalize a cultural model because their personal experiences are incompatible with the conventional model
+            mental representations or meaning construction can be different 
+    
+    Model vs foundational schema
+        schema occurs within a set of specific cultural models 
+        foundation schemas lose specific sensory reference to organize a wide diversity of particular models and underwrite the possibility of meaning construction in a variety of context.
+
+
+
+1. Cultural differences play in meaning making process (p.42, 311-343)
+
+
+
+2. cognitive process of "meaning making"
+p. 75-136
+
+3. what is neuromantic frame of Mind
+p.136
+
+4. "meaning making" models (p.53, 265-284)
+
+    Actors' models and observers' models
+        dealing with the relationship between culture and mind
+        schools:
+            structuralism (Levi-Strauss)
+            symbolic anthropology (Geetz, Turner, and Schneider)
+            ethnoscience (Frake, Goodenough, Sturdevant, Lounesbury, and Conklin)
+        models
+            actors': employ symbolic forms that are dynamic and graded, permitting the representation of an individual's changing relationships to any phenomenon. They are dynamic ecological models that govern the negotiation of a changing landscape.
+            observer's: adapted for the representation and social coordination of abstract general perspectives. Thus observers' models tend to be organized more in terms of categories, permitting mutual rather than just personal orientation.
+        
+    Model Genres
+        linguistic models:
+            Scripts: (conventional model) standardized conversation templates for organizing interactions in well-defined, goal-oriented situations
+            Propositional models: (cultural models) prepositional symbolic forms are characterized by discursiveness. discursive symbolisms as ordinary language or mathematics have a high degree of abstractness from which they derive their power to re-present experience rather than iconically modeling it
+            Sound symbolic models: (conventional model) convey important information through conventional phonological patterns, in which pronunciation styles that index different contexts in a language.
+            Lexical models: model forms of experience (taxonomies) with list of names, linked items, dictionaries, and clearly defined subsets of vocabularies
+            Grammatical models: highly abstract models of time, space, movement, and causality that are encoded by grammatical forms such as noun classes, verb aspect, tense structures, and agent markers. 
+            Verbal formulas: encode traditional wisdom, specialized knowledge, or techniques in highly conventional forms of speech
+            Narrative model: (cultural model) a uniquely ambiguous status among verbal formulas; 
+            Trope models: (cultural models) important linguistic models that permit language to transcend literal reference, including metaphor models, methonym models
+        Nonlinguistic models:
+            Image schemas: (cultural model) "image schematic models" (Lakoff, 1987a:118) and defines them as "schematic images, such as trajectories or long, thin shapes, or containers"; related to somatic experience and knowledge; or called kinesthetic schemas convey important cultural information about status, mood, and relationship.          
+            Action sets: (gestural models) Simple, stylized body movements can become integrated into a coordinated interchange  
+            Olfactory models: (cultural model) Because of their special relation to long-term memory, olfactory models are often used to mark special occasions, individuals, or relationships
+            Sound image models: (cultural model) Many rituals use sounds as an important component
+            Visual image models: (cultural model) culturally salient paintings and decorative motifs and color symbolism
+    Functional distinction among models 
+        Orientational models: orienting individuals to one another and to behavioral environment
+            Spatial models
+                Area maps of all kinds of geographic entities
+                Navigational models such as Micronesian star charts (Hutchins, 1991); verbal formats for giving traveling directions
+                Route maps realized in prepositional form, pictorial form, or (as is common among Australian aborigines) in song lyrics
+                Models of interpersonal space, which code for aspects of power and intimacy                
+                Context markers, which frame spaces as distinctive behavioral contexts (sports fields, play frames, and performance frames are all examples of spatial context markers)
+            Temporal models
+                Incremental models: time related progression
+                Decremental models: time count-down
+                Cyclical models: various spans of time as cycles
+                Rhythmic models break up the flow of time into rhythmic segments for the purpose of framing musical or verbal expression
+                Biographical models are conventional models for conceptualizing people's life cycles.
+                Context-framing devices mark off special time frames in the same sense as spatial models frame places
+            Social orientation models
+                Social relation Model: lexical models mapping kin terminologies
+                Social coordination: rituals, highly scripted and formalized action sets providing a shared behavioral framework for coordinating social relations
+                Social role sets model the division of labor
+                Emotion models: stress the orienting and communicative function
+            Diagnostic models: conventional indexical models that diagnose signs of underlying states, causes, or conditions
+                Medical diagnostic models: include taxonomies and divination rites as well as metonymic and metaphoric models that read somatic symptoms in relation to classifications of disease types.
+                Checklists models: taking inventory of complex procedures or collections of objects or people.
+                Divinatory models: strategies for uncovering hidden causes for a community's problems.
+                Meteorological models: by which communities read the state of the natural world, including weather forecasting but also models for interpreting the relationships between natural events (seasons, floods, eclipses, volcanoes, storms, tides, etc.) and their social, moral and supernatural correlates.
+                Intention displays are cultural models by which members of a community read each others' intentions.
+        Expressive/conceptual models: share personal experience objectified, conventionalized, and transformed into cultural artifacts
+            Classificatory models: based on well-formed categories, defined in terms of the intersection of more primitive semantic components or attributes.
+            Ludic models: discrete performative frame, key cultural problematics
+            Ritual and dramatic models: ritual and drama are important ways that communities externalize and objectify otherwise inchoate or inarticulate experiences
+            Theories: provide communities with a conceptual picture of a complex state of affairs.
+        Task models
+            Scripts: include both verbal and nonverbal dimensions
+            Recipes: conventional task models for performing complex routines
+            Checklists: standardized inventories of functionally related objects or persons
+            Mnemonic models: promote the memorability of important and frequently used information.
+            Persuasion models: Persuasion models include a wide variety of specific conventions like prayer, sacrifice, begging, debate, sorcery, love magic, rational argument, sympathetic or contagious magic, apology, commands, and promising
+
+5. what is primitive classification
+p.167
+
+6. What is dreamtime learning? 
+p.207-236
+

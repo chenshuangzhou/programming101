@@ -1,6 +1,0 @@
-File format
-    Non-proprietary: files need specfic software to load
-
-Dataset:
-    https://repositoryfinder.datacite.org
-    Google dataset search

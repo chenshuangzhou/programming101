@@ -975,3 +975,10 @@ par(mar=c(4,4,1,2),cex=1.2,font=2,mfrow=c(1,1))
        qualitative = 108, 
        quantitative = 89,
        extra_dupes_box = TRUE)
+
+
+
+
+(TI = ((caretak* OR caregiv* OR caring OR career OR care) AND (meaning-making OR make meaning OR making sense))
+ AND TS= ((tool* OR model OR scale OR theor*) AND (make sense OR sense making OR value OR identity OR filial piety OR family) 
+ NOT (nursing care OR nurse OR decision-making OR hospital OR school OR education OR teachers OR student OR pet OR animal)))

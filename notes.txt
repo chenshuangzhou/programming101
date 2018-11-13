@@ -30,6 +30,19 @@ vscode-pdf
 ### SOWK7007 Research Methods ##################################################################################
 
 
+### 181113 
+
+1 in 20 variable can be "significant"
+
+data mining for theory building
+  backward elimination
+  non-linear relationship
+    1. analyze every level of every potential predictor (IV)
+    2. interaction of all splited-level IVs 
+    3. decision tree to find split-point for each IV - boosting algorithm
+    
+
+
 ### 181106 Big data
 About big data 
   Characteristics: 
@@ -318,6 +331,17 @@ Literature review：
 
 
 ### Supervision: Projects ####################################################################################
+
+### Caregiving topic for thesis
+Health ~ congruency of elderly and caregivers on subjective aging (positive/negative)
+subjective aging health positive negative meta analysis
+  meta regression on age group, caregiver's age group, gender, (lower) socioeconomic strata, racial or ethnic (minority) groups, congruency or incongruency of subjective aging
+age norm and age related expectations
+structure lag between the needs and competencies of aging individuals and opportunities provided by society 
+generational differences between caregivers of baby boomers and X in terms of their interaction with elderly
+Multiphase Optimization Strategy
+effective interventions may release potential—economic, productive, familial, and emotional potentials for the benefit of older adults and society
+
 
 ### Cognitive Motivation Therapy for Dementia
 ## 181030

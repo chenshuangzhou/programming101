@@ -1,3 +1,44 @@
+﻿### topics
+
+
+[1.0]
+
+1. Health ~ congruency of dementia and caregivers on subjective aging (positive/negative)
+2. subjective aging and health, a meta analysis
+  [micro] meta regression health ~ age group, caregiver's age group, gender, (lower) socioeconomic strata, racial or ethnic (minority) groups, congruency or incongruency of subjective aging
+  [macro] meta regression health ~ age norm and age related expectations, structure lag between the needs and competencies of aging individuals and opportunities provided by society 
+  [mezzo] meta regression health ~ generational differences between caregivers of baby boomers and X in terms of their interaction with elderly
+  [mezzo] effective interventions may release potential—economic, productive, familial, and emotional potentials for the benefit of older adults and society
+3. Multiphase Optimization Strategy
+
+caregiver burden ~ subjective aging 
+subjective aging ~ meaning making of caregivers 
+moderator: CG depressive symptoms
+compare probability and convenience sampling
+
+[1.1]
+
+subjective aging (SA)
+caregiving burden (CB)
+meaning making (MM)
+
+SA --(MM)--> CB --> Health (depressive symptoms, anxiety, well-being, health)
+
+They feel that their lives make sense and have continuity.
+They are directed and motivated by meaningful goals.
+They believe their existence matters to others.
+
+meaningful relationship and meaningful occupations
+meaning therapy
+
+[1.2]
+meaning making procedure within subjective aging
+meaning making of caregivers (CG)
+discrepency of situational, global and interacting (CR) meanings
+
+stereotype embodiment theory: psychological, behavioral, and physiological pathways (Levy, 2009)
+stress and coping theory
+
 ### Bradd Shore - Culture in Mind - Cognition, Culture, and the Problem of Meaning (1996, Oxford University Press)
 
 ## p.71
@@ -139,6 +180,8 @@ p.167
 
 6. What is dreamtime learning? 
 p.207-236
+
+
 
 
 

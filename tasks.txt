@@ -29,7 +29,7 @@
 181102-181111
 [academic/database] finding datasets (keyword=careg*, sort by released/updated, 3 pages completed)
     keywords:  (caregiv* or family or member) and (meaning or sense) and mak* and dementia
-    search: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
+    database: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
     Results (datasets):
         
         Panel Study of Income Dynamics (PSID): Main Interview, 1968-2015 (ICPSR 37142)
@@ -55,7 +55,10 @@
         National Health and Aging Trends Study (NHATS)
             residential care not nursing home
             SP cared for person; cared for person
-            
+
+        Midlife in the United States (MIDUS) Series
+            subjective aging
+
         HRS: 
             Variables
                 helper: 

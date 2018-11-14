@@ -332,15 +332,22 @@ Literature review：
 
 ### Supervision: Projects ####################################################################################
 
-### Caregiving topic for thesis
-Health ~ congruency of elderly and caregivers on subjective aging (positive/negative)
-subjective aging health positive negative meta analysis
-  meta regression on age group, caregiver's age group, gender, (lower) socioeconomic strata, racial or ethnic (minority) groups, congruency or incongruency of subjective aging
-age norm and age related expectations
-structure lag between the needs and competencies of aging individuals and opportunities provided by society 
-generational differences between caregivers of baby boomers and X in terms of their interaction with elderly
-Multiphase Optimization Strategy
-effective interventions may release potential—economic, productive, familial, and emotional potentials for the benefit of older adults and society
+### Caregiving topics
+
+
+1. Health ~ congruency of dementia and caregivers on subjective aging (positive/negative)
+2. subjective aging and health, a meta analysis
+  [micro] meta regression health ~ age group, caregiver's age group, gender, (lower) socioeconomic strata, racial or ethnic (minority) groups, congruency or incongruency of subjective aging
+  [macro] meta regression health ~ age norm and age related expectations, structure lag between the needs and competencies of aging individuals and opportunities provided by society 
+  [mezzo] meta regression health ~ generational differences between caregivers of baby boomers and X in terms of their interaction with elderly
+  [mezzo] effective interventions may release potential—economic, productive, familial, and emotional potentials for the benefit of older adults and society
+3. Multiphase Optimization Strategy
+
+caregiver burden ~ subjective aging 
+subjective aging ~ meaning making of caregivers 
+moderator: CG depressive symptoms
+compare probability and convenience sampling
+
 
 
 ### Cognitive Motivation Therapy for Dementia

@@ -30,6 +30,38 @@ vscode-pdf
 ### SOWK7007 Research Methods ##################################################################################
 
 
+### 181120 HLM
+Development 
+~ individual: SES, parenting styles
+~ community: infrastructure, health care, 
+~ policy: welfare, allowance, insurance
+
+vs. clustered 
+
+alcohol abuse
+~ individual: stress, trauma, growing experience 
+~ family: 
+~ neibourhood: culture, lique stores, tax, violence, community SES  
+~ society: tax, permission, cost
+
+HLM avoid false regression on the clustered data points
+  Data analyzed if indiivduals selected from different [IVs]
+  Data from stratified sampled dataset
+  applied in the fields of education, public health, social work, politics
+
+OLS/Classical regression
+  Assumptions:
+    Observations are independent 
+    Errors (unexplained variance) is random
+
+  y = bx + a + e
+   b: change in y associated with a one unit change in X
+   a: the value of y when x=0
+
+   ICC : BG^2/(BG^2+WG^2) > 0.25 # between group variance is noticable ONLY in slope variance model
+   
+
+
 ### 181113 
 
 1 in 20 variable can be "significant"
@@ -41,8 +73,6 @@ data mining for theory building
     2. interaction of all splited-level IVs 
     3. decision tree to find split-point for each IV - boosting algorithm
     
-
-
 ### 181106 Big data
 About big data 
   Characteristics: 

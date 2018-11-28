@@ -3312,3 +3312,19 @@ write.xlsx(table,file="C:/Users/chens/Desktop/test.xlsx")
 #anova34=anova(linear3,linear4)
 #anova14=anova(linear1,linear4)
 #stargazer(anova12,anova23,anova34,anova14,title="Model Comparison",align=T,type="text",out="table.htm")
+
+
+############# Cognitive Diagnosis Modeling p.13 ##############
+install.packages("GDINA")
+library(GDINA)
+
+### data reading
+data1 <- read.table(file = "data1.dat", header = TRUE)
+Q1 <- read.table(file = "Q1.txt")   # Q matrix
+
+### G-DINA model fitting
+fit1 <- GDINA(dat = data1, Q = Q1)
+summary(fit1)   # show Log likelihood, AIC, BIC
+coef(fit1)      # item success probabilities for each latent group; coef: withSE (estimate standard errors: T/F), what (what parameters to show: delta/lambda/IRF), item (which item to show)
+
+

@@ -337,6 +337,7 @@ detach(meta1)
     text(c(-10,-8.5,-7,-5.5,-4,-2.5),48,c("Experiment G n","Experiment G M","Experiment G SD","Control G n","Control G M","Control G SD"))
     text(-14,48,"Included",pos=4)
     text(6.7,48,"SMD [95% CI]",pos=2)
+    
     par(ref1)
     
     

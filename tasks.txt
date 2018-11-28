@@ -8,25 +8,7 @@
 ### Ongoing projects ###################################################################################################
 
 
-
-181108-181110
-[academic/homework] Thesis critique (Thesis Writing Class)
-1. critique paper (refer to booklet p.21) 
-2. hardcopy:
-    cover page (portal)
-    old review with remarks
-    updated literature review
-    final assessment feedback sheet (portal)
-    Abstract of thesis
-    Critique
-
-
-181108-181111
-[academic/literature]
-1. find more exclusion criteria by reading literature
-
-
-181102-181111
+181102-181111; 181201-181208
 [academic/database] finding datasets (keyword=careg*, sort by released/updated, 3 pages completed)
     keywords:  (caregiv* or family or member) and (meaning or sense) and mak* and dementia
     database: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
@@ -68,10 +50,6 @@
                 how to add 2016 data to RAND2014 dataset
 
 
-181112-181113
-[academic/homework] Research Proposal (Research method Class)
-
-
 181107-181115
 [academic/literature] common knowledge
 1. social work cyclopedia: http://socialwork.oxfordre.com/
@@ -95,6 +73,12 @@
     [reading] public media: 
         twitter
     [Vivian] Medical care system covers medication for AD in both rural and urban areas?
+
+
+
+
+### Completed Projects ###################################################################################################
+
 
 
 181004-181130 
@@ -158,7 +142,28 @@
 
 
 
-### Completed Projects ###################################################################################################
+
+181112-181113
+[academic/homework] Research Proposal (Research method Class)
+
+
+
+
+181108-181110
+[academic/homework] Thesis critique (Thesis Writing Class)
+1. critique paper (refer to booklet p.21) 
+2. hardcopy:
+    cover page (portal)
+    old review with remarks
+    updated literature review
+    final assessment feedback sheet (portal)
+    Abstract of thesis
+    Critique
+
+
+181108-181111
+[academic/literature]
+1. find more exclusion criteria by reading literature
 
 
 

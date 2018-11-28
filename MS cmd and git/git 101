@@ -21,10 +21,14 @@ git commit          # write comments after it
 git commit -m "change content in notes"     # make comment in the command line
 git commit --amend      # resubmit the file
 
+
 eg.
     git commit -m 'initial commit'
     git add forgotten_file
     git commit --amend
+
+git log --oneline       # show all changes on the current branch
+
 
 git remote add remotename https://github.com/chenshuangzhou/programming101    # set the new remote
 git remote -v       # verify remote access
@@ -35,18 +39,37 @@ touch .gitignore
     # inside  .gitignore naming file's name that can be ignored
         # eg.: /foldername
         # eg.: *.txt
-git branch branch1      # add new branch called 'branch1'
-git checkout branch1    # switch to new branch - branch1
-touch notes2.txt        # create file in new branch
+
+### git branch and merge ###
+
+git branch branch1      # create new branch called 'branch1'
+git branch -a           # show all branches
+git checkout branch1    # switch to new branch - 'branch1'
+git checkout -b branch2 # create a new branch called 'branch2'
+    touch notes2.txt        # create file in new branch
+git branch -D branch1   # delete branch called 'branch1'
+git branch -d branch1   # delete branch already merged onto master called 'branch1'
+
 
 git push
 git push -u origin master       # push files
 
-git clone url
+
+git merge branch1       # merge a branch called 'branch1'; need to return to the destination master before merging
+
+
+
+### git clone ###
+
+git clone url   # url for clone/download
 git pull        # update info from the cloned url
+
 
 ### Referemce
 https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
 
-
+### add new project as new repository ###
+git remote add origin https://github.com/chenshuangzhou/CoA.git     # addressed to specific url of the new project 
+git push -u origin master                                           # push an existing repository from the local computer
+git push origin master

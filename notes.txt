@@ -1,4 +1,4 @@
-﻿### Journals
+### Journals
 JOURNALS OF GERONTOLOGY SERIES A-BIOLOGICAL SCIENCES AND MEDICAL SCIENCES
 JOURNAL OF THE AMERICAN GERIATRICS SOCIETY
 GERONTOLOGIST
@@ -410,6 +410,26 @@ compare probability and convenience sampling
 
 
 ### Meaning making #############################################################
+
+## 181129
+culture and mind (instituted and mental models)
+  meaning making function of culture fails in anthropoligy as the sentient agent was eliminated along with psychological meaning thus leaving logical meaning. 
+  
+  Susanne Langer: observation <- meaning
+    "Langer was referring to philosophy's retreat from questions of ontology and metaphysics and its turning to the problem of symbolic representation and its relation to meaning and truth."
+  
+
+# Infants’ Meaning-Making and the Development of Mental Health Problems
+
+symbolic interaction in making meaning 
+
+  infants (with subsystems of brain, physiologic processes, and behaviors) 
+  experiences/interaction with internal and external worlds -> representations (meanings)
+  meaning + positive/negative feedback = new systemic properties, developmental capacities 
+  open system + resources (energy and information) = development (increase coherence and complexity) (Prigogine & Stengers, 1984)
+
+
+
 ## 181029
 
 Perception of health: 

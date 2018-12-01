@@ -1,0 +1,70 @@
+### CDM
+# Application
+    formative assessment: situational judgement
+    summative assessment: IRT
+    differences between CDM and IRT
+        IRT: unideimentional
+        latent traits exist
+
+# Basics
+    response vector
+    DINO: deterministic input, nosity "or" gate model
+    LLM: linear without penalty
+
+# Attributes
+    an item measuing and assessing a combination of skills
+    distinguish attributes
+    determining what attributes to meausre in a limited time range
+    attributes (validation) <-> (measurement) items
+        validation (of inference): 
+            a) attributes provided for peer review; 
+            b) revision of attributes; 
+            c) repetition until consensus
+        think-aloud interview
+        post-hoc comparison of test results and subjective ratings
+        
+# clinical diagnosis
+    questions distinguishing levels of symptoms
+    phrasing of cutoff points
+
+# G-DINA: general framework
+    distinguish deficiencies of anwering each questions
+    monotonic property
+    GDINA and log-linked have the same effects if it is a saturated model (CDM) 
+        DINA assumes the same interaction terms 
+        A-CDM eliminates all interaction terms (interaction ==0)
+        Reduced Reparameterized Unified Model (RRUM) is the specialized case of CDM
+        LLM 
+
+
+# attribute distribution
+    saturated model: 
+        2^k options with 2^k-1 parameters to estiamte
+    high-order latent trait approach
+        2k parameters to estiamte
+    constraining the atttribute structure
+        learning theory (in sequence) in a particular domain
+            linear structure
+            divergent structure
+            
+# model fit evauation
+    CDM misspecification
+    reduced model: CDM/G-DINA has better fits yet requires larger sample size and more difficult to interpret
+    Q-matrix misspecification
+        over-specified
+        under-specified: cannot be fit in saturated or DINA models
+        mixed
+    LR for estimated comparisons
+
+# model comparison and selection
+    comparison can be done between nested models. models, in fact, are compared with saturated models
+
+# Q-matrix validation
+    simpler and comlicated models has the same variability, thus simpler is selected
+
+
+    
+
+    
+
+

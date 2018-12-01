@@ -62,7 +62,13 @@
 # Q-matrix validation
     simpler and comlicated models has the same variability, thus simpler is selected
 
+# DIF detection
+  Wald
+  LR: 
+  Attribute classification accuracy
 
+# model modification
+    model check -> item modification -> model comparison -> model selection
     
 
     

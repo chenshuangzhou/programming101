@@ -234,20 +234,24 @@ t(extract(Qvalid, what = "PVAF"))
 
 gr <- c(rep(1,400),rep(2,437))
 
-Q1 <- read.table(file = "Q1.txt")
-data1 <- read.table(file = "data1.dat",header = TRUE)
+Q1 <- read.table(file = "D:/OneDrive/research/1personal/Programming/R/CDM/Q1.txt")
+data1 <- read.table(file = "D:/OneDrive/research/1personal/Programming/R/CDM/data1.dat",header = TRUE)
+
+# N0: no difference
+# N1: difference
+
 difout <- dif(dat = data1, Q = Q1, group = gr)
 difout
 
-difout2 <- dif(dat = data1, Q = Q1, group = gr,model="DINA")
+difout2 <- dif(dat = data1, Q = Q1, group = gr,model="DINA")    # Wald test
 difout2
 
-difout3 <- dif(dat = data1, Q = Q1, group = gr, model="DINA",method = "LR")
+difout3 <- dif(dat = data1, Q = Q1, group = gr, model="DINA",method = "LR")   # LR test
 difout3
 
 # -------- 8.2 Classification accuracy------------
 
-fit1 <- GDINA(dat = data1, Q = Q1)
+fit1 <- GDINA(dat = data1, Q = Q1)        
 CA(fit1)
 
 # ------------ 8.3 Data Simulation --------------
@@ -465,27 +469,27 @@ library(GDINA)
 data3 <- read.table(file="D:/OneDrive/research/1personal/Programming/R/CDM/data3.dat")
 Q3 <- read.table(file="D:/OneDrive/research/1personal/Programming/R/CDM/Q3.txt")
 
-#Fit the GDINA model with monotonicity constraint
-mod <- GDINA(dat=data3,Q=Q3,model="GDINA",mono.constraint = TRUE,verbose = 0)
+#Fit the GDINA model with monotonicity constraint (selection of one with higher order)
+mod <- GDINA(dat=data3,Q=Q3,model="GDINA",mono.constraint = TRUE,verbose = 0)  # saturated model
 summary(mod)
 mod
 
 #Preliminary Item Fit Evaluation
 itemfit_initial <- itemfit(mod, p.adjust.methods = "bonferroni")
-plot(itemfit_initial)
+plot(itemfit_initial)                                                 # heat map: item 1 highly correlated with many other items
 
 #Perform Q-matrix validation using eps=0.9
-Q3valid <- Qval(mod, eps = 0.9)
+Q3valid <- Qval(mod, eps = 0.9)                                       
 Q3valid
 
 #Examine the mesaplots for the items with suggested new q-vectors
-plot(Q3valid,item=1,data.label=FALSE,type="best", eps = 0.9)
-plot(Q3valid,item=3,data.label=FALSE,type="best", eps = 0.9)
-plot(Q3valid,item=20,data.label=FALSE,type="best", eps = 0.9)
-plot(Q3valid,item=33,data.label=FALSE,type="best", eps = 0.9)
+plot(Q3valid,item=1,data.label=FALSE,type="best", eps = 0.9)          # 0101 # modify q matrix based on q3valid result
+plot(Q3valid,item=3,data.label=FALSE,type="best", eps = 0.9)          # 0100 (being same with originals)
+plot(Q3valid,item=20,data.label=FALSE,type="best", eps = 0.9)         # 0010 (the same)
+plot(Q3valid,item=33,data.label=FALSE,type="best", eps = 0.9)         # 0001 no original point recorded
 
 #We only need to change the q-vector for items 1 and 33
-Q3[1,] <- c(0,1,0,1)
+Q3[1,] <- c(0,1,0,1)                                                  # modeify q matrix 
 Q3[33,] <- c(0,0,0,1)
 #we modified the provisional Q-matrix
 
@@ -498,13 +502,13 @@ mod_rev
 plot(x = mod_rev, what="IRF", item=16)
 
 #Modify the model for Item 16 and fit it to the data again
-models2 <- c(rep("GDINA",15),"DINO",rep("GDINA",17))
+models2 <- c(rep("GDINA",15),"DINO",rep("GDINA",17))                  # check item 16 
 mod_rev2 <- GDINA(dat=data3,Q=Q3,model=models2,mono.constraint = TRUE,verbose = 0)
 summary(mod_rev2)
 mod_rev2
 
 #Check absolute fit - item 16 does not fit
-itemfit2 <- itemfit(mod_rev2)
+itemfit2 <- itemfit(mod_rev2)                                         # DINO not suitable for item 16
 plot(itemfit2)
 #misfitting item 16
 
@@ -520,12 +524,13 @@ mod_acdm <- GDINA(dat=data3,Q=Q3, model="ACDM", mono.constraint = T,verbose = 0)
 mod_rrum <- GDINA(dat=data3,Q=Q3, model="RRUM", mono.constraint = T,verbose = 0)
 mod_llm <- GDINA(dat=data3,Q=Q3, model="LLM", mono.constraint = T,verbose = 0)
 
-#Perform Model Comparison
-anova(mod_dina, mod_dino, mod_acdm, mod_rrum, mod_llm, mod_rev)
-#GDINA better than these five reduced models
+# Perform Model Comparison ******
+anova(mod_dina, mod_dino, mod_acdm, mod_rrum, mod_llm, mod_rev)     # mod-rev - saturated model
+  # GDINA better than these five reduced models
+  # simple models are all rejected, while saturated model is selected
 
-#Wald Test for Item Fit Evaluation
-wald_rev <- modelcomp(mod_rev)
+# Wald Test for Item Fit Evaluation
+wald_rev <- modelcomp(mod_rev)               # tests specified models for each items
 wald_rev
 
 #Fit the model based on Wald test
@@ -540,38 +545,36 @@ models_wald <- c("LLM","ACDM","GDINA","ACDM","GDINA",
 mod_wald <- GDINA(dat=data3,Q=Q3,model=models_wald,
                   mono.constraint = T,verbose = 0)
 
-#Examine the model fit of the modified model based on Wald test
+# Examine the model fit of the modified model based on Wald test
 itemfit_wald <- itemfit(mod_wald)
 plot(itemfit_wald)
-#all items fit based on adjusted pvalues
+# all items fit based on adjusted pvalues
 
-#Perform model comparison
-anova(mod_wald,mod_rev)
+# Perform model comparison
+anova(mod_wald,mod_rev)       # no significant difference, thus simple model (Wald test can be retained)
 
-#Perform DIF using Wald and LR tests
+# Perform DIF using Wald and LR tests
 gr <- c(rep(1,600),rep(2,610))
 
 difout_wald <- dif(dat=data3,Q=Q3,group=gr,method="wald",mono.constraint=T)
 difout_wald
 
-difout_LR <- dif(dat=as.matrix(data3),Q=Q3,group=grp,method="LR",
+difout_LR <- dif(dat=as.matrix(data3),Q=Q3,group=gr,method="LR",
                  mono.constraint=T, LR.type = "free.all",
                  difitem = 7)
 difout_LR
+  # item 4 has signiifcant difference
 
-
-
-
-#classification accuracy
-CA_all <- CA(mod_wald)
+# classification accuracy
+CA_all <- CA(mod_wald)        # 
 CA_all
 
-#Item Selectioon
+# Item Selectioon
 
-#Discrimination Index
-disc <- extract(mod_wald,"discrim")
+# Discrimination Index
+disc <- extract(mod_wald,"discrim")     # find the most and least discriminating items; 
 
-#Deleting two low discrminating items
+# Deleting two low discrminating items
 data_low <- data3[,c(-3,-20)]
 Q_low <- Q3[c(-3,-20),]
 
@@ -580,10 +583,10 @@ mod_low <- GDINA(dat=data_low,Q=Q_low,model=models_wald[c(-3,-20)],
                  mono.constraint = TRUE,verbose = 0)
 
 #Classification rate
-CA_low <- CA(mod_low)
+CA_low <- CA(mod_low)                   # compare with original accuracy rate (0.82) and has a small drop
 CA_low
 
-#Deleting two highly discrminating items
+# Deleting two highly discrminating items; the accurary rate drops more
 data_high <- data3[,c(-1,-2)]
 Q_high <- Q3[c(-1,-2),]
 
@@ -609,3 +612,5 @@ round(rbind("all"=CA_all$tau_k,
 round(rbind("all"=CA_all$tau_l,
             "no low"=CA_low$tau_l,
             "no high"=CA_high$tau_l),2)
+
+  # the changes of accuracy rates after drop of highly and lowly discriminating items

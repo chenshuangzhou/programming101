@@ -174,6 +174,58 @@ for container in containers:
 f.close()
 
 
+# Creating a function with a single return path:
+def function_name(input_variable):
+    result = input_variable * 5 
+    return(result)
+
+
+# Creating a function with multiple return paths:
+def function_name(input_variable):
+    if input_variable > 5:
+        return("Higher than 5")
+    else:
+        return("Lower than 5")
+
+
+# Creating a function with multiple arguments:
+def function_name(input_one, input_two):
+    result = input_one + input_two
+    return(result)
+
+
+# Creating a function with an optional argument:
+def function_name(input_one, input_two=10):
+    result = input_one + input_two
+    return(result)
+
+
+# Calling a function inside another function:
+def sum(input_one, input_two):
+    return(input_one + input_two)
+def average(input_three, input_four):
+    total = sum(input)
+    return(total / number_items)    
+def calculation(input_three, input_four):
+    result2 = function_one(input_three, input_four)
+    return(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # containers[0].div.div.a.img["title"]    # including href and src of pics and product title
 # containers[1].div.div.a.i.findAll("",{"class":"item-rating"})
 

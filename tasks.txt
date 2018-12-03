@@ -96,7 +96,7 @@
                 1. (TITLE=(caretak*  OR  caregiv*  OR  caring  OR  career  OR  care )) OR (ABS=(caretak*  OR  caregiv*  OR  caring  OR  career  OR  care ))) 
                 2. AND ((ABS=(meaning-making  OR (make  AND  meaning ) OR (making  AND  sense ) OR (make  AND  sense ) OR (sense  AND  making ) OR      value  OR  identity  OR (filial  AND  piety ))) OR (TITLE=(meaning-making  OR (make  AND  meaning ) OR (making  AND  sense ) OR (make  AND  sense ) OR (sense  AND  making ) OR  value  OR   identity  OR (filial  AND  piety )))) 
                 3. AND ((TITLE=(tool*  OR  model  OR  scale  OR  theor* ) OR  ABS=(tool*  OR  model  OR  scale  OR  theor* )))) 
-                4. AND (TITLE=(family ) OR  ABS=(family )) 
+                4. AND (TITLE=(family) OR  ABS=(family )) 
                 5. AND NOT ((TITLE=((nursing  AND  care ) OR  nurse  OR  decision-making  OR  hospital  OR  school  OR  education  OR  teachers  OR student  OR pet  OR  animal ) OR  ABS=((nursing  AND  care ) OR  nurse  OR  decision-making  OR  hospital  OR  school  OR  education  OR teachers  OR  student  OR pet  OR  animal )))
             Database: Medline, PsychoINFO, WOS (Kevin), Scopus, Cochrane library, EMBASE, CINAHL
             Inclusion criteria: 

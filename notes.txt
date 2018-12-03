@@ -1,4 +1,4 @@
-### Journals
+﻿### Journals
 JOURNALS OF GERONTOLOGY SERIES A-BIOLOGICAL SCIENCES AND MEDICAL SCIENCES
 JOURNAL OF THE AMERICAN GERIATRICS SOCIETY
 GERONTOLOGIST
@@ -361,6 +361,54 @@ Literature review：
 
 
 ### Supervision: Projects ####################################################################################
+
+### Teaching Assistantship
+
+Electronic Forms on Moodle with Google Drive links
+  Booklet borrow and return form (E)
+  Pad borrow form (E)
+  Consent forms
+    clinical internship with elderly (E+P): collected for assignment
+    assessment (E+P) for assignment 
+    Reflective journal (chapter 1-2?) upload pics to time museum with consent form, with model and criteria?
+    
+
+Moodle (functions?):
+  online instant editing and collaborative work (google drive link in moodle?)
+  
+    
+Guest Speaks:
+  Honorary fee (contact department WingLun)
+  PPT of speech obtained and uploaded to the system prior to 3 weeks (at least 1 week in advance)
+  Rehearsal: 1 or 2 weeks prior to Mar 2 for Cai Yi Ling to rehearse testing out online teaching environment 
+
+Teaching (6 hours):
+  Students with different teaching methods?
+    fresh post-bachelors
+    with working experience 
+  Assessment report (AT2)
+    assessment tools and processes
+  Group presentation (AT3)
+    Mocked teaching seminar for the group
+    CETL: https://www.cetl.hku.hk/
+    TeLi: https://teli.hku.hk/
+  Recorder setup: http://moodle-support.hku.hk/teacher/panopto  
+
+Readings update:  
+  frail elderly on case management 
+  check InterRAI websites (geriatric assessment and system)
+
+Email address corrected:
+  chenshuangzhou@hku.hk
+
+Portfolio 
+  records of seminars and academic activities
+  research competence
+  seminar outside
+  ourhkfoundation events
+
+
+
 
 ### Caregiving topics
 

@@ -1,4 +1,22 @@
-﻿### Journals
+﻿Caregivers 
+  caregiving burden
+  self-Efficacy
+  stress and coping
+  formal and informal caregiving
+  
+
+Demtnia patient and CST
+  CST
+  quality of life outcome
+  caregiver outcome 
+
+caregiving burden and patient outcome 
+
+intervention -> patient outcome (neuropsychiatric inventory)-> caregiving burden ()/Caregiver (neuropsychiatric inventory) 
+
+
+
+### Journals
 JOURNALS OF GERONTOLOGY SERIES A-BIOLOGICAL SCIENCES AND MEDICAL SCIENCES
 JOURNAL OF THE AMERICAN GERIATRICS SOCIETY
 GERONTOLOGIST
@@ -406,6 +424,102 @@ Portfolio
   research competence
   seminar outside
   ourhkfoundation events
+
+
+
+## InterRai notes
+# Long-term Care Facilities Assessment Form
+
+Notes:
+  1. item definitions and response operations
+  2. procedural instruction, time frames, general coding conventions
+
+Process:
+  person interview and observation
+  discussion with facility staff
+  review of any clinical records or other administrative documents
+  discussion with the person's family, other caregivers, and physician
+  attending physician 
+
+Content [C- category, V - level, L - length]
+  Identification Information 
+    name, gender, birthdate, 
+    marital status: never married, married, partner/significant other, widowed, separated, divorced
+    national numeric identifier: SSN (S1111), medicare number (M1111)
+    assessment reference data
+    person's expressed goals of care - text
+    time since last hospital stay - categorical
+  Intake and Initial History
+    level of control person had over decision to move into LTCF
+    date stay began
+    ethnicity and race                            # why here?
+    admitted from and usual residence
+    living arrangement prior to admission
+    mental health
+      a schizophrenic, mood, paranoid, panic, or other severe anxiety disorder; somatoform disorder, personality disorder; other psychotic disorder; or another mental disorder that may lead to chronic disability
+      not a primary diagnosis of dementia
+      the disorder results in functional limitations in major life activities that would be appropriate within the past 3 to 6 months for the person's developmental state
+      treatment history indicates that the individual has experienced either psychiatric treatment or within the last 2 years due to the mental disorders
+  Cognition
+    cognitive skills for daily decision making [5]
+    memory/recall ability [2]
+    periodic disordered thinking or awareness [3]
+    acute change in mental status from person's usual functioning [2]   # too simple?
+    change in decision making as compared to 90 days ago [3]
+  Communication and Vision
+    making self understood (expression) [5]
+    ability to understand others (comprehension) [5]
+    hearing / aid [5/2]
+    vision / aid [5/2]
+  Mood and Behavior [C*L]
+    indicators of possible depressed, anxious, or sad mood 
+    self-reported mood 
+    behavior symptoms
+  Psychosocial Well-being [C*L]
+    social relationships
+    sense of involvement
+    unsettled relationships
+    major life stressors in last 90 days
+    strengths
+  Functional status [C*V]
+   activities of daily living self-performance
+   locomotion, walking
+   activity level
+   physical function improvement potential [time, distance]
+   change in ADL status as compared to 90 days ago
+  Continence [V/V*C]
+  Disease Diagnoses [C]
+    Musculoskeletal
+    neurological
+    cardiac or pulmonary
+    psychiatric
+    others
+  Health Condition
+  Oral and Nutritional Status
+  Skin Condition
+  Activity Pursuit
+  Medications
+    name, does, unit, route (intake methods), PRN ("as needed"), ATC (anatomical therapeutic chemical) or NDC (national drug code) code 
+    frequency (interval)：bid =? q12h; tid=?q8h
+  Treatment and Procedures
+    prevention
+    treatments and programs received or scheduled in the last 3 days
+    therapy/nursing services in last 7 days
+    hospital and emergency room use in last 90 days
+    physician visits
+    physician orders: written, telephone, fax, email, or consultation orders for new or altered treatment 
+    restrictive devices
+  Responsibility and Directives
+  Discharge potential
+  Discharge
+
+# Community and Long-term Care Assessment Instrument (Protocols)
+
+# Home Care Assessment Form and User's Manual
+  + Assessment Information 
+    the assessment coordinator signs (name and date) and certifies that the assessment is complete
+
+
 
 
 

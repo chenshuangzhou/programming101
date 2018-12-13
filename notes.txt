@@ -383,22 +383,21 @@ Literature review：
 ### Teaching Assistantship
 
 Electronic Forms on Moodle with Google Drive links
-  Booklet borrow and return form (E)
-  Pad borrow form (E)
-  Consent forms
+  Booklet borrow and return form (E) - will be ready soon (Eva)
+  Pad borrow form (E) - handled by Rachel?
+  Consent forms - will be ready soon (Eva)
     clinical internship with elderly (E+P): collected for assignment
     assessment (E+P) for assignment 
     Reflective journal (chapter 1-2?) upload pics to time museum with consent form, with model and criteria?
     
-
-Moodle (functions?):
-  online instant editing and collaborative work (google drive link in moodle?)
-  
+Moodle
+  online instant editing - worked (12 Dec)
+  collaborative work 
     
-Guest Speaks:
-  Honorary fee (contact department WingLun)
-  PPT of speech obtained and uploaded to the system prior to 3 weeks (at least 1 week in advance)
-  Rehearsal: 1 or 2 weeks prior to Mar 2 for Cai Yi Ling to rehearse testing out online teaching environment 
+Guest Speaker:
+  Honorary fee - not yet discussed with WingLun
+  PPT of speech obtained and uploaded to the system prior to 3 weeks - will follow up as scheduled
+  Rehearsal of online teaching setup with Cai: (1 or 2 weeks prior to the teaching) - will follow up in Feburary
 
 Teaching (6 hours):
   Students with different teaching methods?
@@ -412,14 +411,14 @@ Teaching (6 hours):
     TeLi: https://teli.hku.hk/
   Recorder setup: http://moodle-support.hku.hk/teacher/panopto  
 
-Readings update:  
-  frail elderly on case management 
-  check InterRAI websites (geriatric assessment and system)
+Readings update - sent update on 12 Dec
+  frail elderly on case management - checked
+  check InterRAI websites (geriatric assessment and system) - checked
 
 Email address corrected:
-  chenshuangzhou@hku.hk
+  chenshuangzhou@hku.hk - modified and worked
 
-Portfolio 
+Portfolio - asks around and no one knows
   records of seminars and academic activities
   research competence
   seminar outside

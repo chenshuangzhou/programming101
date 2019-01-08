@@ -45,6 +45,21 @@ spell right
 vscode-pdf
 
 
+
+### CETL ##################################################################################
+Learning modules (construtive alignment): intended learning outcome, teaching and learning activities, assessment
+Module 3-4 (10 minutes teaching): think-pair-share to add as active learning activities
+Module 7-8 (15 minutes teaching):
+
+oneline feedback from students: google form
+
+attention: interesting analogy
+participation: pariticpation assignment
+quesitons: educational moment for finding the bugs
+assessment management
+awareness of needs:
+
+
 ### SOWK7007 Research Methods ##################################################################################
 
 

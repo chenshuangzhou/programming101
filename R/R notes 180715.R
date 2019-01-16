@@ -1,4 +1,4 @@
-summary(mtcars)
+﻿summary(mtcars)
 a=c(1,4,2,7,6)
 plot(x=nchar(a),y=a)
 points(4.5,3)
@@ -3330,6 +3330,9 @@ coef(fit1)      # item success probabilities for each latent group; coef: withSE
 
 ### Bootcamp/Workshop on Linear Regression diagnostics by Clifton ###
 ## Notes:  y5 x5 is linearity.  y3 x3 is autocorrelation
+bootcamp=read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/linear regression workshop/bootcamp.txt",header=T,sep="\t",na.strings = "NA")	# Dell
+bootcamp=read.table("C:/Users/admin/OneDrive/research/2school/PhD Courses/linear regression workshop/bootcamp.txt",header=T,sep="\t",na.strings = "NA") # Lenovo
+
 
 # Nonlinearity
 linktest=function(y, reg) {

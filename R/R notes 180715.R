@@ -3328,3 +3328,47 @@ summary(fit1)   # show Log likelihood, AIC, BIC
 coef(fit1)      # item success probabilities for each latent group; coef: withSE (estimate standard errors: T/F), what (what parameters to show: delta/lambda/IRF), item (which item to show)
 
 
+### Bootcamp/Workshop on Linear Regression diagnostics by Clifton ###
+## Notes:  y5 x5 is linearity.  y3 x3 is autocorrelation
+
+# Nonlinearity
+linktest=function(y, reg) {
+  fit=reg$fit
+  fitsq=reg$fit^2
+  link=lm(y~fit+fitsq)
+  ret=summary(link)
+  return(ret)
+}
+
+
+# Heteroskedasticity
+# Breusch-Pagan.  https://en.wikipedia.org/wiki/Breusch%E2%80%93Pagan_test
+
+library(stats)
+hettest=function(reg, sampsize, predictornum) {
+  fit=reg$fit
+  resid=reg$res
+  residsq=resid^2
+  breusch=lm(residsq~fit)
+  degfr=predictornum
+  het=summary(breusch)
+  pagan=het$r.squared*sampsize
+  myhet=dchisq(pagan, degfr)
+  return(myhet)
+}
+
+# Autocorrelation
+arima(myreg, order=c(1,0,0))
+
+
+# Outliers
+install car
+load car
+
+influencePlot(myreg)
+
+
+
+
+
+

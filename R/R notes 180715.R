@@ -1,4 +1,9 @@
-﻿summary(mtcars)
+﻿## File location examples:
+read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Dell
+read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA
+read.table("C:/Users/admin/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo
+
+summary(mtcars)
 a=c(1,4,2,7,6)
 plot(x=nchar(a),y=a)
 points(4.5,3)
@@ -3198,21 +3203,70 @@ abline(h=tree.error2[1])
       pair interaction
       diff of attitude < miu (0.5/0.25) social tolerance
       
+### CMED 6020, MMPH6117 Advanced Statistical Methods I ###
+mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
+
+# histogram
+hist(mvc$MVC, axes=FALSE, xlim=c(0, 600), 
+    ylim=c(0, 8), font.lab=2, cex.lab=1.2, 
+    cex.main=1.5, col=grey(0.8),   
+    xlab="MVC", ylab="Frequency", 
+    main="Histogram of MVC")
+axis(1, pos=-0.2, lwd=3.5, font=2)
+axis(2, pos=-20, lwd=3.5, font=2, las=1)
+
+# scattered plot
+plot(MVC ~ age, data=mvc, xlab="Age (years)", 
+    ylab="Quadriceps muscle (newtons)", 
+    xlim=c(20, 70), ylim=c(0, 600), 
+    cex=1.5, cex.lab=1.2, 
+    font.lab=2, font.axis=2, las=1)
+
+# line plot
 
 
-    
+# save graph to pdf
+pdf("d:/figure1.pdf", width=6, height=4)
+plot(MVC ~ age, data=mvc, 
+    xlab = "Age (years)", 
+    ylab = "Quadriceps muscle (newtons)",  
+    xlim = c(20, 70), ylim = c(0, 600), 
+    cex = 1.5, cex.lab = 1.2, 
+    font.lab = 2,  font.axis = 2, las = 1) 
+dev.off() 
 
+# exercises
+# 1. Using R, generate the first 10 terms of the arithmetic sequence an = -3n + 7 (a1 = 4, a2 = 1, a3 = -2,...)
+An = function(x){
+  f = 0
+  n = 1
+  ns = fs = c()
+  for(n in 1:x){
+    f = -3*n + 7
+    print(paste("a",n," = ",f,sep=''))
+    ns = cbind(ns,n)
+    fs = cbind(fs,f)
+    n = n + 1
+  }
+  plot(x = ns, y = fs, xlab="n", ylab="An",
+      xlim = c(1,x), ylim = c(-3*x+7, -3*1+7), type = "l")
+}
 
-
-
-
-
-
-#
-
-
-
-
+# 2. Using R, generate the first 10 terms of the geometric sequence gn = 2*(-0.5)^(n-1) (g1 = 2, g2 = -1, g3 = 0.5,...)
+Gn = function(x){
+  f = 0
+  n = 1
+  ns = fs = c()
+  for(n in 1:x){
+    f = 2*(-0.5)^(n-1) 
+    print(paste("g",n," = ",f,sep=''))
+    ns = cbind(ns,n)
+    fs = cbind(fs,f)
+    n = n + 1
+  }
+  plot(x = ns, y = fs, xlab="n", ylab="An",
+  xlim = c(min(ns),max(ns)), ylim = c(min(fs),max(fs)), type = "l")
+}
 
 ###   R2wd - R to Word #############################################################################
 

@@ -1,29 +1,51 @@
-﻿Caregivers 
-  caregiving burden
-  self-Efficacy
-  stress and coping
-  formal and informal caregiving
-  
+﻿### Notes ##################################################################################
 
-Demtnia patient and CST
-  CST
-  quality of life outcome
-  caregiver outcome 
-
-caregiving burden and patient outcome 
-
-intervention -> patient outcome (neuropsychiatric inventory)-> caregiving burden ()/Caregiver (neuropsychiatric inventory) 
+READINGS:
+  handbook of positive psychology, p.610
+  monitor - october 2018, p. 43
 
 
+      
 
-### Journals
+
+### Projects ##################################################################################
+##  Dementia patient and Cognitive Stimulation Therapy
+      Cognitive Stimulation Therapy
+      quality of life outcome
+      caregiver outcome 
+
+## Stress process model with Vivian's 2 datasets 
+
+## Meaning writings
+    phd thesis to find out the leading authors and articles
+    meaning making, stress process model, depression
+    
+## caregiving burden and patient outcome 
+      stress process model (Pearlin)
+      neuropsychiatric inventory for caregiver and patients 
+
+## Caregiving and Life-course model
+      instrumental care and measurement of ADL/IADL
+      navigate help
+      differential support and educations
+      policy stimulation model
+      The China Health and Retirement Longitudinal Study (CHARLS) and HRS comparison
+      life-course perspective/model
+      instrumental care and professional care
+      exchange model/ self-enforced model - social norms and cultures
+      family resilience, reciprocal caregiving, dynamics of dyads, meaning of role or identity being the caregivers
+
+## Evaluating Complex Interventions (MRC)
+
+
+### Journals ##################################################################################
 JOURNALS OF GERONTOLOGY SERIES A-BIOLOGICAL SCIENCES AND MEDICAL SCIENCES
 JOURNAL OF THE AMERICAN GERIATRICS SOCIETY
 GERONTOLOGIST
 AMERICAN JOURNAL OF GERIATRIC PSYCHIATRY
 JOURNALS OF GERONTOLOGY SERIES B-PSYCHOLOGICAL SCIENCES AND SOCIAL SCIENCES
 INTERNATIONAL JOURNAL OF GERIATRIC PSYCHIATRY
-BMC Geriatrics
+BMC Geriatrics  - medical, biological and psychiatric geriatrics
 AGING & MENTAL HEALTH
 Geriatrics & Gerontology International
 PSYCHOLOGY AND AGING
@@ -1219,6 +1241,28 @@ POLICY: Macau carer allowance study proposal
 * Australia’s definition on primary carer
 * Meaning making of volunteers and social workers: four pairs of 100 each. Manipulation of age, gender and generations. Mentor illness. Boston university. 
 
+### Other Notes ##################################################################################
+##  Dementia patient and CST
+      CST
+      quality of life outcome
+      caregiver outcome 
+
+## caregiving burden and patient outcome 
+      stress process model (Pearlin)
+      neuropsychiatric inventory for caregiver and patients 
+      
+## Evaluating Complex Interventions (MRC)
+
+## Caregiving and Life-course model
+      instrumental care and measurement of ADL/IADL
+      navigate help
+      differential support and educations
+      policy stimulation model
+      The China Health and Retirement Longitudinal Study (CHARLS) and HRS comparison
+      life-course perspective/model
+      instrumental care and professional care
+      exchange model/ self-enforced model - social norms and cultures
+      family resilience, reciprocal caregiving, dynamics of dyads, meaning of role or identity being the caregivers
 
 
 ### Readings Archive ###############################################################################

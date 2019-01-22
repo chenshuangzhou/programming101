@@ -3206,6 +3206,16 @@ abline(h=tree.error2[1])
 ### CMED 6020, MMPH6117 Advanced Statistical Methods I ###
 mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
 
+dim(data) # check the number of cases and variables
+colname(data) # see variable names
+head(data)    # specify the number of rows
+tail(data)
+relevel       # reset the reference group
+
+aggregate(y ~ x1+x2, data=dataname, FUN='mean')
+prop.table(table, margin)   # margin - by row/column
+
+
 # histogram
 hist(mvc$MVC, axes=FALSE, xlim=c(0, 600), 
     ylim=c(0, 8), font.lab=2, cex.lab=1.2, 
@@ -3236,6 +3246,13 @@ plot(MVC ~ age, data=mvc,
 dev.off() 
 
 # exercises
+
+n = (1:10)
+f1 = -3*n + 7
+f2 = 2*(-0.5)^(n-1)
+plot(x=n, y =f1)
+plot(x=n, y =f2, type="l")
+
 # 1. Using R, generate the first 10 terms of the arithmetic sequence an = -3n + 7 (a1 = 4, a2 = 1, a3 = -2,...)
 An = function(x){
   f = 0
@@ -3251,6 +3268,7 @@ An = function(x){
   plot(x = ns, y = fs, xlab="n", ylab="An",
       xlim = c(1,x), ylim = c(-3*x+7, -3*1+7), type = "l")
 }
+
 
 # 2. Using R, generate the first 10 terms of the geometric sequence gn = 2*(-0.5)^(n-1) (g1 = 2, g2 = -1, g3 = 0.5,...)
 Gn = function(x){

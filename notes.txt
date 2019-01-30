@@ -1410,3 +1410,597 @@ Triangulated design
   thematic: characteristics 
   across-case analysis and narrative + within-case analysis
 Theory: reader-response theory 
+
+
+### Archived ####################################################################
+### Overview ##########################################################################################################
+
+[meeting]: 181204 (Tu)
+[coding]: folder of "Mastering social media mining with python"
+[academic]: /literature, /manuscript, /homework, /writing, /database, /readings
+[others]: /side project; /contracted 
+
+### Ongoing projects ###################################################################################################
+
+
+181102-181111; 181201-181208
+[academic/database] finding datasets (keyword=careg*, sort by released/updated, 3 pages completed)
+    keywords:  (caregiv* or family or member) and (meaning or sense) and mak* and dementia
+    database: ICPSR, CHAPP-PINE, CHR-IRSE, NHAT, HRS
+    Results (datasets):
+        
+        Panel Study of Income Dynamics (PSID): Main Interview, 1968-2015 (ICPSR 37142)
+            dementia 
+            day care center, 
+            family day care home, sense of efficacy
+            family size, family composition
+
+        Work, Family, and Health Study (WFHS) (ICPSR 36158)
+            family caregiving roles; informal caregiving roles; management of work and caregiving roles; double/triple duty caregiving men; women employed in U.S.-based nursing homes entered and exited unpaid caregiving roles for children (double-duty-child caregivers), adults (double-duty-elder 
+            caregivers), or both (triple-duty caregivers)
+
+        Health and Aging in Africa: A Longitudinal Study of an INDEPTH Community in South Africa [HAALSI] Baseline Survey: Agincourt, South Africa, 2015 (ICPSR 36633)
+            caregiver: role, emotional, financial, health care...
+            living status and physical health
+
+        Swedish Adoption/Twin Study on Aging (SATSA), 1984, 1987, 1990, 1993, 2004, 2007, and 2010 (ICPSR 3843)
+            home care, nursing care
+            dementia
+            mental ability, mental health (optimism, passimism)
+            caregiver's roles and tasks
+
+        National Health and Aging Trends Study (NHATS)
+            residential care not nursing home
+            SP cared for person; cared for person
+
+        Midlife in the United States (MIDUS) Series
+            subjective aging
+
+        HRS: 
+            Variables
+                helper: 
+            questions: 
+                identifier throughout all databases?
+                how to see relevant publications
+                how to add 2016 data to RAND2014 dataset
+
+
+181107-181115
+[academic/literature] common knowledge
+1. social work cyclopedia: http://socialwork.oxfordre.com/
+2. family studies cyclopedia: https://onlinelibrary.wiley.com/doi/book/10.1002/9781119085621
+3. readings in onedrive/readings/gerontology
+
+
+181104-181113
+[academic/literature] theory
+    check article: cultural difference in social cognition 
+        1. Shore, B. (1998). Culture in mind: Cognition, culture, and the problem of meaning. Oxford University Press.
+        2. Hong, Y. Y., & Chiu, C. Y. (2001). Toward a paradigm shift: From cross-cultural differences in social cognition to social-cognitive mediation of cultural differences. Social cognition, 19(3: Special issue), 181-196.
+        3. Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psychological review, 98(2), 224.
+        4. Nisbett, R. E., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture and systems of thought: holistic versus analytic cognition. Psychological review, 108(2), 291.
+        5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press. application in survey or questionnaire 
+
+
+180916-181118 
+[coding] Python datamining on social network service
+    [reading] coding module
+    [reading] public media: 
+        twitter
+    [Vivian] Medical care system covers medication for AD in both rural and urban areas?
+
+
+
+
+### Completed Projects ###################################################################################################
+
+
+
+181004-181130 
+[academic/literature/meta-analysis] Systematic review on Meaning-making: 
+    Preliminary search:
+        no year range
+        keywords: care* AND meaning AND (tool OR model OR theory or skill)
+        outcome: 
+            a list of (year, author, title, theory on endnote)
+            summary or notes
+    Organization of papers:
+        Screening
+            Year range: 
+            Keywords: 
+                1. (TITLE=(caretak*  OR  caregiv*  OR  caring  OR  career  OR  care )) OR (ABS=(caretak*  OR  caregiv*  OR  caring  OR  career  OR  care ))) 
+                2. AND ((ABS=(meaning-making  OR (make  AND  meaning ) OR (making  AND  sense ) OR (make  AND  sense ) OR (sense  AND  making ) OR      value  OR  identity  OR (filial  AND  piety ))) OR (TITLE=(meaning-making  OR (make  AND  meaning ) OR (making  AND  sense ) OR (make  AND  sense ) OR (sense  AND  making ) OR  value  OR   identity  OR (filial  AND  piety )))) 
+                3. AND ((TITLE=(tool*  OR  model  OR  scale  OR  theor* ) OR  ABS=(tool*  OR  model  OR  scale  OR  theor* )))) 
+                4. AND (TITLE=(family) OR  ABS=(family )) 
+                5. AND NOT ((TITLE=((nursing  AND  care ) OR  nurse  OR  decision-making  OR  hospital  OR  school  OR  education  OR  teachers  OR student  OR pet  OR  animal ) OR  ABS=((nursing  AND  care ) OR  nurse  OR  decision-making  OR  hospital  OR  school  OR  education  OR teachers  OR  student  OR pet  OR  animal )))
+            Database: Medline, PsychoINFO, WOS (Kevin), Scopus, Cochrane library, EMBASE, CINAHL
+            Inclusion criteria: 
+                In1. Review Paper
+                In2. Peer Reviewed Journal Articles
+                In3. English written
+            Exclusion criteria: 
+                Ex1. Studies focused on non-caregivers like teachers, students (D)
+                Ex2. Studies focused purely on decision- making (D)
+                Ex3. Studies with settings like hospital, school, education (D)
+                Ex4. Studies focused on non-human subjects like pet and animal (D)
+                Studies focused on nursing care or nurse training (D)
+                Ex5. Studies focused on caregivers who were the professional staff or
+                Ex6. Paid domestic helpers
+                Abstract only, books, discussion papers, editorials, thesis, commentary letters or conference proceedings.
+                Ex7. Studies focused on screening or assessing of specific disease.
+                Ex8. Studies focused on pediatric intervention.
+                Ex9. Studies focused on career development and gender equality in career setting.
+                Ex10. Studies focused on parental skills and parenting to infants or youth. 
+                Ex11.Studies focused on politics or social norms.
+                Ex12. Studies focused on the marriage. 
+                Ex13. Studies focused on medicine effects. 
+            Quality assessment: Cochrane, PRISMA, (Whittemore and Knafl, 2005)
+        Summary - Variables:
+            author (year)
+            aims and objectives
+            research method/design (including sampling method)
+            measurement
+            country
+            settings
+            participants (eg.ample size, age, gender, martial status, health and mental health states)
+            care recipient (eg. age, gender, social security, financial status)
+            theory
+            cognitive framework
+            definition of meaning searching/making
+            global meaning 
+            situational meaning 
+            coping strategy
+            changes in meaning (making)
+            other key findings
+            factors mentioned
+            qualitative/quantitative methods
+
+
+
+
+181112-181113
+[academic/homework] Research Proposal (Research method Class)
+
+
+
+
+181108-181110
+[academic/homework] Thesis critique (Thesis Writing Class)
+1. critique paper (refer to booklet p.21) 
+2. hardcopy:
+    cover page (portal)
+    old review with remarks
+    updated literature review
+    final assessment feedback sheet (portal)
+    Abstract of thesis
+    Critique
+
+
+181108-181111
+[academic/literature]
+1. find more exclusion criteria by reading literature
+
+
+
+181108-181110
+[others/side project] assignment writing on aging in society
+1. comment critically the issues and challenges of aging in society? what policy recommendations will you make to improve the caring for the elderly in society? give examples to illustrate your answer 
+2. words of 1500
+
+
+181107-181108 
+[others/side project] country review on United States (google drive)
+In the "service for carers" tab, update info:
+1. definition of caregivers; definition of informal carers
+2. policy differences in different region in US
+3. fill in the grid according to Policies to Suport Family Carers
+4. reference and link to official sources
+5. determine information from care recepients or caregivers, whose inclusion criteria and exclusion criteria need to be updated 
+
+Six categories: stake holders, motivation, belief system, resources, position, decision making model
+
+
+181102-181104
+[others] writing research method part
+    word limit: 500-600
+    material: refer to wechat history
+
+180902-181007 
+[academic/literature/homework] thesis review on 180930
+    750+ words
+
+
+181004-181007
+[academic/writing] Ethical Approval (due on 181008 Monday)
+    English Version proposal (Kevin writes a breif proposal)
+    Consent forms (Template: http://www.rss.hku.hk/integrity/ethics-compliance/hrec-forms)
+        Adult Consent Forms - Informed Consent Form for Adults (English; standard format)
+    Application forms (http://www.rss.hku.hk/integrity/ethics-compliance/hrec )
+        Ethical application form (Kevin takes notes from proposal to the form, which can be find at "Application and Report Forms/Application Form for Ethical Approval"
+    Questionnaires or/and interview questions guidelines (Kevin to confirm with Vivian on what to put for this part)
+        consent form for quesitonnaire (MM on this)
+        consent for for interview (MM on this)
+
+181004-181007 
+[academic/literature] Systematic Review on Meaning-making (due on 181008 Monday)
+    Preliminary search:
+        no year range
+        keywords: care* AND meaning AND (tool OR model OR theory or skill)
+        outcome: 
+            a list of year, author, name of articles, theory on endnote
+            summary or notes
+
+
+180910-181030 
+[meeting] reflective group: 
+    Note (onedrive shared):5-6 sessions; caregiver support group of burden, depression, caregiving, etc.
+    [reading] integrate literature and come up with reflective group course structure: 
+
+181001-181011 
+[academic/writing] AES PPT
+    One slide for 3 minutes' talking
+    Psychodynamics X Machine Learning
+    notes:
+        
+
+# 180912-180926 
+# [academic/homework] critique paper
+    15000+ words
+    due on 180926
+
+# 180920-XXXXXX 
+# [meta analysis] Meaning-making: 
+    [academic/literature] collecting info ('meaning') on:
+        abstract
+        keywords
+        title
+    [academic/literature] organization of papers:
+        methodology
+        empirical info collection
+        factors mentioned
+        theory
+        qualitative/quantitative methods
+    #[meeting] stress processing/Appraisal Theory (meaning and application in questionnaire): 
+        1. Intro: people have difference reactions and responses to the same event based on their own evaluations. Appraisal of an event causes an emotion, or affetive, response. 
+        2. Structural Model (Lazarus, 1991):
+            2.1. Primary appraisal: 
+                2.1.1 evaluates two aspects of a situation: motivational relevance (relevant or irrelevant to self), motivational congruence (congruent or incongrent with one's goals)
+                2.1.2 evaluation of personal significance of a specific person-environment transaction, being influenced by people's underlying assumptions or belifs about the world
+            2.2. Secondary appraisal: 
+                2.2.1 evaluate one's resources and options for coping
+                    coping potential: problem-focused coping or emotion-focused coping
+                2.2.2 evaluation of possibilities for coping and expectations regarding outcomes, being influenced by people's global meaning systems
+        3. Process Model (Smith & Kirby, 2000)
+            3.1 perceptual stimuli: sensation of pain or pleasure, perception of facial expression
+            3.2 associative processing: memory-based process makes quick connections and provides appraisal information associated with given stimulus
+            3.3 reasoning: logical, critical thinking about the stimulus and/or situation; slower and more deliberate. 
+        4. Stress/Coping Framework
+            4.1 demographic info, stressors, resources -> caregiver's `response to stress
+            4.2 resource being a moderator affecting stress outcome
+        5C. Questions:
+            5.1 How many hours per day do you perceive stress?
+            5.2 How many hours per day do you have to deal with the stress by yourself?
+            5.3 Do you have enough resources and capability to handle the stress?
+            5.4 What is your coping strategies?
+            5.5 Are those still stress to you after you adopt coping strategies?
+            5.6 Do you feel better after you use your coping strategies to those stress?
+
+    [meeting] theory
+        check article: cultural difference in social cognition 
+            1. Shore, B. (1998). Culture in mind: Cognition, culture, and the problem of meaning. Oxford University Press.
+            2. Hong, Y. Y., & Chiu, C. Y. (2001). Toward a paradigm shift: From cross-cultural differences in social cognition to social-cognitive mediation of cultural differences. Social cognition, 19(3: Special issue), 181-196.
+            3. Markus, H. R., & Kitayama, S. (1991). Culture and the self: Implications for cognition, emotion, and motivation. Psychological review, 98(2), 224.
+            4. Nisbett, R. E., Peng, K., Choi, I., & Norenzayan, A. (2001). Culture and systems of thought: holistic versus analytic cognition. Psychological review, 108(2), 291.
+            5. Hirschfeld, L. A., & Gelman, S. A. (Eds.). (1994). Mapping the mind: Domain specificity in cognition and culture. Cambridge University Press.
+        application in survey or questionnaire 
+    # [meeting] Factors/roles of personality (DV: stress outcome): 
+        demographics:
+            gender: 
+            race/ethnicity
+            income
+            age
+            education
+            culture: 
+        self-regulation: regulation of emotions, behaviors, and beliefs
+        positive affect (optimism): hope
+        sense of purpose: belief and goals
+        social support:
+
+### topics
+
+
+[1.0]
+
+1. Health ~ congruency of dementia and caregivers on subjective aging (positive/negative)
+2. subjective aging and health, a meta analysis
+  [micro] meta regression health ~ age group, caregiver's age group, gender, (lower) socioeconomic strata, racial or ethnic (minority) groups, congruency or incongruency of subjective aging
+  [macro] meta regression health ~ age norm and age related expectations, structure lag between the needs and competencies of aging individuals and opportunities provided by society 
+  [mezzo] meta regression health ~ generational differences between caregivers of baby boomers and X in terms of their interaction with elderly
+  [mezzo] effective interventions may release potential—economic, productive, familial, and emotional potentials for the benefit of older adults and society
+3. Multiphase Optimization Strategy
+
+caregiver burden ~ subjective aging 
+subjective aging ~ meaning making of caregivers 
+moderator: CG depressive symptoms
+compare probability and convenience sampling
+
+[1.1]
+
+subjective aging (SA)
+caregiving burden (CB)
+meaning making (MM)
+
+SA --(MM)--> CB --> Health (depressive symptoms, anxiety, well-being, health)
+
+They feel that their lives make sense and have continuity.
+They are directed and motivated by meaningful goals.
+They believe their existence matters to others.
+
+meaningful relationship and meaningful occupations
+meaning therapy
+
+[1.2]
+meaning making procedure within subjective aging
+meaning making of caregivers (CG)
+discrepency of situational, global and interacting (CR) meanings
+
+stereotype embodiment theory: psychological, behavioral, and physiological pathways (Levy, 2009)
+stress and coping theory
+
+### Bradd Shore - Culture in Mind - Cognition, Culture, and the Problem of Meaning (1996, Oxford University Press)
+
+## p.71
+
+0. General models
+
+(p.42)
+Culture: 
+    traits, integrated configurations, constellations of symbols and meanings, symbolic templates, a web of meanings, taxonomic trees, measurable units of behavior, a collection of material artifacts, systems of knowledge, sets of values and beliefs, sets of characteristics strategies for accomplishing a desired goal
+    exist as public artifacts "in the world" and cognitive constructs "in the mind" of members of a community
+Models:
+    provides a bridge between the empiricist concept of culture as "object" and the cognitive concept of culture as forms of knowledge. 
+Cultural model:
+    that can distinguish culture on the ground and culture in the mind
+
+Mental model:
+    Definition
+        aka mental representations
+        including personal and conventional (cognitive) models
+        creative and adaptive simplifications of reality that may reduce complexity of reality
+    Personal model (P): 
+        human are adept at constructing idiosyncratic models of experience on the fly, as a basic meaning-making strategy
+        Individual -> (mental model) -> physical environment
+    Conventional model (Co): 
+        reaction in circumstances, settings, and cultural conditions
+        not personally made but special-purpose program in which one internalize as part of his own stock of ready-made responses
+        schematized by people and socially constrained and reinforced by both positive and negative social feedback
+    Cultural model (Cu): 
+        the origin of conventional models
+        born, transformed through endless social exchanges
+        a shared model provides conventional resources to a community for meaning making   
+        Individual ->[(mental model) -> social environment] -> physical environment
+
+    Co->P: 
+        individuals of each generation are inscribed of conventional model
+        gain motivational force in a community
+        conventional models become a personal cognitive resource for individuals
+        conventional model + personal experience = personal models
+        individuals may experience conflicting personal and conventional models for a given domain of experience
+        
+    P vs Cu:
+        mental representations of cultural models internalize socially constrained experiences than idiosyncratic (P) models     
+        cultural practices constrain attention and guide saliency are not open to much personal choices but are closely guided by social norms
+
+    Instituted model vs conventional mental model
+        called "templates", social institutions—conventional, patterned public forms such as greetings, calendars, cockfights, discourse genres, houses, public spaces, chants, conventional body postures, and even deliberately orchestrated aromas 
+        such as rituals, carnival, dance, genres, or games
+        lead a double life, as part of an external social world and as products of intentional behavior
+        govern concept formation of newly socialized individuals, from which individuals construct conventional mental models
+        distinction
+            being different from conventional mental models and the distinction is of great theoretical importance
+            when comparing instituted model and conventional mental model, members of a community under certain conditions will fail to fully internalize a cultural model because their personal experiences are incompatible with the conventional model
+            mental representations or meaning construction can be different 
+    
+    Model vs foundational schema
+        schema occurs within a set of specific cultural models 
+        foundation schemas lose specific sensory reference to organize a wide diversity of particular models and underwrite the possibility of meaning construction in a variety of context.
+
+
+
+1. Cultural differences play in meaning making process (p.42, 311-343)
+
+
+
+2. cognitive process of "meaning making"
+p. 75-136
+
+3. what is neuromantic frame of Mind
+p.136
+
+4. "meaning making" models (p.53, 265-284)
+
+    Actors' models and observers' models
+        dealing with the relationship between culture and mind
+        schools:
+            structuralism (Levi-Strauss)
+            symbolic anthropology (Geetz, Turner, and Schneider)
+            ethnoscience (Frake, Goodenough, Sturdevant, Lounesbury, and Conklin)
+        models
+            actors': employ symbolic forms that are dynamic and graded, permitting the representation of an individual's changing relationships to any phenomenon. They are dynamic ecological models that govern the negotiation of a changing landscape.
+            observer's: adapted for the representation and social coordination of abstract general perspectives. Thus observers' models tend to be organized more in terms of categories, permitting mutual rather than just personal orientation.
+        
+    Model Genres
+        linguistic models:
+            Scripts: (conventional model) standardized conversation templates for organizing interactions in well-defined, goal-oriented situations
+            Propositional models: (cultural models) prepositional symbolic forms are characterized by discursiveness. discursive symbolisms as ordinary language or mathematics have a high degree of abstractness from which they derive their power to re-present experience rather than iconically modeling it
+            Sound symbolic models: (conventional model) convey important information through conventional phonological patterns, in which pronunciation styles that index different contexts in a language.
+            Lexical models: model forms of experience (taxonomies) with list of names, linked items, dictionaries, and clearly defined subsets of vocabularies
+            Grammatical models: highly abstract models of time, space, movement, and causality that are encoded by grammatical forms such as noun classes, verb aspect, tense structures, and agent markers. 
+            Verbal formulas: encode traditional wisdom, specialized knowledge, or techniques in highly conventional forms of speech
+            Narrative model: (cultural model) a uniquely ambiguous status among verbal formulas; 
+            Trope models: (cultural models) important linguistic models that permit language to transcend literal reference, including metaphor models, methonym models
+        Nonlinguistic models:
+            Image schemas: (cultural model) "image schematic models" (Lakoff, 1987a:118) and defines them as "schematic images, such as trajectories or long, thin shapes, or containers"; related to somatic experience and knowledge; or called kinesthetic schemas convey important cultural information about status, mood, and relationship.          
+            Action sets: (gestural models) Simple, stylized body movements can become integrated into a coordinated interchange  
+            Olfactory models: (cultural model) Because of their special relation to long-term memory, olfactory models are often used to mark special occasions, individuals, or relationships
+            Sound image models: (cultural model) Many rituals use sounds as an important component
+            Visual image models: (cultural model) culturally salient paintings and decorative motifs and color symbolism
+    Functional distinction among models 
+        Orientational models: orienting individuals to one another and to behavioral environment
+            Spatial models
+                Area maps of all kinds of geographic entities
+                Navigational models such as Micronesian star charts (Hutchins, 1991); verbal formats for giving traveling directions
+                Route maps realized in prepositional form, pictorial form, or (as is common among Australian aborigines) in song lyrics
+                Models of interpersonal space, which code for aspects of power and intimacy                
+                Context markers, which frame spaces as distinctive behavioral contexts (sports fields, play frames, and performance frames are all examples of spatial context markers)
+            Temporal models
+                Incremental models: time related progression
+                Decremental models: time count-down
+                Cyclical models: various spans of time as cycles
+                Rhythmic models break up the flow of time into rhythmic segments for the purpose of framing musical or verbal expression
+                Biographical models are conventional models for conceptualizing people's life cycles.
+                Context-framing devices mark off special time frames in the same sense as spatial models frame places
+            Social orientation models
+                Social relation Model: lexical models mapping kin terminologies
+                Social coordination: rituals, highly scripted and formalized action sets providing a shared behavioral framework for coordinating social relations
+                Social role sets model the division of labor
+                Emotion models: stress the orienting and communicative function
+            Diagnostic models: conventional indexical models that diagnose signs of underlying states, causes, or conditions
+                Medical diagnostic models: include taxonomies and divination rites as well as metonymic and metaphoric models that read somatic symptoms in relation to classifications of disease types.
+                Checklists models: taking inventory of complex procedures or collections of objects or people.
+                Divinatory models: strategies for uncovering hidden causes for a community's problems.
+                Meteorological models: by which communities read the state of the natural world, including weather forecasting but also models for interpreting the relationships between natural events (seasons, floods, eclipses, volcanoes, storms, tides, etc.) and their social, moral and supernatural correlates.
+                Intention displays are cultural models by which members of a community read each others' intentions.
+        Expressive/conceptual models: share personal experience objectified, conventionalized, and transformed into cultural artifacts
+            Classificatory models: based on well-formed categories, defined in terms of the intersection of more primitive semantic components or attributes.
+            Ludic models: discrete performative frame, key cultural problematics
+            Ritual and dramatic models: ritual and drama are important ways that communities externalize and objectify otherwise inchoate or inarticulate experiences
+            Theories: provide communities with a conceptual picture of a complex state of affairs.
+        Task models
+            Scripts: include both verbal and nonverbal dimensions
+            Recipes: conventional task models for performing complex routines
+            Checklists: standardized inventories of functionally related objects or persons
+            Mnemonic models: promote the memorability of important and frequently used information.
+            Persuasion models: Persuasion models include a wide variety of specific conventions like prayer, sacrifice, begging, debate, sorcery, love magic, rational argument, sympathetic or contagious magic, apology, commands, and promising
+
+5. what is primitive classification
+p.167
+
+6. What is dreamtime learning? 
+p.207-236
+
+
+
+
+
+### [informal support and long-term care settings, annual review of gerontology and geriatrics, 2018]
+
+
+
+
+### [Subjective Aging in annual review of gerontology and geriatrics， 2015]
+subjective aging - negative views of aging, age identity
+awareness of age-related change (AARC)
+  perception of the positive and negative age-related changes in their physical and psychological functioning and tries to explain what makes people aware of their age and aging in several domains of life (e.g., health, lifestyle, interpersonal relationships)
+  negative perception ~ lower wellbeing ~ poorer health behavior and social integration ~ lower self-esteem, ~ lower optimism ~ lower self-Efficacy
+  intergenerational (inter-group) interaction (contact) for perception changes
+    volunteer organizations being younger and older people together to word on a shared tasks
+    preschool and school-aged children visiting retirement communities,
+    retired older adults sharing their experience with and mentoring children in schools
+  challenges on changing negative perception of aging
+    change age identity and its causing factors
+    strategies to promote positive perception of aging
+    stability and the long-term maintenance of effects
+
+# Perception of aging -> Changing ecologies of aging (p.211)
+Micro system: individual's interactions within an environment (the workplace, the health care system)
+  work place
+    person characteristics: 
+      workplace success
+      opportunities for workplace engagement
+      decision about retirement
+      work experience <-> perception of aging process + sense of productivity and responsibility
+    environment characteristics: 
+      poor performance and productivity (slower sped, poorer memory, less turnover)
+      inflexible, resistant to change, uninterested or unable to learn new technologies
+      discrimination, loss of historical company knowledge, missed opportunities for productivity
+  Health Care System
+    person characteristics
+      physical health: cardiovascular disease, including heightened physiological stress response, poorer recovery from heart attack, and higher likelihood of experiencing a cardiac event, impaired sensory functioning
+      mental health (major depressive symptoms) <-> perception of age + age versus subjective age 
+    environment characteristics 
+      quality and amount of care provided to elderly: poorer quality of patient–physician communication, decreased provision of medical information and counseling, failure to recommend certain medical procedures, and limited access to participation in clinical trials, which significantly limits the evidence available for many drugs regularly prescribed to older adults
+      health provider's attitude
+      competence or functional ability: physical health, sensory functioning, independence, language skills, and social and emotional development.
+      subjective factors (such as disengagement from the world, loss of interest in living, unproductivity, and inflexibility
+  other example: self-directed attitudes about aging held by an individual, including how satisfied the person is with his or her own aging process, the awareness of becoming older, and the age with which the person identifies are shaped by ongoing interactions(called proximal processes) of the aging individual with the immediate environment.
+
+Meso system:
+  subjective aging is negotiated through interactions between two or more microsystems.
+  e.g.: Encounters between the staff and family members of a resident at a long-term care facility might have strong influence on subjectively perceived opportunities and developmental constraints of an older person, which in turn affect his or her views of the aging process.
+
+Exo system:
+  captures the indirect influence and interaction of two or more remote settings, at least one of which that does not directly involve the individual.
+  e.g.: the influences of a physician’s medical training on the individual or the influence of a family caregiver’s connection (or lack of connection) to local caregiving resources and information on an aging parent.
+
+Macro system: reflects those patterns made up by the micro-, meso-, and exosystems.
+  current societal structures of aging
+    people retired from their primary profession and career but do not feel old at all and indeed start new life projects in areas such as partnership, intergenerational engagement, volunteering, housing, or leisure (James & Wink, 2006).
+    the fourth age (85+) has been characterized as vulnerable and high risk of multiple losses
+  indications of changing (social) images of aging
+    historical physical decline
+    social roles
+    elderly in an aging society may fuel aging anxiety, fears, or disease-specific concerns such as dementia worries
+    socioeconomic position and health
+  persisting societal age norms 
+    fixed retirement age and extended health condition and life span generate a new life phases
+    nationally held attitudes and norms are important for shaping how older workers are perceived
+    Formal and informal age norms are often intended to protect society or the older person from harm caused by declining abilities and diminishing opportunities.
+    This structural lag between the need and competencies of an individual and the opportunities provided by society might reinforce loss-oriented experiences of aging and, in turn, limit access to meaningful roles which could provide individuals with the opportunity to have experiences of mastery and competence.
+  other example: the macrosystem encompasses the broad age stereotypes and values assigned to “being old,” which are unconsciously adopted and widely held by members of a particular culture (sociocultural perspective on age stereotypes; Hummert, 2011), and also includes cultural structures and social policies.
+
+Interventions at micro and macro levels
+  people (micro)
+    intervention recipient: 
+      higher tendencies toward neuroticism (Moor, Zimprich,Schmitt, & Kliegel, 2006), 
+      living in socioeconomically disadvantaged conditions (Barrett, 2003), 
+      a higher number of television viewing hours (Donlon, Ashman, & Levy, 2005), and 
+      a family history of Alzheimer’s disease (Suhr & Kinkela, 2007).
+    health provider
+      frequently work with the sickest older adults are limited in the opportunities interacting with healthy older adults and are therefore at risk of developing more negative views on aging (Meisner, 2012).
+  intervention strategies (micro)
+    a program supporting one to successfully complete a meaningful tasks -(reinforcement)> improved views on aging
+    education to health providers may change attitude toward older patient (Samra et al., 2013)
+    intervention including experiential components such as simulations and activities designed to promote empathy, may change attitude of participating medical professionals
+    Multiphase Optimization Strategy (MOST) determines which intervention components offer the greatest potential benefit to participants
+  Research (micro)
+    Stereotype embodiment theory: psychological, behavioral, and physiological (Levy, 2009)
+      explains how subjective aging influences physical health, so does workplace performance..improve, after an intervention which helps individuals become aware of age stereotypes and change their expectations, age attributions, self-efficacy, or control beliefs.
+      interventions designed for individuals and professionals should target key psychological, behavioral, and physiological pathways by which negative self-views and age stereotypes influence health and wellbeing. 
+    self-regulation strategies (e.g., selection, optimization, and compensation): 
+    the process of misattributing symptoms of illness or disability as signs of pathological aging as opposed to normal aging has detrimental consequences for physical health. intervention efforts that target expectancies and attributions of aging is effective for promoting positive health
+      1) adults aged 80 years and older who attributed a chronic health condition to old age tended to report more bothersome symptoms, engaged in fewer health behaviors, and were also twice as likely to have died by the 2-year follow-up (Stewart, Chipperfield, Perry, & Weiner, 2012).
+      2) adults who attributed symptoms of arthritis, heart disease, and sleeping problems to normal aging rather than chronic disease were significantly less likely to have sought preventive medical services in the previous year (Goodwin, Black, & Satish, 1999).
+  Role of social policy and health care policy (macro)
+    virtues and the risks of the aging process and societal aging: take advantage of the developmental plasticity of elderly and to encourage individuals to recognize and seize opportunities for growth and development in the later phase of life span
+    aging is a dynamic developmental process in which one should be responsible for their changes and improvement
+    dissociate aging and disease in individual and societal conceptions of aging process
+    social policies regarding retirement age disentangle aging from disease; whereas retirement policy assumes one's functional performance goes down as getting older
+  Role of mass media (macro)
+    social and health care policies, the mass media and the internet play an important role in conveying societal views on aging and post portrays of older adults in the media 
+    older adults with greater tv exposure without appropriate interventions hold more negative views on aging
+  Research (macro)
+    societal age stereotypes are internalized in the young generation throughout their life span
+    socioeconomic strata differences provide opportunities and constraints for positive views on aging
+    systematic review of subjective aging that investigates changes in views on aging across historical periods
+    positive and negative views on aging influence on developmental outcomes
+    balanced between positive and negative views on aging predicts one's limits and potentials in terms of successful aging
+    subgroups of aging population: lower socioeconomic strata or racial or ethnic minority groups
+    interplay between societal age norms and subjective aging on the microlevel will be to examine the subjective aging experiences among individuals in various stages of retirement (e.g., planning for, entering, and living in retirement as well as reentering the workforce).
+
+
+Structure lag (Riley & Riley, 1994)
+  inability of society to keep up with rapid biological and life span changes (extended)
+  related to micro and macro levels
+  individuals living in those "extended years" do not engage in matched meaningful and productive work recognized or values by society. individuals are less likely to use adaptive self-regulation strategies if they hold negative self-perceptions of aging, thereby experiencing poorer health outcomes (Wurm, Warner, Ziegelmann, Wolff, & Schuz, 2013).
+

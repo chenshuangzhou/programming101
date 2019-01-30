@@ -1,7 +1,21 @@
 ﻿## File location examples:
 read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Dell
 read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA
-read.table("C:/Users/admin/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo
+read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo X1
+
+
+## Writing Progress Function
+
+wp = function(){
+  progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",header=T,sep="\t",na.strings = "NA")
+  date = readline("The date today?")
+  day = readline("The day today? (1-7)")
+  word = readline("The word counts?")
+  project = readline("Project name?")
+  status = readline("Percentage of achievement?")
+  insert = c(date,day,word,project,status)
+  write.csv(insert,file="D:/OneDrive/research/1personal/Programming/progress1.csv", append=TRUE)   
+}
 
 summary(mtcars)
 a=c(1,4,2,7,6)

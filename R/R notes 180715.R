@@ -6,16 +6,19 @@ read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,se
 
 ## Writing Progress Function
 
-wp = function(){
-  progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",header=T,sep="\t",na.strings = "NA")
-  date = readline("The date today?")
-  day = readline("The day today? (1-7)")
-  word = readline("The word counts?")
-  project = readline("Project name?")
-  status = readline("Percentage of achievement?")
-  insert = c(date,day,word,project,status)
-  write.csv(insert,file="D:/OneDrive/research/1personal/Programming/progress1.csv", append=TRUE)   
+p = function(){
+  progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+  progress = as.data.frame(progress)
+  n = dim(progress)[1]
+  progress[n+1,1] = readline("The date today?")
+  progress[n+1,2] = readline("The day today? (1-7)")
+  progress[n+1,3] = readline("The word counts?")
+  progress[n+1,4] = readline("Project name?")
+  progress[n+1,5] = readline("Percentage of achievement?")
+  write.table(progress,file="D:/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)   
 }
+
+### Beginning of Notes ##############################################################33
 
 summary(mtcars)
 a=c(1,4,2,7,6)

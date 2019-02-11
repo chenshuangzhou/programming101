@@ -1,13 +1,13 @@
 ﻿## File location examples:
-read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Dell
-read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA
-read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo X1
+read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Office - Dell Inspiron 16
+read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA 
+read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")              # Office - Lenovo X1
 
 
 ## Writing Progress Function
 
 p = function(){
-  progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+  progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
   progress = as.data.frame(progress)
   n = dim(progress)[1]
   progress[n+1,1] = readline("The date today?")
@@ -15,7 +15,7 @@ p = function(){
   progress[n+1,3] = readline("The word counts?")
   progress[n+1,4] = readline("Project name?")
   progress[n+1,5] = readline("Percentage of achievement?")
-  write.table(progress,file="D:/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)   
+  write.table(progress,file="C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)   
 }
 
 ### Beginning of Notes ##############################################################33
@@ -3233,6 +3233,9 @@ aggregate(y ~ x1+x2, data=dataname, FUN='mean')
 prop.table(table, margin)   # margin - by row/column
 
 
+## ggplot help
+http://www.cookbook-r.com/Graphs/index.html
+
 # histogram
 hist(mvc$MVC, axes=FALSE, xlim=c(0, 600), 
     ylim=c(0, 8), font.lab=2, cex.lab=1.2, 
@@ -3262,7 +3265,20 @@ plot(MVC ~ age, data=mvc,
     font.lab = 2,  font.axis = 2, las = 1) 
 dev.off() 
 
-# exercises
+
+
+# convert numeric to factor
+cut(x, breaks, labels = NULL, include.lowest = FALSE, right = TRUE, ...) 
+
+# record categorical - setting reference group
+x.f <- cut(x,c(1,3,6,8), label=c('low','med','high'), include.lowest=T, right=F) 
+relevel(x.f, ref='med')                      # setting 'med' as the reference group
+factor(x.f, c('high', 'med', 'low'))   # setting 'high' as reference group in such order
+
+
+
+# exercise 1 
+# mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv") 
 
 n = (1:10)
 f1 = -3*n + 7
@@ -3302,6 +3318,39 @@ Gn = function(x){
   plot(x = ns, y = fs, xlab="n", ylab="An",
   xlim = c(min(ns),max(ns)), ylim = c(min(fs),max(fs)), type = "l")
 }
+
+# exercise 2
+# 1.
+set.seed(1)
+x = rnorm(10000,0,2)
+y = rnorm(10000,2,3)
+xy = rnorm(10000,2,5)
+xy2 = x + y
+
+par(mfrow=c(2,2))
+
+hist(x, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="X", ylab="Frequency", main="Histogram of X") 
+
+hist(y, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="Y", ylab="Frequency", main="Histogram of Y") 
+
+plot(y ~ x, xlab="X", ylab="Y", xlim=c(-12,12), ylim=c(-12,12), cex=1.5, cex.lab=1.2, font.lab=2, font.axis=2, las=1) 
+
+hist(xy, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="X+Y", ylab="Frequency", main="Histogram of X+Y") 
+
+hist(xy2, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="X+Y(simulated)", ylab="Frequency", main="Histogram of x+Y") 
+
+
+mean(x); sd(x)
+mean(y); sd(y)
+mean(xy); sd(xy)
+
+# 2.
+mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv") 
+ht <- cut(mvc$height,c(168,173), include.lowest=T, right=F) 
+lm(mvc$MVC ~ mvc$age+ht)
+
+label=c('155-167','168-172','173-180'), 
+
 
 ###   R2wd - R to Word #############################################################################
 

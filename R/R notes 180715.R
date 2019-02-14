@@ -9,14 +9,38 @@ read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,se
 p = function(){
   progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
   progress = as.data.frame(progress)
+  print(tail(progress,1))
   n = dim(progress)[1]
   progress[n+1,1] = readline("The date today?")
   progress[n+1,2] = readline("The day today? (1-7)")
   progress[n+1,3] = readline("The word counts?")
   progress[n+1,4] = readline("Project name?")
   progress[n+1,5] = readline("Percentage of achievement?")
-  write.table(progress,file="C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)   
+  write.table(progress,file="C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)
+  tail(progress)
 }
+
+
+# conditional search
+progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+
+  # Search by project
+project = progress[progress$Project  == "meaning table",]$Word
+sum(project); mean(project)
+
+  # Search by date range
+date = progress[progress$Date  >= 190201 & progress$Date <= 190214,]$Word
+sum(date); mean(date)
+
+  # Search by days
+day = progress[progress$Day  == 3,]$Word
+sum(day); mean(day)
+
+  # Search by month
+month = progress[substr(progress$Date,3,4) == "02",]$Word
+sum(month); mean(month)
+
+
 
 ### Beginning of Notes ##############################################################33
 
@@ -3422,12 +3446,22 @@ par(mfrow=c(2,2),mar=c(4,4,1,1))
 
 type = n # nothing in the graph
 
-
-
 # f)
+mvc$height2 = mvc$height^2
+m1=summary(lm(MVC~height2+height,data=mvc))    # with quadratic term
+m2=summary(lm(MVC~height,data=mvc))            # without quadratic term
 
+m1=lm(MVC~height2+height,data=mvc)    # with quadratic term
+m2=lm(MVC~height,data=mvc)            # without quadratic term
+
+
+
+
+plot(mvc$height,mvc$MVC)
 
 # g)
+AIC(m1,m2)    # choose more parsimonious one
+
 
 
 
@@ -3590,7 +3624,10 @@ load car
 influencePlot(myreg)
 
 
-
+### CitNetExplorer - Scopus2CitNet package
+library(Scopus2CitNet)
+scopus_file = read.table(file = "test.csv", sep=",", na = "NA", header=T)
+Scopus2CitNet(scopus_file)
 
 
 

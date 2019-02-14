@@ -3330,15 +3330,10 @@ xy2 = x + y
 par(mfrow=c(2,2))
 
 hist(x, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="X", ylab="Frequency", main="Histogram of X") 
-
 hist(y, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="Y", ylab="Frequency", main="Histogram of Y") 
-
 plot(y ~ x, xlab="X", ylab="Y", xlim=c(-12,12), ylim=c(-12,12), cex=1.5, cex.lab=1.2, font.lab=2, font.axis=2, las=1) 
-
 hist(xy, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="X+Y", ylab="Frequency", main="Histogram of X+Y") 
-
 hist(xy2, axes=FALSE, xlim=c(-12,12), ylim=c(0, 3000), font.lab=2, cex.lab=1.2, cex.main=1.5, col=grey(0.8),  xlab="X+Y(simulated)", ylab="Frequency", main="Histogram of x+Y") 
-
 
 mean(x); sd(x)
 mean(y); sd(y)
@@ -3350,6 +3345,92 @@ ht <- cut(mvc$height,c(168,173), include.lowest=T, right=F)
 lm(mvc$MVC ~ mvc$age+ht)
 
 label=c('155-167','168-172','173-180'), 
+
+
+# Tutorial 1
+# 1. Central limit theorem
+# a-c)
+a = runif(1000,1,3)
+b = runif(1000,1,3)
+c = runif(1000,1,3)
+m = (a+b+c)/3     # m = rowMeans(t)
+v = (a-m)^2+(b-m)^2+(c-m)^2   
+t = matrix(c(a,b,c,m,v),1000,5)
+hist(m) # plot(density(m))
+
+# d)
+m1 = mean(t[,4])
+s1 = var(t[,4])
+
+shapiro.test(m)
+
+# e) change into 30 columns
+
+t2=matrix(runif(30*1000,1,3),ncol=30)
+m2 = mean(rowMeans(t2))
+v2 = var(rowMeans(t2))
+hist(m2)
+plot(density(m2))
+
+shapiro.test(rowMeans(t2))
+
+
+# f)
+sample(1:5,3)
+
+t3 = matrix(sample(1:5,size=300000,replace=T,prob=c(0.1,0.35,0.1,0.35,0.1)),ncol=300)
+m3 = mean(rowMeans(t3))
+v3 = var(rowMeans(t3))
+hist(rowMeans(t3),breaks=0:5/10,freq=F,main="")   # + (breaks=0:5,)
+plot(density(rowMeans(t3)))
+
+shapiro.test(rowMeans(t3))
+
+# g) Null hypothesis: mean of 5 and sd of 3 in normally distributed data (or uniformed distribution)
+shapiro.test(rnorm(100,mean=5,sd=3))
+shapiro.test(runif(100,min=2,max=4))
+
+
+# 2. MVC
+mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv") 
+summary(mvc)
+
+# a)
+mvc$younger = ifelse(mvc$age <= 40,1,0)
+
+# b)
+m1 = mean(mvc$MVC[mvc$younger==1])
+m2 = mean(mvc$MVC[mvc$younger==0])
+
+aggregate(MVC~younger,by=list(nvc$younger),mean)
+
+t.test(MVC~younger,data=mvc)
+
+# c) 
+boxplot(mvc$MVC~mvc$younger)
+
+# d)
+plot(mvc$height,mvc$MVC)
+abline(lm(MVC ~ height, data = mvc))
+
+reg$coef[1]     # the first output of the coefficient in regression model
+
+
+# e)
+par(mfrow=c(2,2),mar=c(4,4,1,1)) 
+
+
+type = n # nothing in the graph
+
+
+
+# f)
+
+
+# g)
+
+
+
 
 
 ###   R2wd - R to Word #############################################################################

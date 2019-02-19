@@ -1,21 +1,25 @@
-"Date","Day","Word","Project","Status"
-190130,3,222,"test",100
-190131,4,600,"revision",100
-190201,5,100,"meaning table",5
-190202,6,0,"",NA
-190203,7,0,"",NA
-190204,1,0,"",NA
-190205,2,300,"meaning table",20
-190206,3,200,"meaning table",30
-190207,4,0,"",NA
-190208,5,300,"meaning table",32
-190209,6,0,"",NA
-190210,7,200,"meaning table",33
-190211,1,500,"meaning table",45
-190212,2,250,"meaning table",50
-190213,3,200,"CST",10
-190213,3,400,"VOLviewer",20
-190214,4,300,"VOLviewer",30
-190214,4,300,"r",10
-190214,4,200,"social network analysis",10
-190215,5,100,"social network analysis",15
+Date,Day,Word,Project,Status
+190130,3,222,test,100
+190131,4,600,revision,100
+190201,5,100,meaning table,5
+190202,6,0,,NA
+190203,7,0,,NA
+190204,1,0,,NA
+190205,2,300,meaning table,20
+190206,3,200,meaning table,30
+190207,4,0,,NA
+190208,5,300,meaning table,32
+190209,6,0,,NA
+190210,7,200,meaning table,33
+190211,1,500,meaning table,45
+190212,2,250,meaning table,50
+190213,3,200,CST,10
+190213,3,400,VOLviewer,20
+190214,4,300,VOLviewer,30
+190214,4,300,r,10
+190214,4,200,social network analysis,10
+190215,5,100,social network analysis,15
+190216,6,100,social network analysis,16
+190217,7,200,social network analysis,16
+190218,1,100,social network analysis,20
+190219,2,600,meaning table,52

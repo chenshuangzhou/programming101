@@ -20,6 +20,8 @@ p = function(){
   tail(progress)
 }
 
+progress1 = progress[order(progress$Project,progress$Status,na.last=T),][,progress$Status]
+
 
 # conditional search
 progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
@@ -3245,6 +3247,7 @@ abline(h=tree.error2[1])
       diff of attitude < miu (0.5/0.25) social tolerance
       
 ### CMED 6020, MMPH6117 Advanced Statistical Methods I ###
+# session 1 #####################
 mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
 
 dim(data) # check the number of cases and variables
@@ -3301,7 +3304,7 @@ factor(x.f, c('high', 'med', 'low'))   # setting 'high' as reference group in su
 
 
 
-# exercise 1 
+# exercise 1 #####################
 # mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv") 
 
 n = (1:10)
@@ -3343,7 +3346,7 @@ Gn = function(x){
   xlim = c(min(ns),max(ns)), ylim = c(min(fs),max(fs)), type = "l")
 }
 
-# exercise 2
+# exercise 2 #####################
 # 1.
 set.seed(1)
 x = rnorm(10000,0,2)
@@ -3371,13 +3374,13 @@ lm(mvc$MVC ~ mvc$age+ht)
 label=c('155-167','168-172','173-180'), 
 
 
-# Tutorial 1
+# Tutorial 1 #####################
 # 1. Central limit theorem
 # a-c)
 a = runif(1000,1,3)
 b = runif(1000,1,3)
 c = runif(1000,1,3)
-m = (a+b+c)/3     # m = rowMeans(t)
+m = (a+b+c)/3     # m = rowMeans(t) or colMeans(t)
 v = (a-m)^2+(b-m)^2+(c-m)^2   
 t = matrix(c(a,b,c,m,v),1000,5)
 hist(m) # plot(density(m))
@@ -3400,17 +3403,20 @@ shapiro.test(rowMeans(t2))
 
 
 # f)
-sample(1:5,3)
+hist(rowMeans(t3),breaks=0:5/10,freq=F,main="")   # hist(sample(1:5, 1000, replace=T, prob=c(0.1,0.35,0.1,0.35,0.1)), breaks=0:5, freq=F, main="")
 
 t3 = matrix(sample(1:5,size=300000,replace=T,prob=c(0.1,0.35,0.1,0.35,0.1)),ncol=300)
 m3 = mean(rowMeans(t3))
 v3 = var(rowMeans(t3))
-hist(rowMeans(t3),breaks=0:5/10,freq=F,main="")   # + (breaks=0:5,)
+
 plot(density(rowMeans(t3)))
+hist(rowMeans(t3), breaks=0:50/10)
 
 shapiro.test(rowMeans(t3))
 
 # g) Null hypothesis: mean of 5 and sd of 3 in normally distributed data (or uniformed distribution)
+??nomrality
+
 shapiro.test(rnorm(100,mean=5,sd=3))
 shapiro.test(runif(100,min=2,max=4))
 
@@ -3420,51 +3426,210 @@ mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
 summary(mvc)
 
 # a)
-mvc$younger = ifelse(mvc$age <= 40,1,0)
+mvc$younger = ifelse(mvc$age <= 40,1,0)   # mvc$younger <- cut(mvc$age,c(min(mvc$age),40,max(mvc$age)), lab=c(1,0), include.lowest=T)
+
 
 # b)
 m1 = mean(mvc$MVC[mvc$younger==1])
-m2 = mean(mvc$MVC[mvc$younger==0])
-
-aggregate(MVC~younger,by=list(nvc$younger),mean)
+m2 = mean(mvc$MVC[mvc$younger==0])  # aggregate(MVC~younger,by=list(nvc$younger),mean); aggregate(MVC~younger,data=mvc,mean)
 
 t.test(MVC~younger,data=mvc)
 
 # c) 
-boxplot(mvc$MVC~mvc$younger)
+boxplot(MVC~younger, data=mvc, xlab = 'Younger adults', ylab = 'MVC', main = 'Boxplot of MVC by age group' )
 
 # d)
-plot(mvc$height,mvc$MVC)
+plot(mvc$height, mvc$MVC, xlab = 'Height', ylab = 'MVC', main='Scatter plot between Height and MVC')
 abline(lm(MVC ~ height, data = mvc))
 
 reg$coef[1]     # the first output of the coefficient in regression model
 
 
 # e)
-par(mfrow=c(2,2),mar=c(4,4,1,1)) 
+par(mfrow=c(2,2), mar=c(4,4,1,1))
+age.lower <- 2:5*10
 
+for (i in 1:4){
+  plot(mvc$height, mvc$MVC, xlab = 'Height', ylab = 'MVC', type='n', las=1)
+  temp.mvc <- mvc[mvc$age>age.lower[i], ]
+  points(temp.mvc$height, temp.mvc$MVC, col=gray(0.7), pch=19)
+  temp.lm.mvc <- lm(MVC ~ height, data = temp.mvc)
+  abline(temp.lm.mvc)
+  legend("topleft", paste('age > ', age.lower[i], 'y', sep=''))
+}
 
 type = n # nothing in the graph
 
 # f)
-mvc$height2 = mvc$height^2
-m1=summary(lm(MVC~height2+height,data=mvc))    # with quadratic term
-m2=summary(lm(MVC~height,data=mvc))            # without quadratic term
+par(mfrow=c(2,2), mar=c(4,4,1,1))
+age.lower <- 2:5*10
 
-m1=lm(MVC~height2+height,data=mvc)    # with quadratic term
-m2=lm(MVC~height,data=mvc)            # without quadratic term
+for (i in 1:4){
+  plot(mvc$height, mvc$MVC, xlab = 'Height', ylab = 'MVC', type='n', las=1)
+  temp.mvc <- mvc[mvc$age>age.lower[i], ]
+  points(temp.mvc$height, temp.mvc$MVC, col=gray(0.7), pch=19)
+  temp.lm.mvc <- lm(MVC ~ height, data = temp.mvc)
+  abline(temp.lm.mvc)
+  legend("topleft", paste('age > ', age.lower[i], 'y', sep=''))
+  legend("bottomright",paste('MVC =', format(round(temp.lm.mvc$coef[1],1),nsmall=1), 
+' + ', format(round(temp.lm.mvc$coef[2],1),nsmall=1), 'age', sep=''), bty='n', text.font=2)
+}
 
+# example: by 5 years age groups
+#windows(width=6, height=10)
+pdf('d:/figure1.pdf', width=6, height=10)
+par(mfrow=c(4,2), mar=c(4,4,1,1))
+age.lower <- 4:11*5
 
-
-
-plot(mvc$height,mvc$MVC)
+for (i in 1:8){
+  plot(mvc$height, mvc$MVC, xlab = 'Height', ylab = 'MVC', type='n', las=1)
+  temp.mvc <- mvc[mvc$age>age.lower[i], ]
+  points(temp.mvc$height, temp.mvc$MVC, col=gray(0.7), pch=19)
+  temp.lm.mvc <- lm(MVC ~ height, data = temp.mvc)
+  abline(temp.lm.mvc)
+  legend("topleft", paste('age > ', age.lower[i], 'y', sep=''))
+  legend("bottomright",paste('MVC =', format(round(temp.lm.mvc$coef[1],1),nsmall=1), 
+' + ', format(round(temp.lm.mvc$coef[2],1),nsmall=1), 'age', sep=''), bty='n', text.font=2)
+}
+dev.off()
 
 # g)
-AIC(m1,m2)    # choose more parsimonious one
+lm.mvc <- lm(MVC ~ height, data=mvc)
+
+mvc$height2 <- mvc$height^2
+lm.mvc2 <- lm(MVC ~ height + height2, data=mvc)
+
+summary(lm.mvc2)
+
+# h)
+AIC(lm.mvc, lm.mvc2) #AIC difference < 2 -> prefer the more parsimonious model
+
+# i)
+require(MASS)
+lm.mvc3 <- lm(MVC ~ age + height + height2, data=mvc)
+step.mvc <- stepAIC(lm.mvc3, direction="both")
+
+summary(step.mvc)
+
+# scope: specific the range of models to be selected
+step.mvc2 <- stepAIC(lm.mvc3, direction="both", scope=list(lower=~height))
+step.mvc3 <- stepAIC(lm.mvc3, direction="both", scope=list(lower=~height, upper=~age*height+age*height2))
 
 
+# j)
+lm.mvc4 <- lm(MVC ~ age + height, data=mvc)
+
+new <- data.frame(age=50, height=170)
+predict(lm.mvc4, new, interval="prediction")
 
 
+# k): extrapolation
+new2 <- data.frame(age=50, height=220)
+predict(lm.mvc4, new2, interval="prediction")
+
+new3 <- data.frame(age=50, height=150:220)
+pred.mvc4 <- predict(lm.mvc4, new3, interval="prediction")
+
+plot(new3$height, pred.mvc4[,"fit"], type='l', ylim=c(0,1000), xlab="height", ylab="predicted MVC", las=1)
+lines(new3$height, pred.mvc4[,"lwr"], lty=2)
+lines(new3$height, pred.mvc4[,"upr"], lty=2)
+text(220, 1000, "at age 50y", adj=1, font=2)
+polygon(c(rep(min(mvc$height),2),rep(max(mvc$height),2)),c(-50,1100,1100,-50), border=NA, col=rgb(0,0.5,0,0.2))
+
+# session 3 - Poisson distribution and GLM ##################
+
+# poisson distribution has only 1 parameter, the mean and variance are assumed to be the same
+  # log of the mean 
+    # link function: where logit(y) = log(y/(1-y))
+  # rates in poisson ditribution
+
+# Model check
+  # compare the actual probabilty and expected ones 
+  # check residual deviance/df <=1 indicates the model has good fitting; otherwise the model fails
+  # or use chi square test to compare the model wit null hypothesized model
+# 
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+dpois(x=2,lambda=5)   # density of poisson distribution, show the xth number of incident, the probability is the corresponding one
+rpois(n=10, lambda=5)
+var(rpois(n=10, lambda=5))
+
+
+for (i in 10^(1:5)){
+  check = rbind(check,shapiro.test(rpois(n=1000,lambda=i))[2])
+}
+
+
+horse = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/Example - horse.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+summary(horse)
+hist(horse$death, breaks=0:5)
+mean(horse$death); var(horse$death)   # mean is close to variance
+table(horse$deaths);table(horse$corps)
+
+  # deaths ~ year
+boxplot(deaths~year,data=horse, xlab="year", ylab="deaths")   # histogram by year
+
+horse.year <- aggregate(horse$deaths, by=list(horse$year), sum) 
+colnames(horse.year) <- c('year', 'deaths') 
+plot(horse.year$year, horse.year$deaths, type='l', xlab='year', ylab='deaths') 
+
+  # deaths ~ corps
+boxplot(deaths~corps, data=horse, xlab="corps", ylab="deaths")
+
+
+# GLM
+summary(glm(deaths ~ 1, data=horse, family=poisson)) 
+
+pois.horse <- glm(deaths ~ 1, data=horse, family=poisson) 
+coef(pois.horse) 
+exp(coef(pois.horse))     # obtain the mean from the link function by taking the exp
+exp(confint(pois.horse))     # obtain the confidence interval from the link function by taking the exp
+
+  # model check - comparison
+prop.table(table(horse$deaths)) 
+round(dpois(0:5,0.61),2)
+
+
+class(horse$corps)
+horse$corps <- as.factor(horse$corps)     # corps is the categorical variable rather than continuous variables
+summary(glm(deaths~corps, data=horse, family=poisson))    # reference group is corp 2 by default
+
+
+pois.corps <- glm(deaths~corps, data=horse, family=poisson) 
+round(exp(coef(pois.corps)),2)    # the exp coefficient indicate the time's relationship between each group to the reference group
+
+cbind(coef(pois.corps),confint(pois.corps))
+round(exp(cbind(coef(pois.corps), confint(pois.corps))),2)    # transformed exp coefficient of each group in relation to the reference group
+
+# counts and rates
+lung = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/Example - lung.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+
+pois.lung <- glm(count~offset(log(pop))+city+age.gp, data=lung, family=poisson)   # offset function enable coefficient of 1 for offset log term
+round(exp(cbind(coef(pois.lung), confint(pois.lung))),3)    # transformation of coefficients; incidents increase as aging
+
+plot(predict(pois.lung, type='response'), lung$count, xlim=c(0,15), ylim=c(0,15), xlab='predicted', ylab='observed') abline(a=0, b=1)     #  Compare predicted and observed data
+
+# observed incidences 
+with(lung,round(count[city=="Fredericia"]
+pop[city=="Fredericia"]*1000,2)) 
+ 
+# predicted incidences 
+new <- data.frame(city="Fredericia", age.gp=lung$age.gp[1:6], pop=lung$pop[1:6]) 
+round(predict(pois.lung, newdata=new, type='response')/ lung$pop[lung$city=="Fredericia"]*1000,2)
+
+# model checking 2
+summary(pois.lung) 
+deviance(pois.lung)/df.residual(pois.lung)    # model checking
+
+# Variance is much larger than mean in poisson distribution - alpha indicates more randomness/ variance
 
 
 ###   R2wd - R to Word #############################################################################

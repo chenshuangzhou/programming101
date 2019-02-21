@@ -20,7 +20,8 @@ p = function(){
   tail(progress)
 }
 
-progress1 = progress[order(progress$Project,progress$Status,na.last=T),][,progress$Status]
+progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+progress1 = progress[order(progress$Project,progress$Status),]
 
 
 # conditional search

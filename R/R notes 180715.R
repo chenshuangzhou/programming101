@@ -7,18 +7,19 @@ read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,se
 ## Writing Progress Function
 
 p = function(){
-  progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+  progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
   progress = as.data.frame(progress)
-  print(tail(progress,1))
+  aggregate(progress,by=list(progress$Project),max)
   n = dim(progress)[1]
   progress[n+1,1] = readline("The date today?")
   progress[n+1,2] = readline("The day today? (1-7)")
   progress[n+1,3] = readline("The word counts?")
   progress[n+1,4] = readline("Project name?")
   progress[n+1,5] = readline("Percentage of achievement?")
-  write.table(progress,file="C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)
-  tail(progress)
+  write.table(progress,file="D:/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)
+  aggregate(progress,by=list(progress$Project),max)
 }
+
 
 progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 progress1 = progress[order(progress$Project,progress$Status),]
@@ -3549,15 +3550,6 @@ polygon(c(rep(min(mvc$height),2),rep(max(mvc$height),2)),c(-50,1100,1100,-50), b
   # check residual deviance/df <=1 indicates the model has good fitting; otherwise the model fails
   # or use chi square test to compare the model wit null hypothesized model
 # 
-#
-#
-#
-#
-#
-#
-#
-#
-#
 
 dpois(x=2,lambda=5)   # density of poisson distribution, show the xth number of incident, the probability is the corresponding one
 rpois(n=10, lambda=5)
@@ -3664,6 +3656,103 @@ tmp[["test"]]$Open("C:/Users/chens/Desktop/test.doc")
 
 
 ######################################## SEM - path analysis
+
+# Examples:
+  Theory of planned-behavior - SEM
+    moderation effect
+    path analysis
+  CES-D:
+    model specification, correlations of items, 
+
+# Book
+  Bollen & Bobel, 2011: structural equations with latent variables
+
+# Concpets
+  similar concepts to SEM
+  covariates: correlations of items
+
+# software
+  STATA: not useful
+  Mplus: most useful
+
+# requirement
+  Observed variables (indcator)
+    ordinal (up to 15 categories)
+    continuous: 
+      normally distributed: 
+      non-normally distributed: 
+    censored: above, below or both
+    nominal: dummies
+  latent variables (unobservable)
+
+  # example
+  SF-12/36 on health
+
+  psychology - intelligence, depression, self-esteem, drinking behavior, feelings
+  sociology - social class, well-being, ambition, discrimination
+  economics - economic expectations, women eempowerment
+  education - academic performance (ETS), science achievement
+  business - customer satisfaction, customer loyalty
+  poligical science - industrial development, political efficacy
+
+  # graphical vocabulary
+  latent variables: 
+    feedback relation or reciprocal causation
+    association between two variables 
+
+  # measurement model - has causal relationships
+  ksai (x being the measure)
+  eta (y being the measure) 
+  a construct usually needs 3 measured variables
+
+library(lavaan)
+library(lavaanPlot)
+library(semPlot)
+?HolzingerSwineford1939
+
+
+# specify the model
+HS.model = '
+  visual =~ x1 + x2 + x3
+  textual =~ x4 + x5 + x6
+  speed =~ x7 + x8 + x9'
+
+fit = cfa(HS.model, data=HolzingerSwineford1939)
+summary(fit,fit.measures=TRUE)
+
+mi = modindices(fit)
+mi[mi$op == "=~",]    # show the suggestion of change "=~"; each time only change one
+
+model = '
+  ind60 =~ x1 + x2 + x3
+  dem60 =~ y1 + y2 + y3 + y4
+  dem65 =~ y5 + y6 + y7 + y8
+  dem60 ~ ind60
+  dem65 ~ dem60 + ind60
+  y1 ~~ y5
+  y2 ~~ y4 + y6
+  y3 ~~ y7
+  y4 ~~ y8
+  y6 ~~ y8
+  '
+
+fit = sem(model,data=PoliticalDemocracy)
+summary(fit,fit.measure=T)
+lavaanPlot(model=fit)
+
+
+# chi-square: 
+  # model fit test stats; should close to df
+  # p value: the null hypothesis does not hold
+
+# RMSEA: N0 < 0.06 acceptable
+
+# Latent variable
+  # p value: the item is significantly different from the 0
+
+
+
+
 x3 affects both x1 and x2 and x2 affects x1 
 
 library(lavaan) 

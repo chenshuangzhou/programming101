@@ -4,19 +4,35 @@ read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strin
 read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")              # Office - Lenovo X1
 
 
+
+## PRISMA Flow Chart
+library(PRISMAstatement)
+
+prisma(found = 3701,
+       found_other = 21,
+       no_dupes = 3531, 
+       screened = 3531, 
+       screen_exclusions = 3486, 
+       full_text = 45,
+       full_text_exclusions = 2, 
+       qualitative = 43, 
+       quantitative = 28,
+       extra_dupes_box = TRUE)
+
+
 ## Writing Progress Function
 
 p = function(){
-  progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+  progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
   progress = as.data.frame(progress)
-  aggregate(progress,by=list(progress$Project),max)
+  print(aggregate(progress,by=list(progress$Project),max))
   n = dim(progress)[1]
   progress[n+1,1] = readline("The date today?")
   progress[n+1,2] = readline("The day today? (1-7)")
   progress[n+1,3] = readline("The word counts?")
   progress[n+1,4] = readline("Project name?")
   progress[n+1,5] = readline("Percentage of achievement?")
-  write.table(progress,file="D:/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)
+  write.table(progress,file="C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",",row.names=F)
   aggregate(progress,by=list(progress$Project),max)
 }
 

@@ -2,11 +2,25 @@
 library(meta);library(metafor);library(nlme);library(checkmate);library(forestplot);library(grid);
 library(officer);library(stargazer);library(outreg);library(SDMTools);library(PRISMAstatement)
 
-### Data Retrieval from "test.txt"
+### Data Retrieval from "test.txt" for [dementia intervention project]
 meta=read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Dell
 meta=read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA
 meta=read.table("C:/Users/admin/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo
 
+### Data Retrieval from "test.txt" for [meaning project]
+
+forest(dat$yi, dat$vi, atransf = exp, ylim = c(-3.5, 16), at = log(c(0.05, 0.25, 1, 4, 20)), xlim = c(-9, 7), slab = paste(dat$author, dat$year, sep = ", ")) 
+res <- rma(yi, vi, mods = cbind(ablat), data = dat) 
+preds <- predict(res, newmods = c(10, 30, 50)) 
+addpoly(preds$pred, sei = preds$se, atransf = exp, mlab = c("10 Degrees", "30 Degrees", "50 Degrees")) 
+text(-9, 15, "Author(s) and Year", pos = 4, font = 2) 
+text(7, 15, "Relative Risk [95% CI]", pos = 2, font = 2) 
+abline(h = 0)
+
+
+### [meaning project]
+
+### [dementia intervention project]
   # Cohen's d columns for all intervention types across 3 measurement types
   attach(meta)
     dMMSEpre=(m1e.pre-m1c.pre)/(sqrt((s1e.pre*s1e.pre*(experiment.n-1)+s1c.pre*s1c.pre*(contrast.n-1))/(experiment.n+contrast.n-2)))

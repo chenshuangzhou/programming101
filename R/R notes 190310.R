@@ -1,8 +1,8 @@
-ï»¿## File location examples:
+## File location examples:
 read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Office - Dell Inspiron 16
 read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA 
 read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")              # Office - Lenovo X1
-read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Home - Dell Gaming
+read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")              # Home - Dell Gaming
 
 
 
@@ -56,6 +56,9 @@ library(jiebaR)
 
 
 m = read.table("C:/Users/chens/OneDrive/research/Projects/1 Meaning Making - VL/Systematic review on MM and Caregiver - VL/MM.csv",header=T,sep=",",na.strings = "NA") 
+
+
+
 
 # conditional search
 progress = read.table("C:/Users/chens/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
@@ -2257,7 +2260,7 @@ yb <- runif(10)*20
 xy.error.bars(x,y,xb,yb)
 
 # loops and repeat
-for (i in 1:5) print(iï¿½?????????2) #
+for (i in 1:5) print(iï¿?????????2) #
 
 # factorial x
 fac1<-function(x) {
@@ -2409,7 +2412,7 @@ as.vector(Country[grep("R",as.character(Country))])
 -grep("[a-t]$"...) # do not end with a letter between a and t
 -grep("[A-T a-t]$"...) # exclude ending with a letter between a and t for both upper and lower case letters
 "^.y"   # with y as the second letter
-"^. {,4}$" # (5 â€˜anythingsï¿½????????? is shown by ï¿½?????????.ï¿½????????? then curly brackets {5} then y). Which are the countries with4 or fewer letters in their names?
+"^. {,4}$" # (5 â€˜anythingsï¿????????? is shown by ï¿?????????.ï¿????????? then curly brackets {5} then y). Which are the countries with4 or fewer letters in their names?
 "^. {15, }$"  # 15 or more characters
 
 ## Substituting text within character strings
@@ -2431,8 +2434,8 @@ freq<-as.vector(unlist (lapply(gregexpr("o",text),length)))
 present<-ifelse(regexpr("o",text)<0,0,1)  # if a string hasnt a 'o', its value is 0 otherwise 1
 freq*present
 
-stock<-c(â€™carï¿½?????????,â€™vanï¿½?????????)
-requests<-c(â€™truckï¿½?????????,â€™suvï¿½?????????,â€™vanï¿½?????????,â€™sportsï¿½?????????,â€™carï¿½?????????,â€™waggonï¿½?????????,â€™carï¿½?????????)
+stock<-c(â€™carï¿?????????,â€™vanï¿?????????)
+requests<-c(â€™truckï¿?????????,â€™suvï¿?????????,â€™vanï¿?????????,â€™sportsï¿?????????,â€™carï¿?????????,â€™waggonï¿?????????,â€™carï¿?????????)
 which(requests %in% stock);requests [which(requests %in% stock)]
 which(sapply(requests, "%in%", stock))  # show both the wrods and their positions
 
@@ -3293,6 +3296,11 @@ relevel       # reset the reference group
 aggregate(y ~ x1+x2, data=dataname, FUN='mean')
 prop.table(table, margin)   # margin - by row/column
 
+## Directory
+getwd()
+setwd()	# /
+
+## R Graph Gallary
 
 ## ggplot help
 http://www.cookbook-r.com/Graphs/index.html
@@ -3307,13 +3315,18 @@ axis(1, pos=-0.2, lwd=3.5, font=2)
 axis(2, pos=-20, lwd=3.5, font=2, las=1)
 
 # scattered plot
-plot(MVC ~ age, data=mvc, xlab="Age (years)", 
+plot(MVC ~ age, data=mvc, xlab="Age (years)",     # type: p - plot; l - line
     ylab="Quadriceps muscle (newtons)", 
     xlim=c(20, 70), ylim=c(0, 600), 
     cex=1.5, cex.lab=1.2, 
     font.lab=2, font.axis=2, las=1)
+	# axes=F; axis(1); axis(2)
 
-# line plot
+# windos and par
+windows(width=10, height=5)		# windows' size
+layout(matrix(1:4,nrow=2,byrow=T),widths=c(1,1), heights=c(1,3))	# top 2 graphics occupy 25% and bottom two occupy 75%
+par(mfrow=c(2,2))
+
 
 
 # save graph to pdf
@@ -3326,7 +3339,13 @@ plot(MVC ~ age, data=mvc,
     font.lab = 2,  font.axis = 2, las = 1) 
 dev.off() 
 
+# ggplot2
+p <- ggplot(mvc, aes(x=age, y=MVC))+xlab("Age (years)") + ylab("Quadriceps Muscle (newtons)")
+p + geom_point(shape=21,size=2) + stat_smooth(method=loess) + scale_fill_gradient(low='blue', high='red')
 
+
+# Random number
+runif(n,min,max)
 
 # convert numeric to factor
 cut(x, breaks, labels = NULL, include.lowest = FALSE, right = TRUE, ...) 
@@ -3335,7 +3354,6 @@ cut(x, breaks, labels = NULL, include.lowest = FALSE, right = TRUE, ...)
 x.f <- cut(x,c(1,3,6,8), label=c('low','med','high'), include.lowest=T, right=F) 
 relevel(x.f, ref='med')                      # setting 'med' as the reference group
 factor(x.f, c('high', 'med', 'low'))   # setting 'high' as reference group in such order
-
 
 
 # exercise 1 ##########################################
@@ -3572,6 +3590,15 @@ polygon(c(rep(min(mvc$height),2),rep(max(mvc$height),2)),c(-50,1100,1100,-50), b
 
 # SESSION 3 - Poisson distribution and GLM ##########################################
 
+# Key assumptions of GLM
+#   Linearity: inear relationship between predictors and dependent variable through a smooth invertible link function 
+#   Errors follow a distribution from the exponential family (e.g. Normal, Bernoulli, Poisson) 
+#   Independence ¨C No correlation / autocorrelation between the errors 
+
+
+
+
+
 # Poisson distribution has only 1 parameter, the mean and variance are assumed to be the same
   # log of the mean 
     # link function: where logit(y) = log(y/(1-y))
@@ -3587,17 +3614,30 @@ dpois(x=2,lambda=5)   # density of Poisson distribution, show the xth number of 
 rpois(n=10, lambda=5)
 var(rpois(n=10, lambda=5))
 
+ 
+plot(dpois(x=0:18,lambda=9), type='h')		# the probability to have x while mean of distribution is lambda. lambda equals to normal mean, making the normal distribution; as the lambda increases above 10, the distribution approximates normal distribution
+rpois(10,5)					# 10 being number of variables; 5 being the mean (lambda)
+mean(rpois(10,5));var(rpois(10,5))		# the mean and variance become closer to the mean as the number of variabales increase
+shapiro.test(rpois(1000,9))
+
 
 for (i in 10^(1:5)){
   check = rbind(check,shapiro.test(rpois(n=1000,lambda=i))[2])
 }
 
 
+# Descriptions
+
+
 horse = read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/GLM1/Example - horse.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 summary(horse)
+table(horse$corps,horse$deaths)
+horse[which(horse$deaths==3),]
 hist(horse$death, breaks=0:5)         # clustered by 1 unit of x from 0 to 5
 mean(horse$death); var(horse$death)   # mean is close to variance
 table(horse$death);table(horse$corps)
+
+# Graphics - histogram, box plots
 
   # deaths ~ year
 boxplot(deaths~year,data=horse, xlab="year", ylab="deaths")   # boxplot by year
@@ -3605,31 +3645,35 @@ boxplot(deaths~year,data=horse, xlab="year", ylab="deaths")   # boxplot by year
 horse.year <- aggregate(horse$deaths, by=list(horse$year), sum)   
 colnames(horse.year) <- c('year', 'deaths') 
 plot(horse.year$year, horse.year$deaths, type='l', xlab='year', ylab='deaths')    # line plot
+
 plot(h[,1],h[,2],type='l',xlab='year',ylab='deaths')        # or, without colname function, use matrix function
 
   # deaths ~ corps
 boxplot(deaths~corps, data=horse, xlab="corps", ylab="deaths")
 
 
-# GLM - ordinal linear, logistic, poisson, negative binomial models
+# GLM - ordinal linear, logistic, poisson, negative binomial models (projection/prediction with Poisson)
+
 summary(glm(deaths ~ 1, data=horse, family=poisson))    # "~1" indicates fit in intercept only
 summary(glm(deaths ~- 1, data=horse, family=poisson))    # "-1" leaves intercept out
 
-pois.horse <- glm(deaths ~ 1, data=horse, family=poisson) 
+pois.horse <- glm(deaths ~ 1, data=horse, family=poisson) 	# modeling intercept only
 coef(pois.horse)            # or 'pois.horse$coef'
 exp(coef(pois.horse))       # to obtain the mean from the link function by taking the exp; mean(deaths)=0.61
+	dpois(0:5,0.61) 	#  0.5433508691 0.3314440301 0.1010904292 0.0205550539 0.0031346457 0.0003824268; using dpois to model the probability of each level of 'deaths'
+	table(horse$deaths); prop.table(table(horse$deaths)); round(dpois(0:5,0.61),2)	# calculate the probability of each level of deaths and compare with dpois
+
 exp(confint(pois.horse))    # obtain the confidence interval from the link function by taking the exp; CI(deaths) = [0.5,0.724]
 
   # model check - comparison
-prop.table(table(horse$deaths))   # = table(horse$deaths)/sum(table(horse$deaths))
-round(dpois(0:5,0.61),2)          # density distribution of poisson, rounded up to the second digit
+
 nrow(horse)*dpois(0:5,exp(coef(pois.horse)))  # reverse to the expected counts of deaths based on the data volumn using the poisson distribtion
 
-class(horse$corps)
-horse$corps <- as.factor(horse$corps)     # corps is the categorical variable rather than continuous variables
-summary(glm(deaths~corps, data=horse, family=poisson))    # reference group is corp 2 by default
+class(horse$corps)		# continuous variable not suitable for comparison
+horse$corps <- as.factor(horse$corps)     # turn corps into categorical variable rather than continuous 
+summary(glm(deaths~corps, data=horse, family=poisson))    # reference group is corp 2 by default; residual/df is under 1, being acceptable fit
 
-
+  # Incidence rate ratios between corps
 pois.corps <- glm(deaths~corps, data=horse, family=poisson) 
 round(exp(coef(pois.corps)),2)    # the exp coefficient indicate the time's relationship between each group to the reference group
 
@@ -3641,54 +3685,149 @@ horse$corps=as.factor(horse$corps)                      # turn continuous into c
 summary(glm(deaths~corps, data=horse, family= poisson)) 
 
 pois.corps=glm(deaths~corps, data=horse, family= poisson)
-round(exp(coef(pois.corps)),2)
+round(exp(coef(pois.corps)),2)	# interpretations: number (coefficient) of times of the reference group 
 round(exp(cbind(coef(pois.corps),confint(pois.corps))),2) # revert to the table with coefficient and confidence interval
 
 
 # counts and rates
 lung = read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/GLM1/Example - lung.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 
+summary(lung)
+
 pois.lung <- glm(count~offset(log(pop))+city+age.gp, data=lung, family=poisson)   # offset function enable in coefficient of 1 for offset log term, in consideration of count/population rates
 round(exp(cbind(coef(pois.lung), confint(pois.lung))),3)    # transformation of coefficients; incidents increase as aging
 
-plot(predict(pois.lung, type='response'), lung$count, 
+plot(predict(pois.lung, type='response'), lung$count, 	# link function, turn predicted value back to the scale
     xlim=c(0,15), ylim=c(0,15), xlab='predicted', ylab='observed') 
-abline(a=0, b=1)     #  Compare predicted and observed data
+abline(a=0, b=1)     #  diagnoal line, compare predicted and observed data
 
 # observed incidences 
 with(lung,round(count[city=="Fredericia"]
 pop[city=="Fredericia"]*1000,2)) 
  
 # predicted incidences 
-new <- data.frame(city="Fredericia", age.gp=lung$age.gp[1:6], pop=lung$pop[1:6]) 
+new <- data.frame(city="Fredericia", age.gp=lung$age.gp[1:6], pop=lung$pop[1:6]) # filter a new dataset with conditions on variables
 round(predict(pois.lung, newdata=new, type='response')/ lung$pop[lung$city=="Fredericia"]*1000,2)
+
 
 # model checking 2
 summary(pois.lung) 
 deviance(pois.lung)/df.residual(pois.lung)    # model checking
 
-# Variance is much larger than mean in poisson distribution - alpha indicates more randomness/ variance
+# Overdispersion - Variance is much larger than mean in poisson distribution - alpha indicates more randomness/ variance
 #Example: lambda=5, gamma mean=1, variance=2
-rpois(10000, 5*rgamma(10000,1/2,1/2))
+rpois(10000, 5*rgamma(10000,1/2,1/2))		# assuming random variance in poisson distribution, in which variance is greater than mean
 
+# negative binomial
+  # alpha: variance
+  # miu: mean
+ 
 epi = read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/GLM1/Example - epilepsy.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 mean(epi$y); var(epi$y)
 
+# poisson modeling
+summary(glm(y~1, data=epi, family="poisson"))	# residual deviance/df >> 1
+
+# negative binomial modeling as poisson modeling shows over dispersion
 require(MASS)
-summary(glm(y~1,data=epi))
-nb.epilepsy0 <-glm(y~1,data=epi)
-nb.therapy1 <- glm.nb(y~therapy, data=epi)
-nb.therapy2 <- glm.nb(y~therapy+x+age, data=epi)
+summary(glm(y~1,data=epi))	# Theta=1/alpha; thus variance (mu+a*mu*mu) = 609.3 (follow NB distribution), var(epi$y) = 823.5 (tdivant ditribution in raw data)
+
+nb.epilepsy0 <-glm(y~1,data=epi)	# intercept only
+nb.therapy1 <- glm.nb(y~therapy, data=epi)	# seizures and intervention
+nb.therapy2 <- glm.nb(y~therapy+x+age, data=epi)	# more varaibles in the model
 epi$log10x <-  log10(epi$x)
-nb.therapy3 <- glm.nb(y~therapy+log10x+age, data=epi)
-round(exp(rbind(cbind(coef(nb.therapy1),confint(nb.therapy1)),
+nb.therapy3 <- glm.nb(y~therapy+log10x+age, data=epi)	# adjust intervention (x) variable
+
+# making coefficient and confidence intervals
+round(exp(cbind(coef(nb.therapy1),confint(nb.therapy1))),3)	# scaled coefficient, or IRR 
     cbind(coef(nb.therapy2),confint(nb.therapy2)),
     cbind(coef(nb.therapy3),confint(nb.therapy3)))),3)
 
+# Report NegBin regression model
+deviance(nb.therapy1)/df.residual(nb.therapy1)	# deviance/df ~= 1
+The estimated effect of therapy (unadjusted) is to reduce the rate of seizures by 34% (RR = 0.66, 95%CI=0.43-1.028)
+
 # model comparison
-AIC(nb.epilepsy0, nb.therapy1, nb.therapy2, nb.therapy3)    # AIC the lowest indicates best fit
+AIC(nb.epilepsy0, nb.therapy1, nb.therapy2, nb.therapy3)    # AIC the lowest indicates best fit; overdispersion parameter takes up one df. Coefficient is 0.74 for therapy (95%CI=0.55-0.98)
+
+
+###
+# find about influential cases
+  # leverage: detecting observations that have a large impact on the predicted values 
+    # average value = k/n (parameters/sample size)
+    # hatvalues(data); sort(htvalues(model),decreasing=T)
+  # Cook's distance: overall influence of a case on a model as a whole
+    # D > 4/n
+    # round(cooks.distance(model),3)
+  #influence.measures(regressionReport) #
+  # Sensitivity analysis (after excluding outliers)
+
+mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv") 
+summary(lm(MVC~height+age, data=mvc))	# original model shows negative correlation
+
+
+# leverage values
+mvc.r=mvc
+mvc.r$height[41]=178
+summary(lm(MVC~height+age, data=mvc.r))
+mvc.r.lm=lm(MVC~height+age, data=mvc.r)
+hatvalues(mvc.r.lm)
+sort(hatvalues(mvc.r.lm), decreasing=T)
+
+# cook's distance values
+round(cooks.distance(mvc.r.lm),3)
+sort(round(cooks.distance(mvc.r.lm),2),decreasing=T)
+
+# influential diagnostic
+influence.measures(mvc.r.lm)	# show hatvalue and influential cases
 
 # SESSION 4 ####################################################################################
+###
+# Model diagnostics
+  # Assumptions: 
+    # 1 linearity (continuous variables): non-linear relationship (between predictor and residuals) - biased coefficient, biased standard error, invalid t-test for coefficient
+      # 1.1 residuals of outcome variable
+      # 1.2 plot Xs and residuals of Y (outcome var)
+    # 2 homoscedasticity: heteroscedasticity of errors - biased standard error, invalid t-test for coefficient
+      # plot Y and (studentized) residual of Y: evenly distributed variance of residuals 
+    # 3 normality of errors: non-normality of the error - invalid t-test for coefficient
+    # 4 independence of errors: autocorrelated errors - biased standard error, invalid t-test for coefficient
+      #   4.1 (auto-correlation of predictors: multicollinearity - r > 0.8 - inflates standard errors of the estimated coefficients)
+      #  4.2 diagnostic: VIF = 1/(1-R^2) > 10, triggered
+ 
+
+mvc.lm <- lm(MVC ~ height + age, data=mvc) # model
+
+# 1
+mvc.lm$res		# show residuals
+glm.model$res		# deviance residuals
+stresid.mvc <- rstudent(mvc.lm)     # create residuals 
+plot(stresid.mvc)                   # residual plot
+
+plot(mvc$age, stresid.mvc) 	# predictor of age and standardized residuals of outcome variables; no obvious pattern across age
+plot(mvc$height, stresid.mvc)       # residuals and predictors; no obvious patterns across height
+
+# 2
+plot(mvc.lm$fitted, stresid.mvc)    # redisual plot against fitted values; no obvious patterns in variance
+
+plot(stresid.mvc, ylim=c(-2.5,2.5)) 
+abline(h=c(0,-2,2), lty=2)          # about 5% of the studentized residuals (nrow(mvc)*0.05=2.05 data points) fall outside the range [-2,2] if the model is true
+
+# 3
+qqnorm(stresid.mvc) 
+abline(0,1)                         # qq plot comparing with diagonal line should be similar
+
+# 4 
+pd.stresid.mvc <- pnorm(stresid.mvc) 
+plot(ppoints(length(stresid.mvc)), sort(pd.stresid.mvc), main = "PP Plot", xlab = "Observed Probability", ylab = "Expected Probability") 
+abline(0,1)                         # pp plot
+
+# ACF: auto-correlation function
+# ¨C Correlation between the same variable at different time point 
+# ¨C Define Xt: variable X observed at time t
+
+
+
 Multicollinearity
   scatterplot between all predictor variables
   variance inflation factor (VIF) - inflated SE
@@ -3705,9 +3844,6 @@ Confounding effect:
 Interaction Effect
 Mediation
   Baron and Kenny criteria
-
-
-
 
 
 mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
@@ -3770,105 +3906,6 @@ mediation.test(cardio$bmi,cardio$phy,cardio$sfrs)
 with(cardio, mediation.test(bmi, phy, sfrs))
 
 
-# SESSION 5 ####################################################################################
-
-i = the matched set
-j = individuals
-
-clogit  # library(suvival)
-case.status ~ exposure + strata(matched.set) 
-
-mers = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/4 logistic and PSM/examplemers.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
-
-clr.mers <- clogit(case ~ dromedary + sheep + smoking + strata(strata), data=mers) 
-# sensoring with summary()
-
-# strata: matched cases
-
-# PSA: the likelihood of selecting the specific options
-  - to balance the selection bias
-  - to adjust confounding effects
-  -
-# group nonequivalenceï¼š
-
-mi=read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/4 logistic and PSM/examplemi.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
-
-with(mi, table(trt, death),1) 
-
-round(with(mi, prop.table(table(trt, death),1)),3)
-with(mi,t.test(death~trt))
-
-library(ggplot2)
-mi$trt <- as.factor(mi$trt) 
- 
-# age * treatment 
-ggplot(mi, aes(x=age, fill=trt)) + geom_histogram(binwidth=1) + facet_grid(trt ~ .) 
-
-# risk * treatment
-ggplot(mi, aes(x=risk, fill=trt)) + geom_histogram(binwidth=1) + facet_grid(trt ~ .) 
-
-ps.model <- glm(trt ~ age + risk + severity, data=mi, family=binomial) 
-mi$ps <- predict(ps.model, type='response') 
-
-ggplot(mi, aes(x=ps, fill=trt)) + geom_histogram(binwidth=0.01) + facet_grid(trt ~ .) 
-
-# stratification
-ps.boundary <- quantile(mi$ps, 0:5/5) 
-mi$psq <- cut(mi$ps, ps.boundary, right=F, include.lowest=T, label=1:5)
-
-# age * PS strata
-ggplot(mi, aes(x=trt, y=age)) + geom_boxplot(aes(fill=trt)) + facet_grid(psq ~ ., labeller=label_both) + coord_flip() 
-
-# risk * PS strata
-ggplot(mi, aes(x=risk)) + geom_histogram(binwidth=1, fill='blue') + facet_grid(trt ~ psq, labeller=label_both) 
-
-# severity * PS strata
-ggplot(mi, aes(x=severity)) + geom_histogram(binwidth=1, fill='blue') + facet_grid(trt ~ psq, labeller=label_both) 
-
-# t-test scores are modified greatly/adjusted by stanadard deviation
-summary(lm(age~trt, data=mi)) 
-summary(lm(age~trt+psq, data=mi)) 
-
-mean.tp <- aggregate(death~trt+psq, data=mi, FUN=mean) 
-count.tp <- aggregate(death~trt+psq, data=mi, FUN=length) 
-cbind(mean.tp, count.tp$death) 
-
-n.psq <- as.numeric(table(mi$psq)) 
-
-cbind(mean.tp, count.tp$death) 
-
-var.tp <- aggregate(death~trt+psq, data=mi, FUN=var) 
-cbind(var.tp, count.tp$death)   
-
-# CI
-sum((var.tp$death/count.tp$death)*rep(n.p sq, each=2)^2)/sum(n.psq)^2 
-
-# matching function for case-control data
-library(MatchIt)
-
-m.out <- matchit(trt ~ age + risk + severity, data = mi, method = "nearest", subclass=20) 
-
-matched.mi <- match.data(m.out) 
-matched.mi[matched.mi$subclass==1,] 
-
-matched.mi <- match.data(m.out) 
-clr.mi <- clogit(death ~ trt + strata(subclass), data=matched.mi) 
-summary(clr.mi)
-
-lr.ps <- glm(death~trt+ps, data=mi, family=binomial) 
-summary(lr.ps)
-
-# Propensity score weighting (inverse probability) to balance fair distribution 
-with(mi, sum(death/ps*(trt==1)-death/(1-ps)*(trt==0)...))
-
-lr.ps <- glm(death~trt+ps, data=mi, family=binomial) 
-summary(lr.ps) 
-
-exp(coef(lr.ps)) 
-exp(confint(lr.ps)) 
-
-
-
 ###   R2wd - R to Word #############################################################################
 
 tmp <-comGetObject("Word.Application") 
@@ -3892,7 +3929,7 @@ tmp[["test"]]$Open("C:/Users/chens/Desktop/test.doc")
 # forest() (download) É­ï¿½ï¿½Í¼
 # funnel() Â©ï¿½ï¿½Í¼
 # metabias() Æ«ï¿½Ð·ï¿½ï¿½ï¿½
-# metainf() (download metainf) ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½????????; forest(metainf())
+# metainf() (download metainf) ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿????????; forest(metainf())
 # metainc() (download, p.105) - time-series analysis
 # metagen() for year,region,lci,uci,se (download, p.109-111);
 # require n1,n2,m1,sd1,m2,sd2

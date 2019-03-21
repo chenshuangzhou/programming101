@@ -3690,11 +3690,17 @@ AIC(nb.epilepsy0, nb.therapy1, nb.therapy2, nb.therapy3)    # AIC the lowest ind
 
 # SESSION 4 ####################################################################################
 Multicollinearity
-  scatterplot between all predictor variables
-  variance inflation factor (VIF) - inflated SE
+  Scatterplot between all predictor variables
+  Variance inflation factor (VIF) - inflated SE
     x (to be tested) as the predictor and the rest being IV
     > 10 -> Multicollinearity
     centering if it is polynominal model
+  No explantation of the x2 (collineared IV) on the outcome variable
+  Strategy on Multicollinearity
+    Do nothing: because coefficients and standar errors are unbiased; however, there is inefficient estimation; overall, should follow the objectives and assumptions 
+    Increase sample size
+    Polynomial terms and interactions: centering (subtracting variable by its mean)
+      squred or interaction with centered term to solve 
 Confounding effect:
   Xc affect both IV and DV
   DAG: directed acyclic graph 
@@ -3702,31 +3708,35 @@ Confounding effect:
   minimizing confounding effects
     variable selection: p value, AIC
     relative change in estiamte: greater than 10%
+  indicated impact of coufounder on outcome variable
+Multi-level strucutre 
+  Violating assumption of homoscadasiticity
+Measurement error
+  Imprecise measurement in predictors will attenuate estiamted coefficients toward zero
 Interaction Effect
 Mediation
   Baron and Kenny criteria
-
-
-
 
 
 mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
 mvc$height.sq=mvc$height^2
 pairs(mvc)      # no strong patterns between variables if it is not in a linear pattened 
 summary(lm(MVC~age+height+height.sq, data=mvc))   # check r^2, estimate and std. error to see if SE inflated
-
-mvc.lm3 <- lm(MVC~age+height+height.sq, data=mvc) 
-vif(mvc.lm3)
+# mvc$height.c=mvc$height-mean(mvc$height)        # create centered term
 
 library(car)
+mvc.lm3 <- lm(MVC~age+height+height.sq, data=mvc) # 
+vif(mvc.lm3)                                      # both height and height.sq have VIF>>10
 
-mvc$ct.height <- scale(mvc$height, scale=F) 
+
+mvc$ct.height <- scale(mvc$height, scale=F)       # standardizing (centering) variable; "scale" : division of standard deviation
 mvc$ct.height.sq <- mvc$ct.height^2 
-mvc.lm4 <- lm(MVC~age+ct.height+ct.height.sq, data=mvc) 
+mvc.lm4 <- lm(MVC~age+ct.height+ct.height.sq, data=mvc) # VIF is lower than 10, multicollinearity is solved
+# mvc.lm4 <- lm(MVC~age+height+ct.height.sq, data=mvc) # same result with different scale of intercepts
 vif(mvc.lm4)   
 
 
-cardio = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/GLM3/Example - cardio.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+cardio = read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/GLM3/Example - cardio.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 
 summary(lm(phy~ses, data=cardio)) 
 summary(lm(sfrs~ses, data=cardio))
@@ -3769,7 +3779,7 @@ mediation.test(cardio$bmi,cardio$phy,cardio$sfrs)
 
 with(cardio, mediation.test(bmi, phy, sfrs))
 
-
+###########################################
 # SESSION 5 ####################################################################################
 
 i = the matched set

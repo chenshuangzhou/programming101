@@ -3688,36 +3688,45 @@ round(exp(rbind(cbind(coef(nb.therapy1),confint(nb.therapy1)),
 # model comparison
 AIC(nb.epilepsy0, nb.therapy1, nb.therapy2, nb.therapy3)    # AIC the lowest indicates best fit
 
-# SESSION 4 ####################################################################################
-Multicollinearity
-  Scatterplot between all predictor variables
-  Variance inflation factor (VIF) - inflated SE
-    x (to be tested) as the predictor and the rest being IV
-    > 10 -> Multicollinearity
-    centering if it is polynominal model
-  No explantation of the x2 (collineared IV) on the outcome variable
-  Strategy on Multicollinearity
-    Do nothing: because coefficients and standar errors are unbiased; however, there is inefficient estimation; overall, should follow the objectives and assumptions 
-    Increase sample size
-    Polynomial terms and interactions: centering (subtracting variable by its mean)
-      squred or interaction with centered term to solve 
-Confounding effect:
-  Xc affect both IV and DV
-  DAG: directed acyclic graph 
-  argue the residual confounding effect in obsevational data
-  minimizing confounding effects
-    variable selection: p value, AIC
-    relative change in estiamte: greater than 10%
-  indicated impact of coufounder on outcome variable
-Multi-level strucutre 
-  Violating assumption of homoscadasiticity
-Measurement error
-  Imprecise measurement in predictors will attenuate estiamted coefficients toward zero
-Interaction Effect
-Mediation
-  Baron and Kenny criteria
+# # SESSION 4, Session 5 ####################################################################################
+ # Multicollinearity
+   # Scatterplot between all predictor variables
+   # Variance inflation factor (VIF) - inflated SE
+     # x (to be tested) as the predictor and the rest being IV
+     > 10 -> Multicollinearity
+     # centering if it is polynominal model
+   No direct explantation of the x2 (collineared IV) on the outcome variable
+   # Strategy on Multicollinearity
+     # Do nothing: because coefficients and standard errors are unbiased; however, there is inefficient estimation; overall, should follow the objectives and assumptions 
+     # Increase sample size
+     # Polynomial terms and interactions: centering (subtracting variable by its mean)
+       squred or interaction with centered term to solve 
+ # Confounding effect (C):
+   # Xc affect both IV and DV
+   # DAG: directed acyclic graph 
+   argue the residual confounding effect in obsevational data
+   # minimizing confounding effects
+     # variable selection: p value, AIC
+     # relative change in estiamte > 10%
+     meet crtieria: associations between C with X and Y; check if C is not the mediator between X -> Y
+   # Indicated impact of coufounder on outcome variable;  C has impact on both X and Y
+   # Include all confounders in the model while reporting that residuals confounders do not have large impact on the result
+ 
+  # C -> X    C -> Y    Direction   Change from unadjusted to adjusted estiamte
+  # direct    direct    positive    unadjusted > adjusted 
+  # direct    inverse   negative    unadjusted < adjusted 
+  # direct    inverse   positive    unadjusted > adjusted 
+  # inverse   direct    negative    unadjusted < adjusted 
 
+  # Multi-level structure 
+    # Violating assumption of homoscedasticity
+  # Measurement error
+    # Imprecise measurement in predictors will attenuate estimated coefficients toward zero
+  # Interaction Effect
+  # Mediation
+    # Baron and Kenny criteria
 
+## multicollinearity
 mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
 mvc$height.sq=mvc$height^2
 pairs(mvc)      # no strong patterns between variables if it is not in a linear pattened 
@@ -3735,43 +3744,61 @@ mvc.lm4 <- lm(MVC~age+ct.height+ct.height.sq, data=mvc) # VIF is lower than 10, 
 # mvc.lm4 <- lm(MVC~age+height+ct.height.sq, data=mvc) # same result with different scale of intercepts
 vif(mvc.lm4)   
 
-
+## confounding, moderation, mediation
 cardio = read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/3 GLM/GLM3/Example - cardio.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 
-summary(lm(phy~ses, data=cardio)) 
-summary(lm(sfrs~ses, data=cardio))
-summary(lm(ses~phy, data=cardio))
+  # confounder check-up 1: path analysis
+  # X: phy; Y: sfrs; C: ses  
+summary(lm(phy~ses, data=cardio))         # c->x
+summary(lm(sfrs~ses, data=cardio))        # c->y
+summary(lm(ses~phy, data=cardio))         # x->c; whether c being mediator of x->y
 
-summary(lm(sfrs~phy, data=cardio))    # R2 = 0.498; coe = -0.0340
-summary(lm(sfrs~phy+ses, data=cardio))# R2 = 0.5481; coe = -0.04454; change% in coeffcient = 25%
+  # confounder check-up 2: relative change in estimate
+summary(lm(sfrs~phy, data=cardio))        # obtain coefficient of phy=-0.0348
+summary(lm(sfrs~phy+ses, data=cardio))    # coefficient of phy=-0.0445; relative change=(445-348)/348=27.9% > 10%, indicating confounding effect from ses
+summary(lm(sfrs~phy+age, data=cardio))    # coefficient of phy=-0.03505; relative change=(3505-3480)/3480=0.7% < 10%, indicating non-confounding effect from age
 
+  # confounder check-up 3: AIC
 require(MASS) 
 cf2 <- lm(sfrs~phy+ses, data=cardio) 
-stepAIC(cf2)                          # the increase of AIC, indicating SES is the confounder; testing a series of assumptions; p value here indicates significance of null hypothesis of each model in the stepping process
+stepAIC(cf2)       # initial model has the lowest AIC. If suspecting SES being the confounder, the AIC will increase. ##??increase of AIC indicates SES is the confounder; testing a series of assumptions; p value here indicates significance of null hypothesis of each model in the stepping process
 
-age.int <- lm(sfrs~phy*age+ses, data=cardio) 
-summary(age.int) 
+## interaction effect
+age.int <- lm(sfrs~phy*age+ses, data=cardio)  # in format of "exposure" * "effect modifier" + "confounder", such as "phy+age+phy*age+ses"
+# A*B = main effects of A and B, interaction term of A and B
+summary(age.int)   # check significance level of interaction term 
 
+  # compare model without interaction term to gain the main effect
 summary(lm(sfrs~phy+age+ses, data=cardio))
 
-# mediation
+## mediation
+  # Approach 1
+  # Steps: M ~ X; Y ~ M; Y ~ X; Y ~ X + M (for reference to evaluate direct and indirect effects)
+  # 1. indirect effect of x -> m
 summary(lm(bmi~phy, data=cardio)) 
+  # 2. indirect effect of m -> y
 summary(lm(sfrs~bmi, data=cardio)) 
-summary(lm(sfrs~phy, data=cardio)) 
-summary(lm(sfrs~phy+bmi, data=cardio))    # the result of beta is more away from 0 indicating the mediation effect does not hold
+  # 3. direct effect of x -> y
+summary(lm(sfrs~phy, data=cardio))        # Bp=-0.035
+  # 4. overall model for comparison
+summary(lm(sfrs~phy+bmi, data=cardio))    # Bp=-0.041; beta is not attenuated, indicating the mediation effect does not hold
 
-coef(summary(lm(sfrs~phy+bmi, data=cardio)))
-
-summary(lm(bmi~phy, data=cardio))
-
-alpha = coef(summary(lm(bmi~phy, data=cardio)))[2,1]
-alphaSE = coef(summary(lm(bmi~phy, data=cardio)))[2,2]
-beta = coef(summary(lm(sfrs~phy+bmi, data=cardio)))[3,1]
+  # Approach 2.1
+  # Sobel' test. alpha: X->M; beta: M->Y in Y~X+M; tau: X -> Y
+alpha = coef(summary(lm(bmi~phy, data=cardio)))[2,1]        # M~X
+alphaSE = coef(summary(lm(bmi~phy, data=cardio)))[2,2]      
+beta = coef(summary(lm(sfrs~phy+bmi, data=cardio)))[3,1]    # Y~X+M
 betaSE = coef(summary(lm(sfrs~phy+bmi, data=cardio)))[3,2]
-z = alpha*beta/sqrt(alpha^2*betaSE^2+beta^2*alphaSE^2)
+z = alpha*beta/sqrt(alpha^2*betaSE^2+beta^2*alphaSE^2)      # Sobel's test
+p = 2*pnorm(z,lower.tail=F)                                 # p value for sobel's test
+
+  # Approach 2.2
+  # Other Sobel's test
+library(bda)
+with(cardio,mediation.test(bmi,phy,sfrs)) # mediation.test(mv,iv,dv); significant result indicates significant mediator
 
 
-# soble's test = the mediation path is significantly from 0
+# sobel's test = the mediation path is significantly from 0
 
 library(bda)
 mediation.test(mv,iv,dv)  # mv mediator
@@ -3779,103 +3806,131 @@ mediation.test(cardio$bmi,cardio$phy,cardio$sfrs)
 
 with(cardio, mediation.test(bmi, phy, sfrs))
 
-###########################################
-# SESSION 5 ####################################################################################
+# SESSION 6 ####################################################################################
 
-i = the matched set
-j = individuals
+## Case control study
+  # types of case control study: matched case-control study, nested case-control study, risk set sampling
+  # matching: balancing certain characteristics between groups to increase efficiency
+  # types of matching: individually matching (paired; 1v1, 1vX), frequency matching
 
-clogit  # library(suvival)
-case.status ~ exposure + strata(matched.set) 
+## Conditional logistic regression
+  # logit(Pij) = Ai + B1 X1ij +... 
+    # A - alpha, characteristics of each stratum (matched set)
+    # B - beta, coefficient
+    # i = the matched set
+    # j = individuals
 
-mers = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/4 logistic and PSM/examplemers.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+library(survival) # for clogit  
+# case.status ~ exposure + strata(matched.set) 
 
-clr.mers <- clogit(case ~ dromedary + sheep + smoking + strata(strata), data=mers) 
-# sensoring with summary()
+mers = read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/4 logistic and PSM/examplemers.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 
-# strata: matched cases
+## conditional logistic regression
+clr.mers <- clogit(case ~ dromedary + sheep + smoking + strata(strata), data=mers)  # strata: matched cases
+summary(clr.mers)   # exposure to dromedary is significantly associated with MERS infection (OR=9.9, 95%CI=1.8-54.8); smoking is significantly associated with MERS infection (OR=14.9, 95%CI=2.6-87.1)
 
-# PSA: the likelihood of selecting the specific options
-  - to balance the selection bias
-  - to adjust confounding effects
-  -
-# group nonequivalence：
+## PSA: the likelihood of selecting the specific options
+  # To analyze quasi-experiment data
+    # quasi experiment: little control on the allocation of treatment and associating factors
+    # selection bias/group nonequivalence
+      # treatment may tend to select patients with certain characteristics
+      # patients with certain characteristics may select treatment
+      # patients across different treatments may not be comparable
+  # To balance observed characteristics across treatment 
+    # so that more accurate estimates of the treatment effect can be estimated
+  # Allow analysis on factors associated with treatment assignment
+  # To adjust confounding effects
 
-mi=read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/4 logistic and PSM/examplemi.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+mi=read.table("C:/Users/chens/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/4 logistic and PSM/examplemi.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 
-with(mi, table(trt, death),1) 
+## summary 
+summary(mi)
+with(mi, table(trt, death)) # table of treatment options and mortality rate
+round(with(mi, prop.table(table(trt, death),1)),3)  # proportion of mortality rate by treatment groups; prop.table - 1 by row, 2 by column; treatment group with 15.6% mortality rate, control with 19.2%
+with(mi,t.test(death~trt))  # death rates are no different between groups
 
-round(with(mi, prop.table(table(trt, death),1)),3)
-with(mi,t.test(death~trt))
-
+## graphics
 library(ggplot2)
-mi$trt <- as.factor(mi$trt) 
+mi$trt <- as.factor(mi$trt) # turn continuous to categorical var
  
-# age * treatment 
+# death ~ age * treatment 
 ggplot(mi, aes(x=age, fill=trt)) + geom_histogram(binwidth=1) + facet_grid(trt ~ .) 
-
-# risk * treatment
+# death ~ risk * treatment
 ggplot(mi, aes(x=risk, fill=trt)) + geom_histogram(binwidth=1) + facet_grid(trt ~ .) 
+# death ~ severity * treatment
+ggplot(mi, aes(x=severity, fill=trt)) + geom_histogram(binwidth=1) + facet_grid(trt ~ .) 
 
-ps.model <- glm(trt ~ age + risk + severity, data=mi, family=binomial) 
-mi$ps <- predict(ps.model, type='response') 
+## Balance Approach 1 - Propensity Score
+  # Functionality and rationale
+    # the probability (propensity) of assigning to treatment for individuals
+    # depends on the covariates / factors
+    # does not depend on the outcome
+    # to compare individuals with similar propensity scores (treatment vs. non-treatment)
+    # any difference in the outcome should then be due to the treatment effect only
+  # Assumptions
+    # conditional independence / unconfoundedness: Y being independent from treatment assignment 
+    # common support/overlap condition: a comparison group in each condition of treatment
 
-ggplot(mi, aes(x=ps, fill=trt)) + geom_histogram(binwidth=0.01) + facet_grid(trt ~ .) 
+  # modeling with example of MI data
+ps.model <- glm(trt ~ age + risk + severity, data=mi, family=binomial) # treatment group with propensity score in consideration of age, risk and severity
+mi$ps <- predict(ps.model, type='response')   # generate propensity score in each case for further matching
 
-# stratification
-ps.boundary <- quantile(mi$ps, 0:5/5) 
-mi$psq <- cut(mi$ps, ps.boundary, right=F, include.lowest=T, label=1:5)
+  # check distribution of data with propensity score 
+ggplot(mi, aes(x=ps, fill=trt)) + geom_histogram(binwidth=0.01) + facet_grid(trt ~ .)   # more people choosing newer drug (treatment=1) with higher propensity score; common support, the comparison by condition of treatment emerges as the other variables are paired up
 
-# age * PS strata
-ggplot(mi, aes(x=trt, y=age)) + geom_boxplot(aes(fill=trt)) + facet_grid(psq ~ ., labeller=label_both) + coord_flip() 
+## Balance Approach 2 - Stratification - stratify by propensity scores into such as 5 groups with weighted mean of stratum-specified treatment effects 
+ps.boundary <- quantile(mi$ps, 0:5/5)   # create 6 groups with even probability 
+mi$psq <- cut(mi$ps, ps.boundary, right=F, include.lowest=T, label=1:5) # propensity grouping 
 
-# risk * PS strata
-ggplot(mi, aes(x=risk)) + geom_histogram(binwidth=1, fill='blue') + facet_grid(trt ~ psq, labeller=label_both) 
-
-# severity * PS strata
+  # death ~ age * treatment by PS strata
+ggplot(mi, aes(x=trt, y=age)) + geom_boxplot(aes(fill=trt)) + facet_grid(psq ~ ., labeller=label_both) + coord_flip() # grouped by propensity score categories
+  # death ~ risk (* counts) by PS strata
+ggplot(mi, aes(x=risk)) + geom_histogram(binwidth=1, fill='blue') + facet_grid(trt ~ psq, labeller=label_both) # check distribution of treatment groups being similar or not
+  # death ~ severity (* counts) by PS strata
 ggplot(mi, aes(x=severity)) + geom_histogram(binwidth=1, fill='blue') + facet_grid(trt ~ psq, labeller=label_both) 
 
-# t-test scores are modified greatly/adjusted by stanadard deviation
-summary(lm(age~trt, data=mi)) 
-summary(lm(age~trt+psq, data=mi)) 
+## Balance Approach 3 - T score for balance of treatment groups; t-test scores are modified greatly/adjusted by standard deviation
+summary(lm(age~trt, data=mi))       # t score for age = 4.41 for unadjusted (in treatment==1); as well as for risk and severity
+summary(lm(age~trt+psq, data=mi))   # t score for age = 0.73 as adjusted  (in treatment==1); as well as for risk and severity
+  # distance (T score) shows the balanced distribution for treatment groups
 
-mean.tp <- aggregate(death~trt+psq, data=mi, FUN=mean) 
-count.tp <- aggregate(death~trt+psq, data=mi, FUN=length) 
+## Treatment Effect Calculation 
+mean.tp <- aggregate(death~trt+psq, data=mi, FUN=mean)    # Mean for each combination of treatment group and propensity groups
+count.tp <- aggregate(death~trt+psq, data=mi, FUN=length) # counting numbers for each combinations of ...
 cbind(mean.tp, count.tp$death) 
 
-n.psq <- as.numeric(table(mi$psq)) 
+  # overall treatment effect 
+n.psq <- as.numeric(table(mi$psq))    # numbers of cases in each stratum
+  # overall treatment effect = (80*(0.04-0.11) + 78*(0.17-0.20) + 82*(0.17-0.15) + 80*(0.15-0.31) + 80*(0.20-0.25)) / 400 = -0.0603 ((treatment1-treatment0)* n)
 
-cbind(mean.tp, count.tp$death) 
-
+  # variance of estimated treatment effect
 var.tp <- aggregate(death~trt+psq, data=mi, FUN=var) 
 cbind(var.tp, count.tp$death)   
+sum((var.tp$death/count.tp$death)*rep(n.psq, each=2)^2)/sum(n.psq)^2
 
-# CI
-sum((var.tp$death/count.tp$death)*rep(n.p sq, each=2)^2)/sum(n.psq)^2 
+  # CI = M +/- SE = (-0.14, 0.02)
 
-# matching function for case-control data
+## Propensity score matching function for case-control data
 library(MatchIt)
+m.out <- matchit(trt ~ age + risk + severity, data = mi, method = "nearest", subclass=20) # 20 classes using nearest neighbor method; interaction term can be added into the matching model
 
-m.out <- matchit(trt ~ age + risk + severity, data = mi, method = "nearest", subclass=20) 
+matched.mi <- match.data(m.out)       # extract cases for each class
+matched.mi[matched.mi$subclass==1,]   # extract cases for certain class
 
-matched.mi <- match.data(m.out) 
-matched.mi[matched.mi$subclass==1,] 
-
-matched.mi <- match.data(m.out) 
+  # calculation with propensity score
 clr.mi <- clogit(death ~ trt + strata(subclass), data=matched.mi) 
 summary(clr.mi)
 
-lr.ps <- glm(death~trt+ps, data=mi, family=binomial) 
-summary(lr.ps)
+## Propensity score weighting (inverse probability) to balance fair distribution 
+  # treatment effect by PS weighting method
+with(mi, sum(death/ps*(trt==1)-death/(1-ps)*(trt==0))/nrow(mi))   # 95%CI=(-0.163, 0.033)
 
-# Propensity score weighting (inverse probability) to balance fair distribution 
-with(mi, sum(death/ps*(trt==1)-death/(1-ps)*(trt==0)...))
-
+  # logistic regression modeling with propensity score s the only predictor to predict outcome
 lr.ps <- glm(death~trt+ps, data=mi, family=binomial) 
-summary(lr.ps) 
+summary(lr.ps)  # OR for treamtent1 is 0.611 (trt1 coefficient)
 
 exp(coef(lr.ps)) 
-exp(confint(lr.ps)) 
+exp(confint(lr.ps)) # 95%CI=(0.35, 1.06)
 
 
 

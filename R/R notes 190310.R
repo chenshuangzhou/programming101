@@ -3809,7 +3809,7 @@ mediation.test(cardio$bmi,cardio$phy,cardio$sfrs)
 
 with(cardio, mediation.test(bmi, phy, sfrs))
 
-# SESSION 6 ####################################################################################
+# SESSION 6 PSA ####################################################################################
 
 ## Case control study
   # types of case control study: matched case-control study, nested case-control study, risk set sampling
@@ -3970,6 +3970,111 @@ summary(lr.ps)  # OR for treamtent1 is 0.611 (trt1 coefficient)
 
 exp(coef(lr.ps)) 
 exp(confint(lr.ps)) # 95%CI=(0.35, 1.06)
+
+
+# SESSION 7 Meta-analysis ####################################################################################
+
+## Missing Data
+  # potential reasons: dropouts, incomplete response, censored
+  # measures: 
+    # missing completely at random (MCAR) - missingness ~! all vars (complete case analysis; nearest neighbor imputation; mean imputation)
+    # missing at random (MAR) - missingness ~! unobserved vars (regression imputation; multiple imputation; inverse probability wrighting)
+    # missing not at random (MNAR) - missingness ~ unobserved vars
+
+# Create data with missing values
+set.seed(123) # unify our results
+n <- 500
+bmi.m <- runif(n, 25,40)
+bmi.f <- runif(n, 15,30)
+bmi.full <- c(bmi.m, bmi.f)	# the combined dataset
+pi <- rep(c(1,0.2), each=n)	# as probability of 100% and 20%
+obs <- rbinom(2*n,1,pi) 	# simulate the missing status
+bmi.obs <- bmi.full[obs==1]
+
+par(mfrow=c(1,2))
+hist(bmi.obs, breaks=c(15,20,25,30,35,40))
+hist(bmi.full, breaks=c(15,20,25,30,35,40))
+
+mean(bmi.obs)   # result=30.8 this estimate is biased due to missing (completed case analysis)
+
+# Inverse calculation with weights (## Inverse Probability Weighting (IPW))
+pi.obs <- pi[obs==1]  # result = 27.1
+sum(bmi.obs/pi.obs)/(2*n) # weighted calculation
+
+## Propensity score weighting 
+mi <- read.csv("examplemi.csv")
+ps.model <- glm(trt ~ age + risk + severity, data=mi,
+family=binomial)
+mi$ps <- predict(ps.model, type='response')
+
+
+## Meta Analysis
+  # fixed effects model: 
+    # assuming true effect of intervention is the same across studies. 
+    # Homogeneous studies. 
+    # outcome variable assumed to be normally distributed
+  # random effects model: 
+    # asumting true intervention effect of each study comes from a larger population.
+    # Heterogenous studies
+      # clinical diversity: Variability in participants, interventions and outcomes
+      # methodological diversity: Variability in study design and risk of bias; need to control for confounders
+      # statistical heterogeneity: 
+        # Variability in the intervention effects across studies
+        # Violate the assumption for fixed effects model
+        # Random effects model allows the true effect to be different across studies
+      # Clinical / methodological diversity should be addressed in the systematic review
+      # Focus on statistical heterogeneity in the following slides (Cochrane Handbook for Systematic Reviews of Interventions, 2011)
+      # Cochran's Q test: compare each estimate with their average. Larger Q indicates hetergeniety. Need large sample size.
+      # Higgins' I^2: 0-30% low; 30-60% moderate; 50-90% substantial
+
+  # effect size:
+    # RR: relative risk - poisson regression 
+    # OR: odds ratio - logistc regression
+  # Inverse variance weighting
+    # assign more weight to studies with higher precision (larger sample size)
+    # the inverse of variance is roughly proportional to the sample size
+    # the variance of the overall estiamte will be minimized
+
+# RMA demonstration
+ecig <- read.csv('d:/exampleecig.csv')
+
+# Convert OR to log OR (beta in logistic regression; assumed to be normal)
+ecig$logOR <- log(ecig$OR)
+
+# Derive the standard error for log OR from the 95% CI
+ecig$se.logOR <- (log(ecig$OR.ub)-log(ecig$OR.lb))/(2*1.96)
+
+# Carry out meta analysis using fix effects model
+require(metafor)
+ecig.fe <- rma(yi=logOR, sei=se.logOR, slab=study,method="FE", data=ecig) # FE - fixed effect
+
+  # names(ecig.fe)  # show variable names
+with(ecig.fe, exp(c(b, ci.lb, ci.ub)))  # show beta and CI
+
+
+summary(ecig.fe)  # show Q indicator
+Q <- ecig.fe$QE
+I2 <- (Q-(ecig.fe$k-1))/Q * 100  # high I2 indicates poor model; need random effect model
+
+# random effect modeling 
+ecig.re <- rma(yi=logOR, sei=se.logOR, slab=study,method="REML", data=ecig) # REML - random effect; having increased estiamtes and larger CI. 
+
+with(ecig.re, exp(c(b, ci.lb, ci.ub)))
+
+forest(ecig.re, transf=exp, refline=1)    # "showweights=T";"transf=exp" - transformation from logit beta to coefficient; "refline=0" - reference line
+
+# funnel plot
+funnel(ecig.re, atransf=exp)  # hetergeniety, biases
+regtest(ecig.re)  # Egger's test; lowest sample size > 10; significance indicates asymmetry
+
+
+
+
+
+
+# SESSION 8 Instrumental Variable ##############################################################################
+
+
 
 
 ###   R2wd - R to Word #############################################################################

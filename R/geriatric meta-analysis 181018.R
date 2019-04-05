@@ -5,7 +5,7 @@ library(officer);library(stargazer);library(outreg);library(SDMTools);library(PR
 ### Data Retrieval from "test.txt" for [dementia intervention project]
 meta=read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Dell
 meta=read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA
-meta=read.table("C:/Users/admin/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo
+meta=read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Lenovo
 
 ### Data Retrieval from "test.txt" for [meaning project]
 

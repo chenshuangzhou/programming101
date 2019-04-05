@@ -4069,13 +4069,123 @@ regtest(ecig.re)  # Egger's test; lowest sample size > 10; significance indicate
 
 
 
+# SESSION 8 Instrumental Variable Analysis ###############################################################
+bmi = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/6 Instrumental Variable/examplebmiiva.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+
+library("AER")  # ivreg() for 2SLS
+
+# X: bmi_friend
+# Y: bmi_adol
+# Z: bmi_parent
+
+## IVA
+  # outcome wth selection bias due to unobserved variable
+# IV's characteristics: Z-> X -> Y (C contains observed and unobserved confounder)
+  # associated with exposure X
+  # uncorrelated with error
+  # uncorrelated with unobserved confounders
+  # X being the complete mediator between Z and Y
+  # confounder: 
+  # estimator: 
+    # Wald estimator: Bxy = Bzy/Bzx; Fieller's theorom
+
+# 2SLS: 2 stage least square
+  # 1 stage: Z -> X 
+  # 2 stage: X -> Y
 
 
+# Bxy = Bzy/Bzx
+zy = coef(lm(bmi_adol~bmi_parent,data=bmi))[2]
+zx = coef(lm(bmi_friend~bmi_parent,data=bmi))[2]
+Wald = zy/zx
 
-# SESSION 8 Instrumental Variable ##############################################################################
+# Fieller's theorom
+beta and variance 
+vcov()    # variance (covariance of self) and covariance matrix
+
+(a/b)^2*(va/a^2+vb/b^2)
+
+summary(lm(bmi_adol~bmi_friend, data=bmi))
+
+## 2SLS; y ~ x|z; x endogenous var, z instrumental var; y ~ ex + en | ex + z 
+bmi.2sls <- ivreg(bmi_adol~bmi_friend|bmi_parent, data=bmi) 
+summary(bmi.2sls)   # conclusion: an increase of 1 kg/m2 in close friend’s average BMI is associated with 1.02 kg/m2 increase of an adolescent’s BMI, after controlled for unmeasured confounders 
 
 
+## Weak instrumental variable
+  # Features
+    # large variance in beta
+    # potential bias in the estimation of beta
+  # Tests
+    # F-stats < 10 - weak instrument in treatment/endogenous regressor
+    # Durbin-Wu-Hausman (DWH) for endogeneity of regressor
+      # (beta(IVA)-beta(LS))/sqrt(var(IVA)^2-var(LS)^2)
+      # H0: IV and LS both consistent, but LS (least square estimates) is efficient, following  normal distibution
+      # H1: Only IV is consistent; 
+      # cannnot justify choice of IV
+    # Mendelian randomization
+      # genetic variant as the IV
+        # random allocation of alleles (paternally and maternally inherited) 
+        # hence not associated with any measured / unmeasured confounders 
+        # gene is chosen to have known link to a phenotype of interest; gentic variance - number
+      # weakness
+        
 
+bmi.lm <- lm(bmi_friend~bmi_parent, data=bmi)  # summary(bmi.lm); F stats >> 10, indicating a good IV
+
+bmi.lm0 <- lm(bmi_friend~1, data=bmi) 
+anova(bmi.lm, bmi.lm0)   
+
+
+### Meta analysis #############################################################################
+require(metafor)
+
+#### Tutorial 3 #############################################################################
+
+fish = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/6.5 tutorial 3/fishconsumption.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+require(metafor)
+
+# 1. study the dataset
+
+# 2. Fixed effect model
+summary(fish)
+
+fish$logRR = log(fish$rr)
+fish$se.logRR = (log(fish$rr.ub)-log(fish$rr.lb))/(2*1.96)
+
+fish1 = fish[-c(21,22,24,25),]    # fish$rr[c(21,22,24,25)]=1
+
+fe.fish = rma(yi=logRR,sei=se.logRR,slab=study,method="FE",data=fish1)
+
+# 3. reproduce the result with inverse wrighting method
+fish1$w = 1/fish1$se.logRR^2
+theta=with(fish1,sum(w*logRR)/sum(w))
+
+# 4. heterogeity of studies 
+summary(fe.fish)    # Q=70.4; I^2=
+Q = summary(fe.fish)$QE
+I2=(Q-(fe.fish$k-1))/Q*100
+
+# 5. random effect model
+re.fish = rma(yi=logRR,sei=se.logRR,slab=study,method="REML",data=fish1)
+summary(re.fish)      # the CI range is wider due to hetergeneity of model
+
+# 6. forest plot
+forest(re.fish, transf=exp, refline=1)
+
+# 7. funnel plot
+funnel(re.fish, atransf=exp)  
+
+# 8. heterogeneity
+regtest(re.fish)
+
+# 9. case of low quality affects overall estimates 
+leaveout()
+
+# 10. 
+
+
+# 11. 
 
 ###   R2wd - R to Word #############################################################################
 

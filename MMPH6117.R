@@ -1098,8 +1098,7 @@ fish$se.logrr <- (log(fish$rr.ub)-log(fish$rr.lb))/(2*1.96)
 library(metafor)
 
 # fit a fixed effects model
-fish.fe <- rma(yi=logrr, sei=se.logrr, slab=study, method="FE", 
-data=fish, subset=strat==0)
+fish.fe <- rma(yi=logrr, sei=se.logrr, slab=study, method="FE", data=fish, subset=strat==0)
 
 fish.fe
 
@@ -1116,8 +1115,7 @@ summary(fish.fe)
 Q <- fish.fe$QE
 I2 <- (Q-(fish.fe$k-1))/Q * 100
 
-fish.re <- rma(yi=logrr, sei=se.logrr, slab=study, method="REML", 
-data=fish, subset=strat==0)
+fish.re <- rma(yi=logrr, sei=se.logrr, slab=study, method="REML", data=fish, subset=strat==0)
 
 # Overall estimate by random effects model
 with(fish.re, exp(c(b, ci.lb, ci.ub)))

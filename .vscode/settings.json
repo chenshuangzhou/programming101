@@ -10,6 +10,6 @@
         "plaintext",
         "r"
     ],
-    "r.rterm.windows": "C:\\Program Files\\R\\R-3.4.3\\bin\\x64\\R.exe",
+    "r.rterm.windows": "C:\\Program Files\\R\\R-3.5.1\\bin\\x64\\R.exe",
     "html.format.wrapLineLength": 300,
 }

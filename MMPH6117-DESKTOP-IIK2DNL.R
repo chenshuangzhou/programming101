@@ -1001,7 +1001,7 @@ summary(lr.fvs.a)
 # indicating the effect modification of smoking
 # there is no significant age-vaccine interaction
 
-# Q7 vaccination effect for smoker and non-smoker. (projected from regression model)
+# Q7 vaccination effect for smoker and non-smoker.
 # non-smoker
 exp(lr.fvs.s$coef["vac"])
 exp(confint.default(lr.fvs.s)["vac",])
@@ -1116,6 +1116,7 @@ summary(fish.fe)
 Q <- fish.fe$QE
 I2 <- (Q-(fish.fe$k-1))/Q * 100
 
+
 fish.re <- rma(yi=logrr, sei=se.logrr, slab=study, method="REML", 
 data=fish, subset=strat==0)
 
@@ -1123,7 +1124,7 @@ data=fish, subset=strat==0)
 with(fish.re, exp(c(b, ci.lb, ci.ub)))
 
 # forest plot based on the random effects model
-forest(fish.re, transf=exp, refline=1)    # "showweights=T";"transf=exp" - transformation from logit beta to coefficient; "refline=0" - reference line (log functions indicator lies on 1 for no neutral position)
+forest(fish.re, transf=exp, refline=1)
 
 # x axis in log scale, with weights
 forest(fish.re, atransf=exp, refline=0, at=log(c(0.1,0.25,1,4,20)), showweights=T)
@@ -1173,7 +1174,8 @@ leave1out(fish.re, transf=exp)
 # Trim and fill sensitivity analysis
 fish.cut <- fish[fish$study!="Albanese",]
 
-fish.cut.re <- rma(yi=logrr, sei=se.logrr, slab=paste(study, year, country, sex, sep=", "), method="REML", data=fish.cut, subset=strat==0)
+fish.cut.re <- rma(yi=logrr, sei=se.logrr, slab=paste(study, year, country, sex, sep=", "), method="REML", 
+data=fish.cut, subset=strat==0)
 
 funnel(fish.cut.re, atransf=exp)
 regtest(fish.cut.re)
@@ -1183,9 +1185,12 @@ with(fish.cut.tf, exp(c(b, ci.lb, ci.ub)))
 
 funnel(fish.cut.tf)
 
-### Assignment 1 (submit to Moodle by 11:55pm, Mar 14, 2019 #######################################################################
+
+### Assignment 1 (submit to Moodle by 11:55pm, Mar 14, 2019) #######################################################################
 
 ### Association of invasive meningococcal disease and environmental and virologic exposure 
+
+ 
 
 ### Weekly counts of invasive meningococcal disease (IMD) reported cases from country A in 1997-2000 were collected and analyzed, to study associations between IMD and environmental and virologic exposure. The file IMD.csv stored the following variables which were found to be significant factors from the literature in other places: 
 
@@ -1195,10 +1200,11 @@ funnel(fish.cut.tf)
 ## pop: population size 
 
 # Data:  
-temp = read.table("imd.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+temp = read.table("C:/.../imd.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
+
 
 # a) Fit a poisson regression model to predict weekly IMD cases using flu and maxtemp, accounting for the increasing population size in 1997-2000. Summarize your results in a table.  [4 marks] 
-imd = glm(imd~offset(log(pop))+flu+maxtemp, data=temp, family=poisson) 
+imd = glm(imd~offset(log(pop))+flu+maxtemp, data=temp, family=poisson); 
 summary(imd)
 ## Predictors of "flu" (p<0.001) and "maxtemp" (p<0.001) significantly predict the outcome variable (AIC = 21459)
 exp(coef(imd))
@@ -1209,12 +1215,13 @@ exp(confint(imd))
 # b) Assess the goodness of fit of the model. [1 marks] 
 deviance(imd)/df.residual(imd)
 ## The ratio of residual deviance to df is 98.21 >> 1, indicating undesirable goodness-of-fit. 
+ 
 
 # c) Quote the mean and variance of the weekly IMD cases. Is there any evidence of overdispersion?  [1 marks] 
 mean(temp$imd)/var(temp$imd)      # 0.00817
 require(MASS)
 summary(glm.nb(imd~1, data=temp))
-## Overdispersion exists for two reasons: 1) variance is much greater; 2) Theta shown in the model = 1.385; exp(4.91255)+exp(4.91255)^2/1.385=13487.7 while var(temp$imd)=16644.14
+## Overdispersion exists for two reasons: 1) variance is much greater; 2) Theta = 1.385; exp(4.91255)+exp(4.91255)^2/1.385=13487.7 while var(temp$imd)=16644.14
 
 # d) Fit a negative binomial regression model to predict weekly IMD cases and summarize your results in a table. [4 marks] 
 ## is it necessary to have an offset term offset(log(pop)) in the model???
@@ -1303,11 +1310,11 @@ predict(nb.imd, newdata, type="response")
 
 # The predicted incidence rates are 114 and 147 per 100 million for conditions 1 and 2 respectively Therefore, condition 2 has a higher risk of IMD and more attention should be paid to suspected IMD cases during periods with similar conditions.  
 pop.size <- 1e8 # just assume a population size 
-newdata.cond <- data.frame(flu=c(0.1,0.4),maxtemp=c(10,-5), pop=pop.size) 
-inc.cond <- round(predict(nb.imd, newdata.cond, type="response")/pop.size*1e8,0) 
+newdata.cond <- data.frame(flu=c (0.1,0.4),maxtemp=c(10,-5), pop=pop.size) inc.cond <- round(predict(nb.imd, newdata.cond, type="response")/pop.size*1e8,0) 
 	# or alternatively, Based on the final model, the predicted risk is given by E(Y)/pop = exp(-14.04 + 1.76 ∙ flu + 0.02∙ maxtemp 
-exp(sum(coef(nb.imd)*c(1,0.1,10)))*1e8 
-exp(sum(coef(nb.imd)*c(1,0.4,-5)))*1e8 
+exp(sum(coef(nb.imd)*c(1,0.1,10)))*1e8 exp(sum(coef(nb.imd)*c(1,0.4,-5)))*1e8 
+
+
 
 # Assignment 2 ####################################################################################
 # a) Calculate the crude mortality rates of patients receiving early and late oseltamivir treatment respectively. [2 marks] 

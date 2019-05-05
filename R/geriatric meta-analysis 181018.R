@@ -818,7 +818,7 @@ attach(meta)
       ", p = ", .(formatC(res2.3$QEp, digits=2, format="f")), "; ", I^2, " = ",
       .(formatC(res2.3$I2, digits=1, format="f")), "%)")))
 
-  ## QOL * Comprehenswive
+  ## QOL * Comprehensive
     attach(meta3.1)
     forest(res3.1,xlim=c(-12,9),ilab=cbind(experiment.n,m3e.post,s3e.post,contrast.n,m3c.post,s3c.post),
             ilab.x=c(-10,-8.5,-7,-5.5,-4,-2.5),cex=1.2)

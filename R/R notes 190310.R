@@ -41,6 +41,25 @@ p = function(){
 progress = read.table("D:/OneDrive/research/1personal/Programming/progress.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
 progress1 = progress[order(progress$Project,progress$Status),]
 
+## HKCSS ######################################
+# Topics: unmet needs from both CR and CG (D*; need but not used), disease burden (C6*; depressive - C8*; C9*), comorbidity of health issues (B16*), caregiving priority management (C6), double caregiving roles (B3), family dynamics (C10*,  C12*), caregiving length (B14.2), CG meaning making (C7), PAC (C5), 
+# CR: gender (B1), age (B2.1), dementia (n =321)
+# CG: gender (F1), age (F2.1), work hours (F4 - FT or PT), education (F5), marital (F6), SES (F7+8)  
+
+# ? C11*
+
+d = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/190501 HKCSS.csv")
+
+
+
+7. early awareness of disease predicts psychological burden
+8. cost-effectiveness analysis of primary care in community setting
+9. non-compliance in treatments among dementia population
+10. Steger's working model of caregiving (occupational and economic aspects)'
+
+
+
+
 
 ## Word Cloud ######################################
 
@@ -3691,7 +3710,7 @@ round(exp(rbind(cbind(coef(nb.therapy1),confint(nb.therapy1)),
 # model comparison
 AIC(nb.epilepsy0, nb.therapy1, nb.therapy2, nb.therapy3)    # AIC the lowest indicates best fit
 
-# # SESSION 4, Session 5 ####################################################################################
+# # SESSION 4 & 5 ####################################################################################
  # Multicollinearity
    # Scatterplot between all predictor variables
    # Variance inflation factor (VIF) - inflated SE

@@ -1,4 +1,4 @@
-## File location examples:
+﻿## File location examples:
 read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Office - Dell Inspiron 16
 read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA 
 read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")              # Office - Lenovo X1
@@ -3301,7 +3301,142 @@ abline(h=tree.error2[1])
       attitude
       pair interaction
       diff of attitude < miu (0.5/0.25) social tolerance
-      
+
+
+
+### Ding-Geng Chen lecture ###
+library(metafor)
+library(help=metafor)
+
+
+## RCT comparison
+dat = read.csv("DBP.csv",header=T)
+dat$diff = dat$DBP5 - dat$DBP1
+
+boxplot(diff~TRT, dat, xlab = "Treatment", ylab = "DBP Changes", las = 1)
+
+# t-test for comparison
+t.test(diff~TRT, dat, var.equal=T)    # df is not integer but close to original df indicating assumption of equal variances not being violated
+
+var.test(diff~TRT, dat)    # F test to be performed suggesting equal variances
+
+    # alternatively:
+diff.A = dat[dat$TRT=="A",]$diff
+diff.B = dat[dat$TRT=="B",]$diff
+t.test(diff.A, diff.B,alternative="less")
+
+# wilcox.test: Mann-Whitney-Wilcoxon (MWW) U-test (also called Wilcoxon rank-sum test, or Wilcoxon-Mann-Whitney test) while data are not normally distributed
+wilcox.test(diff~TRT, dat)    # indicate difference
+
+# bootstrap: no assumptions of t-test holds
+library(bootstrap)
+mean.diff = function(bn,dat) diff(tapply(dat[bn,]$diff, dat[bn,]$TRT,mean))    # function calculating mean differences
+
+nboot = 1000
+boot.mean = bootstrap(1:dim(dat)[1], nboot, mean.diff,dat)    $ 1000 values representing DBP mean differences in bootstrap
+
+x = boot.mean$thetastar
+x.quantile = quantile(x, c(0.025,0.5, 0.975))
+print(x.quantile)
+hist(boot.mean$thetastar, xlab="Mean Differences", main="")
+abline(v=x.quantile,lwd=2, lty=c(4,1,4))
+
+## ANOVA
+# aov: 
+    # One-way ANOVA - Tukey's HSD
+
+    # One-way ANOVA for time changes - 
+aggregate(dat[,3:7], list(TRT=dat$TRT), mean)
+Dat = reshape(dat, direction="long", varying = c("DBP1", "DBP2", "DBP3", "DBP4", "DBP5"), idvar = c("Subject", "TRT", "Age", "Sex", "diff"), sep="")
+colnames(Dat) = c("Subject","TRT","Age","Sex","diff","Time","DBP")
+Dat$Time = as.factor(Dat$Time)
+
+datA = Dat[Dat$TRT=="A",]
+test.A = aov(DBP~Time, datA)	# comparing DBP across time points in treatment A
+summary(test.A)
+TukeyHSD(test.A)	# compare each individual pair of time points
+
+datB = Dat[Dat$TRT=="B",]
+test.B = aov(DBP~Time, datB)
+summary(test.B)
+TukeyHSD(test.B)
+
+    # Multi-way ANOVA - interaction effect
+mod2 = aov(DBP~ TRT*Time, Dat)	# main and interaction effects
+summary(mod2)
+
+par(mfrow=c(2,1),mar=c(5,3,1,1))
+with(Dat,interaction.plot(Time,TRT,DBP,las=1,legend=T))
+with(Dat,interaction.plot(TRT,Time,DBP,las=1,legend=T))
+
+TukeyHSD(aov(DBP ~ TRT*Time,Dat))
+
+    ## ANCOVA
+
+SexbyTRT = table(dat$TRT,dat$Sex)
+prop.test(SexbyTRT)
+
+bm1=lm(DBP1~Sex+Age, dat)
+summary(bm1)
+
+    ## ANCOVA with time changes
+m0 = lm(diff~TRT*Age*Sex, dat)
+m1 = step(m0)	# check main effects significant and interaction insignificant
+m2 = lm(diff~TRT+Age, dat)	# only main effects 
+anova(m2)
+summary(m2)	# model 2 is fit
+
+plot(diff~Age,las=1,pch=as.character(TRT), dat, xlab="Age", ylab="DBP Change")
+abline(m2$coef[1], m2$coef[3],lwd=2, lty=1)
+abline(m2$coef[1]+m2$coef[2], m2$coef[3],lwd=2, lty=4)
+
+
+## Linear Regression Model
+Cassidy = read.csv("cassady.csv", header=T)
+Cassidy$Male = as.factor(Cassidy$Male)
+
+    # descriptives
+plot(GPA ~ CTA.tot, Cassidy)
+
+    # regression
+Model1.0 <- lm(GPA ~ CTA.tot, Cassidy)	#SLR
+summary(Model1.0)
+
+Model1.1 <- lm(GPA ~ CTA.tot + BStotal, Cassidy)	# MLR
+summary(Model1.1)
+anova(Model1.1)
+hist(Model1.1$residuals)
+
+Model1.2 <- lm(GPA ~ CTA.tot*Male, Cassidy)	# check interaction
+summary(Model1.2)
+
+    # assumption check
+      # normality - distribution
+hist(Model1.1$residuals, main="Residual Distribution")
+qqnorm(Model1.1$residuals)
+qqline(Model1.1$residuals)
+
+
+      # Homogeneity with residual plot
+library(car)
+residualPlots(Model1.1)	# should not have curvature distribution of residuals
+
+      # Independence - MLM is one of the methods to incorporate dependent structures.
+
+## Logistic Regression Model
+coronary = read.csv("coronaryArtery.csv", header=T)
+plot(group~time, coronary, xlim = c(500,1400),  ylim = c(-0.5,1.5), xlab="Time", ylab="Group")
+
+coronary.lm = lm(group~time, data=coronary)
+summary(coronary.lm)
+
+plot(group~time, coronary, xlim = c(500,1400), ylim = c(-0.5,1.5), xlab = "Time", ylab = "Group")
+abline(coronary.lm, col="red", lwd=3)
+
+## Logistic Regression Model - using GLM
+coronary.logistic <- glm(group~time, data = coronary, family = binomial)
+chisq.pvalue = 1-pchisq(deviance(coronary.logistic), df.residual(coronary.logistic))
+
 ### CMED 6020, MMPH6117 Advanced Statistical Methods I #############################################
 # SESSION 1 ##########################################
 mvc <- read.csv("http://web.hku.hk/~ehylau/mvc.csv")
@@ -3731,7 +3866,7 @@ AIC(nb.epilepsy0, nb.therapy1, nb.therapy2, nb.therapy3)    # AIC the lowest ind
      # variable selection: p value, AIC
      # relative change in estiamte > 10%
      meet crtieria: associations between C with X and Y; check if C is not the mediator between X -> Y
-   # Indicated impact of coufounder on outcome variable;  C has impact on both X and Y
+   # Indicated impact of confounder on outcome variable;  C has impact on both X and Y
    # Include all confounders in the model while reporting that residuals confounders do not have large impact on the result
  
   # C -> X    C -> Y    Direction   Change from unadjusted to adjusted estiamte
@@ -4086,7 +4221,73 @@ forest(ecig.re, transf=exp, refline=1)    # "showweights=T";"transf=exp" - trans
 funnel(ecig.re, atransf=exp)  # hetergeniety, biases
 regtest(ecig.re)  # Egger's test; lowest sample size > 10; significance indicates asymmetry
 
+    # metabias: calculate p value for publication bais; insignificant p indicates asymmetry of the funnel plot. 
 
+library("metafor")
+library(help="metafor" )
+data("dat.bcg", package = "metafor")
+
+
+
+######################################### Ding-Geng Chen on Meta Analysis ####################################3
+## prep
+setwd()
+dir()
+data("dat.bcg",package="metafor")	# obtain dataset from package
+
+
+## Effect Size: "escalc"
+    # OR, RR - proportion
+dat  = escalc(measure="OR", ai=tpos, bi=tneg, ci=cpos, di = cneg, data = dat.bcg, append = TRUE)		# calculate effect size (odds ratio, risk ratio, or risk difference: OR, RR, RD); append: results appending to original dataset
+dat$zscore = dat$yi/sqrt(dat$vi)	# odds ratio/std = Z comparing with 1.96 (95% CI)
+
+meta.RE = rma(yi, vi, data = dat)	# result show log risk ratio, requiring exp transformation; tau^2: betwee-group variance; I^2: between-study variance/total variance (tau2/(tau2+theta2))
+exp(meta.RE$beta)			# "multiplication" relationship
+meta.RE$coef
+
+    # SMD - continuous data
+d1 = read.csv("angina.csv", header=T)
+md1 <- escalc(measure="SMD", m1i=meanE, sd1i=sqrt(varE), n1i=nE, m2i=meanC, d2i=sqrt(varC), n2i=nC, data=d1)	# yi: effect size (difference divided by variance); yi: variance
+md1$zscore = md1$yi/sqrt(md1$vi)
+meta.d1 = rma(yi, vi, data = md1)	# method to choose FE or other types
+
+## Forest plot
+    # OR
+forest(meta.RE, slab = dat$author,atransf = exp)	
+funnel(meta.RE, slab = dat$author,atransf = exp)	# check with Egger test
+
+    # SMD
+      # fixed-effect model
+library(meta)
+fixed.angina = metacont(nE,meanE,sqrt(varE), nC, meanC, sqrt(varC), data = d1,studlab = Protocol, comb.random = FALSE)
+forest.meta(fixed.angina)
+
+      # random-effect model
+random.angina = metacont(nE, meanE, sqrt(varE),nC, meanC, sqrt(varC), data = d1, studlab = Protocol, comb.random=T)
+
+
+    # RE-MA with SMD
+random.angina.SMD = metacont(nE, meanE, sqrt(varE), nC, meanC, sqrt(varC), data = d1, sm = "SMD", comb.random = TRUE)
+
+
+## Egger test - publication bias test
+regtest(meta.RE, model="lm")	# insignificant p indicates symmetry
+regtest(meta.RE)	### random/mixed-effects version of the Egger test; model=rma -> random effect model; model=lm not suggested to use
+
+## Meta regression
+metaReg = rma(yi, vi, mods = ~ablat+year+alloc, data = dat)	# vi as variance, yi as RR
+metaReg = rma(yi, vi, mods = ~ablat+year, data = dat)
+
+    # plots
+preds <- predict(metaReg, newmods = cbind(0:60, 1970), transf = exp)	# ablat and year in model
+wi <- 1/sqrt(dat$vi)
+size <- 0.5 + 3 * (wi - min(wi))/(max(wi) - min(wi))
+plot(dat$ablat, exp(dat$yi), pch = 19, cex = size, bty = "l", xlab = "Absolute Latitude", ylab = "Relative Risk", las = 1,  log = "y")	# ablat on x-axis and y(RR) on y-axis; 
+lines(0:60, preds$pred)				# predicting abline
+lines(0:60, preds$ci.lb, lty = "dashed")	# lower bound of CI
+lines(0:60, preds$ci.ub, lty = "dashed")	# higher bound of CI
+abline(h = 1, lty = "dotted")			# abline of RR cutoff line
+#########################################
 
 # SESSION 8 Instrumental Variable Analysis ###############################################################
 bmi = read.table("D:/OneDrive/research/2school/PhD Courses/CMED 6020 MMPH6117 Advanced Statistical Methods I/6 Instrumental Variable/examplebmiiva.csv",sep=",", header=T, na.strings = "NA",stringsAsFactors = FALSE)
@@ -4464,6 +4665,35 @@ influencePlot(myreg)
 library(Scopus2CitNet)
 scopus_file = read.table(file = "test.csv", sep=",", na = "NA", header=T)
 Scopus2CitNet(scopus_file)
+
+
+
+### HLM - Bacon-Shone #########################################
+Bayes' Law: French and German statisticians coined the same idea
+
+Importance of clustered sampling: 
+* students share similar experience with the same recuritment criteria and process; so do schools; 
+* variations exist between classes and schools
+* why not SLR: strong assumptions that all individuals are independent and variances are the same; variations in reality will be biasedly assessed with SLR
+* 
+
+HLM
+* error terms are different on various levels
+* repeated measurement on the same individual, such as the individual's performance may be due to one's own effort, teachers' teaching (or teaching from past teacher), school level, 
+* j: individual
+* i: measurement
+
+Yij = beta0j + Xij + ei + ej
+* ei and ej are assumed to be different for evaluation of between-group effects
+* 
+
+Gaussian density needs no inferences
+1/sigma exp(-1/2((y-theta)/sigma)2) 
+
+Maximum Likelihood (ML)
+LogL(theta|data) = constant -n log(sigma) -1/2å((y-theta)/sigma)2 
+Parameters that enable to find the maxumum of the probability
+theta must be the mean of the Y
 
 
 

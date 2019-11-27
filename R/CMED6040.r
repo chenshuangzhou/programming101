@@ -1,6 +1,6 @@
 ################ TEST ############################
 
-setwd("C:/Users/chens/Desktop/test")
+setwd("C:/Users/Kevin/Desktop/test")
 
 x = c("ROCR","boot",                            # session 2
       "np","rdrobust",                          # session 3
@@ -256,7 +256,7 @@ hpa <- read.csv("examplehpa.csv")
 require(survival)
 
 ## Kaplan-Meier estiamte and plots
-hpa.km1 <- survfit(Surv(time, event,type="right")~1, data=hpa)
+hpa.km1 <- survfit(Surv(time, event,type="right")~1, data=hpa)      # no grouping; right censoring
 plot(hpa.km1, col='blue')
 
     # plot of Kaplan-Meier estiamte for two groups
@@ -483,6 +483,7 @@ summary(glm.ohio)
     # divide training and testing data
     set.seed(23456)
     TestingIndex <- sample(1:nrow(Prostate), nrow(Prostate)*0.2)    # assign 1-20 to each row of data without replacement, so only take 20 cases
+        # TestingIndex <- sample(1:nrow(Prostate), 20)
     Training <- Prostate[-TestingIndex, ]
     Testing <- Prostate[TestingIndex, ]
 
@@ -508,9 +509,13 @@ summary(glm.ohio)
 
 ## Ridge regression - penalized regression, shrink regression 
     library(glmnet)
+
+    # Training <- Prostate[-TestingIndex, ]
+    # Testing <- Prostate[TestingIndex, ]
+
     x <- model.matrix(lpsa ~ . - 1, data = Training)        # extract predictor from dataset; remove (-1) intercept column, 
     y <- Training$lpsa                                      # 
-    Ridge1 <- glmnet(x, y, alpha = 0, lambda = c(0.5, 1))   # %Dev = R2; larger lambda means larger penalty and causes lower R2 
+    Ridge1 <- glmnet(x, y, alpha = 0, lambda = c(0.5, 1))   # %Dev = R2; larger lambda means larger penalty and causes lower R2; alpha by default=1 for lasso; =0 for ridge; =0.5 for elnet; x input matrix; y response matrix
     coef(Ridge1)        # show columns of lambda of 1 and 0.5
 
     # basics
@@ -576,7 +581,13 @@ summary(glm.ohio)
     Elastic100 <- glmnet(x, y, alpha = 1)
 
     plot(Elastic000, xvar="lambda", label=TRUE)
-    ...
+    plot(Elastic005, xvar="lambda", label=TRUE)
+    plot(Elastic010, xvar="lambda", label=TRUE)
+    plot(Elastic020, xvar="lambda", label=TRUE)
+    plot(Elastic050, xvar="lambda", label=TRUE)
+    plot(Elastic080, xvar="lambda", label=TRUE)
+    plot(Elastic090, xvar="lambda", label=TRUE)
+    plot(Elastic095, xvar="lambda", label=TRUE)
     plot(Elastic100, xvar="lambda", label=TRUE)
 
     # cross-validation to determine lambda
@@ -593,8 +604,35 @@ summary(glm.ohio)
     coef(Elastic050, s = Elastic.cv$lambda.1se)
     Elastic.Pred <- predict(Elastic050, newx = x.test, s = Elastic.cv$lambda.1se)
 
+### Marginal structural model
 
-### Assignment / Tutorial
+    # using weights
+    library(ipw)
+    temp <- ipwpoint(exposure = a, family = "binomial", link = "logit", numerator = ~ 1, denominator = ~ l, data = simdat)
+    summary(temp$ipw.weights)
+        # show distribution of weight
+        ipwplot(weights = temp$ipw.weights,logscale = FALSE,main = "Stabilized weights",xlim = c(0, 8))
+
+    # using unstabilized weight
+    temp.uns <- ipwpoint(exposure = a, family = "binomial", link ="logit", denominator = ~ l, data = simdat)
+    summary(temp.uns$ipw.weights)
+        # show distribution of weight
+        ipwplot(weights = temp.uns$ipw.weights,
+        logscale = FALSE,
+        main = "Unstabilized weights",
+        xlim = c(0, 8))
+
+simdat$unsw <- temp.uns$ipw.weights
+msm.uns <- svyglm(y ~ a, design = svydesign(~ 1, weights = ~unsw, data = simdat))
+summary(msm.uns)    
+
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+### Assignment / Tutorial #############################################################################
+#######################################################################################################
 # For public health surveillance purposes, a study has been carried out to assess the prevalence of obesity (defined as BMI>25) among male HKU undergraduates. The study took a random sample of 185 undergraduate males in May 2019, and assessed each of their heights and weights. In total, 13 students were found to be obese.
 
 # 1. Write down the likelihood function corresponding to a binomial model for the observed data, in terms of the parameter θ representing the population prevalence.
@@ -707,8 +745,7 @@ summary(glm.ohio)
     logL.i.group.k1 <- function(theta,n.obese,n.sample) return(n.obese*log(theta[1])+ (n.sample-n.obese)*log(1-theta[1]))
     logL.group.k1 <- function(theta) return(sum(logL.i.group.k1(theta, n.obese, n.sample)))
 
-    group.k1.out <- optim(c(0.07), logL.group.k1, method="L-BFGS-B", lower=0.0001, upper=0.99,control=list(fnscale=-1))
-    group.k1.out 
+    group.k1.out <- optim(0.07, logL.group.k1, method="L-BFGS-B", lower=0.0001, upper=0.99,control=list(fnscale=-1))
 
     est.theta.group.k1 <- group.k1.out$par[1]
     est.theta.group <- group.out$par[1]
@@ -801,12 +838,12 @@ summary(glm.ohio)
 
     # Visualize missing pattern
     require(VIM)
-    aggr_plot <- aggr(flu.m1, sortVars=T, numbers=T)
-    marginplot(flu.m1[,c(4,5)])
+    aggr_plot <- aggr(flu.m1, sortVars=T, numbers=T)    # data demonstration
+    marginplot(flu.m1[,c(4,5)])                         # marginal plot 
     marginplot(flu.m1[,c(4,7)])
 
-    flu.m1$complete <- complete.cases(flu.m1)
-    boxplot(shealth~complete, data=flu.m1)
+    flu.m1$complete <- complete.cases(flu.m1)           # mark cases with or without complete cases
+    boxplot(shealth~complete, data=flu.m1)              # show var "shealth" with complete info
     with(flu.m1, prop.table(table(vac, complete),2))
     with(flu.m1, prop.table(table(smoking, complete),2))
 
@@ -819,12 +856,12 @@ summary(glm.ohio)
 # 26. Construct imputed dataset using variables in the final analysis model
     require(Hmisc)
     
-    flu.m1.impute <- transcan(~flu+vac+shealth+smoking, n.impute=50, shrink=T, data=flu.m1, imputed=T)
+    flu.m1.impute <- transcan(~flu+vac+shealth+smoking, n.impute=50, shrink=T, data=flu.m1, imputed=T)      # shrink=T to avoid overfitting; imputed=T to save imputed value
     flu.m1.impute$imputed$shealth[,1]
     flu.m1.impute$imputed$vac[,1]
 
     # switch to aregImpute
-    flu.m1.impute <- aregImpute(~flu+vac+shealth+smoking, n.impute=50, data=flu.m1)
+    flu.m1.impute <- aregImpute(~flu+vac+shealth+smoking, n.impute=50, data=flu.m1) # imputed data saved
     flu.m1.impute$imputed$shealth[,1]
     flu.m1.impute$imputed$vac[,1]
 
@@ -835,18 +872,17 @@ summary(glm.ohio)
     boxplot(flu.m1$shealth, border='blue', at=1, xlim=c(0,53))
     for (i in 1:50) boxplot(flu.m1.impute$imputed$shealth[,i], border='red', at=i+1, add=T)
 
-    # vac
-    prop.table(table(flu.m1$vac))
+    # compare imputed and orginal data on variable "vac"
+    prop.table(table(flu.m1$vac))                       
     prop.table(table(flu.m1.impute$imputed$vac[,1]))
 
-    for(i in 1:50) print(prop.table(table(flu.m1.impute$imputed$vac[,i])))
+    for(i in 1:50) print(prop.table(table(flu.m1.impute$imputed$vac[,i])))  # show all imputed data
 
 # 27. Fit regression model on imputed datasets
-lr0.m1.impute <- fit.mult.impute(flu ~vac+shealth+vac*smoking, glm, flu.m1.impute, data=flu.m1, family=binomial)
-summary(lr0.m1.impute)
-exp(coef(lr0.m1.impute))
-exp(confint(lr0.m1.impute))
-
+    lr0.m1.impute <- fit.mult.impute(flu ~vac+shealth+vac*smoking, glm, flu.m1.impute, data=flu.m1, family=binomial)    # formula, fitter (model), xtrans, data,approach
+    summary(lr0.m1.impute)
+    exp(coef(lr0.m1.impute))
+    exp(confint(lr0.m1.impute))
 
 # 28. dataset with missing data (not MCAR)
     flu.m2 <- read.csv('fluvaccine_m2.csv')
@@ -863,7 +899,7 @@ exp(confint(lr0.m1.impute))
 
 
 # 30. multiple imputation using variables in the final model
-    flu.m2.impute <- aregImpute(~flu+vac+shealth+smoking, n.impute=50, data=flu.m2)
+    flu.m2.impute <- aregImpute(~flu+vac+shealth+smoking, n.impute=50, data=flu.m2) # imputation method
     flu.m2.impute$imputed$vac
 
     # Visualize imputed data
@@ -885,11 +921,10 @@ exp(confint(lr0.m1.impute))
     vac.miss.m2 <- which(is.na(flu.m2$vac))
     shealth.miss.m2 <- which(is.na(flu.m2$shealth))
     imputed.shealth.m2.i1 <- flu.m2$shealth
-    imputed.shealth.m2.i1[shealth.miss.m2] <- flu.m2.impute$imputed$shealth[,1]
+    imputed.shealth.m2.i1[shealth.miss.m2] <- flu.m2.impute$imputed$shealth[,1]     # replace missing data with imputed values
     prop.table(table(imputed.shealth.m2.i1[vac.miss.m2], flu.m2.impute$imputed$vac[,1]),1)
 
-    lr0.m2.impute <- fit.mult.impute(flu ~vac+shealth+vac*smoking, glm,
-    flu.m2.impute, data=flu.m2, family=binomial)
+    lr0.m2.impute <- fit.mult.impute(flu ~vac+shealth+vac*smoking,glm,flu.m2.impute, data=flu.m2, family=binomial)
     summary(lr0.m2.impute)
 
     exp(coef(lr0.m2.impute))
@@ -908,7 +943,7 @@ exp(confint(lr0.m1.impute))
 # 32. Suppose the same dataset have more missing data (up to 30% missing for key variables, ‘fluvaccine_m3.csv’). Study the dataset especially on the missingness of the data.
     flu.m3 <- read.csv('fluvaccine_m3.csv')
     aggr_plot <- aggr(flu.m3, sortVars=T, numbers=T)
-    marginplot(flu.m3[,c(4,7)])
+    marginplot(flu.m3[,c(4,7)])     # 4th (shealth) and 7th (vac) columns
 
     # complete case analysis
     lr0.m3 <- glm(flu~vac+shealth+vac*smoking, data=flu.m3, family=binomial)
@@ -920,8 +955,7 @@ exp(confint(lr0.m1.impute))
     # multiple imputation using all variables
     flu.m3.impute <- aregImpute(~flu+vac+shealth+smoking+age+male+bmi+abT, n.impute=50, data=flu.m3)
 
-    lr0.m3.impute <- fit.mult.impute(flu ~vac+shealth+vac*smoking, glm,
-    flu.m3.impute, data=flu.m3, family=binomial)
+    lr0.m3.impute <- fit.mult.impute(flu ~vac+shealth+vac*smoking, glm, flu.m3.impute, data=flu.m3, family=binomial)
     summary(lr0.m3.impute)
 
     exp(coef(lr0.m3.impute))
@@ -933,11 +967,11 @@ exp(confint(lr0.m1.impute))
     data <- read.csv('ambc.csv')
 
     require(lattice)
-    with(data,interaction.plot(time,id,pm, legend=F, lty=1, col=gray(0.7), xlab='follow up', ylab='Mean PM2.5', las=1))
+    with(data,interaction.plot(time,id,pm, legend=F, lty=1, col=gray(0.7), xlab='follow up', ylab='Mean PM2.5', las=1)) # factors time and id; response variable pm
     with(data,interaction.plot(time,id,ambc, legend=F, lty=1, col=gray(0.7), xlab='follow up', ylab='AMBC', las=1))
 
     require(ICC)
-    with(data, ICCest(as.factor(id), ambc))
+    with(data, ICCest(as.factor(id), ambc)) # column name indicating individual or group id; measurement variable ambc
 
 # 35. Explore the relationship between indoor PM2.5 and AMBC content for some subjects
     xyplot(ambc~pm|id, data=data, type=c('p','r'))
@@ -947,9 +981,9 @@ exp(confint(lr0.m1.impute))
     summary(l0)
     confint(l0)
 
-    ICCest(as.factor(data$id), resid(l0))       # ICC = 0.23
+    ICCest(as.factor(data$id), resid(l0))       # ICC = 0.23; id and residuals of l0
 
-# 37. fitting GEE in 4 different approaches
+# 37. fitting GEE in 4 different approaches - specify correlational structure assuming cases are conditionally independent
     library(geepack)
     g.indp <- geeglm(ambc~male+age+pm, family=gaussian, id=id, corstr="independence", data=data)
     g.exch <- geeglm(ambc~male+age+pm, family=gaussian, id=id, corstr="exchangeable", data=data)
@@ -960,14 +994,19 @@ exp(confint(lr0.m1.impute))
     library(MESS)
     QIC(g.indp); QIC(g.exch); QIC(g.ar1); QIC(g.unstr)  # select lowest QIC and QIC
 
+    rbind(QIC(g.indp), QIC(g.exch), QIC(g.ar1), QIC(g.unstr))  # select lowest QIC and QIC
+
 # 39. Summarize your results from the selected model in (38) in the following table
     summary(g.ar1)
     library(doBy)
-    esticon(g.ar1, c(0,1,0,0))  # male
-    esticon(g.ar1, c(0,0,1,0))  # age
-    esticon(g.ar1, c(0,0,0,1))  # pm
+    est.male <- esticon(g.ar1, c(0,1,0,0))  # male
+    est.age <- esticon(g.ar1, c(0,0,1,0))  # age
+    est.pm <- esticon(g.ar1, c(0,0,0,1))  # pm
+    
+    rbind(est.male,est.age,est.pm)      # show all estimates
 
-    ICCest(as.factor(data$id), resid(g.ar1))
+
+    ICCest(as.factor(data$id), resid(g.ar1))    # check ICC = 0.2327
 
 # 40. Fit a linear mixed model with random intercept to predict AMBC by age, male, and PM2.5.
     require(lme4)
@@ -987,7 +1026,7 @@ ICCest(as.factor(data$id), resid(lme1))
 
 # 43. convert data to wide form 
     data.wide <- reshape(data, v.names=c("pm","ambc"), idvar="id", timevar="time", direction="wide")
-    head(data.wide)
+    head(data.wide)     # v.names: vars in long formt corresponding to multiple vars in wide format; idvar: case id including multiple cases in long format
 
     l.multi <- lm(ambc.5~male+age+pm.1+pm.2+pm.3+pm.4+pm.5, data=data.wide)
     summary(l.multi)
@@ -995,6 +1034,8 @@ ICCest(as.factor(data$id), resid(lme1))
 
     require(car)
     vif(l.multi)
+
+    data.long <- reshape(data.wide, varying = list(c(4,6,8,10,12),c(5,7,9,11,13)),v.names=c("pm","ambc"), idvar="id",times=1:5,direction="long")    # list position of columnes; v.names - initial name; times- time points
 
 # 44. LASSO regression
     x <- model.matrix(ambc.5~-1+male+age+pm.1+pm.2+pm.3+pm.4+pm.5, data=data.wide)
@@ -1013,40 +1054,6 @@ ICCest(as.factor(data$id), resid(lme1))
     coef(lasso.1se)
 
 
-### Marginal structural model
 
-library(ipw)
-temp <- ipwpoint(exposure = a, family = "binomial", link = "logit", numerator = ~ 1, denominator = ~ l, data = simdat)
-summary(temp$ipw.weights)
-
-    # show distribution of weight
-ipwplot(weights = temp$ipw.weights,logscale = FALSE,main = "Stabilized weights",xlim = c(0, 8))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Questions:
-
-why use reml or ml
-when to use glm or gee
 
 

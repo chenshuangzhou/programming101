@@ -1,0 +1,46 @@
+install.packages("ltm")
+install.packages("mirt")
+library(ltm)
+library(mirt)
+
+
+setwd("C:/Users/chens/Desktop")
+d =read.csv("assessor.csv",header=T,na.strings = "-99")
+d1 = d[,c(1:11,21:39)]
+d2 = d[,c(12:20)]
+
+rcor.test(d2, method="pearson")
+
+irt1 = mirt(data=d1, model=1, itemtype="gpcm")
+irt2 = mirt(data=d2, model=1, itemtype="gpcm")
+
+summary(irt1)
+summary(irt2)
+
+itemplot(irt1,1,type="trace")
+itemplot(irt1,1,type="info")
+
+itemplot(irt2,1,type="trace")
+itemplot(irt2,1,type="info")
+
+
+### GRM ###
+
+out = grm(d1)
+out2 = grm(d1, constrained=T)
+anova(out,out2)
+
+# compute margins
+margins(out)
+summary(out)
+coef(out)
+
+# plots
+plot(out, lwd=2,type="ICC")
+plot(out, lwd=2,type="OCCu")
+
+# information
+information(out,c(-10,10))
+information(out,c(-10,10), items=10) # check specific items
+
+

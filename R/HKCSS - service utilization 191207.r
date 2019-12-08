@@ -10,7 +10,11 @@ library(outreg);
 library(plyr);
 library(psych);
 library(stargazer);
-
+library(interplot);
+library(Hmisc);
+# library(VIM)      # visualization of missing data
+   # aggr(d,prop=F,numbers=T)
+   # matrixplot(d)
 ############### add number of caregivers
 
 data = work = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/191122 HKCSS.csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
@@ -30,24 +34,17 @@ w = ac[ac$workCG=="1",]     # 494
 nw = ac[ac$workCG=="0",]    # 252
 
 # dementia population among working caregivers
-d = w[w$B16b=="1",]    # 181
+d  = w[w$B16b=="1",]    # 181
 nd = w[w$B16b=="0",]    # 309
+
 
 # ggpairs(data = d, columns = 2:10, title = "bivariates")
 
 
-### use AD and AD+DP only
-# data = work[work$B16b==1 | work$B16f==1,]
-# data = data[data$B16b==1,]
-# m = data[data$genderCG==1,]
-# f = data[data$genderCG==0,]
-
-### Anderson Theory ####
+### Anderson Model on Service Utialization ####
    # predisposing (age[ageCR], gender[genderCR], marital status[null], ethnicity[null] and family size[null]; +[resid])
    # enabling (education level[eduCG], family support[C10T(relationship)], access to services[ADL_UN?], travel time to the nearest health facility[?], medical expense per capita[?], and health insurance coverage[?]), 
    # need factors (chronic disease)[phyFra], actual needs[ADL_UN], with the utilization of health services (i.e. physician visit and hospitalization).
-
-
 
 # description table
 # head(describe(un),10)   # show basic description of first 10 variables 
@@ -55,11 +52,57 @@ nd = w[w$B16b=="0",]    # 309
    attach(nd);table1.2 = rbind.fill(describe(ageCG),describe(ageCR),describe(phyFra),describe(ADL_UN));detach()
    table1 = cbind(table1.1,table1.2)
 
-
    reg1 = (glm(US ~ ageCR+genderCR+ageCG+genderCG+phyFra+ADL_UN+eduCG+economicCG+fr+resid+CF,data=d, family=poisson))
    reg2 = (glm(US ~ ageCR+genderCR+ageCG+genderCG+phyFra+ADL_UN+eduCG+economicCG+fr+resid+CF,data=nd, family=poisson))
    table2 = outreg(list(reg1,reg2))
 
+   write.csv(table1,file="C:/Users/chens/Desktop/table1.csv")
+   write.csv(table2,file="C:/Users/chens/Desktop/table2.csv")
+
+### Pearlin's SPM Model ###
+
+   reg3 = (glm(US ~ ageCG+genderCG+eduCG+economicCG+C12+LvHm+phyFra+GF12Positive+burden+resid+CRtype3+fr+depressive+C6T,data=d, family=poisson))
+   reg4 = (glm(US ~ ageCG+genderCG+eduCG+economicCG+C12+LvHm+phyFra+GF12Positive+burden+resid+CRtype3+fr+depressive+C6T,data=nd, family=poisson))
+   table3 = outreg(list(reg3,reg4))
+
+   write.csv(table3,file="C:/Users/chens/Desktop/table3.csv")
+
+
+### Andersen's model on unmet needs
+
+   reg5 = (glm(ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+US,data=d, family=poisson))
+   reg6 = (glm(ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+US,data=nd, family=poisson))
+   
+   ADL1  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
+   ADL2  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
+   ADL3  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
+   ADL4  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
+   IADL1 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
+   IADL2 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
+   IADL3 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
+   IADL4 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
+   table4 = outreg(list(ADL1,ADL2,ADL3,ADL4,IADL1,IADL2,IADL3,IADL4))
+  
+   write.csv(table4,file="C:/Users/chens/Desktop/table.csv")
+
+
+############
+
+   # interplot(ADL3, var1 = 'US',var2 = 'C5T', predPro = FALSE) + ggtitle("Average Conditional Effects")
+
+   # impute(d$C5T,median)
+   # impute(d$US,median)
+   ADLd  = interplot(ADL3, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of ADL on PAC by US among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+   ADLnd  = interplot(ADL4, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of ADL on PAC by US among CG of Other Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+   IADLd = interplot(IADL3, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of IADL on PAC by US among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+   IADLnd  = interplot(IADL4, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of IADL on PAC by US among CG of Other Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+
+  
+   grid.arrange(ADLd,ADLnd,IADLd,IADLnd, ncol=2, nrow=2)    # library(gridExtra)
+
+   # plot_3val <- interplot(ADL3, var1 = "US",var2 = "C5T", predPro = TRUE, var2_vals = c(min(d$C5T), max(d$C5T))) + ggtitle("Conditional Predicted Probabilities for \nCitizens with Low and High Incomes") + scale_colour_discrete(guide = guide_legend(title = "Income"), labels = c("Low", "High")) + scale_fill_discrete(guide = guide_legend(title = "Income"), labels = c("Low", "High")) + theme(legend.position = c(0, .8), legend.justification = c(0, .5))
+   
+   
 
 ## Framework
    # DV: utilization of service in need [US]
@@ -74,8 +117,6 @@ nd = w[w$B16b=="0",]    # 309
 
       summary(glm(US ~ ageCG+genderCG+eduCG+CGMarry+B13+economicCG+DemCom+ADL_UN+C6T+C10T,data=w, family=poisson))
       summary(glm(US ~ ageCG+genderCG+eduCG+CGMarry+B13+economicCG+DemCom+ADL_UN+C6T+C10T,data=nw, family=poisson))
-
-
 
 ## Variables - basic check (finished)
    # ad1=un[,c("D1_UN", "D2_UN", "ADL_UN", "IADL_UN", "phyFra", "psyFra", "socFra")]
@@ -139,8 +180,7 @@ nd = w[w$B16b=="0",]    # 309
    # table = rbind.fill(table1,table2,table3,table4)     # require library(plyr)
 
 # output to excel
-   write.csv(table1,file="C:/Users/chens/Desktop/table1.csv")
-   write.csv(table2,file="C:/Users/chens/Desktop/table2.csv")
+
 
    # write.csv(table1,file="C:/Users/chens/Desktop/test1.csv")
    # write.csv(table2,file="C:/Users/chens/Desktop/test2.csv")

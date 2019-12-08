@@ -1,4 +1,11 @@
-﻿## File location examples:
+﻿# GGPLOT2  我们将使用这个流行的数据可视化包来构建我们的模型图。
+# GGally 该包扩展了ggplot2的功能。 我们将使用它来创建绘图矩阵，作为我们最初的探索性数据可视化的一部分。
+# scatterplot3d 我们将使用此包来显示具有多个预测变量的更复杂的线性回归模型。
+
+
+
+
+## File location examples:
 read.table("C:/Users/chens/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")  # Office - Dell Inspiron 16
 read.table("C:/Users/Student RA/vscode temp/test.txt",header=T,sep="\t",na.strings = "NA")                             # CoA 
 read.table("D:/OneDrive/research/1personal/Geriatrics/meta/test.txt",header=T,sep="\t",na.strings = "NA")              # Office - Lenovo X1

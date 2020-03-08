@@ -2,14 +2,19 @@ install.packages("ltm")
 install.packages("mirt")
 library(ltm)
 library(mirt)
-
+library(semPLS); library(seminr); library(semPlot); library(lavaan)
 
 setwd("C:/Users/chens/Desktop")
-d =read.csv("assessor.csv",header=T,na.strings = "-99")
-d1 = d[,c(1:11,21:39)]
-d2 = d[,c(12:20)]
+work =read.csv("merged.csv",header=T,na.strings = "NA")
+d = work[-c(58,73),]
+
+d1 = d[,c(140:150,187:205)]
+d2 = d[,c(159:163,164:167)]
 
 rcor.test(d2, method="pearson")
+ggpairs(d2)   # library(GGally)
+
+### IRT
 
 irt1 = mirt(data=d1, model=1, itemtype="gpcm")
 irt2 = mirt(data=d2, model=1, itemtype="gpcm")
@@ -23,6 +28,70 @@ itemplot(irt1,1,type="info")
 itemplot(irt2,1,type="trace")
 itemplot(irt2,1,type="info")
 
+### SEM
+
+
+m1 = "
+ls =~ Q25_1+Q25_2+Q25_3+Q25_4+Q25_5
+zbi =~ Q26_1+Q26_2+Q26_3+Q26_4
+"
+
+m2 = "
+ls =~ Q25_1+Q25_2+Q25_3+Q25_4+Q25_5
+zbi =~ Q26_1+Q26_2+Q26_3+Q26_4
+global =~ ls + zbi
+"
+
+mb = "
+ls =~ Q25_1+Q25_2+Q25_3+Q25_4+Q25_5
+zbi =~ Q26_1+Q26_2+Q26_3+Q26_4
+global =~ Q25_1+Q25_2+Q25_3+Q25_4+Q25_5+Q26_1+Q26_2+Q26_3+Q26_4
+"
+
+
+fit1 = cfa(m1,data=d)
+fit2 = cfa(m2,data=d)
+fit3 = cfa(mb,data=d, orthogonal=T,std.lv=T)
+
+
+semPaths(fit1,whatLabels='std',layout='tree')
+semPaths(fit2,whatLabels='std',layout='tree')
+semPaths(fit3,whatLabels='std',layout='tree')
+
+fitMeasures(fit1)
+fitMeasures(fit2)
+fitMeasures(fit3)
+
+summary(fit1,standardized=T,rsquare=T)
+summary(fit2,standardized=T,rsquare=T)
+summary(fit3,standardized=T,rsquare=T)
+ 
+### CFA
+f2 = "
+ls =~ Q25_1+Q25_2+Q25_3+Q25_4+Q25_5
+zbi =~ Q26_1+Q26_2+Q26_3+Q26_4
+"
+
+f1 = "
+f1 =~ Q25_1+Q25_2+Q25_3+Q25_4+Q25_5+Q26_1+Q26_2+Q26_3+Q26_4
+"
+
+fit2 = cfa(f2,data=d)
+fit1 = cfa(f1,data=d)
+
+semPaths(fit1,whatLabels='std',layout='tree')
+semPaths(fit2,whatLabels='std',layout='tree')
+
+summary(fit1,standardized=T,rsquare=T)
+summary(fit2,standardized=T,rsquare=T)
+
+## residual correlations
+cor = residuals(fit2,type='cor')
+zcor = residuals(fit2,type='standardized')
+View(cor$cor)
+View(zcor$cov)
+
+## 
 
 ### GRM ###
 
@@ -43,4 +112,11 @@ plot(out, lwd=2,type="OCCu")
 information(out,c(-10,10))
 information(out,c(-10,10), items=10) # check specific items
 
+#########################
 
+
+data = work = read.csv("C:/Users/chens/OneDrive/research/Projects/1 Meaning Making - VL/GRF/analysis/merged.csv",header=T,na.strings = "NA")  
+
+ggpairs(data, columns = 274:291)   # library(GGally)
+
+aggregate(data$PAC, by=list(data$generation), FUN=mean)[2]

@@ -13,8 +13,8 @@ library(stargazer);
 
 ############### add number of caregivers
 
-data = work = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/191122 HKCSS.csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
-# data = read.csv("D:/OneDrive/research/Projects/4 HKCSS/190908 HKCSS (no missing).csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
+data = work = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/191216 HKCSS.csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
+data = read.csv("D:/OneDrive/research/Projects/4 HKCSS/191216 HKCSS.csv",header=T,na.strings = "NA")  
 
 ## Var names
 data$CMon=data$CGMon

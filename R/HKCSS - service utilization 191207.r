@@ -17,7 +17,7 @@ library(Hmisc);
    # matrixplot(d)
 ############### add number of caregivers
 
-data = work = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/191122 HKCSS.csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
+data = work = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/191216 HKCSS.csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
 # data = read.csv("D:/OneDrive/research/Projects/4 HKCSS/190908 HKCSS (no missing).csv",header=T,na.strings = "NA")  # Office - Dell Inspiron 16
 
 ## Var names
@@ -28,18 +28,41 @@ data$dr=data$C12     # dyadic relation
 data$fr=data$C10T   # family relation
 
 # with adult children caregivers 
-ac = data[data$CRtype2=="2" | data$CRtype2=="3",]     # 742
+ac = data[data$CRtype2=="2" | data$CRtype2=="3",]     # 742 | data$CRtype2=="4"
 
 w = ac[ac$workCG=="1",]     # 494  
 nw = ac[ac$workCG=="0",]    # 252
 
 # dementia population among working caregivers
 d  = w[w$B16b=="1",]    # 181
+   m = d[d$genderCG=="1",]  # 37
+   f = d[d$genderCG=="0",]  # 144
 nd = w[w$B16b=="0",]    # 309
 
 
-# ggpairs(data = d, columns = 2:10, title = "bivariates")
+### unmet need of CR
+   # D201A-D210A: use - 0 no, 1 yes
+   # D201B-D210B: reasons not using - 1 dont know, 2 cannt use, 3 not appropriate
+   # D201C-D210C: need - 1-5 very unneed to very need
+   
+   
+   D2A - services utilized by CR
+   # D2C - service needed by caregivers
+   # D2_UN - unmet need of CR
 
+
+### Correlation
+
+# ggpairs(data = d, columns = 2:10, title = "bivariates")
+#
+
+data1 <- d[, c("ageCR","genderCR","ageCG")]
+corr <- round(cor(data1), 2)
+# Visualize - library("ggcorrplot")
+ggcorrplot(corr, p.mat = cor_pmat(data1),
+           hc.order = TRUE, type = "lower",
+           color = c("#FC4E07", "white", "#00AFBB"),
+           outline.col = "white", lab = TRUE,na.rm=T)
 
 ### Anderson Model on Service Utialization ####
    # predisposing (age[ageCR], gender[genderCR], marital status[null], ethnicity[null] and family size[null]; +[resid])
@@ -69,13 +92,18 @@ nd = w[w$B16b=="0",]    # 309
 
 
 ### Andersen's model on unmet needs
+### CR's unmet need: ADL_UN, IADL_UN, ADL_UNP (unmet need percentage), IADL_UNP
 
    reg5 = (glm(ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+US,data=d, family=poisson))
    reg6 = (glm(ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+US,data=nd, family=poisson))
    
    ADL1  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
+      # ADL1.1  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=m,  family=poisson,na.action='na.omit'))   # heart issues
+      # ADL1.2  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=f,  family=poisson,na.action='na.omit'))   # heart issues
    ADL2  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
    ADL3  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
+      # ADL3.1  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=m,  family=poisson,na.action='na.omit'))   # heart issues
+      # ADL3.2  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=f,  family=poisson,na.action='na.omit'))   # heart issues
    ADL4  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US*C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
    IADL1 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=d,  family=poisson,na.action='na.omit'))   # heart issues
    IADL2 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+US+C5T,data=nd, family=poisson,na.action='na.omit'))   # heart issues
@@ -86,22 +114,67 @@ nd = w[w$B16b=="0",]    # 309
    write.csv(table4,file="C:/Users/chens/Desktop/table.csv")
 
 
+# felt need: real need
+# expressed need: real need to be expressed
+
+
+   ADL1  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS+PAC1,data=d,  family = gaussian(),na.action='na.omit'))   # heart issues
+   ADL2  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS+PAC1,data=nd, family = gaussian(),na.action='na.omit'))   # heart issues
+   ADL3  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS*PAC1,data=d,  family = gaussian(),na.action='na.omit'))   # heart issues
+   ADL4  = (glm( ADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS*PAC1,data=nd, family = gaussian(),na.action='na.omit'))   # heart issues
+   IADL1 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS+PAC1,data=d,  family = gaussian(),na.action='na.omit'))   # heart issues
+   IADL2 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS+PAC1,data=nd, family = gaussian(),na.action='na.omit'))   # heart issues
+   IADL3 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS*PAC1,data=d,  family = gaussian(),na.action='na.omit'))   # heart issues
+   IADL4 = (glm(IADL_UN ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+UNS*PAC1,data=nd, family = gaussian(),na.action='na.omit'))   # heart issues
+   table4 = outreg(list(ADL1,ADL2,ADL3,ADL4,IADL1,IADL2,IADL3,IADL4))
+  
+   write.csv(table4,file="C:/Users/chens/Desktop/table1.csv")
+
+
 ############
 
+
+   m1  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+ ADL_UN+C6T+PAC,data=d,  family=poisson,na.action='na.omit')) 
+   m2  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+ ADL_UN+C6T+PAC,data=nd, family=poisson,na.action='na.omit')) 
+   m3  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+ ADL_UN+C6T*PAC,data=d,  family=poisson,na.action='na.omit')) 
+   m4  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+ ADL_UN+C6T*PAC,data=nd, family=poisson,na.action='na.omit')) 
+   m5  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+IADL_UN+C6T+PAC,data=d,  family=poisson,na.action='na.omit')) 
+   m6  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+IADL_UN+C6T+PAC,data=nd, family=poisson,na.action='na.omit')) 
+   m7  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+IADL_UN+C6T*PAC,data=d,  family=poisson,na.action='na.omit')) 
+   m8  = (glm(UNS ~ ageCR+genderCR+ageCG+genderCG+CGMarry+eduCG+resid+dr+CF+economicCG+phyFra+depressive+B16c+IADL_UN+C6T*PAC,data=nd, family=poisson,na.action='na.omit')) 
+   
+   
+   UNS_ADL_d   = interplot(m3, var1 = "PAC",var2 = "C6T", predPro = TRUE, var2_vals = c(min(  d$C6T,na.rm=T), max( d$C6T,na.rm=T))) + ggtitle("Unmet Need on PAC by ZBI among CG of Dementia Caregivers") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("LowestZBI", "Highest ZBI")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("LowestZBI", "Highest ZBI")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5)) + ylab("Estimated Coefficient for Unmet Need of Services")
+   UNS_ADL_nd  = interplot(m4, var1 = "PAC",var2 = "C6T", predPro = TRUE, var2_vals = c(min( nd$C6T,na.rm=T), max(nd$C6T,na.rm=T))) + ggtitle("Unmet Need on PAC by ZBI among CG of non-Dementia Caregiver") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("LowestZBI", "Highest ZBI")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("LowestZBI", "Highest ZBI")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+   UNS_IADL_d  = interplot(m7, var1 = "PAC",var2 = "C6T", predPro = TRUE, var2_vals = c(min(  d$C6T,na.rm=T),max(  d$C6T,na.rm=T))) + ggtitle("Unmet Need on PAC by ZBI among CG of Dementia Caregiver") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("LowestZBI", "Highest ZBI")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("LowestZBI", "Highest ZBI")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5)) + ylab("Estimated Coefficient for Unmet Need of Services")
+   UNS_IADL_nd = interplot(m8, var1 = "PAC",var2 = "C6T", predPro = TRUE, var2_vals = c(min( nd$C6T,na.rm=T),max( nd$C6T,na.rm=T))) + ggtitle("Unmet Need on PAC by ZBI among CG of non-Dementia Caregiver") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("LowestZBI", "Highest ZBI")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("LowestZBI", "Highest ZBI")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+
+   grid.arrange(UNS_ADL_d,UNS_ADL_nd,UNS_IADL_d,UNS_IADL_nd, ncol=2, nrow=2)    # library(gridExtra)
+     
+   table4 = outreg(list(m1,m2,m3,m4,m5,m6,m7,m8))
+  
+   write.csv(table4,file="C:/Users/chens/Desktop/table1.csv")
+
+
+###############
    # interplot(ADL3, var1 = 'US',var2 = 'C5T', predPro = FALSE) + ggtitle("Average Conditional Effects")
+      # V1 on x-axis; prediction of V2 on DV on y-axis
 
    # impute(d$C5T,median)
    # impute(d$US,median)
-   ADLd  = interplot(ADL3, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of ADL on PAC by US among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
-   ADLnd  = interplot(ADL4, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of ADL on PAC by US among CG of Other Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
-   IADLd = interplot(IADL3, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of IADL on PAC by US among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
-   IADLnd  = interplot(IADL4, var1 = "C5T",var2 = "US", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T))) + ggtitle("Unmet Need of IADL on PAC by US among CG of Other Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Low PAC", "High PAC")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Low PAC", "High PAC")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+   library(gridExtra)
 
-  
+   ADLd  = interplot(ADL3,   var1 = "PAC1",var2 = "UNS", predPro = TRUE, var2_vals = c(min( d$UNS,na.rm=T), max( d$UNS,na.rm=T))) + ggtitle("Unmet Need of ADL on` PAC by SU among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5)) + ylab("Estimated Coefficient for Service Utilization")
+   ADLnd  = interplot(ADL4,  var1 = "PAC1",var2 = "UNS", predPro = TRUE, var2_vals = c(min(nd$UNS,na.rm=T), max(nd$UNS,na.rm=T))) + ggtitle("Unmet Need of ADL on` PAC by SU among CG of Other Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
+   IADLd = interplot(IADL3,  var1 = "PAC1",var2 = "UNS", predPro = TRUE, var2_vals = c(min( d$UNS,na.rm=T), max( d$UNS,na.rm=T))) + ggtitle("Unmet Need of IADL on` PAC by SU among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5)) + xlab("PAC") + ylab("Estimated Coefficient for Service Utilization")
+   IADLnd  = interplot(IADL4,var1 = "PAC1",var2 = "UNS", predPro = TRUE, var2_vals = c(min(nd$UNS,na.rm=T), max(nd$UNS,na.rm=T))) + ggtitle("Unmet Need of IADL on` PAC by SU among CG of Other Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Least Service Unmet Need", "Most Service Unmet Need")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5)) + xlab("PAC")
+
    grid.arrange(ADLd,ADLnd,IADLd,IADLnd, ncol=2, nrow=2)    # library(gridExtra)
+     
 
    # plot_3val <- interplot(ADL3, var1 = "US",var2 = "C5T", predPro = TRUE, var2_vals = c(min(d$C5T), max(d$C5T))) + ggtitle("Conditional Predicted Probabilities for \nCitizens with Low and High Incomes") + scale_colour_discrete(guide = guide_legend(title = "Income"), labels = c("Low", "High")) + scale_fill_discrete(guide = guide_legend(title = "Income"), labels = c("Low", "High")) + theme(legend.position = c(0, .8), legend.justification = c(0, .5))
    
+  interplot(ADL3, var1 = "US",var2 = "C5T", predPro = TRUE, var2_vals = c(min(d$US,na.rm=T), max(d$US,na.rm=T)), point=T) + ggtitle("Unmet Need of ADL on PAC by SU among CG of Dementia Population") + scale_colour_discrete(guide = guide_legend(title = "Mean"), labels = c("Least Service", "Most Service")) + scale_fill_discrete(guide = guide_legend(title = "Intervals"), labels = c("Least Service", "Most Service")) + theme(legend.position = c(.1, .8), legend.justification = c(0, .5))
    
 
 ## Framework

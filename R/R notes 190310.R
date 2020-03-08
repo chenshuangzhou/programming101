@@ -64,8 +64,38 @@ d = read.csv("C:/Users/chens/OneDrive/research/Projects/4 HKCSS/190501 HKCSS.csv
 9. non-compliance in treatments among dementia population
 10. Steger's working model of caregiving (occupational and economic aspects)'
 
+### Visualization ###
+
+p <- ggpairs(data, aes(color = Species))+ theme_bw()
+# Change color manually.
+# Loop through each plot changing relevant scales
+for(i in 1:p$nrow) {
+  for(j in 1:p$ncol){
+    p[i,j] <- p[i,j] + 
+        scale_fill_manual(values=c("#00AFBB", "#E7B800", "#FC4E07")) +
+        scale_color_manual(values=c("#00AFBB", "#E7B800", "#FC4E07"))  
+  }
+}
+
+# install.packages("PerformanceAnalytics")
+library("PerformanceAnalytics")
+my_data <- mtcars[, c(1,3,4,5,6,7)]
+chart.Correlation(my_data, histogram=TRUE, pch=19)
+
+# correlation; install.packages("ggcorrplot")
+
+library("ggcorrplot")
+# Compute a correlation matrix
+my_data <- mtcars[, c(1,3,4,5,6,7)]
+corr <- round(cor(my_data), 2)
+# Visualize
+ggcorrplot(corr, p.mat = cor_pmat(my_data),
+           hc.order = TRUE, type = "lower",
+           color = c("#FC4E07", "white", "#00AFBB"),
+           outline.col = "white", lab = TRUE)
 
 
+# ggpairs(data = d, columns = 2:10, title = "bivariates")
 
 
 ## Word Cloud ######################################

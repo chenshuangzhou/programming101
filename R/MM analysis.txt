@@ -1,18 +1,132 @@
+setwd("C:/Users/chens/Desktop")     # file directory
+work =read.csv("merged.csv",header=T,na.strings = "NA")     
+
+### path analysis
+library(RAMpath)
+attach(work)        
+m1 = '          # full model 
+PHQ ~ adapt1
+adapt1 ~ FMTC_LP + FMTC_PM
+FMTC_LP ~ ZBI
+FMTC_PM ~ ZBI
+'
+detach(work)
+
+fit1 = sem(m1, data = work)
+summary(fit1)
+    
+    # plot
+library(semPlot)
+semPaths(fit1)
+
+### demographics
+attach(work)
+summary(ageR);summary(ageG);
+cbind(table(genderR),prop.table(table(genderR)))
+cbind(table(genderG),prop.table(table(genderG)))
+cbind(table(Q37),prop.table(table(Q37)))    # marital - single, married, partner, widowed, separate, divorce
+cbind(table(Q39),prop.table(table(Q39)))    # education - no, primary, secondary, vocational, college, graduate
+cbind(table(Q42_1),prop.table(table(Q42_1)))    # economic burden - not at all, rarely, merely, mostly, completely
+
+### correlations; 
+library(GGally)
+t = work[,c(303:305, 275, 311, 296)]  # LS, ZBI, FMTCs, adaptation, PHQ
+rcor.test(t, method="pearson")
+ggpairs(t)   
+
+
+### model testing
+
+m = (glm(PHQ ~ ageG+genderG+Q39+CGintensity+Q13+support+URCS_chg+RES+religion+work1, data=work, family=gaussian,na.action='na.omit')) 
+m = (glm(PHQ ~ ageG+genderG+Q39+CGintensity+Q13+support+URCS_chg+RES+religion+work1, data=work, family=poisson,na.action='na.omit')) 
+m = (glm(PHQ ~ ageG+genderG+Q39+CGintensity+Q13+support+URCS_chg+RES+religion, data=work, family=poisson,na.action='na.omit')) 
+
+summary(glm(PHQ ~ ageG+Q39+CGintensity+Q13+support+URCS_chg+RES+religion, data=work, family=poisson,na.action='na.omit')) 
+
+
+
+################################# 
+
 install.packages("ltm")
 install.packages("mirt")
+
 library(ltm)
 library(mirt)
 library(semPLS); library(seminr); library(semPlot); library(lavaan)
 
 setwd("C:/Users/chens/Desktop")
 work =read.csv("merged.csv",header=T,na.strings = "NA")
-d = work[-c(58,73),]
+# d = work[-c(58,73),]
 
-d1 = d[,c(140:150,187:205)]
-d2 = d[,c(159:163,164:167)]
+# d1 = d[,c(140:150,187:205)]
+# d2 = d[,c(159:163,164:167)]
 
-rcor.test(d2, method="pearson")
-ggpairs(d2)   # library(GGally)
+w1 = work[which(work$generation==1),]
+w2 = work[which(work$generation==2),]
+
+
+t = work[,c(303:305, 275, 310, 296)]  # LS, ZBI, FMTCs, PACs,adapt_len
+t1 = w1[, c(303:305, 275, 310, 296)]  # LS, ZBI, FMTCs, PACs,adapt_len
+t2 = w2[, c(303:305, 275, 310, 296)]  # LS, ZBI, FMTCs, PACs,adapt_len
+
+rcor.test(t, method="pearson")
+rcor.test(t1, method="pearson")
+rcor.test(t2, method="pearson")
+
+ggpairs(t)   # library(GGally)
+ggpairs(t1)   # library(GGally)
+ggpairs(t2)   # library(GGally)
+
+## path analysis
+
+work$adapt = log(work$adapt_len)
+work$a1 = log10(work$adapt_len)
+hist(work$adapt_len)
+
+
+work$p1 = log(work$PHQ+1, base = exp(1))
+
+work$p1 = log(work$PHQ)
+hist(work$p1)
+
+
+prop.table(table(work$adapt))
+
+
+library(epiDisplay)
+tab1(work$adapt, sort.group = "decreasing", cum.percent = TRUE)
+tab1(work$adapt, cum.percent = TRUE)
+tab1(work$p1, cum.percent = TRUE)
+tab1(work$p2, cum.percent = TRUE)
+
+
+library(RAMpath)
+
+attach(work)
+m1 = '          # full model 
+p1 ~ adapt1
+adapt1 ~ FMTC_LP + FMTC_PM
+FMTC_LP ~ ZBI
+FMTC_PM ~ ZBI
+'
+m2 = '          # full model 
+PHQ ~ adapt1
+adapt1 ~ FMTC_LP + FMTC_PM
+FMTC_LP ~ ZBI
+FMTC_PM ~ ZBI
+'
+detach(work)
+
+
+
+fit1 = sem(m1, data = work)
+fit2 = sem(m2, data = work)
+summary(fit1)
+summary(fit2)
+
+
+m1.0  = (glm(PHQ ~ adapt1, data=work, family=gaussian,na.action='na.omit')) 
+
 
 ### IRT
 
